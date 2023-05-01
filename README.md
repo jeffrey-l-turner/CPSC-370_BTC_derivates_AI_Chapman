@@ -5,6 +5,7 @@ Repo for a Chapman University testnet.
 Team members: 
 - Jeff Turner and Stephen Preston (ComposeDAO)
 - Alexander Kurz and Ronan Kearns (Chapman University)
+- Lucius Gregory Meredith (firefly.io, CEO)
 
 Project outline:
 
