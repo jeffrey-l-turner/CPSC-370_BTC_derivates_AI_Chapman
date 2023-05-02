@@ -2,7 +2,7 @@
 
 Repo for a Chapman University testnet. 
 
-The methods and results of this project will be taught in the course CPSC-370 *The Decentralized Web and Scalable Blockchain Programming* in Fall 2023.
+The methods and results of this project will be taught in the Fall 2023 course CPSC-370 *The Decentralized Web and Scalable Blockchain Programming*.
 
 Team members: 
 - Jeff Turner and Stephen Preston (ComposeDAO)
