@@ -47,6 +47,9 @@
 </em></h5> 
 
 ### Smart Contracts & Turing Completeness
+- Solidity
+- Cosmos SDK
+- RGB...
 
 ## Solution/Problem Examples
 - Censorship of Money
@@ -58,14 +61,17 @@
 - See Tab
 
 ## Course Logistics
-
-## GitHub centric problems
+- Testing use of Discord
+- Notes and assignments on GitHub
+- GitHub centric problems
 
 ## Grading
+- See Canvas Syllabus
 
 ## Homework
 -  `git clone git@github.com:jeffrey-l-turner/Chapman_testnet.git`
 -  install [aider](https://github.com/paul-gauthier/aider) # figure out how to use with `anaconda`
+- hook into Discord (instructions to be provided via Canvas & Slack)
 
 ## Other Details:
 - IDE: VS Code or Vim preferred
