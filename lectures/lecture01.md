@@ -15,7 +15,7 @@
 - Sovereign Technology Opportunity
 
 ## Examples
-- Video: [https://costofconvenience.film/](Sovereign Tech: Cost of Convenience)
+- Video: (Sovereign Tech: Cost of Convenience)(https://costofconvenience.film/)
 
 ## Introduction of AI
 - Large Language Models for Coding
