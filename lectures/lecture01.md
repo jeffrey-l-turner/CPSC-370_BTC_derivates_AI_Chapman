@@ -62,6 +62,7 @@
 
 ## Course Logistics
 - Testing use of Discord
+- Chat-GPT 4 use of Aider & OpenAI
 - Notes and assignments on GitHub
 - GitHub centric problems
 
