@@ -82,3 +82,7 @@
 - The Network State
 - Life After Capitalism
 
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./life_after_capitalism.png"></img></div>
+<div align="center"><img src="./network_state.png"></img></div>
+</em></h5> 
