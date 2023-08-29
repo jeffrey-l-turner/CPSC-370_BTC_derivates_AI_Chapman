@@ -22,13 +22,19 @@
 - Example: [Aider]
 
 ## Course Structure
+
+### High Level Concept
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./generative_ai_code.png"></img></div>
 </em></h5> 
 
+### Web 2 to 3
+
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Web2_3.png"></img></div>
 </em></h5> 
+
+### LLMs and Tech Stack
 
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Generative_Dapp_stack.png"></img></div>
@@ -36,11 +42,20 @@
 
 ## A Brief review of Bitcoin and Cryptocurrencies
 
-## Smart Contracts & Turing Completeness
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./bft_timeline.png"></img></div>
+</em></h5> 
+
+### Smart Contracts & Turing Completeness
 
 ## Solution/Problem Examples
+- Censorship of Money
+- Censorship of Services (e.g. Gmail)
+- Privacy and Ownership (in AI - see genomic data)
+- Government and Governance (e.g. FATF, Binance, & Developing World Insurance)
 
 ## AI and Tech Stacks
+- See Tab
 
 ## Course Logistics
 
