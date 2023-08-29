@@ -15,10 +15,11 @@
 - Sovereign Technology Opportunity
 
 ## Examples
-- Video: (Sovereign Tech: Cost of Convenience)(https://costofconvenience.film/)
+- Video: [Sovereign Tech: Cost of Convenience](https://costofconvenience.film/)
 
 ## Introduction of AI
 - Large Language Models for Coding
+- Example: [Aider]
 
 ## Course Structure
 
@@ -38,7 +39,7 @@
 
 ## Homework
 - `git clone git@github.com:jeffrey-l-turner/Chapman_testnet.git`
-- install `aider`
+- install `aider` # figure out how to use with `anaconda`
 
 ## Other Details:
 - IDE: VS Code or Vim preferred
