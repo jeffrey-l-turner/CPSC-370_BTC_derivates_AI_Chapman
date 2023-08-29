@@ -38,8 +38,8 @@
 ## Grading
 
 ## Homework
-   `git clone git@github.com:jeffrey-l-turner/Chapman_testnet.git`
-   install [aider](https://github.com/paul-gauthier/aider) # figure out how to use with `anaconda`
+-  `git clone git@github.com:jeffrey-l-turner/Chapman_testnet.git`
+-  install [aider](https://github.com/paul-gauthier/aider) # figure out how to use with `anaconda`
 
 ## Other Details:
 - IDE: VS Code or Vim preferred
