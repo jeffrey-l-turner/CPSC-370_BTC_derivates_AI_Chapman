@@ -69,7 +69,7 @@
 - See Canvas Syllabus
 
 ## Homework
--  `git clone git@github.com:jeffrey-l-turner/Chapman_testnet.git`
+-  `git clone git@github.com:github.com:jeffrey-l-turner/CPSC-370_BTC_derivates_AI_Chapman` # learn how to use ssh!
 -  install [aider](https://github.com/paul-gauthier/aider) # figure out how to use with `anaconda`
 - hook into Discord (instructions to be provided via Canvas & Slack)
 
