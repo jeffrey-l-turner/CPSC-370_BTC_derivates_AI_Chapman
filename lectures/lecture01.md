@@ -22,6 +22,17 @@
 - Example: [Aider]
 
 ## Course Structure
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./generative_ai_code.png"></img></div>
+</em></h5> 
+
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./Web2_3.png"></img></div>
+</em></h5> 
+
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./Generative_Dapp_stack.png"></img></div>
+</em></h5> 
 
 ## A Brief review of Bitcoin and Cryptocurrencies
 
