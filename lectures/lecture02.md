@@ -53,13 +53,16 @@
 
 ## Ethereum/BFT Ethos
 
-* Proof of Work vs Stake (the poor venacular for Sybil Resistance)
+### Proof of Work vs Stake (the poor venacular for Sybil Resistance)
 
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Consensus.png"></img></div>
 </em></h5> 
 
-* What is decentralization and "DINO?"(https://www.lynalden.com/proof-of-stake/)
+### What is decentralization and "DINO?"
+
+* [Lyn Alden](https://www.lynalden.com/proof-of-stake/)
+* [Lane Rettig](https://www.whatbitcoindid.com/podcast/the-reality-of-web3)
 
 ## Bitcoin Maxi Viewpoint
 
