@@ -74,7 +74,7 @@
 - "Sound Money"
 - Bitcoin Core, RSK, RGB, Taro, Bifrost...
 
-<h5 style="width: 400px; height: 400px " align="center"><em>
+<h5 style="width: 300px; height: 300px " align="center"><em>
 <div align="center"><img src="./btc_rgb_triangle.png"></img></div>
 </em></h5> 
 
