@@ -11,14 +11,14 @@
 
 # Lightning Bitcoin Demo
 
-<flex style="text:italic" align="center"><em>
-<div align="center"><img src="./WofSat.png"></img>
+<flex style="text:italic">
+<div align="center">
+<img src="./WofSat.png"></img>
 Android
-</div>
-<div align="center"><img src="./WofSat2.png"></img>
+<img src="./WofSat2.png"></img>
 Apple
 </div>
-</em></flex> 
+</flex> 
 
 ## Concepts
 
