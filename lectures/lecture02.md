@@ -15,7 +15,7 @@
   <img style="width: 300px; height: 300px" src="./WofSat.png" alt="Play Store">
   <p>Android</p>
   <img style="width: 300px; height: 300px" src="./WofSat2.png" alt="Apple Store">
-  <label for="qrcode2">Apple</label>
+  <p>Apple</p>
 </div>
 
 ## Concepts
