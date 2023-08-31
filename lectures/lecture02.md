@@ -1,7 +1,8 @@
 # Lecture 2
 
-# Announcments
+# Housekeeping
 
+- Office Hours
 - Update on 31 Aug. assignment
 - Class Recordings
 - Discord Server [https://discord.gg/pvaG4gSf](https://discord.gg/pvaG4gSf)
@@ -32,7 +33,7 @@
 - [Directed Acyclic Graphs (DAGs)](https://www.geeksforgeeks.org/graph-types-and-applications/?ref=Digraph)
 - [One-way/Trap-door functions](https://onlydifferences.com/trapdoor-function-vs-one-way-function/)
 - [Hash Functions](https://www.technipages.com/definition/one-way-hash-function/)
-- [Encryption -- Symetric and Asymetric]()
+- [Encryption -- Symetric and Asymetric](https://preyproject.com/blog/types-of-encryption-symmetric-or-asymmetric-rsa-or-aes#:~:text=Asymmetric%20and%20symmetric%20encryption%20are,a%20private%20key%20for%20decryption.)
 - [Blockchains](https://andersbrownworth.com/blockchain/)
 - [Open Timestamps](https://petertodd.org/2016/opentimestamps-announcement)
 - [Single Use Seals](https://petertodd.org/2017/scalable-single-use-seal-asset-transfer)
@@ -50,6 +51,10 @@
 - Data Representations
 - Sovereignty & Sequestration
 - Provenance, Confidentiality, and Security
+
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./Abstracting_data.png"></img></div>
+</em></h5> 
 
 ## Ethereum/BFT Ethos
 
@@ -75,6 +80,10 @@
 
 ## Artificial Intelligence - Provenance, Security, Privacy
 
+<h5 style="text:italic" align="center"><em>
+<div align="center"><img src="./Immutable_svc_infra.png"></img></div>
+</em></h5> 
+
 ## Assignment & Upcoming Quiz
 
 * [See Assignments](./assignments) 
@@ -83,4 +92,8 @@
 
 [Bitcoin Simulator](https://andersbrownworth.com/blockchain/hash)
 [Merkel Trees](https://prathamudeshmukh.github.io/merkle-tree-demo/)
+[Bitcoin Core]()
+[RGB]()
+[RSK]()
+[Taro]()
 
