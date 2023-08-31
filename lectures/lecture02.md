@@ -1,6 +1,7 @@
 # Lecture 2
 
 # Announcments
+- Update on 31 Aug. assignment
 - Discord Server [https://discord.gg/pvaG4gSf](https://discord.gg/pvaG4gSf)
 - OpenAI API key sponsor
 - Code Llama release
@@ -48,8 +49,9 @@
 
 ## Ethereum/BFT Ethos
 
-## Bitcoin Maxis
+## Bitcoin Maxis Viewpoint
 
+- "Sound Money"
 - Bitcoin Core, RGB, Taro...
 
 <h5 style="text:italic" align="center"><em>
