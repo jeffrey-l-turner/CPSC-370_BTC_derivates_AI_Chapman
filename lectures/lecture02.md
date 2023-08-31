@@ -9,12 +9,16 @@
 - Code Llama release
 - Quizes
 
-# Lighning Bitcoin Demo
+# Lightning Bitcoin Demo
 
-<h5 style="text:italic" align="center"><em>
-<div align="center"><img src="./WofSat.png"></img></div>
-<div align="center"><img src="./WofSat2.png"></img></div>
-</em></h5> 
+<flex style="text:italic" align="center"><em>
+<div align="center"><img src="./WofSat.png"></img>
+Android
+</div>
+<div align="center"><img src="./WofSat2.png"></img>
+Apple
+</div>
+</em></flex> 
 
 ## Concepts
 
