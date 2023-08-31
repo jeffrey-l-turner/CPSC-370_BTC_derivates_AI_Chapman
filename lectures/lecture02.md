@@ -51,17 +51,15 @@
 - Sovereignty & Sequestration
 - Provenance, Confidentiality, and Security
 
-## Nakamoto Consensus vs BFT-type Consensus
-
 ## Ethereum/BFT Ethos
 
-* Proof of Work vs Stake (should describe Sybil Resistance Mechanism)
+* Proof of Work vs Stake (the poor venacular for Sybil Resistance)
 
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Consensus.png"></img></div>
 </em></h5> 
 
-* What is decentralization and "DINO?"
+* What is decentralization and "DINO?"(https://www.lynalden.com/proof-of-stake/)
 
 ## Bitcoin Maxi Viewpoint
 
@@ -74,10 +72,12 @@
 
 ## Artificial Intelligence - Provenance, Security, Privacy
 
-## Assignment
+## Assignment & Upcoming Quiz
+
+* [See Assignments](./assignments) 
 
 ## Resources
 
 [Bitcoin Simulator](https://andersbrownworth.com/blockchain/hash)
-Merkel Trees
+[Merkel Trees](https://prathamudeshmukh.github.io/merkle-tree-demo/)
 
