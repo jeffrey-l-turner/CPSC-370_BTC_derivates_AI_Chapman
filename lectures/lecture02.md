@@ -11,14 +11,12 @@
 
 # Lightning Bitcoin Demo
 
-<flex style="text:italic">
-<div align="center">
-<img src="./WofSat.png"></img>
-Android
-<img src="./WofSat2.png"></img>
-Apple
+<div>
+  <img src="./WofSat.png" alt="Play Store">
+  <label for="qrcode1">Android</label>
+  <img src="./WofSat2.png" alt="Apple Store">
+  <label for="qrcode2">Apple</label>
 </div>
-</flex> 
 
 ## Concepts
 
