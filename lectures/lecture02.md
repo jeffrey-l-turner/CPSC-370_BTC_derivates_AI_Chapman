@@ -12,7 +12,7 @@
 # Lightning Bitcoin Demo
 
 <div>
-  <img src="./WofSat.png" alt="Play Store">
+  <img style="width: 200px; height: 200px" src="./WofSat.png" alt="Play Store">
   <label for="qrcode1">Android</label>
   <img src="./WofSat2.png" alt="Apple Store">
   <label for="qrcode2">Apple</label>
