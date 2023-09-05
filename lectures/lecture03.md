@@ -19,8 +19,7 @@
 
 ## Aider Installation
 
-- [https://github.com/paul-gauthier/aider}(https://github.com/paul-gauthier/aider)
-- []() 
+- [aider](https://github.com/paul-gauthier/aider)
 - `conda create -n aider python=3.11.4`
 - `conda activate aider`
 - Instantiation
@@ -28,7 +27,7 @@
 ## Project Setup
 
 - Git basics
-- NPM via NVM installation
+- [NPM, node via NVM installation](https://github.com/nvm-sh/nvm) 
 - [Using Parcel](https://parceljs.org/getting-started/webapp/)
 - Using with Aider
 - Generative code writing
