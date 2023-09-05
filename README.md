@@ -1,5 +1,5 @@
 # Bitcoin Derivatives with AI assitance
-
+## THIS IS A TEST - I AM CHANGING THE README FILE
 ## Repo for a Chapman University blockchain testnet and CPSC-370 course. 
 
 The methods and results of this project will be taught in the Fall 2023 course CPSC-370 *The Decentralized Web and Scalable Blockchain Programming*.
