@@ -9,7 +9,6 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - Stephen Preston (ComposeDAO assistant)
 - Alexander Kurz (Professor in Fowler School of Engineering)
 - Lucius Gregory Meredith (Inventor of Rholang, CEO of F1r3fly.io)
-- Noah Fuery - student
 
 ## Lectures
 - [29-Aug-2023](./lectures/lecture01.md)
