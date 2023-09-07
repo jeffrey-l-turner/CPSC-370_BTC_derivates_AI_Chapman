@@ -31,13 +31,8 @@
 
 ## Workspaces in Project
 
-- Git basics
-- [NPM, node via NVM installation](https://github.com/nvm-sh/nvm) 
-- [Using Parcel](https://parceljs.org/getting-started/webapp/)
-- Using with Aider
-- Generative code writing
-- FreshJS & DenoJS with Aider (use React/Parcel)
-- Integrating Aider feedback into our coursework
+- Git Repo for Block Explorer
+- Git Repo for React Counter
 
 
 <h5 style="text:italic" align="center"><em>
