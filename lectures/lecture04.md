@@ -46,7 +46,7 @@
 
 ## Assignment 
 
-* [See Assignments](./assignments) 
+* [See Assignments](./assignments/7_Sept_2023.md) 
 
 ## Resources for this Lecture
 
