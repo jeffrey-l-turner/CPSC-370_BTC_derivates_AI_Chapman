@@ -8,11 +8,12 @@
 - Business School collaboration update
 - Revisiting git operations (`add`, `commit`, `log`, `merge`, `pull`, etc.)
 
-# Exogenous & Endogenous Data for Blockchains
+# Smart Contracts, Exogenous & Endogenous Data for Blockchains
 
 - ["Global State"](./notes_lec4.md)
-- Internally Obtainable Data: Timestamp, Account Information (i.e. UTXO or Wallet Address), Intrinsics (signatures, transactions)
--
+- Internally Obtainable Data: Timestamp, Account Information (i.e. UTXO or Wallet Address), Intrinsics (signatures, transactions, smart contracts)
+- [The Need for Oracles](https://learn.bybit.com/blockchain/what-are-blockchain-oracles/)
+- Smart Contracts on [Ethereum](https://ethereum.org/en/developers/docs/smart-contracts/) vs [Bitcoin (RGB)](https://www.coinex.com/en/blog/3654-a-brief-analysis-of-rgb-a-scalable-confidential-smart-contract-protocol-built-on-bitcoin)
 
 # Aider/GPT-X Strategies
 
