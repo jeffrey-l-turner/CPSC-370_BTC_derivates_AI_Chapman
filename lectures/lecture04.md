@@ -8,28 +8,26 @@
 - Business School collaboration update
 - Revisiting git operations (`add`, `commit`, `log`, `merge`, `pull`, etc.)
 
-# Smart Contracts, Exogenous & Endogenous Data for Blockchains
-
-- ["Global State"](./notes_lec4.md)
-- Internally Obtainable Data: Timestamp, Account Information (i.e. UTXO or Wallet Address), Intrinsics (signatures, transactions, smart contracts)
-- [The Need for Oracles](https://learn.bybit.com/blockchain/what-are-blockchain-oracles/)
-- Smart Contracts on [Ethereum](https://ethereum.org/en/developers/docs/smart-contracts/) vs [Bitcoin (RGB)](https://www.coinex.com/en/blog/3654-a-brief-analysis-of-rgb-a-scalable-confidential-smart-contract-protocol-built-on-bitcoin)
-
 # Aider/GPT-X Strategies
 
 - Repo/code organization
 - Using Git with Aider
 - Existing Code
-- Strategies
+- Strategies:
 > * Scaffolding
 > * Parallel Code Bases
 > * Granular Coding Instructions
 > * Porting Code
+> * "Speaking to" Code
 
-## Blockchain APIs & Exogenous Data
+# Smart Contracts, Exogenous & Endogenous Data for Blockchains, and APIs
 
+- ["Global State"](./notes_lec4.md)
+- Internally Obtainable Data: Timestamp, Account Information (i.e. UTXO or Wallet Address), Intrinsics (signatures, transactions, smart contracts)
+- [The Need for Oracles](https://learn.bybit.com/blockchain/what-are-blockchain-oracles/)
+- Smart Contracts on [Ethereum](https://ethereum.org/en/developers/docs/smart-contracts/) vs [Bitcoin (RGB)](https://www.coinex.com/en/blog/3654-a-brief-analysis-of-rgb-a-scalable-confidential-smart-contract-protocol-built-on-bitcoin)
 - [Blockchain.com API](https://www.blockchain.com/explorer/api/blockchain_api) 
-- 
+- [Open Source Explorer](https://bitcoinexplorer.org/)
 
 ## Workspaces in Project
 
@@ -46,12 +44,12 @@
 <div align="center"><img src="./Generative_Dapp_stack.png"></img></div>
 </em></h5> 
 
-## Assignment & Upcoming Quiz
+## Assignment 
 
 * [See Assignments](./assignments) 
 
-## Resources
+## Resources for this Lecture
 
-* [Warp](https://app.warp.dev/referral/PXZMWP)
-* []()
+* [Blockchain.com](https://www.blockchain.com/explorer/api/blockchain_api)
+* [Testnet Explorer](https://testnet.bitcoinexplorer.org/)
 
