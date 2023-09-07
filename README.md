@@ -19,6 +19,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
 - [First Quiz](https://canvas.chapman.edu/courses/56721/quizzes/103845/take)
+- [Second Assignment; Due End of Day 12-Sept-2023](./assignments/7_Sept_2023.md)
 
 ### Testnet Project Outline:
 
