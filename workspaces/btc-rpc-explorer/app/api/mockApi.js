@@ -151,7 +151,7 @@ function getBlocksByHash(blockHashes) {
   });
 }
 
-function getRawTransaction(txid) {
+async function getRawTransaction(txid) {
   return new Promise(function(resolve, reject) {
     resolve({
       "txid": txid,
@@ -201,7 +201,7 @@ function getRawTransaction(txid) {
 
 async function getAddress(address) {
   try {
-    const response = await axios.get(`https://blockchain.info/rawaddr/${address}`);
+    const response = await axios.get(`https://blockchain.com/rawaddr/${address}`);
     const data = response.data;
 
     return {
