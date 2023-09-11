@@ -92,7 +92,9 @@
 
 * [Bitcoin Simulator](https://andersbrownworth.com/blockchain/hash)
 * [Merkel Trees](https://prathamudeshmukh.github.io/merkle-tree-demo/)
-* [Bitcoin Core]()
+* [Verkle Trees](https://youtu.be/Q7rStTKwuYs?si=u0lTL3AsT0h6IHaq)
+* [Joachim Neu on Proof Stake and Consensus](https://www.youtube.com/watch?v=2nMS-TK_tMw)
+* [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/)
 * [RGB](https://www.rgbfaq.com/)
 * [RSK](https://rootstock.io/)
 * [Taro/Taproot Assets](https://docs.lightning.engineering/the-lightning-network/taproot-assets)
