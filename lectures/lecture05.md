@@ -7,8 +7,8 @@
 - GPT-3.5 Keys updated to GPT-4
 - Business School collaboration update
 - Revisiting git operations part of quiz today
-- Coding exercises -- as of Tues. AM 5 classmates have not used Aider;
-only way to fail assignment is to not use it for a little bit of coding; make sure you push your code changes!
+- Remember to: `git pull upstream master` & `git push`
+- Coding exercises -- as of Tues. AM 5 classmates have not used Aider; only way to fail assignment is to not use it for a little bit of coding; 
 - Aider fork; will reveal more Thurs.
 
 # Front-ends, back-ends, mutable, and immutable services
