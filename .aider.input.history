@@ -1,0 +1,12 @@
+
+# 2023-09-12 12:36:54.971297
++Add a hello world function to app/api/mockApi.js so that I know my setup is working correctly
+
+# 2023-09-12 12:37:46.864096
++cd ../
+
+# 2023-09-12 12:38:19.844486
++Add a hello world function to this file so that I know my setup is working correctly
+
+# 2023-09-12 12:40:16.107204
++git diff
