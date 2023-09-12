@@ -40,7 +40,8 @@ function createMemoryLruCache(cacheName, cacheObj, onCacheEvent) {
 			cacheObj.set(key, obj, {ttl: maxAge});
 
 			if (key.match(watchKeysRegex)) {
-				debugLog(`cache.${cacheName}[${key}]: SET  (${utils.addThousandsSeparators(JSON.stringify(obj).length)} B), T=${maxAge}`);
+				let objSize = utils.addThousandsSeparators(JSON.stringify(obj).length);
+				debugLog(`cache.${cacheName}[${key}]: SET  (${objSize} B), T=${maxAge}`);
 			}
 
 			onCacheEvent("memory", "set", key);
@@ -83,7 +84,9 @@ function createTieredCache(cacheObjs) {
 		},
 		set:(key, obj, maxAge) => {
 			for (var i = 0; i < cacheObjs.length; i++) {
-				cacheObjs[i].set(key, obj, maxAge);
+				if (cacheObjs[i].set(key, obj, maxAge)) {
+					break;
+				}
 			}
 		}
 	}
