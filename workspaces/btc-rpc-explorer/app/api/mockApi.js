@@ -277,5 +277,10 @@ module.exports = {
   getUptimeSeconds,
   getHelp,
   getRpcMethodHelp,
-  getAddress
+  getAddress,
+  helloWorld
 };
+
+async function helloWorld() {
+  return "Hello, World!";
+}
