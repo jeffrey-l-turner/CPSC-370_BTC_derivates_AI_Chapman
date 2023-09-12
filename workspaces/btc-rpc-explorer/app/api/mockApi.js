@@ -261,6 +261,91 @@ async function getRpcMethodHelp(methodName) {
 	throw new Error("Not implemented");
 }
 
+const fetch = require("node-fetch-commonjs");
+
+async function getBlockchainInfo() {
+	try {
+		const response = await fetch("https://blockchain.info/q/getblockcount");
+		const data = await response.text();
+		return {
+			blocks: parseInt(data),
+		};
+	} catch (error) {
+		throw new Error("Failed to get blockchain info");
+	}
+}
+
+async function getNetworkInfo() {
+	try {
+		const response = await fetch("https://blockchain.info/q/getblockcount");
+		const data = await response.text();
+		return {
+			blocks: parseInt(data),
+		};
+	} catch (error) {
+		throw new Error("Failed to get network info");
+	}
+}
+
+async function getMempoolInfo() {
+	try {
+		const response = await fetch("https://blockchain.info/q/unconfirmedcount");
+		const data = await response.text();
+		return {
+			size: parseInt(data),
+		};
+	} catch (error) {
+		throw new Error("Failed to get mempool info");
+	}
+}
+
+async function getBlockByHeight(blockHeight) {
+	try {
+		const response = await fetch(`https://blockchain.info/block-height/${blockHeight}?format=json`);
+		const data = await response.json();
+		return data.blocks[0];
+	} catch (error) {
+		throw new Error("Failed to get block by height");
+	}
+}
+
+async function getBlockByHash(blockHash) {
+	try {
+		const response = await fetch(`https://blockchain.info/rawblock/${blockHash}`);
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		throw new Error("Failed to get block by hash");
+	}
+}
+
+async function getRawTransaction(txid) {
+	try {
+		const response = await fetch(`https://blockchain.info/rawtx/${txid}`);
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		throw new Error("Failed to get raw transaction");
+	}
+}
+
+async function getAddress(address) {
+	try {
+		const response = await fetch(`https://blockchain.info/rawaddr/${address}`);
+		const data = await response.json();
+		return {
+			address: data.address,
+			balance: data.final_balance,
+			totalReceived: data.total_received,
+			totalSent: data.total_sent,
+			transactionCount: data.n_tx,
+			transactions: data.txs.map((tx) => tx.hash),
+		};
+	} catch (error) {
+		throw new Error("Failed to get address information");
+	}
+}
+
 module.exports = {
 	getBlockchainInfo,
 	getNetworkInfo,
