@@ -261,14 +261,11 @@ async function getRpcMethodHelp(methodName) {
 	throw new Error("Not implemented");
 }
 
-const fetch = require("node-fetch-commonjs");
-
 async function getBlockchainInfo() {
 	try {
-		const response = await fetch("https://blockchain.info/q/getblockcount");
-		const data = await response.text();
+		const response = await axios.get("https://blockchain.info/q/getblockcount");
 		return {
-			blocks: parseInt(data),
+			blocks: parseInt(response.data),
 		};
 	} catch (error) {
 		throw new Error("Failed to get blockchain info");
@@ -277,10 +274,9 @@ async function getBlockchainInfo() {
 
 async function getNetworkInfo() {
 	try {
-		const response = await fetch("https://blockchain.info/q/getblockcount");
-		const data = await response.text();
+		const response = await axios.get("https://blockchain.info/q/getblockcount");
 		return {
-			blocks: parseInt(data),
+			blocks: parseInt(response.data),
 		};
 	} catch (error) {
 		throw new Error("Failed to get network info");
@@ -289,10 +285,9 @@ async function getNetworkInfo() {
 
 async function getMempoolInfo() {
 	try {
-		const response = await fetch("https://blockchain.info/q/unconfirmedcount");
-		const data = await response.text();
+		const response = await axios.get("https://blockchain.info/q/unconfirmedcount");
 		return {
-			size: parseInt(data),
+			size: parseInt(response.data),
 		};
 	} catch (error) {
 		throw new Error("Failed to get mempool info");
