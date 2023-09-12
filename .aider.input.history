@@ -56,3 +56,14 @@
 
 # 2023-09-12 13:23:06.913102
 +How would I resolve babel-node command not found?
+
+# 2023-09-12 13:28:06.042583
++Refactor `workspaces/counter-app/src/App.js` to use htmx` 
+
+# 2023-09-12 13:29:52.638367
++How would I resolve this aider issue: DO NOT skip blank lines, comments, docstrings, etc!
++The HEAD block needs to be EXACTLY the same as the lines in workspaces/counter-app/src/App.js with nothing missing!
++
+
+# 2023-09-12 13:30:14.232128
++Refactor `workspaces/counter-app/src/App.js` to use htmx` 
