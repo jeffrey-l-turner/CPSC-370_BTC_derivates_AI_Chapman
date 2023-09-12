@@ -77,6 +77,10 @@
 		"event-loop-stats": "^1.4.1"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.22.15",
+		"@babel/core": "^7.22.17",
+		"@babel/preset-env": "^7.22.15",
+		"@babel/preset-react": "^7.22.15",
 		"eslint": "^8.39.0",
 		"npm-run-all": "^4.1.5",
 		"sass": "^1.62.1"
