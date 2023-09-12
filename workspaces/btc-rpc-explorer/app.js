@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+const React = require('react');
+const { useState, useEffect } = React;
+const axios = require('axios');
 
 function App() {
 	const [data, setData] = useState(null);
