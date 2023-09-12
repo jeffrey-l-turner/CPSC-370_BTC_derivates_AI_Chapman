@@ -11,33 +11,33 @@ const earliestBlockTime = 1231006505;
 const avgBlockTime = 200000;
 const currentBlockHeight = 1234567;
 
-async function getBlockchainInfo() {
+const getBlockchainInfo = async () => {
 	return {
 		blocks: currentBlockHeight,
 	};
 }
 
-async function getNetworkInfo() {
+const getNetworkInfo = async () => {
 	return getRpcData("getnetworkinfo");
 }
 
-async function getNetTotals() {
+const getNetTotals = async () => {
 	return getRpcData("getnettotals");
 }
 
-async function getMempoolInfo() {
+const getMempoolInfo = async () => {
 	return getRpcData("getmempoolinfo");
 }
 
-async function getUptimeSeconds() {
+const getUptimeSeconds = async () => {
 	return getRpcData("uptime");
 }
 
-async function getRawMempool() {
+const getRawMempool = async () => {
 	return getRpcDataWithParams("getrawmempool", true);
 }
 
-async function getBlockByHeight(blockHeight) {
+const getBlockByHeight = async (blockHeight) => {
 	const txCount = utils.seededRandomIntBetween(blockHeight, 1, 20);
 	const txids = [];
 	for (let i = 0; i < txCount; i++) {
@@ -66,7 +66,7 @@ async function getBlockByHeight(blockHeight) {
 	};
 }
 
-async function getBlocksByHeight(blockHeights) {
+const getBlocksByHeight = async (blockHeights) => {
 	console.log("mock.getBlocksByHeight: " + blockHeights);
 	const blocks = [];
 	for (let i = 0; i < blockHeights.length; i++) {
@@ -77,7 +77,7 @@ async function getBlocksByHeight(blockHeights) {
 	return blocks;
 }
 
-async function getBlockByHash(blockHash) {
+const getBlockByHash = async (blockHash) => {
 	return {
 		hash: blockHash,
 		confirmations: 3,
@@ -106,7 +106,7 @@ async function getBlockByHash(blockHash) {
 	};
 }
 
-async function getBlocksByHash(blockHashes) {
+const getBlocksByHash = async (blockHashes) => {
 	const blocks = [];
 	for (let i = 0; i < blockHashes.length; i++) {
 		blocks.push({
@@ -140,7 +140,7 @@ async function getBlocksByHash(blockHashes) {
 	return blocks;
 }
 
-async function getRawTransaction(txid) {
+const getRawTransaction = async (txid) => {
 	return {
 		txid: txid,
 		hash: txid,
@@ -185,7 +185,7 @@ async function getRawTransaction(txid) {
 	};
 }
 
-async function getAddress(address) {
+const getAddress = async (address) => {
 	try {
 		const response = await axios.get(`https://blockchain.com/rawaddr/${address}`);
 		const data = response.data;
@@ -203,7 +203,7 @@ async function getAddress(address) {
 	}
 }
 
-async function getRawTransactions(txids) {
+const getRawTransactions = async (txids) => {
 	const txs = [];
 	for (let i = 0; i < txids.length; i++) {
 		txs.push({
@@ -253,11 +253,11 @@ async function getRawTransactions(txids) {
 	return txs;
 }
 
-async function getHelp() {
+const getHelp = async () => {
 	throw new Error("Not implemented");
 }
 
-async function getRpcMethodHelp(methodName) {
+const getRpcMethodHelp = async (methodName) => {
 	throw new Error("Not implemented");
 }
 
@@ -359,6 +359,6 @@ module.exports = {
 	helloWorld,
 };
 
-async function helloWorld() {
+const helloWorld = async () => {
 	return "Hello, World!";
 }
