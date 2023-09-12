@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('/api/data')
+    axios.get('https://blockchain.info/latestblock')
       .then(response => {
         setData(response.data);
       })
@@ -18,8 +18,12 @@ function App() {
     <div>
       {data ? (
         <div>
-          <h1>{data.title}</h1>
-          <p>{data.description}</p>
+          <h1>Latest Block</h1>
+          <p>Hash: {data.hash}</p>
+          <p>Time: {new Date(data.time * 1000).toLocaleString()}</p>
+          <p>Block Index: {data.block_index}</p>
+          <p>Height: {data.height}</p>
+          <p>Size: {data.size}</p>
         </div>
       ) : (
         <p>Loading...</p>
