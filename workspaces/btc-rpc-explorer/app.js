@@ -1,6 +1,6 @@
-const React = require('react');
+const React = require("react");
 const { useState, useEffect } = React;
-const axios = require('axios');
+const axios = require("axios");
 
 function App() {
 	const [data, setData] = useState(null);

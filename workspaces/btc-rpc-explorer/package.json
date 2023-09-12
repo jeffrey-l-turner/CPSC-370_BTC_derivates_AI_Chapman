@@ -5,7 +5,7 @@
 	"private": false,
 	"bin": "bin/cli.js",
 	"scripts": {
-		"start": "node ./bin/www",
+		"start": "npx babel-node ./bin/www",
 		"test": "node ./bin/test.js",
 		"miners": "node ./bin/refresh-mining-pool-configs.js",
 		"integrity": "node ./bin/frontend-resource-integrity.js",
@@ -34,6 +34,7 @@
 		"@janoside/app-utils": "github:janoside/app-utils#0f52c7028951c1c2b67b06b2ce50fd74001bba93",
 		"async": "^3.2.4",
 		"axios": "^1.4.0",
+		"babel-node": "^0.0.1-security",
 		"basic-auth": "^2.0.1",
 		"bech32": "2.0.0",
 		"bip32": "^4.0.0",
