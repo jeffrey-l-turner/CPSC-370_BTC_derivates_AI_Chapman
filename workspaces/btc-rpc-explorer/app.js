@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import logo from './assets/logo.png'; // Import the logo
 
 function App() {
   const [data, setData] = useState(null);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <img src={logo} alt="Logo" /> {/* Add the logo */}
       {data ? (
         <div>
           <h1>{data.title}</h1>
