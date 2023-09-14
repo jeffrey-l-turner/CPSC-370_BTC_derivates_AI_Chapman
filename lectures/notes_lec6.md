@@ -10,7 +10,7 @@
   </img>
 </div>
 <div align="right">
-  <img style="width:200px" src="./orlovsky.jpeg.jpeg">
+  <img style="width:200px" src="./orlovsky.jpeg">
   </img>
 </div>
 <div/>
