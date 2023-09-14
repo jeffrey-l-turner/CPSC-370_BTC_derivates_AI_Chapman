@@ -5,11 +5,12 @@ fetch('https://blockchain.info/ticker')
   })
   .catch(error => console.error('Error:', error));
 
-function getBalanceSummary(address) {
+function getBalanceSummary() {
+  const address = document.getElementById('address').value;
   fetch(`https://blockchain.info/balance?active=${address}`)
     .then(response => response.json())
     .then(data => {
-      console.log(`Balance for ${address}: ${data[address].final_balance}`);
+      document.getElementById('balance').textContent = `Balance for ${address}: ${data[address].final_balance}`;
     })
     .catch(error => console.error('Error:', error));
 }
