@@ -14,15 +14,21 @@ function isValidAddress(address) {
 }
 
 function getBalanceSummary() {
-  const address = document.getElementById('address').value;
-  if (!isValidAddress(address)) {
-    document.getElementById('balance').textContent = 'Invalid Bitcoin address.';
-    return;
+  const addresses = document.getElementById('address').value.split('|');
+  for (let i = 0; i < addresses.length; i++) {
+    if (!isValidAddress(addresses[i])) {
+      document.getElementById('balance').textContent = 'Invalid Bitcoin address.';
+      return;
+    }
   }
-  fetch(`https://blockchain.info/balance?active=${address}`)
+  fetch(`https://blockchain.info/balance?active=${addresses.join('|')}`)
     .then(response => response.json())
     .then(data => {
-      document.getElementById('balance').textContent = `Balance for ${address}: ${data[address].final_balance}`;
+      let balanceText = '';
+      for (let i = 0; i < addresses.length; i++) {
+        balanceText += `Balance for ${addresses[i]}: ${data[addresses[i]].final_balance}\n`;
+      }
+      document.getElementById('balance').textContent = balanceText;
     })
     .catch(error => console.error('Error:', error));
 }
