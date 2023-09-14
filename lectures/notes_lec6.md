@@ -2,15 +2,15 @@
 
 <div>
 <div align="left">
-  <img src="./Szabo.png">
+  <img style="width:200px" src="./Szabo.png">
   </img>
 </div>
 <div align="center">
-  <img src="./todd.jpeg">
+  <img style="width:200px" src="./todd.jpeg">
   </img>
 </div>
 <div align="right">
-  <img src="./orlovsky.jpeg.jpeg">
+  <img style="width:200px" src="./orlovsky.jpeg.jpeg">
   </img>
 </div>
 <div/>
