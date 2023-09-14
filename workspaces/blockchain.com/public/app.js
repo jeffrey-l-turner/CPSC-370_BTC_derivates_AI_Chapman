@@ -32,3 +32,15 @@ function getBalanceSummary() {
     })
     .catch(error => console.error('Error:', error));
 }
+
+function getLatestBlock() {
+  fetch('https://blockchain.info/latestblock')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('latestBlock').textContent = `Latest Block: ${data.hash}`;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+// Call the getLatestBlock function when the page loads
+getLatestBlock();
