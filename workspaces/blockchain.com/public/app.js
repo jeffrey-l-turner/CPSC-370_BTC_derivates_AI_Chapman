@@ -37,7 +37,7 @@ function getLatestBlock() {
   fetch('https://blockchain.info/latestblock')
     .then(response => response.json())
     .then(data => {
-      document.getElementById('latestBlock').textContent = `Latest Block: ${data.hash}`;
+      document.getElementById('latestBlock').textContent = `Latest Block: ${data.hash}\nTime: ${new Date(data.time * 1000)}\nBlock Index: ${data.block_index}\nHeight: ${data.height}\nTransaction Indexes: ${data.txIndexes.join(', ')}`;
     })
     .catch(error => console.error('Error:', error));
 }
