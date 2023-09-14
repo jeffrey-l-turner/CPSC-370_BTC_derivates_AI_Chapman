@@ -53,6 +53,5 @@
 
 ## Resources for this Lecture
 
-* [Blockchain.com](https://www.blockchain.com/explorer/api/blockchain_api)
-* [Testnet Explorer](https://testnet.bitcoinexplorer.org/)
+* [Aider](https://Aider.chat/)
 
