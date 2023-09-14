@@ -1,0 +1,3 @@
+[submodule "pair_programming"]
+	path = pair_programming
+	url = ./new-subdir
