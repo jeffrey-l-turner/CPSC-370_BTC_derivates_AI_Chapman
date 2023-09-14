@@ -3,6 +3,7 @@
 # Housekeeping
 
 - Resolution on Canvas Quizes
+- Discord user for me: jlt (mobile) & jlt (desktop)
 - Class Recordings now automatically available on permanent link
 - GPT-4 Usage Budget and Rate Limiting
 - Coding exercise next week
@@ -19,11 +20,17 @@
 # Cross-Chain Assets
 
 * [Nick Szabo & Smart Contract Evolution](./notes_lec6.md)
+* Cross-Chain Assets and History
+> * "Bridges" &  Hacks
+> * Thorchain
+> * Markets, Financial Systems, Equities, and Instaneous State Synchronization (Theory)
+> * The Future of Finance (Concurrency, Consensus, Process Calculi, & Quantum Information Theory)
+
 
 ## Quiz & Assignment
 
-* Due End of Day this Sunday the 17th
-*
+* Quize Updated & due End of Day this Sunday the 17th
+* Programming Assignment TBD (based on lecture, check back here)
 
 ## Resources for this Lecture
 
