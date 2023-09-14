@@ -1,5 +1,20 @@
 # Nick Szabo, Smart Contracts, and the Evolution of Blockchain Programming
 
+<div>
+<div align="left">
+  <img src="./Szabo.png">
+  </img>
+</div>
+<div align="center">
+  <img src="./todd.jpeg">
+  </img>
+</div>
+<div align="right">
+  <img src="./orlovsky.jpeg.jpeg">
+  </img>
+</div>
+<div/>
+
 Nick Szabo, a computer scientist, legal scholar, and cryptographer, is widely recognized for his contributions to the field of digital contracts and digital currency. He introduced the concept of "smart contracts"—self-executing contracts where the terms and conditions are embedded within lines of code. The aim was to use a decentralized ledger to store contracts, which could then use cryptographic protocols to enhance transaction security.
 
 The advent of Ethereum in 2015 marked a significant leap towards the realization of Szabo's vision. Ethereum's co-founder, Gavin Wood, introduced Solidity, a contract-oriented programming language tailored for implementing smart contracts on Ethereum. Solidity expanded on Bitcoin's scripting language, adding the ability to create programmable transactions, or smart contracts. This language allowed developers to write applications that emulate legal contracts, crowdfunding, voting, and multi-signature wallets, among others.
