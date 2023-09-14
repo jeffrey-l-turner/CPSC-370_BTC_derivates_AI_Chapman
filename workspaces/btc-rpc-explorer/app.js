@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('https://blockchain.info/ticker')
+    axios.get('/api/data')
       .then(response => {
         setData(response.data);
       })
@@ -18,8 +18,8 @@ function App() {
     <div>
       {data ? (
         <div>
-          <h1>Bitcoin Price Index</h1>
-          <p>USD: {data.USD.last}</p>
+          <h1>{data.title}</h1>
+          <p>{data.description}</p>
         </div>
       ) : (
         <p>Loading...</p>
