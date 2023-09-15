@@ -29,10 +29,11 @@
 
 ## Quiz & Assignment
 
-* Quize Updated & due End of Day this Sunday the 17th
+* Quiz Updated & due End of Day this Sunday the 17th
 * Programming Assignment TBD (based on lecture, check back here)
 
-## Resources for this Lecture
+## Resources for this Lecture and Quiz
 
 * [Bard](https://bard.google.com)
+* [MIT Lost Skills - Missing Semester of CS](https://missing.csail.mit.edu/ )
 
