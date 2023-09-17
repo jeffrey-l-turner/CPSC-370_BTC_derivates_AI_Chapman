@@ -4,7 +4,10 @@
 	export let data: PageData;
 </script>
 
+{JSON.stringify(data.address)}
+
 <section class="prose p-20 max-w-full">
+	<!--
 	<h1 class="text-primary">Address: {data.address.address}</h1>
 	<h2>Transactions</h2>
 	{#each data.address.txs as tx}
@@ -14,4 +17,5 @@
 			</code>
 		</div>
 	{/each}
+	-->
 </section>

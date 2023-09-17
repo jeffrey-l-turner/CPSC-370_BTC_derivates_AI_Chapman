@@ -33,6 +33,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@tailwindcss/typography": "^0.5.10"
+		"@tailwindcss/typography": "^0.5.10",
+		"@trpc/client": "^10.38.3",
+		"@trpc/server": "^10.38.3",
+		"trpc-sveltekit": "^3.5.20"
 	}
 }
