@@ -10,6 +10,7 @@
 - Formal Specification --> Formal Verification --> Code -- Unit/Integration Tests --> Provably Correct
 - Office Hours reversed next week and in-office Tuesday -- not Thursday
 - Business School collaboration: Note new Discord
+- Use Warp, oh-my-zsh & my dotfiles before seeing me in office hours (see: [Warp](https://app.warp.dev/referral/PXZMWP), [oh-my-zsh](https://ohmyz.sh/), [JLT dotfiles `wget`/`curl > ~/.zshrc` this link](https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc))
 - Showcase from last week
 
 # Revisit Developoment Methodology
