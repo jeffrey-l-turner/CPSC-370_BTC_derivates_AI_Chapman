@@ -17,12 +17,14 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [7-Sept-2023](./lectures/lecture04.md)
 - [12-Sept-2023](./lectures/lecture05.md)
 - [14-Sept-2023](./lectures/lecture06.md)
+- [19-Sept-2023](./lectures/lecture07.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
 - [First Quiz](https://canvas.chapman.edu/courses/56721/quizzes/103845/take)
 - [Second Assignment; Due End of Day 12-Sept-2023](./assignments/7_Sept_2023.md)
-- Second Quiz sent EoD Tuesday 12th; Due End of Day 15-Sept-2023
+- Second/Third Quiz sent; Due End of Day 18-Sept-2023
+- Fourth Week Quiz out EoD 19th; Due by End of Day 24-Sept-2023
 
 ### Testnet Project Outline:
 
