@@ -20,7 +20,7 @@ function App() {
             <p>{dataQuery.data.description}</p>
           </div>
         ) : (
-          <p>Loading...</p>
+          <p>Fetching...</p>
         )}
       </div>
     </TRPCProvider>
