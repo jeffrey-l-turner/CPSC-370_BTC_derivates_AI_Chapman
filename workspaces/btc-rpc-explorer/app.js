@@ -1,30 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { createTRPCClient } from '@trpc/client';
+import { TRPCProvider, useQuery } from '@trpc/react';
+import logo from './assets/logo.png'; // Import the logo
+
+const client = createTRPCClient({
+  url: 'http://localhost:3000/api/trpc',
+});
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios.get('/api/data')
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }, []);
+  const dataQuery = useQuery(['data']);
 
   return (
-    <div>
-      {data ? (
-        <div>
-          <h1>{data.title}</h1>
-          <p>{data.description}</p>
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
+    <TRPCProvider client={client}>
+      <div>
+        <img src={logo} alt="Logo" /> {/* Use the logo */}
+        {dataQuery.data ? (
+          <div>
+            <h1>{dataQuery.data.title}</h1>
+            <p>{dataQuery.data.description}</p>
+          </div>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
+    </TRPCProvider>
   );
 }
 
