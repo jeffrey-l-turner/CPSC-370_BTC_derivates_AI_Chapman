@@ -13,30 +13,25 @@
 > Used in Physics as well
 > Provides conventions for thinking about Security, Privacy, and System Design
 
-# Crypto Wallets 
+# Using Aider, Bard and other LLM Coding Tools
 
-* [Interaction with Chain](https://www.simplilearn.com/tutorials/blockchain-tutorial/blockchain-wallet)
-* Software Wallets:
-> * DApps, Apps...
-> * Smart Contract Implementations
-* Hardware Wallets:
-> * Ledger, Coldcard, Trezor...
-> * (Controversies)[https://www.coindesk.com/consensus-magazine/2023/05/19/ledgers-hard-lesson-being-right-isnt-good-enough/]
 
-# Smart Contracts
+# Exchanges
 
-* [Interaction with Chain](./notes_lec7.md)
-* Programming: ([Solidty](https://docs.soliditylang.org/en/v0.8.21/) vs ([Alu](https://www.rgbfaq.com/glossary/aluvm) & [Functional/Compositional Programming](https://www.rgbfaq.com/rgb-smart-contracts/how-does-one-program-rgb-smart-contracts))/[Rholang](https://rholang.github.io/docs/rholang/))
-* [On-Chain/Off-Chain Interaction and Data](https://www.researchgate.net/profile/Zeinab-Nehai/publication/332669639/figure/fig1/AS:751780929486849@1556249949435/Communication-process-between-on-chain-and-off-chain.ppm)
-* [Composition](https://x-team.com/blog/functional-programming-composition-associativity/)
-* [Oracles](https://www.forbes.com/sites/digital-assets/article/why-do-blockchains-need-oracles/?sh=186e464b7569)
+- [History](https://academy.bit2me.com/en/historia-exchanges-trading-bitcoin/)
+> [Mt. Gox](https://www.investopedia.com/terms/m/mt-gox.asp#:~:text=In%202014%2C%20Mt.,and%20half%20year%20legal%20battle.)
+> [Coinbase](https://www.coinbase.com/)
+> [EtherDelta](https://www.sec.gov/news/press-release/2018-258)
+> [Uniswap](https://app.uniswap.org/swap) 
+> Many others (Sushi Swap, Pancake Swap, etc.)
+
 
 ## Quiz & Assignment Review
 
-* Quiz to be published & due End of Day this Sunday the 24th
-* Programming Assignment Expected Thursday, personal environments are expected to be fully operating
+* Quiz published & due End of Day this Sunday the 24th
+* All personal environments are expected to be fully operating - See assignment
 
 ## Resources for this Lecture and Quiz
 
 * [Bard](https://bard.google.com)
-* [Ledger Controversy](https://decrypt.co/140364/is-there-a-backdoor-in-ledger-hardware-wallets)
+* [Local LLMs and Coding]()
