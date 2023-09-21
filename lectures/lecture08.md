@@ -20,11 +20,12 @@
 # Exchanges
 
 - [History](https://academy.bit2me.com/en/historia-exchanges-trading-bitcoin/)
-> [Mt. Gox](https://www.investopedia.com/terms/m/mt-gox.asp#:~:text=In%202014%2C%20Mt.,and%20half%20year%20legal%20battle.)
-> [Coinbase](https://www.coinbase.com/)
-> [EtherDelta](https://www.sec.gov/news/press-release/2018-258)
-> [Uniswap](https://app.uniswap.org/swap) 
-> Many others (Sushi Swap, Pancake Swap, etc.)
+- [Mt. Gox](https://www.investopedia.com/terms/m/mt-gox.asp#:~:text=In%202014%2C%20Mt.,and%20half%20year%20legal%20battle.)
+- [Coinbase](https://www.coinbase.com/)
+- [EtherDelta](https://www.sec.gov/news/press-release/2018-258)
+- [Uniswap](https://app.uniswap.org/swap) 
+
+> * Many others (Sushi Swap, Pancake Swap, etc.)
 
 
 ## Quiz & Assignment Review
