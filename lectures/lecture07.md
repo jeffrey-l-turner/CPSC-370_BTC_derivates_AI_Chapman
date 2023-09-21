@@ -13,7 +13,7 @@
 - Use Warp, oh-my-zsh & my dotfiles before seeing me in office hours (see: [Warp](https://app.warp.dev/referral/PXZMWP), [oh-my-zsh](https://ohmyz.sh/), [JLT dotfiles `wget`/`curl > ~/.zshrc` this link](https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc))
 - Showcase from last week
 
-# Revisit Developoment Methodology
+# Revisit Development Methodology
 
 - File Navigation (e.g. `cd ~`, `cd src/<project-name>`, reproducibility & canonical form)
 - Git intrinsics and usage
@@ -31,7 +31,7 @@
 
 # Crypto Wallets 
 
-* (Interaction with Chain)[https://www.simplilearn.com/tutorials/blockchain-tutorial/blockchain-wallet]
+* [Interaction with Chain](https://www.simplilearn.com/tutorials/blockchain-tutorial/blockchain-wallet)
 * Software Wallets:
 > * DApps, Apps...
 > * Smart Contract Implementations
@@ -41,7 +41,7 @@
 
 # Smart Contracts
 
-* (Interaction with Chain)[./notes_lec7.md]
+* [Interaction with Chain](./notes_lec7.md)
 * Programming: ([Solidty](https://docs.soliditylang.org/en/v0.8.21/) vs ([Alu](https://www.rgbfaq.com/glossary/aluvm) & [Functional/Compositional Programming](https://www.rgbfaq.com/rgb-smart-contracts/how-does-one-program-rgb-smart-contracts))/[Rholang](https://rholang.github.io/docs/rholang/))
 * [On-Chain/Off-Chain Interaction and Data](https://www.researchgate.net/profile/Zeinab-Nehai/publication/332669639/figure/fig1/AS:751780929486849@1556249949435/Communication-process-between-on-chain-and-off-chain.ppm)
 * [Composition](https://x-team.com/blog/functional-programming-composition-associativity/)
@@ -55,5 +55,4 @@
 ## Resources for this Lecture and Quiz
 
 * [Bard](https://bard.google.com)
-* [MIT Lost Skills - Missing Semester of CS](https://missing.csail.mit.edu/ )
-
+* [Ledger Controversy](https://decrypt.co/140364/is-there-a-backdoor-in-ledger-hardware-wallets)
