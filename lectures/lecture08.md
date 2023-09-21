@@ -6,6 +6,7 @@
 - Reports of Rate Limiting in Aider/Chat-GPT
 - Reminder: Office Hours reversed next week and in-office Tuesday -- not Thursday
 - Business School collaboration Update
+- [Pacific Crypto Conference](https://www.pacificbitcoin.com/) & [Bitcoin Hackathon](https://btcolympics.devpost.com/ )
 
 # Cryptography Conventions
 
