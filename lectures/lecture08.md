@@ -29,7 +29,8 @@
 ## Quiz & Assignment Review
 
 * Quiz published & due End of Day this Sunday the 24th
-* All personal environments are expected to be fully operating - [See assignment](../assignments/21_Sept_2023.md)
+* All personal environments are expected to be fully operating: `git clone`, `git pull upstream master`, `nvm i`, `npm i`, `pip install aider-chat # with api key`, & github webhooks
+> [See assignment](../assignments/21_Sept_2023.md)
 
 ## Resources for this Lecture and Quiz
 
