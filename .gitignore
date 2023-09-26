@@ -6,5 +6,6 @@ devenv.local.nix
 .DS_Store
 .aider*
 yarn.lock
-node_modules/
-src/abis
+workspaces/mySwap/node_modules/
+workspaces/mySwap/src/abis
+workspaces/mySwap/src/types/v3
