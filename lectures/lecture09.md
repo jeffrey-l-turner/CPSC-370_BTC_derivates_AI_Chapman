@@ -35,6 +35,7 @@
 > * Lambda Calculus
 > * Pi Calculus
 > * Rho Calculus
+- [Lecture Diagram](./notes_lec9.md#Cross-chain-Functional-Programming)
 
 ## Quiz & Assignment Review
 
