@@ -7,3 +7,4 @@ devenv.local.nix
 .aider*
 yarn.lock
 node_modules/
+src/abis
