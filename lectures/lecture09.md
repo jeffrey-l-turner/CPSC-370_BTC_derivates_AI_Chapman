@@ -29,7 +29,7 @@
 
 - [Object Oriented versus Functionally (FP) "Pure" approaches](https://youtu.be/aoE-92Ac4zE?si=0BB3cp2blwqNlfsQ); [Not Necessarily Orthogonal](https://youtu.be/Z84Z1Fi-Hxs?si=1el9l76iq4IhqWqP)
 - Notion of "Side Effects", "Some", "Any"
-- [Monads & Monoids]()
+- [ Monads,Monoids & Functors](https://blog.knoldus.com/basic-understanding-of-monads-monoids-and-functor/#:~:text=A%20monad%20can%20be%20seen,in%20the%20case%20of%20lists)
 > * [Cross and intra-chain FP](https://medium.com/@mchammond/blockchain-interoperability-319bce3f9105)
 - Process Calculi
 > * Lambda Calculus
@@ -43,7 +43,7 @@
 
 ## Resources for this Lecture and Quiz
 
+* [Smart Contract Composability](https://ethereum.org/en/developers/docs/smart-contracts/composability/)
 * [A monad in X is a monoid in the category of endofunctors a of X.](https://youtu.be/ENo_B8CZNRQ?si=cWHxECf0kGpOkeqJ)
 > * "Original Stack Overflow: A monad is a monoid in the category of endofunctors."
 * [Category Theory](https://youtu.be/FQYOpD7tv30?si=HzxCfqc3b-YYBagH)
-* []()
