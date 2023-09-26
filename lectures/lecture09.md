@@ -25,11 +25,11 @@
 > * Rust
 > * Others: Legacy: Scala, Java; Future: Mojo...
 
-# Functional Programming (FP) and Blockchains (ncl. Distributed Systems/Decentralized Tech.)
+# Functional Programming (FP) and Blockchains (incl. Distributed Systems/Decentralized Tech.)
 
 - [Object Oriented versus Functionally (FP) "Pure" approaches](https://youtu.be/aoE-92Ac4zE?si=0BB3cp2blwqNlfsQ); [Not Necessarily Orthogonal](https://youtu.be/Z84Z1Fi-Hxs?si=1el9l76iq4IhqWqP)
 - Notion of "Side Effects";  e.g. "Some"
-- [ Monads,Monoids & Functors](https://blog.knoldus.com/basic-understanding-of-monads-monoids-and-functor/#:~:text=A%20monad%20can%20be%20seen,in%20the%20case%20of%20lists)
+- [Monads,Monoids & Functors](https://blog.knoldus.com/basic-understanding-of-monads-monoids-and-functor/#:~:text=A%20monad%20can%20be%20seen,in%20the%20case%20of%20lists)
 > * [Cross and intra-chain FP](https://medium.com/@mchammond/blockchain-interoperability-319bce3f9105)
 - Process Calculi
 > * Lambda Calculus
