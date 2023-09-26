@@ -5,8 +5,9 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "ajv": "echo 'Dummy ajv script'",
-    "contracts:compile:abi": "typechain --target ethers-v5 --out-dir src/abis/types \"./src/abis/**/*.json\"",
-    "contracts:compile:v3": "typechain --target ethers-v5 --out-dir src/types/v3 \"./node_modules/@uniswap/**/artifacts/contracts/**/*[!dbg].json\"",
+"scripts": {
+    "contracts:compile:abi": "echo 'Dummy contracts:compile:abi script'",
+    "contracts:compile:v3": "echo 'Dummy contracts:compile:v3 script'",
     "contracts": "yarn contracts:compile:abi && yarn contracts:compile:v3",
     "i18n:extract": "lingui extract --locale en-US",
     "i18n:compile": "lingui compile",
