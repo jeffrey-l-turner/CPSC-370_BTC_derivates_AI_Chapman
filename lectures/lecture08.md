@@ -37,4 +37,4 @@
 ## Resources for this Lecture and Quiz
 
 * [Bard](https://bard.google.com)
-* [Local LLMs and Coding]()
+* [Local LLMs and Coding](./notes_lec8.md)
