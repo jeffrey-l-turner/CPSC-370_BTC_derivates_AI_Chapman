@@ -29,6 +29,10 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - Fourth Week Quiz out EoD 19th; Due by End of Day 24-Sept-2023
 - Fifth Week Quiz out on 27th; Due by End of Day 2-October-2023
 
+### Resourcs
+
+* [Warp](app.warp.dev/referral/PXZMWP)
+
 ### Testnet Project Outline:
 
 <div align="center"><img src="./docs/drawings/Chapman_testnet.png"></img></div>
