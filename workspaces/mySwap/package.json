@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start src/App.tsx",
     "build": "echo build",
-    "test": "echo test"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
