@@ -5,7 +5,7 @@ import App from './App';
 test('renders learn react link', () => {
   const renderAppAndCheckHeader = compose(
     (headerElement) => expect(headerElement).toBeInTheDocument(),
-    () => screen.getByText(/Uniswap/i),
+    () => screen.getByText(/MySwap/i),
     () => render(<App />)
   );
 
