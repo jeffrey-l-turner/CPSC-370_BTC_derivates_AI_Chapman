@@ -15,4 +15,4 @@ const SwapForm: React.FC<SwapFormProps> = () => {
   );
 };
 
-export default SwapForm;
+export { SwapForm };

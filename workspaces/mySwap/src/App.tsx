@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header.tsx';
-import Navigation from './Navigation.tsx';
-import Portfolio from './Portfolio.tsx';
-import SwapForm from './SwapForm.tsx';
+import { Header } from './Header.tsx';
+import { Navigation } from './Navigation.tsx';
+import { Portfolio } from './Portfolio.tsx';
+import { SwapForm } from './SwapForm.tsx';
 
 const App: React.FC = () => {
   return (

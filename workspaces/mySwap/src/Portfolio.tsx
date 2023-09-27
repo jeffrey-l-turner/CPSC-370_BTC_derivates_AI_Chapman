@@ -38,4 +38,4 @@ const Portfolio: React.FC<PortfolioProps> = () => {
   );
 };
 
-export default Portfolio;
+export { Portfolio };
