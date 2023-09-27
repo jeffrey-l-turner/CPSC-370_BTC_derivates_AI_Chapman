@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../public/logo.svg";
+import logo from "./logo.svg";
 
 interface HeaderProps {
   // No props needed for this component
