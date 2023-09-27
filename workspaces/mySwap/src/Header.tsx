@@ -9,7 +9,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="uniswap-header">
       <img src={logo} alt="Uniswap logo" />
-      <h1>Uniswap</h1>
+      <h1>MySwap</h1>
     </header>
   );
 };
