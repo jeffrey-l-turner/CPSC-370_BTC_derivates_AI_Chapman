@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
+import { compose } from 'ramda';
 import App from './App';
 
 test('renders learn react link', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/Uniswap/i);
-  expect(headerElement).toBeInTheDocument();
+  const renderAppAndCheckHeader = compose(
+    (headerElement) => expect(headerElement).toBeInTheDocument(),
+    () => screen.getByText(/Uniswap/i),
+    () => render(<App />)
+  );
+
+  renderAppAndCheckHeader();
 });
