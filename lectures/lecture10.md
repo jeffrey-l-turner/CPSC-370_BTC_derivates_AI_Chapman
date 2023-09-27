@@ -35,7 +35,7 @@
 > * 
 - 
 > 
-- [Lecture Diagram](./notes_lec10.md#tbd)
+- [Lecture Diagram](./notes_lec10.md#Side-Effects-and-Unit-Tests)
 
 ## Assignment
 
