@@ -15,6 +15,10 @@ const App: React.FC = () => {
       <Portfolio />
     </div>
     </div>
+    <span>
+      <p>Hello World</p>
+    </span>
+    </div>
   );
 };
 
