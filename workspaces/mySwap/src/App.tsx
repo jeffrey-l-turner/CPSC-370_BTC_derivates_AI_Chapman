@@ -11,6 +11,7 @@ const App: React.FC = () => {
       <Navigation />
       <SwapForm />
       <Portfolio />
+      <Portfolio />
     </div>
   );
 };
