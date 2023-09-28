@@ -20,6 +20,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [19-Sept-2023](./lectures/lecture07.md)
 - [21-Sept-2023](./lectures/lecture08.md)
 - [26-Sept-2023](./lectures/lecture09.md)
+- [28-Sept-2023](./lectures/lecture10.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
@@ -32,6 +33,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 ### Resourcs
 
 * [Warp](app.warp.dev/referral/PXZMWP)
+* [settings.json for VSCode](./resources/settings.json)
 
 ### Testnet Project Outline:
 
