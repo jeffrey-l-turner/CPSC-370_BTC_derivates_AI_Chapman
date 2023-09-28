@@ -9,37 +9,35 @@
 - Quiz is published and available through Monday evening.
 - Awaiting [Pacific Crypto Conference](https://www.pacificbitcoin.com/) student discounts. Update on Tues.
 - Mojo as an Ecosystem
+- Upgrade your Aider: `pip install aider-chat`
+- New [`prompt_book.md`](../workspaces/prompt_book.md)
 
-# Process Calculi
+# Process Calculi (Part II)
 
+- Lambdas in JavaScript/TypeScript
+- * [See VSCode settings]()
 > * Lambda Calculus
 > * Pi Calculus
 > * Rho Calculus
-- 
-- 
-- 
+- Scaling Blockchains and Decentralized Tech w/Client Side Validation
+- Other approaches
 
 # Functional Programming Examples for Unit Testing
 
-- 
-- 
-- 
-> * 
-> * 
-> * 
-> * 
-
-# Side Effects and Unit Testing
-
-- 
-> * 
-- 
-> 
-- [Lecture Diagram](./notes_lec10.md#Side-Effects-and-Unit-Tests)
+- Updated Assignment Code
+- [The JavaScript Ramda Library](https://www.htmlgoodies.com/javascript/advanced-functional-programming-monads-in-javascript/)
+- Running the JavaScript Debugger in the Browser
+> * Prompts
+> * Git interaction
+> * Borrowing from other projects (Bard example)
+> * Using PRs in your Assignments
+- Side Effects and Unit Testing
+> * Improving Modularity and Testability
+- [Lecture Notes/Diagram](./notes_lec10.md#Side-Effects-and-Unit-Tests)
 
 ## Assignment
 
-* See [Write a Unit Test using FP](../assignments/28_Sept_2023.md)
+* See [Write a Unit Test Suite using for all Components using FP](../assignments/28_Sept_2023.md)
 * All personal environments should be operational; This will be checked with your PR submissions this coming week.
 
 ## Resources for this Lecture and Quiz
