@@ -7,10 +7,10 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = () => {
   return (
     <nav className="uniswap-navigation">
-      <a href="javascript:void(0)">Swap</a>
-      <a href="javascript:void(0)">Pool</a>
-      <a href="javascript:void(0)">Analytics</a>
-      <a href="javascript:void(0)">Docs</a>
+      <button className="link-button">Swap</button>
+      <button className="link-button">Pool</button>
+      <button className="link-button">Analytics</button>
+      <button className="link-button">Docs</button>
     </nav>
   );
 };
