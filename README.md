@@ -33,6 +33,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 ### Resourcs
 
 * [Warp](app.warp.dev/referral/PXZMWP)
+* [settings.json for VSCode](./resources/settings.json)
 
 ### Testnet Project Outline:
 
