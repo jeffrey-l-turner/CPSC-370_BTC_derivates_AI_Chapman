@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /address/
-Disallow: /rpc*
-Disallow: /tx-stats
-Disallow: /peers
-Disallow: /mempool-transactions
-Disallow: /block-analysis/
-Disallow: /snippet/
-Crawl-delay: 7
