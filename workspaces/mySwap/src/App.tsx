@@ -9,7 +9,11 @@ const App: React.FC = () => {
     <div className="App">
       <Header />
       <Navigation />
+      <Navigation />
       <SwapForm />
+      <SwapForm />
+      <Portfolio />
+      <span></span>
       <Portfolio />
     </div>
   );
