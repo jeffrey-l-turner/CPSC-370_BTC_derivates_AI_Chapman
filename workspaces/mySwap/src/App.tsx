@@ -6,11 +6,16 @@ import { SwapForm } from './SwapForm.tsx';
 
 const App: React.FC = () => {
   return (
+    <div>
     <div className="App">
       <Header />
       <Navigation />
       <SwapForm />
       <Portfolio />
+    </div>
+    <span>
+      <p>Hello World</p>
+    </span>
     </div>
   );
 };
