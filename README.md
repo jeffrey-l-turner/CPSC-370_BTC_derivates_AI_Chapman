@@ -19,6 +19,8 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [14-Sept-2023](./lectures/lecture06.md)
 - [19-Sept-2023](./lectures/lecture07.md)
 - [21-Sept-2023](./lectures/lecture08.md)
+- [26-Sept-2023](./lectures/lecture09.md)
+- [28-Sept-2023](./lectures/lecture10.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
@@ -26,6 +28,12 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [Second Assignment; Due End of Day 12-Sept-2023](./assignments/7_Sept_2023.md)
 - Second/Third Quiz sent; Due End of Day 18-Sept-2023
 - Fourth Week Quiz out EoD 19th; Due by End of Day 24-Sept-2023
+- Fifth Week Quiz out on 27th; Due by End of Day 2-October-2023
+
+### Resourcs
+
+* [Warp](app.warp.dev/referral/PXZMWP)
+* [settings.json for VSCode](./resources/settings.json)
 
 ### Testnet Project Outline:
 
