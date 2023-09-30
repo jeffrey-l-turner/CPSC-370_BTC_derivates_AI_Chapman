@@ -12,6 +12,7 @@
 - Upgrade your Aider: `pip install aider-chat`
 - New [`prompt_book.md`](../workspaces/prompt_book.md)
 - Note: [VSCode settings.json](../resources/settings.json)
+- Handling Merge Conflicts in Git
 
 # Process Calculi (Part II)
 
