@@ -13,7 +13,7 @@
 
 # Rho, Pi and Lambda Revisited
 
-- [See](../workspaces/rgb/lecture_notes.md)
+- [See](./notes_lec11.md)
 
 ## Assignment
 
