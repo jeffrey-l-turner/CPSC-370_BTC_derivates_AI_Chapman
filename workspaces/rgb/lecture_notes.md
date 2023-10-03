@@ -4,14 +4,6 @@ The lambda calculus was introduced by Alonzo Church in the 1930s as a formal sys
 
 The lambda calculus is a powerful tool for representing computation, but it does not explicitly model concurrency. This is because the lambda calculus is a purely functional language, and functions in functional languages are typically assumed to be executed sequentially.
 
-In the 1970s, Robin Milner introduced the pi-calculus as a formal system for modeling concurrent computation. The pi-calculus is based on the idea of processes as communicating agents. Processes can send and receive messages, and they can synchronize their actions with each other.
-
-The pi-calculus is a very general model of concurrency, and it has been used to model a wide variety of concurrent systems, including distributed systems, operating systems, and programming languages.
-
-In the 2000s, Lucius Gregory Meredith and colleagues at Microsoft introduced Rholang as a new process calculus for modeling concurrent systems. Rholang is based on the idea of processes, which are concurrent entities that can send and receive messages and perform computations.
-
-Rholang differs from the pi-calculus in a number of ways. First, Rholang processes are explicitly typed, while pi-calculus processes are not. Second, Rholang processes can have mutable state, while pi-calculus processes cannot. Third, Rholang processes can communicate with each other using asynchronous messages, while pi-calculus processes can only communicate using synchronous messages.
-
 Coding Examples in TypeScript with Anonymous Functions
 
 ### TypeScript with Anonmyous Functions
@@ -38,12 +30,21 @@ In these examples, `number => number * number` is an anonymous function that tak
 
 ## Rholang's Fundamentally Different Concurrent Approaches
 
+In 1988, Robin Milner introduced the pi-calculus as a formal system for modeling concurrent computation. The pi-calculus is based on the idea of processes as communicating agents. Processes can send and receive messages, and they can synchronize their actions with each other.
+
+The pi-calculus is a very general model of concurrency, and it has been used to model a wide variety of concurrent systems, including distributed systems, operating systems, and programming languages.
+
+In the 2000s, Lucius Gregory Meredith and colleagues at Microsoft introduced Rholang as a new process calculus for modeling concurrent systems. Rholang is based on the idea of processes, which are concurrent entities that can send and receive messages and perform computations.
+
+Rholang differs from the pi-calculus in a number of ways. First, Rholang processes are explicitly typed, while pi-calculus processes are not. Second, Rholang processes can have mutable state, while pi-calculus processes cannot. Third, Rholang processes can communicate with each other using asynchronous messages, while pi-calculus processes can only communicate using synchronous messages.
+
+
 Rholang's use of processes and asynchronous messages provides a number of advantages over the pi-calculus. First, processes are more expressive than pi-calculus processes, because they allow for mutable state and asynchronous communication. Second, Rholang's asynchronous communication model is more efficient than the pi-calculus's synchronous communication model.
 
 
-## First Class Attributes in Programming Languages
+## First Class Objects in Programming Languages
 
-The first class attributes of a programming language are those entities that can be treated in the same way as any other value. This means that they can be:
+The first class objects of a programming language are those entities that can be treated in the same way as any other value. This means that they can be:
 
 * Passed as arguments to functions.
 * Returned from functions.
@@ -52,7 +53,7 @@ The first class attributes of a programming language are those entities that can
 * Compared for equality.
 * Used in control flow statements.
 
-Some common first class attributes include:
+Some common first class objects include:
 
 * Variables: Variables can be used to store values and can be used in expressions and control flow statements.
 * Constants: Constants are values that cannot be changed once they are assigned.
@@ -60,11 +61,11 @@ Some common first class attributes include:
 * Classes: Classes can be used to create new types of objects and can be used to create new instances of those objects.
 * Modules: Modules can be used to group related code together and can be imported into other modules.
 
-Some programming languages support a wider range of first class attributes than others. For example, some languages support first-class classes, which means that classes can be passed as arguments to functions and returned from functions. Other languages support first-class modules, which means that modules can be passed as arguments to functions and returned from functions.
+Some programming languages support a wider range of first class objects than others. For example, some languages support first-class classes, which means that classes can be passed as arguments to functions and returned from functions. Other languages support first-class modules, which means that modules can be passed as arguments to functions and returned from functions.
 
-First class attributes are important because they allow programmers to write more expressive and flexible code. For example, by passing functions as arguments to other functions, programmers can create reusable and composable code. By storing classes and modules in data structures, programmers can create more modular and reusable code.
+First class objects are important because they allow programmers to write more expressive and flexible code. For example, by passing functions as arguments to other functions, programmers can create reusable and composable code. By storing classes and modules in data structures, programmers can create more modular and reusable code.
 
-## Concurrency and First Class Attributes 
+## Concurrency and First Class objects 
 
 Composition is considered first class in Rholang programming language. This means that compositions can be passed as arguments to functions, returned from functions, and stored in communication channels.
 
