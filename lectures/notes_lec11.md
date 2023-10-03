@@ -2,7 +2,9 @@
 
 The lambda calculus was introduced by Alonzo Church in the 1930s as a formal system for representing computation. It is based on the idea of functions as anonymous, first-class values. This means that functions can be passed as arguments to other functions, returned from functions, and stored in data structures.
 
-The lambda calculus is a powerful tool for representing computation, but it does not explicitly model concurrency. This is because the lambda calculus is a purely functional language, and functions in functional languages are typically assumed to be executed sequentially.
+As a powerful too for representing computation, lambda calculus it does not explicitly model concurrency. This is because the lambda calculus is a purely functional language, and functions in functional languages are typically assumed to be executed sequentially.
+
+### Beta Reduction
 
 Coding Examples in TypeScript with Anonymous Functions
 
@@ -30,17 +32,56 @@ In these examples, `number => number * number` is an anonymous function that tak
 
 ## Rholang's Fundamentally Different Concurrent Approaches
 
-In 1988, Robin Milner introduced the pi-calculus as a formal system for modeling concurrent computation. The pi-calculus is based on the idea of processes as communicating agents. Processes can send and receive messages, and they can synchronize their actions with each other.
+In the 1980s, [Robin Milner](https://en.wikipedia.org/wiki/Robin_Milner) introduced the pi-calculus as a formal system for modeling concurrent computation. The pi-calculus is based on the idea of processes as communicating agents. Processes can send and receive messages, and they can synchronize their actions with each other.
 
 The pi-calculus is a very general model of concurrency, and it has been used to model a wide variety of concurrent systems, including distributed systems, operating systems, and programming languages.
 
-In the 2000s, Lucius Gregory Meredith and colleagues at Microsoft introduced Rholang as a new process calculus for modeling concurrent systems. Rholang is based on the idea of processes, which are concurrent entities that can send and receive messages and perform computations.
+In the 2000s, Lucius Gregory Meredith and a colleagues, Matthias Radestock introduced rho as a new process calculus for modeling concurrent systems. Rholang, the programming language behind rho-calculs, is based on the idea of processes, which are concurrent entities that can send and receive messages and perform computations.
 
 Rholang differs from the pi-calculus in a number of ways. First, Rholang processes are explicitly typed, while pi-calculus processes are not. Second, Rholang processes can have mutable state, while pi-calculus processes cannot. Third, Rholang processes can communicate with each other using asynchronous messages, while pi-calculus processes can only communicate using synchronous messages.
 
 
 Rholang's use of processes and asynchronous messages provides a number of advantages over the pi-calculus. First, processes are more expressive than pi-calculus processes, because they allow for mutable state and asynchronous communication. Second, Rholang's asynchronous communication model is more efficient than the pi-calculus's synchronous communication model.
 
+### Beta Reduction
+
+Beta reduction is a process in lambda calculus for reducing lambda expressions. It is a form of substitution, where the body of a lambda expression is substituted for its free variable in the context where the lambda expression is applied.
+
+The beta reduction rule is as follows:
+
+```
+(\lambda x. t) u -> t[x := u]
+
+```
+
+Beta reduction is a process in lambda calculus for reducing lambda expressions. It is a form of substitution, where the body of a lambda expression is substituted for its free variable in the context where the lambda expression is applied.
+
+The beta reduction rule is as follows:
+
+`(\lambda x. t) u -> t[x := u]`
+
+where `t` is a lambda expression, `u` is an expression, and `t[x := u]` is the result of substituting `u` for all free occurrences of `x` in `t`.
+
+For example, consider the following lambda expression:
+
+```
+(\lambda x. x + 1) 3
+
+```
+
+This expression can be reduced using beta reduction as follows:
+
+```
+(\lambda x. x + 1) 3 -> (3 + 1)
+```
+
+The beta reduction rule applies to the entire lambda expression, so the entire body of the lambda expression is substituted for the free variable x in the context where the lambda expression is applied.
+
+Beta reduction can be used to evaluate lambda expressions and to prove properties of lambda terms. It is also used in the implementation of functional programming languages.
+
+Here are some more examples of beta reduction:
+
+`(\lambda x. x * x) 5 -> 5 * 5`
 
 ## First Class Objects in Programming Languages
 
@@ -64,6 +105,34 @@ Some common first class objects include:
 Some programming languages support a wider range of first class objects than others. For example, some languages support first-class classes, which means that classes can be passed as arguments to functions and returned from functions. Other languages support first-class modules, which means that modules can be passed as arguments to functions and returned from functions.
 
 First class objects are important because they allow programmers to write more expressive and flexible code. For example, by passing functions as arguments to other functions, programmers can create reusable and composable code. By storing classes and modules in data structures, programmers can create more modular and reusable code.
+
+## Rho calculus in Comparison to Lambda
+
+In Rho calculus, we introduce the "comm rule" which says that arguments do not have to be next to each other and instead can be synchronized over a channel. When you compare this to how functional languages are compile to real hardware it happens more like the comm rule. The arguments are placed in registers (or certain positions on the stack) and the function code is placed at a position on the stack. These positions correspond to channel synchronization.
+
+The "comm rule" is a fundamental part of process calculi, specifically the pi- and rho-calculus. It represents the communication between two processes.
+
+In process calculi, the comm rule (short for "communication rule") is defined as follows:
+
+`a!(P) | a?(x).Q → Q{P/x}`
+
+In this rule:
+
+`a!(P)` represents a process that sends message `P` on channel `a`.
+`a?(x).Q` represents a process that waits to receive a message on channel `a`, which it will call `x`, and then continues as process `Q`.
+`Q{P/x}` means the process `Q` where `x` has been replaced by `P`.
+
+The comm rule describes the interaction between these two processes: the message P sent by the first process is received by the second process, and the second process continues as `Q` with `P` substituted for `x`.
+
+For example, if we have processes:
+
+`a!("Hello") | a?(x).print(x)`
+
+After communication occurs, the system evolves to:
+
+`print("Hello")`
+
+This represents a process that prints the message `"Hello". Here, a!("Hello")` sent the message "Hello" on channel `a`, and `a?(x).print(x)` received it and substituted it in place of `x` in `print(x)`.
 
 ## Concurrency and First Class objects 
 
@@ -122,5 +191,10 @@ Note: Rholang is concurrent, so the order of process execution is not guaranteed
 
 F1r3fly and Rholang are rapidly evolving technologies. This example illustrates how Rholang's asynchronous communication model can be used to implement concurrent programs in a simple and efficient way.
 
+## Actor versus Process Calculi Approaches
+
+There are several differences between the process calculi and the actor model. The biggest difference is that the actor model is principal port. An actor has 1 port where it responds to interaction, its mailbox. But, concurrency in the real world is multi-port. You have to coordinate over multiple ports. You can code this in actors, but you end up coding it all the time. Since you're building this impedance matching code over and over again, its better to just build it directly into the language. Process calculi and Rholang work using the process approach -- not actors.
+
+
 ## Conurrency in the Blockchain Programming
-Overall, Rholang is a powerful and expressive process calculus for modeling concurrent systems. It is worth considering for any project that involves concurrent programming. In the blockchain space, there a few concurrent languages actively being developed. In addition to Rholang, the move language has been developed with concurrency in mind. This language and corresponding blockchain emerged from Facebook's ill fated Libra project (later renamed to Diem). Most recently the [Aptos](https://coinmarketcap.com/currencies/aptos/) chain has emerged with major venture capital funding behind it.
+Overall, Rholang is a powerful and expressive process calculus for modeling concurrent systems. It is worth considering for any project that involves concurrent programming. In the blockchain space, there a few concurrent languages actively being developed. In addition to Rholang, the move language has been developed with concurrency in mind. This language and corresponding blockchain emerged from Facebook's ill fated Libra project (later renamed to Diem). Most recently the [Aptos](https://coinmarketcap.com/currencies/aptos/) chain has emerged with major venture capital funding behind it. In addition, [Silverment](https://silvermint.net) uses a concurrent model for its smart contracts. They also use an [extension of the Go programming language](https://docs.silvermint.net/whitepapers/Symmetry_language_extensions_for_Go.pdf), similar to Aptos' Move language.
