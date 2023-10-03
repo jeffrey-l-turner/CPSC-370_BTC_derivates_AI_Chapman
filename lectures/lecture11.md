@@ -4,7 +4,7 @@
 
 - Currently out of Open AI credits; Sponsorship should be updated late today/tomorrow. (working on additional commercial sponsor for class.)
 - Assignment due dates changed... combining previous two assignment (and may combine this weeks).
-- Office Hours changed on Mondays to 5PM. Students are having conflicts with time. Noted on Canvas.
+- Office Hours changed on Mondays to 4PM. Students are having conflicts with time. Noted on Canvas.
 - Unable to get [Pacific Crypto Conference](https://www.pacificbitcoin.com/) student discounts. Conference start Thurs.
 - Reminder: Upgdate your Aider: `pip install aider-chat`
 - New [`prompt_book.md`](../workspaces/prompt_book.md)
