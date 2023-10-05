@@ -1,4 +1,4 @@
-class Blockchain1 {
+const Blockchain1 = () => {
     // Blockchain1 implementation goes here
 }
 export default Blockchain1;
