@@ -4,7 +4,8 @@
   "description": "CPSC 370 assignments",
   "main": "index.ts",
   "scripts": {
-    "test": "echo testing"
+    "test": "echo testing",
+    "start": "ts-node blockchain1.ts"
   },
   "author": "",
   "license": "ISC",
