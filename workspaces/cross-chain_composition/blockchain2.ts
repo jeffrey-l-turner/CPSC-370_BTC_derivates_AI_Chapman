@@ -1,11 +1,19 @@
 import crypto from 'crypto';
 
-const Blockchain2 = () => {
-    let chain = [];
+interface Block {
+    index: number;
+    timestamp: number;
+    data: any;
+    previousHash: string | null;
+    hash: string;
+}
 
-    const createBlock = (data) => {
+const Blockchain2 = () => {
+    let chain: Block[] = [];
+
+    const createBlock = (data: any) => {
         const previousBlock = chain[chain.length - 1];
-        const block = {
+        const block: Block = {
             index: chain.length,
             timestamp: Date.now(),
             data,
@@ -16,7 +24,7 @@ const Blockchain2 = () => {
         chain.push(block);
     };
 
-    const calculateHash = (block) => {
+    const calculateHash = (block: Block) => {
         const { index, timestamp, data, previousHash } = block;
         return crypto.createHash('sha256').update(index + timestamp + JSON.stringify(data) + previousHash).digest('hex');
     };
