@@ -14,6 +14,11 @@ const Blockchain2 = () => {
     const fs = require('fs');
     const logFile = 'blockchain2.log';
 
+    // Create the log file if it does not exist
+    if (!fs.existsSync(logFile)) {
+        fs.writeFileSync(logFile, '');
+    }
+
     const createBlock = (data: any) => {
         console.log('createBlock called in Blockchain2');
         const previousBlock = chain[chain.length - 1];
