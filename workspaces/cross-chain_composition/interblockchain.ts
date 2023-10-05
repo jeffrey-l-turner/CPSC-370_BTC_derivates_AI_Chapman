@@ -13,6 +13,14 @@ const fs = require('fs');
 const logFile1 = 'blockchain1.log';
 const logFile2 = 'blockchain2.log';
 
+// Create the log files if they do not exist
+if (!fs.existsSync(logFile1)) {
+    fs.writeFileSync(logFile1, '');
+}
+if (!fs.existsSync(logFile2)) {
+    fs.writeFileSync(logFile2, '');
+}
+
 let chain1Length = fs.readFileSync(logFile1, 'utf-8').split('\n').filter(Boolean).length;
 let chain2Length = fs.readFileSync(logFile2, 'utf-8').split('\n').filter(Boolean).length;
 
