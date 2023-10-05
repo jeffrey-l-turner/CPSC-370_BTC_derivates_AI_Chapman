@@ -13,6 +13,7 @@ interface Blockchain {
 
         let chain1Length = blockchain1.chain.length;
         let chain2Length = blockchain2.chain.length;
+        let lastBlockTime: number | null = null;
 
         const checkForNewBlocks = setInterval(() => {
             if (blockchain1.chain.length === chain1Length && blockchain2.chain.length === chain2Length) {
@@ -20,8 +21,18 @@ interface Blockchain {
                 clearInterval(checkForNewBlocks);
                 process.exit(0);
             } else {
+                const currentTime = Date.now();
+                if (lastBlockTime) {
+                    const interval = currentTime - lastBlockTime;
+                    console.log(`Time interval between blocks: ${interval} ms`);
+                }
+                lastBlockTime = currentTime;
+
                 chain1Length = blockchain1.chain.length;
                 chain2Length = blockchain2.chain.length;
+
+                sharedState.blockchain1CurrentHash = blockchain1.chain[blockchain1.chain.length - 1].hash;
+                sharedState.blockchain2CurrentHash = blockchain2.chain[blockchain2.chain.length - 1].hash;
             }
         }, 10000); // Check every 10 seconds
 
