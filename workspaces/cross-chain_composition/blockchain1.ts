@@ -38,6 +38,7 @@ const Blockchain1 = () => {
     // Create the genesis block if the chain is empty
     if (chain.length === 0) {
         createBlock({ info: 'Genesis Block' });
+        console.warn(`Blockchain1: wrote genesis block to log file 1, ${chain.length}`);
     }
     // Initialize the chain with blocks from the log file
     const blocks = fs.readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
