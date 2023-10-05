@@ -1,6 +1,4 @@
-interface BlockData {
-    info: string;
-}
+import BlockData from './types';
 
 interface Block {
     index: number;
