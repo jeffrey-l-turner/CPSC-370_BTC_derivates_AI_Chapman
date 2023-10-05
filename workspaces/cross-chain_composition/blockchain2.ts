@@ -39,8 +39,14 @@ const Blockchain2 = () => {
     createBlock({ info: 'Genesis Block' });
 
     const startProducingBlocks = () => {
-        setInterval(() => {
-            createBlock({ info: `New block in Blockchain2 at ${Date.now()}` });
+        let blockCount = 0;
+        const intervalId = setInterval(() => {
+            if (blockCount < 5) {
+                createBlock({ info: `New block in Blockchain2 at ${Date.now()}` });
+                blockCount++;
+            } else {
+                clearInterval(intervalId);
+            }
         }, 5000); // Create a new block every 5 seconds
         };
 
