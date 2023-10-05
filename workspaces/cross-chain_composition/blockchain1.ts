@@ -15,6 +15,7 @@ const Blockchain1 = () => {
     const logFile = 'blockchain1.log';
 
     const createBlock = (data: any) => {
+        console.log('createBlock called in Blockchain1');
         const previousBlock = chain[chain.length - 1];
         const block: Block = {
             index: chain.length,
@@ -28,8 +29,7 @@ const Blockchain1 = () => {
 
         // Write the block to the log file
         fs.appendFileSync(logFile, JSON.stringify(block) + '\n');
-
-        console.warn(`Blockchain1: wrote block to log file 1, ${block}`);
+        console.log(`Blockchain1: wrote block to log file 1, ${block}`);
     };
 
     const calculateHash = (block: Block) => {
