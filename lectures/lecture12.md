@@ -1,6 +1,8 @@
 # Lecture 12
 
-<img src="./Bitcoin_lambda_pi_rho.png" width="150" height="150" />
+<div align="center">
+  <img src="./Bitcoin_lambda_pi_rho.png" width="150" height="150" />
+</div>
 
 # Housekeeping
 
