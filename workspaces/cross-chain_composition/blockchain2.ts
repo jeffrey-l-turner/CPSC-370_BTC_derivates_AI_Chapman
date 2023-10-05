@@ -48,7 +48,6 @@ const Blockchain2 = () => {
 
     const startProducingBlocks = () => {
         // Start producing blocks from the last block in the chain
-        let blockCount = chain.length;
         let blockCount = 0;
         const intervalId = setInterval(() => {
             if (blockCount < 5) {
