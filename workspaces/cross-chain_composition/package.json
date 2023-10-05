@@ -4,7 +4,7 @@
   "description": "CPSC 370 assignments",
   "main": "index.ts",
   "scripts": {
-    "test": "echo testing",
+    "test": "echo tests to be supplied",
     "start": "((ts-node blockchain1.ts && npm run start:blockchain2) &) && npm run start:interblock",
     "start:blockchain2": "ts-node blockchain2.ts",
     "start:interblock": "ts-node interblockchain.ts"
