@@ -42,13 +42,13 @@ const Blockchain2 = () => {
         return crypto.createHash('sha256').update(index + timestamp + JSON.stringify(data) + previousHash).digest('hex');
     };
 
+    // Create the genesis block if the chain is empty
+    if (chain.length === 0) {
+        createBlock({ info: 'Genesis Block' });
+    }
     // Initialize the chain with blocks from the log file
     const blocks = fs.readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
     chain = blocks;
-    if (chain.length === 0) {
-        // Create the genesis block if the chain is empty
-        createBlock({ info: 'Genesis Block' });
-    }
 
     const startProducingBlocks = () => {
         // Start producing blocks from the last block in the chain
