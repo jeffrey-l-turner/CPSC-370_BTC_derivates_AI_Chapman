@@ -7,6 +7,7 @@ interface Blockchain {
 }
 
     const InterBlockchain = () => {
+        console.log('InterBlockchain function called');
         const blockchain1: Blockchain = Blockchain1();
         const blockchain2: Blockchain = Blockchain2();
         const sharedState: any = {};
