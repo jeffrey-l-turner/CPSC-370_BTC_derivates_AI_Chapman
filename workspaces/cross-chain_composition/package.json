@@ -1,0 +1,11 @@
+{
+  "name": "cross-chain_composition",
+  "version": "0.0.1",
+  "description": "CPSC 370 assignments",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo testing"
+  },
+  "author": "",
+  "license": "ISC"
+}
