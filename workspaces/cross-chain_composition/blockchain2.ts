@@ -60,4 +60,6 @@ const Blockchain2 = () => {
         createBlock
     };
 }
+
+Blockchain2();
 export default Blockchain2;
