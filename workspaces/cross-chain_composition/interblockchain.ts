@@ -15,10 +15,10 @@ const logFile1 = path.join(__dirname, 'blockchain1.log');
 const logFile2 = path.join(__dirname, 'blockchain2.log');
 
 // Create the log files if they do not exist
-fs.open(logFile1, 'a', (err) => {
+fs.open(logFile1, 'a', (err: NodeJS.ErrnoException | null) => {
     if (err) throw err;
 });
-fs.open(logFile2, 'a', (err) => {
+fs.open(logFile2, 'a', (err: NodeJS.ErrnoException | null) => {
     if (err) throw err;
 });
 
