@@ -12,7 +12,11 @@ const Blockchain1 = () => {
         fs.writeFileSync(logFile, '');
     }
 
-    const createBlock = (data: any) => {
+interface BlockData {
+    info: string;
+}
+
+    const createBlock = (data: BlockData) => {
         console.log('createBlock called in Blockchain1');
         const previousBlock = chain[chain.length - 1];
         const block: Block = {
