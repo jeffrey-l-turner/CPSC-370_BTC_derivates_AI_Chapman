@@ -1,5 +1,5 @@
 import * as crypto from 'crypto';
-import Block from './block';
+import { Block } from './types';
 
 const Blockchain1 = () => {
     let chain: Block[] = [];
