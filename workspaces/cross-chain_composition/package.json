@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo tests to be supplied",
-    "start": "npm run start:interblock && ((ts-node blockchain1.ts && npm run start:blockchain2) &)",
+    "start": "(ts-node blockchain1.ts & ts-node blockchain2.ts & wait) & npm run start:interblock",
     "start:blockchain2": "ts-node blockchain2.ts",
     "start:interblock": "ts-node interblockchain.ts"
   },
