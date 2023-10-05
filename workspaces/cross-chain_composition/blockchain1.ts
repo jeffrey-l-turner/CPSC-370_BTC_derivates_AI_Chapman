@@ -37,10 +37,18 @@ const Blockchain1 = () => {
         return crypto.createHash('sha256').update(index + timestamp + JSON.stringify(data) + previousHash).digest('hex');
     };
 
-    // Create the genesis block
-    createBlock({ info: 'Genesis Block' });
+    // Initialize the chain with blocks from the log file
+    const blocks = fs.readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
+    if (blocks.length === 0) {
+        // Create the genesis block if the log file is empty
+        createBlock({ info: 'Genesis Block' });
+    } else {
+        chain = blocks;
+    }
 
     const startProducingBlocks = () => {
+        // Start producing blocks from the last block in the chain
+        let blockCount = chain.length;
         let blockCount = 0;
         const intervalId = setInterval(() => {
             if (blockCount < 5) {
