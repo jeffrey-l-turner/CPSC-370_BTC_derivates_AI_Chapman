@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }
