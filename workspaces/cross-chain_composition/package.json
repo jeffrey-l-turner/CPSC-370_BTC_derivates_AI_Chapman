@@ -5,9 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo testing",
-    "start": "(ts-node blockchain1.ts &) && (start:blockchain2 &) && start:interblock.ts",
+    "start": "(ts-node blockchain1.ts &) && (npm run start:blockchain2 &) && npm run start:interblock",
     "start:blockchain2": "ts-node blockchain2.ts",
-    "start:interblock": "ts-node interblock.ts"
+    "start:interblock": "ts-node interblockchain.ts"
   },
   "author": "",
   "license": "ISC",
