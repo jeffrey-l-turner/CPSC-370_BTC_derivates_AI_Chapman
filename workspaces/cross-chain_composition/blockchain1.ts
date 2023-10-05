@@ -1,18 +1,16 @@
 import * as crypto from 'crypto';
-
-interface Block {
-    index: number;
-    timestamp: number;
-    data: any;
-    previousHash: string | null;
-    hash: string;
-}
+import Block from './block';
 
 const Blockchain1 = () => {
     let chain: Block[] = [];
 
     const fs = require('fs');
     const logFile = 'blockchain1.log';
+
+    // Create the log file if it does not exist
+    if (!fs.existsSync(logFile)) {
+        fs.writeFileSync(logFile, '');
+    }
 
     const createBlock = (data: any) => {
         console.log('createBlock called in Blockchain1');
@@ -37,14 +35,14 @@ const Blockchain1 = () => {
         return crypto.createHash('sha256').update(index + timestamp + JSON.stringify(data) + previousHash).digest('hex');
     };
 
+    // Create the genesis block if the chain is empty
+    if (chain.length === 0) {
+        createBlock({ info: 'Genesis Block' });
+        console.warn(`Blockchain1: wrote genesis block to log file 1, ${chain.length}`);
+    }
     // Initialize the chain with blocks from the log file
     const blocks = fs.readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
-    if (blocks.length === 0) {
-        // Create the genesis block if the log file is empty
-        createBlock({ info: 'Genesis Block' });
-    } else {
-        chain = blocks;
-    }
+    chain = blocks;
 
     const startProducingBlocks = () => {
         // Start producing blocks from the last block in the chain
