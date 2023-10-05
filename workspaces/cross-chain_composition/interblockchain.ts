@@ -45,7 +45,7 @@ interface Blockchain {
             console.log('Blockchain2:', blocks2);
             console.log('Shared State:', sharedState);
         }
-    }, 10000); // Check every 10 seconds
+    }, 1000); // Check every second
         setTimeout(() => {
             console.log('One minute passed. Terminating...');
             clearInterval(checkForNewBlocks);
