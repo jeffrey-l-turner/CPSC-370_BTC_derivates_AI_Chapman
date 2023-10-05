@@ -11,7 +11,7 @@
 - Reminder: Upgdate your Aider: `pip install aider-chat`
 - New additions to [`prompt_book.md`](../workspaces/prompt_book.md)
 - Week 6 Quiz published. Please see details in Canvas.
-- New context window size and demo set up.
+- New context window size and demo set up. (TBD)
 
 # RGB and UTXOs
 
@@ -19,7 +19,7 @@
 
 ## Assignment
 
-* Submit PR (per previous demonstration) & Ask Aider to write your first Rholang code.
+* Submit PR (per previous demonstration) and for the current three assignments; & Ask Aider to enhance [cross-chain_composition](../workspaces/cross-chain_composition/) to write an `npm test` script(s) to demonstrate interblock shared state
 
 ## Resources for this Lecture and Quiz
 

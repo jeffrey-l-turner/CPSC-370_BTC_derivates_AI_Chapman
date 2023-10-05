@@ -1,6 +1,13 @@
 # Potential Pormpts to use with Aider
 
 ```
+> now getting """interblockchain.ts:2:12 - error TS2552: Cannot find name 'Block'. Did you mean 'Lock'?  
+>>   
+>> 2     chain: Block[];  
+>>              ~~~~~""" there is no standard `Block` type.  
+
+> fix the TypeScript """any""" types in all the .ts files  
+
 > write two test blockchains in TypeScript that demonstrate interblockchain communciation with shared state  
 
 > write two test blockchains in TypeScript that demonstrate interblockchain communciation with shared state  
