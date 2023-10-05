@@ -22,9 +22,6 @@ interface Blockchain {
     const checkForNewBlocks = setInterval(() => {
         const blocks1 = fs.readFileSync(logFile1, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
         const blocks2 = fs.readFileSync(logFile2, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
-    const checkForNewBlocks = setInterval(() => {
-        const blocks1 = fs.readFileSync(logFile1, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
-        const blocks2 = fs.readFileSync(logFile2, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
 
         if (blocks1.length + blocks2.length >= 10) {
             console.log('10 blocks produced. Terminating...');
