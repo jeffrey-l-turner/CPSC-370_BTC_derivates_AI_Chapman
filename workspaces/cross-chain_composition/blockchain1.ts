@@ -35,7 +35,7 @@ const Blockchain1 = () => {
     const startProducingBlocks = () => {
         setInterval(() => {
             createBlock({ info: `New block in Blockchain1 at ${Date.now()}` });
-        }, 5000); // Create a new block every 5 seconds
+        }, 10000); // Create a new block every 10 seconds
     };
 
     // Start producing blocks
