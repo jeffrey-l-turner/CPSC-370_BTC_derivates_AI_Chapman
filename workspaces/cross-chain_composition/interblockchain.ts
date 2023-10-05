@@ -13,6 +13,9 @@ interface Blockchain {
     const logFile1 = 'blockchain1.log';
     const logFile2 = 'blockchain2.log';
 
+    let chain1Length = fs.readFileSync(logFile1, 'utf-8').split('\n').filter(Boolean).length;
+    let chain2Length = fs.readFileSync(logFile2, 'utf-8').split('\n').filter(Boolean).length;
+
     const checkForNewBlocks = setInterval(() => {
         const blocks1 = fs.readFileSync(logFile1, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
         const blocks2 = fs.readFileSync(logFile2, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
