@@ -5,7 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo testing",
-    "start": "ts-node blockchain1.ts"
+    "start": "ts-node blockchain1.ts",
+    "start:blockchain2": "ts-node blockchain2.ts"
   },
   "author": "",
   "license": "ISC",
