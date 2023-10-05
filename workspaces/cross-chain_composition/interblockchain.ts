@@ -1,4 +1,4 @@
-import Block from './block';
+import { Block } from './types';
 
 interface Blockchain {
     chain: Block[];

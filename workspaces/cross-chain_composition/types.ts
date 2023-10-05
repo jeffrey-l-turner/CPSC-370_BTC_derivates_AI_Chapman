@@ -10,4 +10,4 @@ interface Block {
     hash: string;
 }
 
-export default Block;
+export { BlockData, Block };
