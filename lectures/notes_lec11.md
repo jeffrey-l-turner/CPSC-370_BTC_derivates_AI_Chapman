@@ -6,45 +6,6 @@ As a powerful too for representing computation, lambda calculus it does not expl
 
 ### Beta Reduction
 
-Coding Examples in TypeScript with Anonymous Functions
-
-### TypeScript with Anonmyous Functions
-```
-// Define an array of numbers
-let numbers = [1, 2, 3, 4, 5];
-
-// Use an anonymous function to square each number
-let squares = numbers.map(number => number * number);
-
-console.log(squares); // Output: [1, 4, 9, 16, 25]
-
-// Define an array of numbers
-let numbers = [1, 2, 3, 4, 5];
-
-// Use an anonymous function to filter out even numbers
-let odds = numbers.filter(number => number % 2 !== 0);
-
-console.log(odds); // Output: [1, 3, 5]
-
-```
-
-In these examples, `number => number * number` is an anonymous function that takes a number and returns its square. The map method applies this function to each element of the numbers array. In the second snippet, the `filter` method uses an anonymous (lambda) function: `number => number % 2 !== 0` is an anonymous function that takes a number and returns true if it's odd and false if it's even. The filter method uses this function to create a new array that only contains the odd numbers from the original array.
-
-## Rholang's Fundamentally Different Concurrent Approaches
-
-In the 1980s, [Robin Milner](https://en.wikipedia.org/wiki/Robin_Milner) introduced the pi-calculus as a formal system for modeling concurrent computation. The pi-calculus is based on the idea of processes as communicating agents. Processes can send and receive messages, and they can synchronize their actions with each other.
-
-The pi-calculus is a very general model of concurrency, and it has been used to model a wide variety of concurrent systems, including distributed systems, operating systems, and programming languages.
-
-In the 2000s, Lucius Gregory Meredith and a colleagues, Matthias Radestock introduced rho as a new process calculus for modeling concurrent systems. Rholang, the programming language behind rho-calculs, is based on the idea of processes, which are concurrent entities that can send and receive messages and perform computations.
-
-Rholang differs from the pi-calculus in a number of ways. First, Rholang processes are explicitly typed, while pi-calculus processes are not. Second, Rholang processes can have mutable state, while pi-calculus processes cannot. Third, Rholang processes can communicate with each other using asynchronous messages, while pi-calculus processes can only communicate using synchronous messages.
-
-
-Rholang's use of processes and asynchronous messages provides a number of advantages over the pi-calculus. First, processes are more expressive than pi-calculus processes, because they allow for mutable state and asynchronous communication. Second, Rholang's asynchronous communication model is more efficient than the pi-calculus's synchronous communication model.
-
-### Beta Reduction
-
 Beta reduction is a process in lambda calculus for reducing lambda expressions. It is a form of substitution, where the body of a lambda expression is substituted for its free variable in the context where the lambda expression is applied.
 
 The beta reduction rule is as follows:
@@ -82,6 +43,42 @@ Beta reduction can be used to evaluate lambda expressions and to prove propertie
 Here are some more examples of beta reduction:
 
 `(\lambda x. x * x) 5 -> 5 * 5`
+Coding Examples in TypeScript with Anonymous Functions
+
+### TypeScript with Anonmyous Functions
+```
+// Define an array of numbers
+let numbers = [1, 2, 3, 4, 5];
+
+// Use an anonymous function to square each number
+let squares = numbers.map(number => number * number);
+
+console.log(squares); // Output: [1, 4, 9, 16, 25]
+
+// Define an array of numbers
+let numbers = [1, 2, 3, 4, 5];
+
+// Use an anonymous function to filter out even numbers
+let odds = numbers.filter(number => number % 2 !== 0);
+
+console.log(odds); // Output: [1, 3, 5]
+
+```
+
+In these examples, `number => number * number` is an anonymous function that takes a number and returns its square. The map method applies this function to each element of the numbers array. In the second snippet, the `filter` method uses an anonymous (lambda) function: `number => number % 2 !== 0` is an anonymous function that takes a number and returns true if it's odd and false if it's even. The filter method uses this function to create a new array that only contains the odd numbers from the original array.
+
+## Rholang's Fundamentally Different Concurrent Approaches
+
+In the 1980s, [Robin Milner](https://en.wikipedia.org/wiki/Robin_Milner) introduced the pi-calculus as a formal system for modeling concurrent computation. The pi-calculus is based on the idea of processes as communicating agents. Processes can send and receive messages, and they can synchronize their actions with each other.
+
+The pi-calculus is a very general model of concurrency, and it has been used to model a wide variety of concurrent systems, including distributed systems, operating systems, and programming languages.
+
+In the 2000s, Lucius Gregory Meredith and a colleagues, Matthias Radestock introduced rho as a new process calculus for modeling concurrent systems. Rholang, the programming language behind rho-calculs, is based on the idea of processes, which are concurrent entities that can send and receive messages and perform computations.
+
+Rholang differs from the pi-calculus in a number of ways. First, Rholang processes are explicitly typed, while pi-calculus processes are not. Second, Rholang processes can have mutable state, while pi-calculus processes cannot. Third, Rholang processes can communicate with each other using asynchronous messages, while pi-calculus processes can only communicate using synchronous messages.
+
+
+Rholang's use of processes and asynchronous messages provides a number of advantages over the pi-calculus. First, processes are more expressive than pi-calculus processes, because they allow for mutable state and asynchronous communication. Second, Rholang's asynchronous communication model is more efficient than the pi-calculus's synchronous communication model.
 
 ## First Class Objects in Programming Languages
 

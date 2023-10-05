@@ -22,6 +22,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [26-Sept-2023](./lectures/lecture09.md)
 - [28-Sept-2023](./lectures/lecture10.md)
 - [3-Oct-2023](./lectures/lecture11.md)
+- [5-Oct-2023](./lectures/lecture12.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
