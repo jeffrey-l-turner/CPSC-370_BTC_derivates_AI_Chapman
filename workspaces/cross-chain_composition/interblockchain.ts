@@ -42,12 +42,8 @@ interface Blockchain {
             process.exit(0);
         }, 60000); // Terminate after one minute
 
-        blockchain1.createBlock({ info: 'New block in Blockchain1' });
-        blockchain2.createBlock({ info: 'New block in Blockchain2' });
-
-        console.log('Blockchain1:', blockchain1.chain);
-        console.log('Blockchain2:', blockchain2.chain);
-        console.log('Shared State:', sharedState);
+        // Removed direct calls to createBlock method of both blockchains
+        // Removed logs of the blockchain chains and shared state
 
         // Methods for interblockchain communication and managing shared state go here
 
