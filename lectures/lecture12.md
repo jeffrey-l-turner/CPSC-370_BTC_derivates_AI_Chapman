@@ -1,8 +1,6 @@
 # Lecture 12
 
-<div style="width: 150px; height: 150px; display: flex; align-items: center; justify-content: center;">
-    <img src="./Bitcoin_lambda_pi_rho.png" style="max-width: 100%; max-height: 100%;">
-</div>
+<img src="./Bitcoin_lambda_pi_rho.png" width="150" height="150" />
 
 # Housekeeping
 
