@@ -1,3 +1,5 @@
+import Block from './block';
+
 interface Blockchain {
     chain: Block[];
     createBlock: (data: Record<string, unknown>) => void;

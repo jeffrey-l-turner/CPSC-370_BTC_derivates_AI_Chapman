@@ -1,12 +1,5 @@
 import * as crypto from 'crypto';
-
-interface Block {
-    index: number;
-    timestamp: number;
-    data: Record<string, unknown>;
-    previousHash: string | null;
-    hash: string;
-}
+import Block from './block';
 
 const Blockchain2 = () => {
     let chain: Block[] = [];
