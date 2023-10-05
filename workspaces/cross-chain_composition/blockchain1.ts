@@ -28,6 +28,8 @@ const Blockchain1 = () => {
 
         // Write the block to the log file
         fs.appendFileSync(logFile, JSON.stringify(block) + '\n');
+
+        console.warn(`Blockchain1: wrote block to log file 1, ${block}`);
     };
 
     const calculateHash = (block: Block) => {

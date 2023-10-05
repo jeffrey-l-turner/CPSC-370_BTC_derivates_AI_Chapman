@@ -1,6 +1,3 @@
-import Blockchain1 from './blockchain1';
-import Blockchain2 from './blockchain2';
-
 interface Blockchain {
     chain: any[];
     createBlock: (data: any) => void;
@@ -8,12 +5,8 @@ interface Blockchain {
 
     const InterBlockchain = () => {
         console.log('InterBlockchain function called');
-        const blockchain1: Blockchain = Blockchain1();
-        const blockchain2: Blockchain = Blockchain2();
         const sharedState: any = {};
 
-        let chain1Length = blockchain1.chain.length;
-        let chain2Length = blockchain2.chain.length;
         let lastBlockTime: number | null = null;
 
     const fs = require('fs');
@@ -36,14 +29,7 @@ interface Blockchain {
             }
             lastBlockTime = currentTime;
 
-            chain1Length = blocks1.length;
-            chain2Length = blocks2.length;
 
-            sharedState.blockchain1CurrentHash = blocks1[blocks1.length - 1].hash;
-            sharedState.blockchain2CurrentHash = blocks2[blocks2.length - 1].hash;
-
-            console.log('Blockchain1:', blocks1);
-            console.log('Blockchain2:', blocks2);
             console.log('Shared State:', sharedState);
         }
     }, 1000); // Check every second
@@ -58,8 +44,6 @@ interface Blockchain {
 
         // Methods for interblockchain communication and managing shared state go here
         return {
-            blockchain1,
-            blockchain2,
             sharedState
         }
     }
