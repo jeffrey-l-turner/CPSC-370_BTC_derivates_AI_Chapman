@@ -44,11 +44,10 @@ const Blockchain1 = () => {
 
     // Initialize the chain with blocks from the log file
     const blocks = fs.readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
-    if (blocks.length === 0) {
-        // Create the genesis block if the log file is empty
+    chain = blocks;
+    if (chain.length === 0) {
+        // Create the genesis block if the chain is empty
         createBlock({ info: 'Genesis Block' });
-    } else {
-        chain = blocks;
     }
 
     const startProducingBlocks = () => {
