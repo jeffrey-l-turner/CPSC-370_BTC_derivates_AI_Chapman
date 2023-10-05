@@ -3,7 +3,7 @@ import * as crypto from 'crypto';
 interface Block {
     index: number;
     timestamp: number;
-    data: any;
+    data: Record<string, unknown>;
     previousHash: string | null;
     hash: string;
 }

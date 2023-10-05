@@ -1,6 +1,6 @@
 interface Blockchain {
-    chain: any[];
-    createBlock: (data: any) => void;
+    chain: Block[];
+    createBlock: (data: Record<string, unknown>) => void;
 }
 
 const InterBlockchain = () => {
