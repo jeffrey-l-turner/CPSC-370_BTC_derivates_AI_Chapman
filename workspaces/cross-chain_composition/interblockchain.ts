@@ -59,11 +59,11 @@ interface Blockchain {
         // Removed logs of the blockchain chains and shared state
 
         // Methods for interblockchain communication and managing shared state go here
-
         return {
             blockchain1,
             blockchain2,
             sharedState
         }
     }
+
     export default InterBlockchain;
