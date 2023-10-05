@@ -1,6 +1,6 @@
 # Lecture 12
 
-<div align="center" style="width: 300px;"><img src="./Bitcoin_lambda_pi_rho.png"></img></div>
+<div align="center" style="width: 100px;"><img src="./Bitcoin_lambda_pi_rho.png"></img></div>
 
 # Housekeeping
 
