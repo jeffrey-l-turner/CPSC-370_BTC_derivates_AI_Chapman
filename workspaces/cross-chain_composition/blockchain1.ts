@@ -15,6 +15,7 @@ const Blockchain1 = () => {
     const logFile = 'blockchain1.log';
 
     const createBlock = (data: any) => {
+        console.log('createBlock called in Blockchain1');
         const previousBlock = chain[chain.length - 1];
         const block: Block = {
             index: chain.length,
@@ -28,6 +29,7 @@ const Blockchain1 = () => {
 
         // Write the block to the log file
         fs.appendFileSync(logFile, JSON.stringify(block) + '\n');
+        console.log(`Blockchain1: wrote block to log file 1, ${block}`);
     };
 
     const calculateHash = (block: Block) => {
@@ -35,10 +37,17 @@ const Blockchain1 = () => {
         return crypto.createHash('sha256').update(index + timestamp + JSON.stringify(data) + previousHash).digest('hex');
     };
 
-    // Create the genesis block
-    createBlock({ info: 'Genesis Block' });
+    // Initialize the chain with blocks from the log file
+    const blocks = fs.readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
+    if (blocks.length === 0) {
+        // Create the genesis block if the log file is empty
+        createBlock({ info: 'Genesis Block' });
+    } else {
+        chain = blocks;
+    }
 
     const startProducingBlocks = () => {
+        // Start producing blocks from the last block in the chain
         let blockCount = 0;
         const intervalId = setInterval(() => {
             if (blockCount < 5) {
@@ -58,4 +67,5 @@ const Blockchain1 = () => {
         createBlock
     };
 }
+Blockchain1();
 export default Blockchain1;
