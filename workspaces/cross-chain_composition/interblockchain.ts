@@ -15,27 +15,37 @@ interface Blockchain {
         let chain2Length = blockchain2.chain.length;
         let lastBlockTime: number | null = null;
 
-        const checkForNewBlocks = setInterval(() => {
-            if (blockchain1.chain.length === chain1Length && blockchain2.chain.length === chain2Length) {
-                console.log('No new blocks produced. Terminating...');
-                clearInterval(checkForNewBlocks);
-                process.exit(0);
-            } else {
-                const currentTime = Date.now();
-                if (lastBlockTime) {
-                    const interval = currentTime - lastBlockTime;
-                    console.log(`Time interval between blocks: ${interval} ms`);
-                }
-                lastBlockTime = currentTime;
+    const fs = require('fs');
+    const logFile1 = 'blockchain1.log';
+    const logFile2 = 'blockchain2.log';
 
-                chain1Length = blockchain1.chain.length;
-                chain2Length = blockchain2.chain.length;
+    const checkForNewBlocks = setInterval(() => {
+        const blocks1 = fs.readFileSync(logFile1, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
+        const blocks2 = fs.readFileSync(logFile2, 'utf-8').split('\n').filter(Boolean).map(JSON.parse);
 
-                sharedState.blockchain1CurrentHash = blockchain1.chain[blockchain1.chain.length - 1].hash;
-                sharedState.blockchain2CurrentHash = blockchain2.chain[blockchain2.chain.length - 1].hash;
+        if (blocks1.length === chain1Length && blocks2.length === chain2Length) {
+            console.log('No new blocks produced. Terminating...');
+            clearInterval(checkForNewBlocks);
+            process.exit(0);
+        } else {
+            const currentTime = Date.now();
+            if (lastBlockTime) {
+                const interval = currentTime - lastBlockTime;
+                console.log(`Time interval between blocks: ${interval} ms`);
             }
-        }, 10000); // Check every 10 seconds
+            lastBlockTime = currentTime;
 
+            chain1Length = blocks1.length;
+            chain2Length = blocks2.length;
+
+            sharedState.blockchain1CurrentHash = blocks1[blocks1.length - 1].hash;
+            sharedState.blockchain2CurrentHash = blocks2[blocks2.length - 1].hash;
+
+            console.log('Blockchain1:', blocks1);
+            console.log('Blockchain2:', blocks2);
+            console.log('Shared State:', sharedState);
+        }
+    }, 10000); // Check every 10 seconds
         setTimeout(() => {
             console.log('One minute passed. Terminating...');
             clearInterval(checkForNewBlocks);

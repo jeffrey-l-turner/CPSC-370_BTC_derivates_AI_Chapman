@@ -11,6 +11,9 @@ interface Block {
 const Blockchain2 = () => {
     let chain: Block[] = [];
 
+    const fs = require('fs');
+    const logFile = 'blockchain2.log';
+
     const createBlock = (data: any) => {
         const previousBlock = chain[chain.length - 1];
         const block: Block = {
@@ -22,6 +25,9 @@ const Blockchain2 = () => {
         };
         block.hash = calculateHash(block);
         chain.push(block);
+
+        // Write the block to the log file
+        fs.appendFileSync(logFile, JSON.stringify(block) + '\n');
     };
 
     const calculateHash = (block: Block) => {
