@@ -1,5 +1,5 @@
 import * as crypto from 'crypto';
-import Block from './block';
+import { Block } from './types';
 
 const Blockchain1 = () => {
     let chain: Block[] = [];
@@ -12,7 +12,9 @@ const Blockchain1 = () => {
         fs.writeFileSync(logFile, '');
     }
 
-    const createBlock = (data: any) => {
+import BlockData from './types';
+
+    const createBlock = (data: BlockData) => {
         console.log('createBlock called in Blockchain1');
         const previousBlock = chain[chain.length - 1];
         const block: Block = {

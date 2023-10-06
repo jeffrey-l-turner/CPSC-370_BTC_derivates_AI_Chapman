@@ -1,9 +1,13 @@
+interface BlockData {
+    info: string;
+}
+
 interface Block {
     index: number;
     timestamp: number;
-    data: Record<string, unknown>;
+    data: BlockData;
     previousHash: string | null;
     hash: string;
 }
 
-export default Block;
+export { BlockData, Block };
