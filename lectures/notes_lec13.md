@@ -5,6 +5,7 @@
 * [Install Homebrew](https://brew.sh) `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 * [Install NixOS](https://nixos.org/download) `sh <(curl -L https://nixos.org/nix/install) --daemon # optional for later in semester`
 - See [master branch `.zprofile` and `.zshrc` dotfiles](https://github.com/jeffrey-l-turner/dotfiles/tree/master); may `wget` raw files from `dev` branch if experimenting, otherwise use `master`
+- * `brew install wget`
 - * `cd ~; touch .zshrc; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
 - * `touch .zprofile; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zprofile`
 - *Recommended*: use a `.aider.conf.yml` file:
