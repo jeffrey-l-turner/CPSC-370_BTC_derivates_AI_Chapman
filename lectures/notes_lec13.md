@@ -7,14 +7,14 @@
 - See [master branch `.zprofile` and `.zshrc` dotfiles](https://github.com/jeffrey-l-turner/dotfiles/tree/master); may `wget` raw files from `dev` branch if experimenting, otherwise use `master`
 - * `brew install wget`
 - * `cd ~; touch .zshrc; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
-- * `touch .zprofile; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zprofile`
+- * `touch .zprofile; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zprofile >> .zprofile`
 - *Recommended*: use a `.aider.conf.yml` file:
 ```
 openai-api-base: https://openrouter.ai/api/v1
 openai-api-key: sk-or-v1-<your_key>
 model: openai/gpt-4-32k
 ```
-- * *This has been added to the* `.gitignore`
+- * *This* `.yml` *file has been added to the* `.gitignore` *for the project*
 
 ## Type Systems and State Integrity
 
