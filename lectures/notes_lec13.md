@@ -17,6 +17,8 @@ model: openai/gpt-4-32k
 ```
 - * *This* `.yml` *file has been added to the* `.gitignore` *for the project*
 
+#### *Note:*  remember to have `nvm` installed (`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`) which should have been done previously
+
 ## Type Systems and State Integrity
 
 Type systems are used to ensure the safety and correctness of computer programs.
