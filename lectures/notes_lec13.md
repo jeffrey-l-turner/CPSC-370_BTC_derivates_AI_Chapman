@@ -5,8 +5,8 @@
 * [Install Homebrew](https://brew.sh) `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 * [Install NixOS](https://nixos.org/download) `sh <(curl -L https://nixos.org/nix/install) --daemon # optional for later in semester`
 - See [master branch `.zprofile` and `.zshrc` dotfiles](https://github.com/jeffrey-l-turner/dotfiles/tree/master); may `wget` raw files from `dev` branch if experimenting, otherwise use `master`
-- * (`cd ~; touch .zshrc; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`)
-- * (`touch .zprofile; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zprofile`)
+- * `cd ~; touch .zshrc; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
+- * `touch .zprofile; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zprofile`
 - *Recommended*: use a `.aider.conf.yml` file:
 ```
 openai-api-base: https://openrouter.ai/api/v1
@@ -52,3 +52,5 @@ The total value of all UTXOs in a block must be equal to the total value of all 
 These invariants are essential for ensuring the security and integrity of UTXO-based blockchains. By verifying these invariants, we can help to protect users from fraud and theft.
 
 Overall, the UTXO paradigm is a powerful and flexible model for transaction processing. By using invariants to ensure the correctness of UTXO-based systems, we can build secure, scalable, and reliable systems.
+
+### Maintaining System Integrity & Security
