@@ -4,11 +4,10 @@
 * [Install Warp](https://app.warp.dev/referral/PXZMWP)
 * [Install Homebrew](https://brew.sh) `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 * [Install NixOS](https://nixos.org/download) `sh <(curl -L https://nixos.org/nix/install) --daemon # optional for later in semester`
+* [Install oh-my-zsh](https://ohmyz.sh/#install) `sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
 - See [master branch `.zprofile` and `.zshrc` dotfiles](https://github.com/jeffrey-l-turner/dotfiles/tree/master); may `wget` raw files from `dev` branch if experimenting, otherwise use `master`
-- * `brew install wget`
-- * [Install oh-my-zsh](https://ohmyz.sh/#install) `sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
-- * `cd ~; touch .zshrc; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
-- * `touch .zprofile; wget -qO - https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zprofile >> .zprofile`
+- * `cd ~; touch .zshrc; curl https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
+- * `touch .zprofile; curl https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zprofile >> .zprofile`
 - *Recommended*: use a `.aider.conf.yml` file:
 ```
 openai-api-base: https://openrouter.ai/api/v1
