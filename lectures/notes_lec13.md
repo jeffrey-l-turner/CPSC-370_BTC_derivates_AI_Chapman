@@ -35,7 +35,7 @@ By ensuring that operations are idempotent, we can help to prevent errors, ensur
 
 Here are some examples of idempotent operations:
 
-* Transferring money from one bank account to another
+* Transferring value in a single transaction from a blockchain account to another
 * Deleting a file from a disk
 * Inserting a record into a database
 * Sending a message to a queue
@@ -63,7 +63,7 @@ By using these techniques, we can help to make our code more idempotent and impr
 
 ## Type Systems and State Integrity
 
-Type systems are used to ensure the safety and correctness of computer programs.
+Type systems are used to ensure the safety and correctness of computer programs. We can leverage idempotency of operations to insure that a valid global state is maintained in the overall blockchain system.
 
 State validation and integrity assurance is the process of ensuring that the state of a system is valid and consistent. This can be done by using type checkers to verify that the state of the system satisfies certain invariants.
 
