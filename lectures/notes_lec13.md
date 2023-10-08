@@ -19,17 +19,59 @@ model: openai/gpt-4-32k
 
 #### *Note:*  remember to have `nvm` installed (`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`) which should have been done previously
 
+## Idempotency
+
+Idempotency is the property of an operation that ensures that performing the operation multiple times has the same effect as performing it once. In other words, an idempotent operation can be safely repeated without changing the result.
+
+Idempotency is an important property for many operations, such as:
+
+* Financial transactions
+* Database operations
+* Distributed systems (*our focus!*)
+* Caching systems
+* Message queues
+
+By ensuring that operations are idempotent, we can help to prevent errors, ensure data consistency, and improve the performance and scalability of our systems.
+
+Here are some examples of idempotent operations:
+
+* Transferring money from one bank account to another
+* Deleting a file from a disk
+* Inserting a record into a database
+* Sending a message to a queue
+
+Here are some examples of non-idempotent operations:
+
+* Incrementing a counter
+* Writing to a file
+* Updating a database record
+* Sending an email
+
+To make a non-idempotent operation idempotent, we can use techniques such as:
+
+* Using transactions
+* Using idempotent functions
+* Using state validation and integrity assurance
+
+For example, we can use a transaction to ensure that a database operation is either completed successfully or not at all. This will prevent the database from being left in a inconsistent state if the operation is interrupted or fails.
+
+We can also use idempotent functions to make our code more idempotent. An idempotent function is a function that always produces the same result when called with the same arguments, regardless of the number of times it is called.
+
+Finally, we can use state validation and integrity assurance to ensure that our code is idempotent. This involves checking the state of the system before performing an operation and aborting the operation if the system is not in a valid state.
+
+By using these techniques, we can help to make our code more idempotent and improve the reliability, performance, and scalability of our systems.
+
 ## Type Systems and State Integrity
 
 Type systems are used to ensure the safety and correctness of computer programs.
 
 State validation and integrity assurance is the process of ensuring that the state of a system is valid and consistent. This can be done by using type checkers to verify that the state of the system satisfies certain invariants.
 
-For example, we can use a type checker to verify that the state of a bank account satisfies the following invariant:
+For example, we can use a type checker to verify that the state of an account satisfies the following invariant:
 
 `balance >= 0`
 
-This invariant ensures that the bank account balance is always non-negative.
+This invariant ensures that the global state of account balances is always non-negative.
 
 We can also use type checkers to verify that the state of a system satisfies more complex invariants. For example, we can use a type checker to verify that the state of a blockchain satisfies the following invariant:
 
@@ -41,9 +83,10 @@ State validation and integrity assurance is a powerful technique that can be use
 
 Here are some specific examples of how state validation and integrity assurance can be used in type theory:
 
-Type-safe access to memory: Type systems can be used to ensure that memory is accessed safely. For example, a type checker can verify that a pointer is never dereferenced after it has been freed.
-Correctness of data structures: Type systems can be used to ensure that data structures are used correctly. For example, a type checker can verify that a linked list is always in a valid state.
-Consistency of concurrent systems: Type systems can be used to ensure that concurrent systems are consistent. For example, a type checker can verify that two threads never access the same shared variable at the same time.
+- Type-safe access to memory: Type systems can be used to ensure that memory is accessed safely. For example, a type checker can verify that a pointer is never dereferenced after it has been freed.
+- Correctness of data structures: Type systems can be used to ensure that data structures are used correctly. For example, a type checker can verify that a linked list is always in a valid state.
+- Consistency of concurrent systems: Type systems can be used to ensure that concurrent systems are consistent. For example, a type checker can verify that two threads never access the same shared variable at the same time.
+
 Overall, state validation and integrity assurance is a powerful technique that can be used to improve the safety and correctness of computer programs. Type theory provides a framework for implementing state validation and integrity assurance in a rigorous and systematic way.
 
 ### Keeping Invariant State
