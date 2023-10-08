@@ -91,7 +91,7 @@ Overall, state validation and integrity assurance is a powerful technique that c
 
 ### Importance of Keeping Invariant State
 
-Here are some additional invariant examples that are specific to UTXO-based blockchains:
+Here are some additional invariant examples that are specific to Unspent Transaction Output (UTXO) based blockchains:
 
 Every block must contain a valid Merkle root of all UTXOs in the blockchain. This invariant prevents the modification of UTXOs without the consensus of the network.
 Every transaction in a block must be valid and spend unspent transaction outputs from previous blocks. This invariant prevents the double-spending of UTXOs.
@@ -161,10 +161,10 @@ Idempotency can be used to improve the reliability and correctness of 2PC system
 
 Here are some techniques can be used to keep the global state of a blockchain system valid:
 
-- Idempotent operations: All transactions on a blockchain are idempotent. This is because each transaction is uniquely identified by its hash, and no transaction can be applied to the blockchain more than once.
-- State invariants: Some common state invariants for blockchain systems include:
+- Idempotent operations: All transactions on a blockchain are idempotent. This is because each transaction is uniquely identified by its hash, and no transaction can be applied to the blockchain more than once in the distributed system.
+- State invariance: Some common state invariants for blockchain systems include:
 - * The total supply of coins must always be equal to the amount of coins that have been mined.
 - * The balance of each account must always be non-negative.
 - * Each transaction must be valid and spend unspent transaction outputs from previous blocks.
-- Consensus algorithm: Proof-of-work (PoW) is a consensus algorithm that is commonly used in blockchain systems. PoW uses a complex mathematical problem to ensure that all nodes in the network agree on the global state of the system.
+- Consensus algorithm: Proof-of-work (PoW) is a consensus algorithm that is commonly used in UTXO blockchain systems. PoW uses a complex mathematical problem to ensure that all nodes in the network agree on the global state of the system. Another consensus approach commonly used in account-based Blockchains is Proof of Stake (PoS).
 
