@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import logo from './public/chapman_panther.png'; // Import the new image
 
 function App() {
   const [blockchainData, setBlockchainData] = useState(null);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={logo} className="App-logo" alt="logo" /> {/* Use the new image */}
       {blockchainData && (
         <div>
           <h1>Bitcoin Price Index</h1>
