@@ -12,6 +12,7 @@
 - New context window size and demo set up. 
 - Send Pull Requests for my review to my Chapman email
 - If in need of office hours, please DM. Had Zoom problem yesterday.
+- Canvas Grading Rubric to be restored.
 
 # Using dotfiles and Homebrew on MacOS (better M2 setup)
 * [Install Warp](https://app.warp.dev/referral/PXZMWP)
