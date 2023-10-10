@@ -1,24 +1,5 @@
 # 7th Week Start
 
-### Using dotfiles and Homebrew on MacOS (better M2 setup)
-* [Install Warp](https://app.warp.dev/referral/PXZMWP)
-* [Install Homebrew](https://brew.sh) `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-* [Install NixOS](https://nixos.org/download) `sh <(curl -L https://nixos.org/nix/install) --daemon # optional for later in semester`
-* [Install oh-my-zsh](https://ohmyz.sh/#install) `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-- See [master branch `.zprofile` and `.zshrc` dotfiles](https://github.com/jeffrey-l-turner/dotfiles/tree/master); may `curl` raw files from `dev` branch if experimenting, otherwise use `master`
-- * `cd ~; touch .zshrc; curl https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
-- * `touch .zprofile; curl https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zprofile >> .zprofile`
-* Start a new terminal/warp session to have changes take effect
-- *Recommended*: use a `.aider.conf.yml` file:
-```
-openai-api-base: https://openrouter.ai/api/v1
-openai-api-key: sk-or-v1-<your_key>
-model: openai/gpt-4-32k
-```
-- * *This* `.yml` *file has been added to the* `.gitignore` *for the project*
-
-#### *Note:*  remember to have `nvm` installed (`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`) which should have been done previously
-
 ## Idempotency
 
 Idempotency is the property of an operation that ensures that performing the operation multiple times has the same effect as performing it once. In other words, an idempotent operation can be safely repeated without changing the result.
