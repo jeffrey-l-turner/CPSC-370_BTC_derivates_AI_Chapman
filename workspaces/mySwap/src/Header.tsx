@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="uniswap-header">
-      <img src={logo} alt="Chapman class logo" />
+      <img src="./chapman_class_logo.svg" alt="Chapman class logo" />
       <h1>MySwap</h1>
     </header>
   );
