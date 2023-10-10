@@ -1,4 +1,4 @@
-# Lecture 13
+# Lecture 12
 
 <div align="center">
   <img src="./Bitcoin_lambda_pi_rho.png" width="250" height="250" />
