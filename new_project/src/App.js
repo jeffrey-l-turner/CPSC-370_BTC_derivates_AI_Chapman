@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import logo from './public/chapman_panther.png'; // Import the new image
+import logo from '../public/chapman_panther.png'; // Corrected path
 
 function App() {
   const [blockchainData, setBlockchainData] = useState(null);
