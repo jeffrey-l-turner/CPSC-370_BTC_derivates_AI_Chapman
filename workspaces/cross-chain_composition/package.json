@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "ts-jest": "^29.7.0"
   }
 }
