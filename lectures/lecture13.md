@@ -1,7 +1,7 @@
-# Lecture 12
+# Lecture 13
 
 <div align="center">
-  <img src="./Bitcoin_idempotent.png" width="250" height="250" />
+  <img src="./Bitcoin_idemp.png" width="250" height="250" />
 </div>
 
 # Housekeeping
@@ -10,6 +10,8 @@
 - Mid-term next week; Will be in class and proctered.
 - Reminder: Upgdate your Aider: `pip install aider-chat`
 - New context window size and demo set up. 
+- Send Pull Requests for my review to my Chapman email
+- If in need of office hours, please DM. Had Zoom problem yesterday.
 
 # Using dotfiles and Homebrew on MacOS (better M2 setup)
 * [Install Warp](https://app.warp.dev/referral/PXZMWP)
