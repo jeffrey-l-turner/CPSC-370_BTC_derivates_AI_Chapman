@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./chapman_panther.png";
 
 interface HeaderProps {
   // No props needed for this component
@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="uniswap-header">
-      <img src={logo} alt="Uniswap logo" />
+      <img src={logo} alt="Chapman Panther logo" />
       <h1>MySwap</h1>
     </header>
   );
