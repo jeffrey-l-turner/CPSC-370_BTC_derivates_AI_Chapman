@@ -1,27 +1,36 @@
 # 7th Week Start
 
-### Using dotfiles and Homebrew on MacOS (better M2 setup)
-* [Install Warp](https://app.warp.dev/referral/PXZMWP)
-* [Install Homebrew](https://brew.sh) `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-* [Install NixOS](https://nixos.org/download) `sh <(curl -L https://nixos.org/nix/install) --daemon # optional for later in semester`
-* [Install oh-my-zsh](https://ohmyz.sh/#install) `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-- See [master branch `.zprofile` and `.zshrc` dotfiles](https://github.com/jeffrey-l-turner/dotfiles/tree/master); may `curl` raw files from `dev` branch if experimenting, otherwise use `master`
-- * `cd ~; touch .zshrc; curl https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zshrc >> .zshrc`
-- * `touch .zprofile; curl https://raw.githubusercontent.com/jeffrey-l-turner/dotfiles/master/.zprofile >> .zprofile`
-* Start a new terminal/warp session to have changes take effect
-- *Recommended*: use a `.aider.conf.yml` file:
-```
-openai-api-base: https://openrouter.ai/api/v1
-openai-api-key: sk-or-v1-<your_key>
-model: openai/gpt-4-32k
-```
-- * *This* `.yml` *file has been added to the* `.gitignore` *for the project*
-
-#### *Note:*  remember to have `nvm` installed (`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`) which should have been done previously
-
 ## Idempotency
 
+* Concurrency Idepmpotancy Theorem:
+* * *If a function is idempotent, then it is also safe to call concurrently.*
+
+This means that if you can call a function multiple times without changing the outcome, then you can also call it concurrently (meaning from multiple threads or processes) without any problems.
+
+This theorem is important because it allows us to design concurrent systems that are more robust and reliable. By using idempotent functions, we can avoid the race conditions and other concurrency problems that can occur when multiple threads or processes are trying to modify the same data at the same time.
+
+Here is an example of an idempotent function:
+
+def increment(counter):
+  counter += 1
+This function increments a counter by 1. It is idempotent because calling it multiple times will have the same effect as calling it once. For example, if we start with a counter value of 0 and call the increment() function twice, the counter value will be 2. If we call the increment() function four times, the counter value will also be 2.
+
+We can safely call the increment() function concurrently from multiple threads or processes without any problems. This is because the function is idempotent.
+
+Here is an example of a non-idempotent function:
+
+def decrement(counter):
+  if counter > 0:
+    counter -= 1
+This function decrements a counter by 1, but only if the counter value is greater than 0. It is not idempotent because calling it multiple times can change the outcome. For example, if we start with a counter value of 0 and call the decrement() function twice, the counter value will still be 0. If we call the decrement() function four times, the counter value will be -2.
+
+We cannot safely call the decrement() function concurrently from multiple threads or processes. This is because the function is not idempotent.
+
+The concurrency idempotency theorem is a powerful tool that can help us to design more robust and reliable concurrent systems. By using idempotent functions, we can avoid the race conditions and other concurrency problems that can occur when multiple threads or processes are trying to modify the same data at the same time.
+
 Idempotency is the property of an operation that ensures that performing the operation multiple times has the same effect as performing it once. In other words, an idempotent operation can be safely repeated without changing the result.
+
+### Use in design of distributed systems
 
 Idempotency is an important property for many operations, such as:
 
