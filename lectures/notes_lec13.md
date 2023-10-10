@@ -34,9 +34,9 @@ Idempotency is the property of an operation that ensures that performing the ope
 
 Idempotency is an important property for many operations, such as:
 
+* Distributed systems (*our focus!*)
 * Financial transactions
 * Database operations
-* Distributed systems (*our focus!*)
 * Caching systems
 * Message queues
 
@@ -170,7 +170,7 @@ Idempotency can be used to improve the reliability and correctness of 2PC system
 
 Here are some techniques can be used to keep the global state of a blockchain system valid:
 
-- Idempotent operations: All transactions on a blockchain are idempotent. This is because each transaction is uniquely identified by its hash, and no transaction can be applied to the blockchain more than once in the distributed system.
+- Idempotent operations: All transactions on a blockchain are idempotent. This is because each transaction relies on the current state of the chain to a uniquely identified hash, and no transaction can be applied to the blockchain more than once in the distributed system.
 - State invariance: Some common state invariants for blockchain systems include:
 - * The total supply of coins must always be equal to the amount of coins that have been mined.
 - * The balance of each account must always be non-negative.
