@@ -2,7 +2,35 @@
 
 ## Idempotency
 
+* Concurrency Idepmpotancy Theorem:
+* * *If a function is idempotent, then it is also safe to call concurrently.*
+
+This means that if you can call a function multiple times without changing the outcome, then you can also call it concurrently (meaning from multiple threads or processes) without any problems.
+
+This theorem is important because it allows us to design concurrent systems that are more robust and reliable. By using idempotent functions, we can avoid the race conditions and other concurrency problems that can occur when multiple threads or processes are trying to modify the same data at the same time.
+
+Here is an example of an idempotent function:
+
+def increment(counter):
+  counter += 1
+This function increments a counter by 1. It is idempotent because calling it multiple times will have the same effect as calling it once. For example, if we start with a counter value of 0 and call the increment() function twice, the counter value will be 2. If we call the increment() function four times, the counter value will also be 2.
+
+We can safely call the increment() function concurrently from multiple threads or processes without any problems. This is because the function is idempotent.
+
+Here is an example of a non-idempotent function:
+
+def decrement(counter):
+  if counter > 0:
+    counter -= 1
+This function decrements a counter by 1, but only if the counter value is greater than 0. It is not idempotent because calling it multiple times can change the outcome. For example, if we start with a counter value of 0 and call the decrement() function twice, the counter value will still be 0. If we call the decrement() function four times, the counter value will be -2.
+
+We cannot safely call the decrement() function concurrently from multiple threads or processes. This is because the function is not idempotent.
+
+The concurrency idempotency theorem is a powerful tool that can help us to design more robust and reliable concurrent systems. By using idempotent functions, we can avoid the race conditions and other concurrency problems that can occur when multiple threads or processes are trying to modify the same data at the same time.
+
 Idempotency is the property of an operation that ensures that performing the operation multiple times has the same effect as performing it once. In other words, an idempotent operation can be safely repeated without changing the result.
+
+### Use in design of distributed systems
 
 Idempotency is an important property for many operations, such as:
 

@@ -6,12 +6,10 @@
 
 # Housekeeping
 
-- Switched over to openrouter.ai (budget $15/month/student);
-- Assignment will have 3 coding exercises combined since we've been out of AI credits; See Assignment below
+- Switched over to openrouter.ai (budget $15/month/student); DM me if any issues
+- Mid-term next week; Will be in class and proctered.
 - Reminder: Upgdate your Aider: `pip install aider-chat`
-- New additions to [`prompt_book.md`](../workspaces/prompt_book.md)
-- Week 6 Quiz published. Please see details in Canvas.
-- New context window size and demo set up. (TBD)
+- New context window size and demo set up. 
 
 # Using dotfiles and Homebrew on MacOS (better M2 setup)
 * [Install Warp](https://app.warp.dev/referral/PXZMWP)
