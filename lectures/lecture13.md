@@ -1,7 +1,7 @@
-# Lecture 12
+# Lecture 13
 
 <div align="center">
-  <img src="./Bitcoin_idempotent.png" width="250" height="250" />
+  <img src="./Bitcoin_idemp.png" width="250" height="250" />
 </div>
 
 # Housekeeping
