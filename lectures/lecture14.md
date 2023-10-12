@@ -21,7 +21,7 @@
 * The Oracle Problem
 
 ## Cross-/Inter-Chain
-* Decentralized Exchanges ("DeXs")[e.g. Uniswap](https://uniswap.org)
+* Decentralized Exchanges ("DeXs") [e.g. Uniswap](https://uniswap.org)
 * Marketplaces:
 > * Non-Fungible Tokens (NFTs) [e.g. Opensea](https://opensea.com)
 > * Other Virtual Goods (games, tickets, rights management, etc.)
@@ -37,11 +37,11 @@
 ## Intra-Chain
 * All of above
 * Smart Contract "DApps"
-* Decentralized Storage [e.g. IPFS]()
-* Decentralized Social Media [e.g. Nostr]()
-* Decentralized Resource Registration [ENS (e.g. Domain Name Systems)]() 
+* Decentralized Storage [e.g. IPFS](https://ipfs.tech/)
+* Decentralized Social Media [e.g. Nostr](https://nostr.com/)
+* Decentralized Resource Registration [ENS (e.g. Domain Name Systems)](https://ens.domains/) 
 * Decentralized Identity (see above)
-* Decentralized Autonomous Organization (DAO) Governance [(Now thousands)]()
+* Decentralized Autonomous Organization (DAO) Governance [(Now thousands)](https://www.investopedia.com/tech/what-dao/)
 
 # [Suitability for Decentralized App Development](./notes_lec14.md)
 - "Trustless" Interaction
