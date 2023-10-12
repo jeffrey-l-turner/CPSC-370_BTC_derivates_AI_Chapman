@@ -29,7 +29,7 @@
 * Gaming [e.g. Animoca](https://www.animocabrands.com/primary-game-products)
 * Metaverse [e.g. Meta (Facebook) DApp ](https://www.coindesk.com/web3/2023/03/10/facebook-parent-company-meta-exploring-decentralized-app-report/)
 * Identity [e.g. Worldcoin Orb](https://www.theguardian.com/technology/2023/jul/28/crypto-firm-wants-to-scan-your-eyeballs-worldcoin-privacy-ai)
-* Insurance [e.g. Crop](https://chainlinktoday.com/march-2023-recap-etheriscs-chainlink-powered-crop-insurance-continues-to-scale-in-kenya-pwc-germany-partners-with-chainlink-labs-to-boost-enterprise-blockchain-adoption/) [Kenyan Farmers](https://chainlinktoday.com/additional-7000-kenyan-farmers-protected-by-etheriscs-chainlink-powered-parametric-crop-insurance/)
+* Insurance [e.g. Crop Ins.](https://chainlinktoday.com/march-2023-recap-etheriscs-chainlink-powered-crop-insurance-continues-to-scale-in-kenya-pwc-germany-partners-with-chainlink-labs-to-boost-enterprise-blockchain-adoption/) [- Kenyan Farmers](https://chainlinktoday.com/additional-7000-kenyan-farmers-protected-by-etheriscs-chainlink-powered-parametric-crop-insurance/)
 * Data Federation, Provenance & Sequestration (whiteboard)
 * Governance (on-chain/cross-chain)
 * Bridging Services (& Cross-Chain Execution)
