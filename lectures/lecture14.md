@@ -22,9 +22,9 @@
 
 ## Cross-/Inter-Chain
 * Decentralized Exchanges ("DeXs")[e.g. Uniswap](https://uniswap.org)
-* Marketplaces
-- * Non-Fungible Tokens (NFTs) [e.g. Opensea](https://opensea.com)
-- * Other Virtual Goods
+* Marketplaces:
+> * Non-Fungible Tokens (NFTs) [e.g. Opensea](https://opensea.com)
+> * Other Virtual Goods (games, tickets, rights management, etc.)
 * [Decentralized Finance](https://defillama.com/)
 * Gaming [e.g. Animoca](https://www.animocabrands.com/primary-game-products)
 * Metaverse [e.g. Meta (Facebook) DApp ](https://www.coindesk.com/web3/2023/03/10/facebook-parent-company-meta-exploring-decentralized-app-report/)
