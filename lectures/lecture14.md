@@ -14,10 +14,11 @@
 
 # A Survey of Decentralized Applications & Immutable Services:
 
-## Notes on Layer 1 versus 2
+## Layer 1 and 2 & the Oracle Problem Revisited
 * Layer 1 "Base" -- Layer 2 as an Extension
 * [Optimistic Rollups (generalized concurrency control)](https://en.wikipedia.org/wiki/Optimistic_concurrency_control)
 * [ZK (Zero Knowledge) Rollups and others](https://vitalik.ca/general/2021/01/05/rollup.html)
+* The Oracle Problem
 
 ## Cross-/Inter-Chain
 * Decentralized Exchanges ("DeXs")[e.g. Uniswap](https://uniswap.org)
