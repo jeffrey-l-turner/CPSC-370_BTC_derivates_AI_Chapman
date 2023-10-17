@@ -12,6 +12,8 @@
 
 # Pull Request Reviews
 
+- Noah, Jaden, Paul, Chris
+
 ## Common Problems
 
 ## Resources
