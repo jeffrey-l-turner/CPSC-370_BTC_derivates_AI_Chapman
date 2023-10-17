@@ -1,0 +1,23 @@
+{
+  "name": "cross-chain_composition",
+  "version": "0.0.1",
+  "description": "CPSC 370 assignments",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "npm run start:interblock && (ts-node blockchain1.ts & ts-node blockchain2.ts & wait)",
+    "start:blockchain2": "ts-node blockchain2.ts",
+    "start:interblock": "ts-node interblockchain.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.1",
+    "ts-jest": "^29.7.0"
+  }
+}

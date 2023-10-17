@@ -15,10 +15,31 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [31-Aug-2023](./lectures/lecture02.md)
 - [5-Sept-2023](./lectures/lecture03.md)
 - [7-Sept-2023](./lectures/lecture04.md)
+- [12-Sept-2023](./lectures/lecture05.md)
+- [14-Sept-2023](./lectures/lecture06.md)
+- [19-Sept-2023](./lectures/lecture07.md)
+- [21-Sept-2023](./lectures/lecture08.md)
+- [26-Sept-2023](./lectures/lecture09.md)
+- [28-Sept-2023](./lectures/lecture10.md)
+- [3-Oct-2023](./lectures/lecture11.md)
+- [5-Oct-2023](./lectures/lecture12.md)
+- [10-Oct-2023](./lectures/lecture13.md)
+- [12-Oct-2023](./lectures/lecture14.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
 - [First Quiz](https://canvas.chapman.edu/courses/56721/quizzes/103845/take)
+- [Second Assignment; Due End of Day 12-Sept-2023](./assignments/7_Sept_2023.md)
+- Second/Third Quiz sent; Due End of Day 18-Sept-2023
+- Fourth Week Quiz out EoD 19th; Due by End of Day 24-Sept-2023
+- Fifth Week Quiz out on 27th; Due by End of Day 2-October-2023
+- Sixth Week Quiz out on 5th; Due by End of Day 5-October-2023
+- Seventh Week Quiz out on 12th; Due by End of Day 18-October-2023
+
+### Resourcs
+
+* [Warp](app.warp.dev/referral/PXZMWP)
+* [settings.json for VSCode](./resources/settings.json)
 
 ### Testnet Project Outline:
 
