@@ -13,7 +13,7 @@
 
 # Pull Request Reviews
 
-- Noah, Jaden, Paul, Chris
+- Noah, Jaden, Paul, Chris, Jack, Gilberto
 
 ## Common Problems
 
