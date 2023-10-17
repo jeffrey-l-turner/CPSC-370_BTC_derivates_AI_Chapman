@@ -9,6 +9,7 @@
 - Mid Term
 - Help with PRs
 - Mid-term Review
+- PR Canvas Submissions (if not on GitHub)
 
 # Pull Request Reviews
 
