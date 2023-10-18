@@ -1,0 +1,50 @@
+/* src/components/LatestBlocks.css */
+
+.latest-blocks {
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF;
+    width: 100%;
+    background-color: #1A1A1D;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #D1D1D6;
+}
+
+.block-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.block-header, .block-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.block-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #D1D1D6;
+    font-size: 16px;
+}
+
+.block-col {
+    padding: 15px 10px;
+    border: 1px solid #2D2D31;
+    background-color: #232326;
+    color: #D1D1D6;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.block-row:hover {
+    background-color: #313136;
+}
+
