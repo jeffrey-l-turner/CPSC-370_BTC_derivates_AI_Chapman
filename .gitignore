@@ -4,8 +4,8 @@
 devenv.local.nix
 
 .DS_Store
-.aider*
 yarn.lock
 workspaces/mySwap/node_modules/
 workspaces/mySwap/src/abis
 workspaces/mySwap/src/types/v3
+**/node_modules/
