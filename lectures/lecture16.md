@@ -8,7 +8,7 @@
 
 - Mid Term Results to be published today
 - More help with PRs and Git
-- Update PR Submissions to Monday after office hours
+- Update PR Submissions to Monday by EoD; see me during office hours if help needed after class review today
 - DM / Visit office hours for Quizzes/Mid-term Grade Boost
 - AI Usage Limits with Open Router substituting Open AI
 ```
