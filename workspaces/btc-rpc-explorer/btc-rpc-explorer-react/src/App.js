@@ -1,31 +1,17 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
-import LatestBlocks from './components/LatestBlocks';
+
+import React from 'react';
 import './App.css';
+import LatestBlocks from './components/LatestBlocks';
 
 function App() {
-  const [blocks, setBlocks] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://blockchain.info/blocks?format=json');
-        const data = await response.json();
-        //setBlocks(data.blocks); // Adjust this line based on the API's response structure
-      } catch (error) {
-        console.error('Error fetching blocks:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  return (
-    <div className="App">
-      <LatestBlocks blocks={blocks} />
-    </div>
-  );
+    return (
+        <div className="app">
+            <div className="container">
+                <LatestBlocks />
+            </div>
+        </div>
+    );
 }
 
 export default App;
-
