@@ -1,7 +1,7 @@
 # Lecture 16
 
 <div align="center">
-  <img src="./Dex.png" width="250" height="250" />
+  <img src="./DeX.png" width="250" height="250" />
 </div>
 
 # Housekeeping
