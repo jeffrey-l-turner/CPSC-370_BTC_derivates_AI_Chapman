@@ -59,3 +59,4 @@ mv .aider.conf.yml-oai .aider.conf.yml
 * [Decentralized Exchanges](https://coinmarketcap.com/academy/article/the-evolution-of-decentralized-exchanges)
 * [CLOB and AMM Compared](https://www.blog.goosefx.io/clob-vs-amms/)
 * [Decentralized Media Evolution](https://tftc.io/453-from-barstool-to-mash-with-louis-roberts/)
+* [Class Note Graphics](./19Oct_class_notes.png)
