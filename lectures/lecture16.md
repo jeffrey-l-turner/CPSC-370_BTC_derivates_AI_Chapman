@@ -20,7 +20,9 @@ mv .aider.conf.yml-oai .aider.conf.yml
 
 - Please see me if you need help or DM.
 
+## this is to see a merge conflict
 ## Using git with PR submission:
+## this is to see a merge conflict
 
 - Logging
 - `git bisect`
