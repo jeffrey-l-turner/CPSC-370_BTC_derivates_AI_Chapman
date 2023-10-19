@@ -9,6 +9,7 @@
 - Mid Term Results to be published today
 - More help with PRs and Git
 - Update PR Submissions to Monday after office hours
+- DM / Visit office hours for Quizzes/Mid-term Grade Boost
 - AI Usage Limits with Open Router substituting Open AI
 ```
 mv .aider.conf.yml .aider.conf.yml-or
