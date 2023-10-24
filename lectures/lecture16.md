@@ -45,7 +45,7 @@ mv .aider.conf.yml-oai .aider.conf.yml
 | Fees | CLOB exchanges typically charge trading fees. | AMM exchanges typically charge trading fees and liquidity pool fees. |
 
 * Counterparty Matching versus Pooling
-- * Generalized Differences between automated pools and counterparties (see TontineLinks to an external site.)
+- * Generalized Differences between automated pools and counterparties [(see Tontine)](https://en.wikipedia.org/wiki/Tontine).
 - * Automation via Smart Contracts
 * Applying these concepts to finance
 * - Centralized Institutional Approaches & Intermediaries
@@ -59,3 +59,4 @@ mv .aider.conf.yml-oai .aider.conf.yml
 * [Decentralized Exchanges](https://coinmarketcap.com/academy/article/the-evolution-of-decentralized-exchanges)
 * [CLOB and AMM Compared](https://www.blog.goosefx.io/clob-vs-amms/)
 * [Decentralized Media Evolution](https://tftc.io/453-from-barstool-to-mash-with-louis-roberts/)
+* [Class Note Graphics](./19Oct_class_notes.png)
