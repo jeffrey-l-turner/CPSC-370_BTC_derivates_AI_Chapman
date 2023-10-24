@@ -10,7 +10,7 @@
 - OpenAI/OpenRouter Credits
 - GitHub PR Reviews
 - Assume everyone has GitHub properly established by now
-- Visit office hours to Demo Mindmap for Quiz Boost: only if grades is under 75%
+- Visit office hours to Demo Mindmap for Quiz Boost: only if grades is under 80%
 - Guest Lecturers next two classes 
 - Next quiz out tomorrow
 
