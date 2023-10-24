@@ -53,4 +53,5 @@
 
 ## Resources
 
-* [Flash Loans and Trading Bots]()
+* [Lecture Graphics Notes](./lecture_notes17.png)
+* [Flash Loans and Trading Bots](https://youtu.be/m0VBsAOMsw8?si=bQUm6RmYiwzRPF4V)
