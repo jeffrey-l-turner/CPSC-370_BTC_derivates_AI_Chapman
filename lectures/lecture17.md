@@ -6,7 +6,7 @@
 
 # Housekeeping
 
-- [Student Services Satisfaction Survey (SSSS)](tbd)
+- [Student Services Satisfaction Survey (SSSS)](https://www.chapman.edu/2023-satisfaction-survey)
 - BTC/Crypto Rally & Crypto Crackdown
 - OpenAI/OpenRouter Credits
 - GitHub PR Reviews
