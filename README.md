@@ -38,6 +38,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - Fifth Week Quiz out on 27th; Due by End of Day 2-October-2023
 - Sixth Week Quiz out on 5th; Due by End of Day 5-October-2023
 - Seventh Week Quiz out on 12th; Due by End of Day 18-October-2023
+- Eigth Week Quiz out on 25th; Due by End of Day 29-October-2023
 
 ### Resourcs
 
