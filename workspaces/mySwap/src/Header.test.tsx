@@ -6,7 +6,7 @@ import { Header } from './Header';
 test('renders logo', () => {
   const renderHeaderAndCheckLogo = compose(
     (logoElement) => expect(logoElement).toBeInTheDocument(),
-    () => screen.getByAltText(/Uniswap logo/i),
+    () => screen.getByAltText(/MySwap Logo/i),
     () => render(<Header />)
   );
 

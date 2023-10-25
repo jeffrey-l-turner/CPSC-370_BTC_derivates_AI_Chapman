@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the title */
+  margin-bottom: 20px;
+  color: #E5E5E5;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%; /* Round the corners of the logo */
+}
+
+.header-title {
+  font-size: 1.8em;
+  color:#E5E5E5;
+  font-weight: bold;
+}

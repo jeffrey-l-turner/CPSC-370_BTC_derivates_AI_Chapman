@@ -1,14 +1,15 @@
 import React from "react";
+import './Portfolio.css';
 
 interface PortfolioProps {
-  // Props for the portfolio component
+  portfolio: { [key: string]: { balance: number; value: number } };
 }
 
-const Portfolio: React.FC<PortfolioProps> = () => {
+const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
   return (
-    <div className="uniswap-portfolio">
-      <h2>Your Portfolio</h2>
-      <table>
+    <div className="portfolio">
+      <h2 className="portfolio-title">Portfolio</h2>
+      <table className="portfolio-table">
         <thead>
           <tr>
             <th>Token</th>
@@ -17,21 +18,13 @@ const Portfolio: React.FC<PortfolioProps> = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>ETH</td>
-            <td>10.000000</td>
-            <td>$500.00</td>
-          </tr>
-          <tr>
-            <td>DAI</td>
-            <td>1000.000000</td>
-            <td>$1000.00</td>
-          </tr>
-          <tr>
-            <td>USDC</td>
-            <td>1000.000000</td>
-            <td>$1000.00</td>
-          </tr>
+          {Object.entries(portfolio).map(([token, { balance, value }]) => (
+            <tr key={token}>
+              <td>{token}</td>
+              <td>{Number(balance.toFixed(2)).toLocaleString()}</td>
+              <td>${Number(value.toFixed(2)).toLocaleString()}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

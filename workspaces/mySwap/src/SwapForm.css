@@ -1,0 +1,44 @@
+.swap-form {
+  width: 20%;
+  height: 50%;
+  background: #282828;
+  color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; /* Add right margin */
+  padding: 20px; /* Add padding */
+}
+
+.swap-form label {
+  display: block;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.swap-form input, .swap-form select {
+  width: auto;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.swap-button {
+  background: #ff007f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.swap-button:hover {
+  background: #b3003f;
+}
