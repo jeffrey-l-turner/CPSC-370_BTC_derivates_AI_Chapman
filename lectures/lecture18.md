@@ -1,7 +1,7 @@
 # Lecture 18
 
 <div align="center">
-  <img src="./Orange_bull_Bitcoin_neck.png" width="250" height="250" />
+  <img src="./RGB_sd.png" width="250" height="250" />
 </div>
 
 # Housekeeping
@@ -33,7 +33,10 @@ Should have:
 - * `cargo install rgb`
 - try: `rgb -h`
 
+## Assignment
+
+- [TBD: post guest lecture]()
+
 ## Resources
 
-* 
-* 
+* [RGB Standards](https://github.com/rgb-org) 
