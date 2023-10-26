@@ -21,6 +21,13 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [21-Sept-2023](./lectures/lecture08.md)
 - [26-Sept-2023](./lectures/lecture09.md)
 - [28-Sept-2023](./lectures/lecture10.md)
+- [3-Oct-2023](./lectures/lecture11.md)
+- [5-Oct-2023](./lectures/lecture12.md)
+- [10-Oct-2023](./lectures/lecture13.md)
+- [12-Oct-2023](./lectures/lecture14.md)
+- [17-Oct-2023](./lectures/lecture15.md)
+- [19-Oct-2023](./lectures/lecture16.md)
+- [24-Oct-2023](./lectures/lecture17.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
@@ -29,6 +36,9 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - Second/Third Quiz sent; Due End of Day 18-Sept-2023
 - Fourth Week Quiz out EoD 19th; Due by End of Day 24-Sept-2023
 - Fifth Week Quiz out on 27th; Due by End of Day 2-October-2023
+- Sixth Week Quiz out on 5th; Due by End of Day 5-October-2023
+- Seventh Week Quiz out on 12th; Due by End of Day 18-October-2023
+- Eigth Week Quiz out on 25th; Due by End of Day 29-October-2023
 
 ### Resourcs
 
