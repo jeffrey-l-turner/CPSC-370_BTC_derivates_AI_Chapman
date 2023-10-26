@@ -1,0 +1,29 @@
+header {
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em; /* Smaller font size on small screens */
+  }
+}
+
+header p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  color: #fff;
+}
+
+header a {
+  color: #007BFF; /* Accent color */
+  transition: color 0.3s ease; /* Transition effect */
+}
