@@ -1,0 +1,75 @@
+
+# 2023-09-12 12:36:54.971297
++Add a hello world function to app/api/mockApi.js so that I know my setup is working correctly
+
+# 2023-09-12 12:37:46.864096
++cd ../
+
+# 2023-09-12 12:38:19.844486
++Add a hello world function to this file so that I know my setup is working correctly
+
+# 2023-09-12 12:40:16.107204
++git diff
+
+# 2023-09-12 13:02:44.285636
++Rewrite the `workspaces/btc-rpc-explorer/app/api/mockApi.js` to use async await
+
+# 2023-09-12 13:03:13.812339
++Are you familiar with the blockchain.com apis?
+
+# 2023-09-12 13:03:58.405908
++Rewrite the functions in mockApi.js to use blockchain.com apis. Use node-fetch-commonjs and wrap fetches in try catch blocks to handle errors.
+
+# 2023-09-12 13:11:21.602146
++Actually use axios instead of node-fecth-commonjs since axios is already a dependency within our react app
+
+# 2023-09-12 13:11:29.481832
++/clear
+
+# 2023-09-12 13:11:31.381138
++Actually use axios instead of node-fecth-commonjs since axios is already a dependency within our react app
+
+# 2023-09-12 13:14:41.992663
++The react app does not start with npm run start. I get the following error: SyntaxError: Cannot use import statement outside a module. How would I adjust my project setup or this file to fix this problem?
+
+# 2023-09-12 13:15:58.761654
++Now I am getting SyntaxError: Unexpected token '<'
++    at internalCompileFunction (node:internal/vm:73:18)
++    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
++    at Module._compile (node:internal/modules/cjs/loader:1218:27)
++    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
++    at Module.load (node:internal/modules/cjs/loader:1117:32)
++    at Module._load (node:internal/modules/cjs/loader:958:12)
++    at Module.require (node:internal/modules/cjs/loader:1141:19)
++    at require (node:internal/modules/cjs/helpers:110:18)
++    at Object.<anonymous> (/Users/carsonmccue/Desktop/CPSC-370_BTC_derivates_AI_Chapman/workspaces/btc-rpc-explorer/bin/www:6:13)
++
+
+# 2023-09-12 13:16:45.038974
++Can you install those packages for me or do I need to do that?
+
+# 2023-09-12 13:17:37.524468
++I installed the packages. Make .babelrc file in `workspaces/btc-rpc-explorer` and update the package.json.
+
+# 2023-09-12 13:22:23.279750
++/drop
+
+# 2023-09-12 13:23:06.913102
++How would I resolve babel-node command not found?
+
+# 2023-09-12 13:28:06.042583
++Refactor `workspaces/counter-app/src/App.js` to use htmx` 
+
+# 2023-09-12 13:29:52.638367
++How would I resolve this aider issue: DO NOT skip blank lines, comments, docstrings, etc!
++The HEAD block needs to be EXACTLY the same as the lines in workspaces/counter-app/src/App.js with nothing missing!
++
+
+# 2023-09-12 13:30:14.232128
++Refactor `workspaces/counter-app/src/App.js` to use htmx` 
+
+# 2023-09-12 13:36:16.065931
++Edit `workspaces/btc-rpc-explorer/app/api/mockApi.js` to use arrow functions
+
+# 2023-09-12 13:39:18.923607
++Refactor the functions where possible to use the blockchain.com api. If there are noticeable differences between the return type of the api and the existing data, try to transform the data from the blockchain.com to fit the return type of the current implementation. Use fake data if necessary to fill in the gaps. 
