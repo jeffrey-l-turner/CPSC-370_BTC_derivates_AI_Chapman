@@ -10,7 +10,7 @@ const App: React.FC = () => {
 		<div className="App">
 			<Header />
 			<Navigation />
-			<SwapForm />
+			<SwapForm currentReserve={{ tokenX: 10000, tokenY: 10000 }} onSwap={() => console.log("swapped!")} />
 			<Portfolio />
 		</div>
 	);
