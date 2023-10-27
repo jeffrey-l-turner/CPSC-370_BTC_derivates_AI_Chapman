@@ -1,4 +1,3 @@
-
 # Devenv
 .devenv*
 devenv.local.nix
@@ -6,7 +5,13 @@ devenv.local.nix
 .DS_Store
 .aider*
 **/node_modules/
+
+# Include these from 28SeptAssignment branch
 yarn.lock
 workspaces/mySwap/node_modules/
 workspaces/mySwap/src/abis
 workspaces/mySwap/src/types/v3
+
+# Include these from master branch
+.aider.conf.yml
+**/node_modules/
