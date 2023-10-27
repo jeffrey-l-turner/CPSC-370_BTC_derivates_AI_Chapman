@@ -2,7 +2,11 @@
 # Devenv
 .devenv*
 devenv.local.nix
-
+**/node_modules/
 .DS_Store
 .aider*
 **/node_modules/
+yarn.lock
+workspaces/mySwap/node_modules/
+workspaces/mySwap/src/abis
+workspaces/mySwap/src/types/v3
