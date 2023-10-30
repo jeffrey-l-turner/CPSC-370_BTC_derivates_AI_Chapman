@@ -6,7 +6,8 @@
 
 # Housekeeping
 
-- BTC/Crypto Rally
+- [Student Services Satisfaction Survey (SSSS)](https://www.chapman.edu/2023-satisfaction-survey)
+- BTC/Crypto Rally & Crypto Crackdown
 - OpenAI/OpenRouter Credits
 - GitHub PR Reviews
 - Assume everyone has GitHub properly established by now
@@ -39,6 +40,7 @@
 - * Etherisc: Etherisc is a decentralized insurance platform that uses smart contracts to automate the insurance process. Etherisc offers a variety of insurance products, including flight insurance, crop insurance, and weather insurance.
 - * B3i: B3i is a blockchain-based insurance consortium that is being developed by a number of leading insurance companies. B3i aims to streamline the insurance claims process and reduce costs.
 - * Nexus Mutual: Nexus Mutual is a peer-to-peer insurance platform that uses Ethereum to provide insurance to smart contracts. Nexus Mutual offers a variety of insurance products, including smart contract hack insurance and smart contract failure insurance.
+- * [Lemonade](https://www.lemonade.com/blog/crypto-climate-coalition/)
 - Weak political jurisdictions
 - Lack of trust between operating parties
 * [*Notes:*](./notes_lec17.md)
@@ -51,4 +53,5 @@
 
 ## Resources
 
-* [Flash Loans and Trading Bots]()
+* [Lecture Graphics Notes](./lecture_notes17.png)
+* [Flash Loans and Trading Bots](https://youtu.be/m0VBsAOMsw8?si=bQUm6RmYiwzRPF4V)
