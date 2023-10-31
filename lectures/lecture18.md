@@ -35,7 +35,7 @@ Should have:
 
 ## Assignment
 
-- [TBD: post guest lecture]()
+- [two parts; no quiz next week](../assignments/26_Oct_2023.md)
 
 ## Resources
 
