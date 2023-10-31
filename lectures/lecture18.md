@@ -39,4 +39,5 @@ Should have:
 
 ## Resources
 
+* [Slides from Lecture](../docs/RGB_Lecture.pdf) 
 * [RGB Standards](https://github.com/rgb-org) 
