@@ -35,8 +35,9 @@ Should have:
 
 ## Assignment
 
-- [TBD: post guest lecture]()
+- [two parts; no quiz next week](../assignments/26_Oct_2023.md)
 
 ## Resources
 
+* [Slides from Lecture](../docs/RGB_Lecture.pdf) 
 * [RGB Standards](https://github.com/rgb-org) 
