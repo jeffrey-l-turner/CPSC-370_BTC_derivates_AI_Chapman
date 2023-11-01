@@ -7,7 +7,7 @@
 # Housekeeping
 
 - Switched over to openrouter.ai (budget $15/month/student); DM me if any issues
-- Mid-term next week; Will be in class and proctered.
+- Mid-term next week; Will be in class and proctored.
 - Reminder: Upgdate your Aider: `pip install aider-chat`
 - New context window size and demo set up. 
 - Send Pull Requests for my review to my Chapman email
