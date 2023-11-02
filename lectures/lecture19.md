@@ -21,9 +21,7 @@
 
 ## Guest Lecturer: Lucius Gregory Meredith
 
-- Bitcoin History 
-- Client Side Validation
-- Prometheus
+- Concurrency and Agency
 
 ## RGB Setup and Assignment
 
