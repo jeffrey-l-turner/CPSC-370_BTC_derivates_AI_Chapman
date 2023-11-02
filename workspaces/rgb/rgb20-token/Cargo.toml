@@ -5,7 +5,7 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[denpendencies]
+[dependencies]
 amplify = "4.0.1"
 strict_encoding = "2.5.0"
 strict_types = "1.6.1"
