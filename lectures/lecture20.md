@@ -20,13 +20,9 @@
 ## RGB part II
 
 
-## RGB Setup and Assignment
+## Single Use Seals
 
-Should have:
-* For next class lecture
-- * `brew install rustup`
-- * `cargo install rgb`
-- try: `rgb -h`
+* [SUS](./notes_lec20.md)
 
 ## Assignment
 
