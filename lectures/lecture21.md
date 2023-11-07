@@ -1,4 +1,4 @@
-# Lecture 22
+# Lecture 21
 
 <div align="center">
   <img src="./bitcoin_network.png" width="250" height="250" />
