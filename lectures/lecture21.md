@@ -12,6 +12,7 @@
 - OpenRouter limits are fixed. Checkout switch to new Open AI quadruple size context window
 - New quiz should be available later today 
 - SBF Trial/Sentencing...
+- Canvas Survey for final project: review skills; Front-end, back-end, smart contracts, middleware (& languages, Python, TypeScript, Java...)
 
 ## Open Source Capital Markets
 
