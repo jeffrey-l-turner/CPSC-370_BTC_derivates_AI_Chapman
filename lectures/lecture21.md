@@ -16,7 +16,7 @@
 ## Open Source Capital Markets
 
 * Initial Coin Offerings and "Fly Wheel Business Models"
-* Bitcoin and Alt Coin capital raises are very different
+* Bitcoin and Altcoin capital raises and ethos are quite different
 * [Coin Gecko](https://coingecko.com)
 
 ## Non-Fungible Tokens
