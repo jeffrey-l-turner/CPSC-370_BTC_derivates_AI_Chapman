@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Header } from './Header.tsx';
-import { Navigation } from './Navigation.tsx';
-import { Portfolio } from './Portfolio.tsx';
-import { SwapForm } from './SwapForm.tsx';
-import { ConversionRates } from './ConversionRates.tsx';
+import { Header } from './components/Header/Header';
+import { Navigation } from './components/Navigation/Navigation';
+import { Portfolio } from './components/Portfolio/Portfolio';
+import { SwapForm } from './components/SwapForm/SwapForm';
+import { ConversionRates } from './components/ConversionRates/ConversionRates';
+import { CLOBDashboard } from './components/CLOB/CLOBDashboard';
+import { AMMDashboard } from './components/AMM/AMMDashboard';
 
 const App: React.FC = () => {
   const [portfolio, setPortfolio] = useState({
@@ -22,6 +24,14 @@ const App: React.FC = () => {
           <SwapForm portfolio={portfolio} setPortfolio={setPortfolio} />
           <Portfolio portfolio={portfolio} />
           <ConversionRates />
+        </div>
+        <div className="dashboard-container">
+          <div className='amm-dashboard-container'>
+            <AMMDashboard />
+          </div>
+          <div className='clob-dashboard-container'>
+            <CLOBDashboard />
+          </div>
         </div>
       </main>
     </div>

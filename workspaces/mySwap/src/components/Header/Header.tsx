@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css';
-import logo from "./chapman_panther.png";
+import logo from '../../assets/chapman_panther.png';
 
 interface HeaderProps {
   // No props needed for this component

@@ -56,7 +56,7 @@ const SwapForm: React.FC<SwapFormProps> = ({ portfolio, setPortfolio }) => {
       </label>
       <label htmlFor="amount">
         Amount:
-        <input type="text" id="amount" placeholder="Amount" value={amount} onChange={(e) => setAmount(e.target.value === "" ? "0" : e.target.value)} />
+        <input type="text" id="amount" placeholder="Amount" value={amount} onChange={(e) => setAmount(e.target.value === "" ? 0 : Number(e.target.value))} />
       </label>
       <button type="submit" className="swap-button">Swap</button>
     </form>

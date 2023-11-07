@@ -5,6 +5,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
+  padding-top: 80px; /* Add padding-top to push the content down */
 }
 
 .main-content {
@@ -13,8 +14,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  /* Remove position: absolute */
 }
 
 .conversion-rates-container {
@@ -22,6 +22,16 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.navigation-button {
+  background: none;
+  border: none;
+  color:#E5E5E5;
+  text-decoration: none;
+  cursor: pointer;
+
 }
 
 .swap-portfolio-container {
@@ -32,4 +42,23 @@
   align-items: center;
   box-shadow: 10px 10px 20px #1c1c1c, -10px -10px 20px #343434;
   border-radius: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center children horizontally */
+  align-items: start; /* Align children to the start of the cross axis */
+  flex-wrap: wrap; /* Allow children to wrap to next line on smaller screens */
+}
+
+.navigation-button {
+  background: none;
+  border: none;
+  color:#E5E5E5;
+  text-decoration: none;
+  cursor: pointer;
+
 }

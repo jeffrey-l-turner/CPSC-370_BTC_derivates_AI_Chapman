@@ -9,6 +9,16 @@
   justify-content: center;
   margin-right: 20px; /* Add right margin */
   padding: 20px; /* Add padding */
+  position: relative;
+}
+
+.navigation-button {
+  background: none;
+  border: none;
+  color:#E5E5E5;
+  text-decoration: none;
+  cursor: pointer;
+
 }
 
 .swap-form label {
