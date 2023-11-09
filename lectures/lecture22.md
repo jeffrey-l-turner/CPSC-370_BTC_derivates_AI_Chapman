@@ -1,7 +1,7 @@
 # Lecture 22
 
 <div align="center">
-  <img src="./Consensus.png" width="250" height="250" />
+  <img src="./bitcoin_light.png" width="250" height="250" />
 </div>
 
 # Housekeeping
@@ -11,7 +11,7 @@
 - Grading assignments delayed due to Open AI attack
 - New quiz available - due next Wed.
 - Please respond to Canvas Survey for final project: review skills; Front-end, back-end, smart contracts, middleware (& languages, Python, TypeScript, Java...)
-- Electrum server or lightning node being created for final project
+- Electrum server or lightning node being created for final project (after survey complete)
 - Little more than one-month left; may have one more quiz before final
 
 ## RGB part III (postponed)
