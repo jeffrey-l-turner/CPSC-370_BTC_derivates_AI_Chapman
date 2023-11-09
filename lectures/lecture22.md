@@ -1,42 +1,36 @@
-# Lecture 21
+# Lecture 22
 
 <div align="center">
-  <img src="./bitcoin_network.png" width="250" height="250" />
+  <img src="./Consensus.png" width="250" height="250" />
 </div>
 
 # Housekeeping
 
-- GitHub PR Grading -- everyone can get at least 70%; check canvas for grades & GitHub PRs for feedback
-- Reminder: Visit office hours to Demo Mindmap / use to review assignment feedback as well
-- This Thurs. Office Hours shifted to morning; see Canvas and Discord for details
-- OpenRouter limits are fixed. Checkout switch to new Open AI quadruple size context window
-- New quiz should be available later today 
-- SBF Trial/Sentencing...
-- Canvas Survey for final project: review skills; Front-end, back-end, smart contracts, middleware (& languages, Python, TypeScript, Java...)
+- Open Router credits are done
+- Open AI under DDoS attack; postponement of RGB final assignment
+- Grading assignments delayed due to Open AI attack
+- New quiz available - due next Wed.
+- Please respond to Canvas Survey for final project: review skills; Front-end, back-end, smart contracts, middleware (& languages, Python, TypeScript, Java...)
+- Electrum server or lightning node being created for final project
+- Little more than one-month left; may have one more quiz before final
 
-## Open Source Capital Markets
+## RGB part III (postponed)
 
-* Initial Coin Offerings and "Fly Wheel Business Models"
-* Bitcoin and Altcoin capital raises and ethos are quite different
-* [Coin Gecko](https://coingecko.com)
+* see [Open AI Status](https://status.openai.com/) -- Twitter/X also good source of status
 
-## Non-Fungible Tokens
+## Final Project Setup (as "Startup Engineering")
 
-- Not only used for Art...
-- Bonding curves on Uniswap [explained](https://www.linumlabs.com/articles/bonding-curves-the-what-why-and-shapes-behind-it)
-- Transferrable Names on ENS
-- Proof of Presence/Attendance
-- "Soul bound NFTs" [identity applicaion](https://vitalik.ca/general/2022/01/26/soulbound.html)
-- [Cross/Intra-Gaming artifacts](https://g.co/bard/share/0810fe9da12c)
-- [Useful in Secondary Markets](https://www.investopedia.com/terms/s/secondarymarket.asp)
-- Tickets
-- Many other applications...
+- Definining the Project
+- Minimum Viable Product
+- User Interface Design (overview of tools) & now [AI assistance](https://app.uizard.io/)
+- Back-end Services (databases, APIs/proxies, name resolution, oracles, etc.)
+- Immutable Services (payments, smart contracts, oracle maintenance)
+- Continuous Integration
+- Project Standards (coding conventions, ecosystems used, code commit/maintenance process)
+- Framework: Agile software development approach & tickets ([we're using GitHub]()https://github.com/jeffrey-l-turner/CPSC-370_BTC_derivates_AI_Chapman/issues/new)
+- AI assistance (new approach) -- going to try: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
 
-## RGB final assignment
-
-- [RGB part II](../assignments/31_Oct_2023.md)
 
 ## Resources
 
-* [RGB Standards](https://github.com/rgb-org) 
-* [Slides from Dr. Orlovsky](../docs/RGB_Lecture.pdf) 
+* Please sign up if assigned UI component: [UIzard](https://uizard.io)
