@@ -23,7 +23,7 @@
 - Definining the Project
 - Minimum Viable Product
 - User Interface Design (overview of tools) & now [AI assistance](https://app.uizard.io/)
-- * Note: Mobile First approach, generally. Pay attention to landscape/portrait and desktop interfaces
+- * [Note](https://www.interaction-design.org/literature/topics/mobile-first): Mobile First approach, generally. Pay attention to landscape/portrait and desktop interfaces
 - Back-end Services (databases, APIs/proxies, name resolution, oracles, etc.)
 - Immutable Services (payments, smart contracts, oracle maintenance)
 - Continuous Integration
