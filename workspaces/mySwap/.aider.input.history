@@ -1,0 +1,947 @@
+
+# 2023-10-19 19:56:46.004904
++/run clear
+
+# 2023-10-19 19:56:51.600311
++/run ls
+
+# 2023-10-19 19:57:41.304392
++/add App.tsx
+
+# 2023-10-19 19:57:52.225264
++/add src/App.tsx
+
+# 2023-10-19 19:58:58.610857
++/add src/Header.tsx src/Navigation.tsx src/Portfolio.tsx src/SwapForm.tsx src/index.tsx
+
+# 2023-10-19 19:59:02.903345
++/tokens
+
+# 2023-10-19 19:59:43.480954
++/add src/chapman_panther.png
+
+# 2023-10-19 20:00:10.016918
++I want to switch out the stock React logo with the `src/chapman_panther.png` 
+
+# 2023-10-19 20:00:46.247436
++I want to swtich out the stock react logo with the src/chapman_panther logo 
+
+# 2023-10-19 20:01:14.569758
++I want to switch out the logo with the chapman panther logo in source
+
+# 2023-10-19 20:01:50.497919
++/add src/App.tsx src/Header.tsx src/Navigation.tsx src/Portfolio.tsx src/SwapForm.tsx src/index.tsx
+
+# 2023-10-19 20:02:06.271193
++I want to switch out the stock logo with the chapman one in the source directory
+
+# 2023-10-19 20:03:19.830347
++/run clear
+
+# 2023-10-19 20:05:38.788987
++/add src/App.tsx src/Header.tsx src/Navigation.tsx src/Portfolio.tsx src/SwapForm.tsx src/index.tsx
+
+# 2023-10-19 20:05:50.424484
++I want to swap out the stock React logo with `src/chapman_panther.png`
+
+# 2023-10-20 11:30:10.962221
++/add src/App.tsx src/Header.tsx src/Navigation.tsx src/Portfolio.tsx src/SwapForm.tsx src/index.tsx
+
+# 2023-10-20 11:30:41.751691
++Lets switch out the stock React Logo with the chapman_panther.png
+
+# 2023-10-20 11:31:01.940024
++/run clear
+
+# 2023-10-20 11:31:09.724002
++/add src/App.tsx src/Header.tsx src/Navigation.tsx src/Portfolio.tsx src/SwapForm.tsx src/index.tsx
+
+# 2023-10-20 11:31:15.513859
++Lets switch out the stock React Logo with the chapman_panther.png
+
+# 2023-10-20 11:33:42.662699
++Lets replace the swap interface with a drop down menu
+
+# 2023-10-20 11:35:08.987874
++What can you infer from this project and what it does. In relation to cryptocurrency, exchange with US currency, and DEX
+
+# 2023-10-20 11:52:32.083245
++Lets complete this project, one step at a time. Lets add/complete functionality which allows the user to swap between these coins and updates their portfolio along with their tokens, balance and value
+
+# 2023-10-20 11:58:52.277408
++ok implement the rest of the functionalities
+
+# 2023-10-20 12:00:05.221472
++Can't find variable: useState
++SwapForm@http://localhost:3000/main.0d7b8df378d02262f952.hot-update.js:218:35
++renderWithHooks@http://localhost:3000/static/js/bundle.js:21685:31
++mountIndeterminateComponent@http://localhost:3000/static/js/bundle.js:24971:32
++callCallback@http://localhost:3000/static/js/bundle.js:11277:23
++dispatchEvent@[native code]
++invokeGuardedCallbackDev@http://localhost:3000/static/js/bundle.js:11321:33
++invokeGuardedCallback@http://localhost:3000/static/js/bundle.js:11378:40
++beginWork$1@http://localhost:3000/static/js/bundle.js:31252:32
++performUnitOfWork@http://localhost:3000/static/js/bundle.js:30499:27
++workLoopSync@http://localhost:3000/static/js/bundle.js:30422:26
++renderRootSync@http://localhost:3000/static/js/bundle.js:30395:23
++performSyncWorkOnRoot@http://localhost:3000/static/js/bundle.js:30087:38
++performSyncWorkOnRoot@[native code]
++flushSyncCallbacks@http://localhost:3000/static/js/bundle.js:18117:34
++flushSync@http://localhost:3000/static/js/bundle.js:30191:29
++scheduleRefresh@http://localhost:3000/static/js/bundle.js:31544:18
++@http://localhost:3000/static/js/bundle.js:33613:36
++forEach@[native code]
++performReactRefresh@http://localhost:3000/static/js/bundle.js:33605:37
++@http://localhost:3000/static/js/bundle.js:790:36
+
+# 2023-10-20 12:01:24.028988
++my values arent being updated or swapped, how do we make sure this is working on how its intended
+
+# 2023-10-20 12:03:00.833349
++I am clicking on the swap button and my portfolio isnt being updated
+
+# 2023-10-20 12:04:06.473247
++Great that worked, now the values arent being updated
+
+# 2023-10-20 12:05:40.223796
++can we make the UI a little bit cleaner and organized following proper design principles
+
+# 2023-10-20 14:24:25.278521
++can we undo those changes you just made
+
+# 2023-10-20 14:31:19.371233
++/add src/App.css src/index.css
+
+# 2023-10-20 14:32:12.400886
++Nvm no need to undo, can you edit the css files to make it look cleaner and more organized, create more css files if needed for other componentw
+
+# 2023-10-20 14:34:34.519458
++/tokens
+
+# 2023-10-20 14:34:56.595674
++/add src/Header.css src/Navigation.css
+
+# 2023-10-20 14:35:04.208760
++/run clear
+
+# 2023-10-20 14:36:31.484810
++Can you edit the css files to align the elements in the middle, for the balance to only have up to 2 decimal places, add comma's to larger numbers. Make the logo a little bit smaller relative to the rest of the components.
+
+# 2023-10-20 14:38:02.544422
++What are some suggestions to make this ui more modern, (color, typography, borders, size, font, etc.)
+
+# 2023-10-20 14:38:46.795509
++Yes can you modify the code following these principals you have proposed
+
+# 2023-10-20 14:41:40.672724
++I am not seeing the updated, changes can you link these css files with their corresponding tsx file
+
+# 2023-10-20 14:47:08.106738
++Perfect, lets keep improving on the ui. Here are some UI principles that modern crypto startups are using. :ark Mode: This trend has gained traction across many apps and platforms, and crypto startups are no exception. A dark theme often provides a modern and sophisticated look.
++Neumorphism: A design trend characterized by soft UI, where elements have a soft, extruded plastic look. It's a sort of successor to skeuomorphism but with more subtlety and softness.
++Minimalism: Clean interfaces with ample whitespace, focusing on essential elements and getting rid of unnecessary clutter. This helps users focus on key actions and information.
++Vibrant and Bold Colors: Especially to distinguish brands in a crowded market, vibrant colors can make crypto startups stand out. Using unique and vibrant color schemes can help brands stay memorable. 
+
+# 2023-10-20 14:48:35.525552
++Lets proceed with these changes and we will go with your recommendations for  for the dark theme and vibrant elements and color choices which will follow industry standard UI principles and follows the crypto style startup UI practices
+
+# 2023-10-20 14:49:05.989196
++yes, proceed
+
+# 2023-10-20 14:50:18.612009
++Yes, lets continue
+
+# 2023-10-20 14:51:00.089228
++Implement the neumorphism that you proposed and the vibrant and bold colors
+
+# 2023-10-20 14:51:36.832263
++Continue with the next steps
+
+# 2023-10-20 14:55:02.863733
++Can you make the drop-down menu for the currency and amount more narrow and the same size and give it a more modern style
+
+# 2023-10-20 14:56:48.256089
++Can you make the header elements for the table of the user's portfolio more readable and aligned with the theme, currently it is white and the text color is getting lost in the white background
+
+# 2023-10-20 15:00:56.195663
++/run code.
+
+# 2023-10-20 15:00:59.986887
++/run code .
+
+# 2023-10-20 15:01:06.183062
++/clear
+
+# 2023-10-20 15:01:08.832512
++/run clear
+
+# 2023-10-20 15:08:20.418648
++/tokens
+
+# 2023-10-20 15:10:42.641543
++Lets make one change at a time, lets align the SwapForm and Portfolio to center of the page, from both the top/bottom and left/right so these elements are next to eachother but in the center overall
+
+# 2023-10-20 15:11:59.917777
++Lets narrow down the drop down menu in SwapForm to fit the size of the font for the options, and make it same size for the amount section as well
+
+# 2023-10-20 15:13:13.360082
++Can we make the size of swap form more narrow to properly align all the elements together
+
+# 2023-10-20 15:15:27.909400
++What are some suggestions to improve on the SwapForm, right now it feels to cramped, the swap button is on the bottom left, overall it needs to be improved
+
+# 2023-10-20 15:18:31.886592
++Can you analyza the overall design and suggest how to improve it
+
+# 2023-10-20 15:19:52.914189
++Can you make the text on the navigation bold, all capital, and appropriate font size
+
+# 2023-10-20 15:21:03.080170
++can you make the components for the portfolio the same height and width and center them together side by side 
+
+# 2023-10-20 15:22:01.603650
++The height is taking up the whole paging obfuscating the other components,
+
+# 2023-10-20 15:24:21.653907
++can you put the swapform and portfolio side by side, and round the corners on the left side for the swap and right side for the portfolio
+
+# 2023-10-20 15:25:50.048419
++There is still spacing in between the swapform and the portfolio, which doesnt give the illusion they are together
+
+# 2023-10-20 15:42:33.647053
++can you make the swapform and portfolio to have a consistent box shadow in which follow neumorphism principles
+
+# 2023-10-20 15:43:32.267982
++Can you apply this same thing to the navigation toolbar
+
+# 2023-10-20 15:51:21.459555
++align the navigation buttons a little closer, they are too close to the edge of the box
+
+# 2023-10-20 15:52:35.204806
++can you remove the shadow on portfolio on the left side only, right now its overlaying on swapform and it doesnt look like one component
+
+# 2023-10-20 15:54:46.244795
++maybe we need to combine portfolio and swapform to have the effect of the shadow box to appear as one, right now this part of portfolio box shadow is still overlaying to the swap form, messing up the continuity 0px -10px 20px #343434;
+
+# 2023-10-20 15:57:03.334683
++Okay that worked, but now the elements from the swap form and portfolio are overlapping, can you give them some spacing as well vertical since the swapform is too close to the edges
+
+# 2023-10-20 16:33:35.978184
++Center the title MySwap to the middle and round the corners of the logo
+
+# 2023-10-20 16:57:42.961216
++When swapping the amounts can you make sure the rates are all aligned, in which when I swap 1 ETH for DAI the values are not adding up
+
+# 2023-10-20 16:59:26.562608
++Let me input an amount
+
+# 2023-10-20 17:01:12.472604
++Although in the swapform when I type an amount the zero stays in place and doesnt allow me to have a longer input or use decimals, there is also an up and down arrow there which is not needed
+
+# 2023-10-20 17:01:58.401593
++When I backspace to remove the zero it shows NaN as opposed to just nothing and let me input an amount
+
+# 2023-10-20 17:03:28.563343
++The input box for Amount is not working properly, it doesnt let me remove the zero and input a decimal value. I want to be able to do this "0 -> 0.5 or -> *blank*"
+
+# 2023-10-20 17:04:29.432642
++When I backspace it does not remove the 0, and it just stays there. This input box should be more simple than it is. 
+
+# 2023-10-20 17:05:49.133319
++Can you display the matrix rate below the swapform and portfolio but still stay in the parent box to keep the shadow box effect to make it look like one
+
+# 2023-10-20 17:06:43.523977
++ERROR
++[eslint] 
++src/App.tsx
++  Line 23:12:  'ConversionRates' is not defined  react/jsx-no-undef
++
++Search for the keywords to learn more about each error.
+
+# 2023-10-20 17:07:18.598067
++Move the conversation rates table in which is below the swapform and portfolio
+
+# 2023-10-20 17:07:55.602297
++/run clear
+
+# 2023-10-20 17:11:08.356192
++the 3x3 conversion rate table is not being properly displayed, such as Eth to Eth should be 1 and instead it is showing as 2000
+
+# 2023-10-20 17:12:38.842437
++Move the conversation rate table for it to be below the swapform and portfolio
+
+# 2023-10-20 17:13:43.323763
++Add it to the parent element of swapform and `portfolio`
+
+# 2023-10-20 17:16:12.257621
++while staying in that container move the conversation rate below the swapform and portfolio, and make the conversation rate table a litte bit smaller
+
+# 2023-10-20 17:18:42.590026
++I want the shadowbox container to also encapsulate the conversation rates table
+
+# 2023-10-20 17:21:19.595436
++change the ordware of the container as such, first row: swapform and portfolio, 2nd row: conversation rates table
+
+# 2023-10-24 12:46:48.126466
++/run ls
+
+# 2023-10-24 12:47:59.192699
++/add src/Header.css src/Portfolio.tsx src/SwapForm.css src/SwapForm.tsx 
+
+# 2023-10-24 12:48:29.328071
++/add src/ConversionRates.tsx src/App.css src/Header.tsx src/App.tsx
+
+# 2023-10-24 12:48:55.887542
++Can we change the swap form, portfolio and conversation rate table to be a row instead of a column
+
+# 2023-10-24 21:05:14.609193
++/add src/Header.tsx src/Navigation.tsx src/index.tsx src/SwapForm.tsx
+
+# 2023-10-24 21:05:54.752466
++/add src/SwapForm.css src/index.css ssrc/ConversionRates.css src/Header.css src/Header.css src/Navigation.css src/App.tsx src/Portfolio.css src/Portfolio.tsx src/ConversionRates.tsx src/App.css
+
+# 2023-10-24 21:06:48.999642
++/add src/SwapForm.css src/index.css src/ConversionRates.css src/Header.css src/Header.css src/Navigation.css src/App.tsx src/Portfolio.css src/Portfolio.tsx src/ConversionRates.tsx s
++rc/App.css
+
+# 2023-10-24 21:07:06.810494
++/add src/SwapForm.css src/index.css src/ConversionRates.css src/Header.css src/Header.css src/Navigation.css src/App.tsx src/Portfolio.css src/Portfolio.tsx src/ConversionRates.tsx src/App.css
+
+# 2023-10-24 21:07:14.081559
++/add src/Header.tsx src/Navigation.tsx src/index.tsx src/SwapForm.tsx
+
+# 2023-10-24 21:07:18.670943
++/tokens
+
+# 2023-10-24 21:08:11.943154
++Can you change the elements of swapform, portfolio, and conversion rates table to appear in a row as opposed to a column
+
+# 2023-10-24 21:09:04.175838
++/run code .
+
+# 2023-10-24 21:09:52.894844
++Can we adjust the size of swap form to fit inside the swa-portfolio-container, currently it is bigger than the container it is in
+
+# 2023-10-24 21:12:02.554072
++how can we move the conversion rates table to a row below the swap form and portfolio all while keeping it in the swap-form container form for to still stay in the rounded border effect it is in
+
+# 2023-10-24 21:14:32.115275
++I want to keep the elements in a row form. I want it to be displayed as such:
+
+# 2023-10-24 21:15:29.072354
++Ok thats better, but now the border of swap-form container is not covering conversation rates table and it is falling out of it
+
+# 2023-10-24 21:16:57.325530
++The 3 elements are not fitting together in the container still, the conversation rates table appears to be outside
+
+# 2023-10-24 21:20:43.250130
++Is there a way to make sure the change the name and make sure conversation rates is also part of the `swap-portfolio-container`
+
+# 2023-10-24 21:22:14.576322
++Ok perfect, but now make sure the `conversion-rates` is on a 2nd row in this container
+
+# 2023-10-24 21:23:14.361250
++Can we try again
+
+# 2023-10-24 21:24:13.659770
++Can we try again, its not working
+
+# 2023-10-24 21:24:51.520135
++/add src/SwapForm.css src/index.css src/ConversionRates.css src/Header.css src/Header.css src/Navigation.css src/App.tsx src/Portfolio.css src/Portfolio.tsx src/ConversionRates.tsx s
++rc/App.css
+
+# 2023-10-24 21:25:01.051164
++/add src/SwapForm.css src/index.css src/ConversionRates.css src/Header.css src/Header.css src/Navigation.css src/App.tsx src/Portfolio.css src/Portfolio.tsx src/ConversionRates.tsx src/App.css
+
+# 2023-10-24 21:25:05.018317
++/add src/Header.tsx src/Navigation.tsx src/index.tsx src/SwapForm.tsx
+
+# 2023-10-24 21:25:23.699896
++Can we move the `conversion-rates` to the 2nd row while still staying inside the `swap-portfolio-container`
+
+# 2023-10-24 21:26:37.483391
++Can we keep the direction as row, since this will just be 2 rows, as opposed to columns
+
+# 2023-10-24 21:28:17.932947
++I want the conversation rates to be a continer on the 2nd row of the encompassing `swap-portfolio-container`
+
+# 2023-10-24 21:32:46.304312
++/add src/App.test.tsx
+
+# 2023-10-24 21:33:19.503471
++/add src/Header.test.tsx src/Navigation.test.tsx src/setupTests.js
+
+# 2023-10-24 21:33:36.528210
++Can you update the tests to test the functionality of this application
+
+# 2023-10-24 21:34:26.201319
++Can we test that this application runs how its supposed ti
+
+# 2023-10-24 21:35:24.165136
++Got this error on one of the tests: FAIL  src/Header.test.tsx
++  ● renders logo
++
++    TestingLibraryElementError: Unable to find an element with the alt text: /Uniswap logo/i
++
++    Ignored nodes: comments, script, style
++    <body>
++      <div>
++        <header
++          class="header"
++        >
++          <img
++            alt="MySwap Logo"
++            class="header-logo"
++            src="chapman_panther.png"
++          />
++          <h1
++            class="header-title"
++          >
++            MySwap
++          </h1>
++        </header>
++      </div>
++    </body>
++
++       7 |   const renderHeaderAndCheckLogo = compose(
++       8 |     (logoElement) => expect(logoElement).toBeInTheDocument(),
++    >  9 |     () => screen.getByAltText(/Uniswap logo/i),
++         |                  ^
++      10 |     () => render(<Header />)
++      11 |   );
++      12 |
++
++      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
++      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
++      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
++      at getByAltText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
++      at renderHeaderAndCheckLogo.fileName (src/Header.test.tsx:9:18)
++      at node_modules/ramda/src/internal/_pipe.js:3:14
++      at node_modules/ramda/src/internal/_pipe.js:3:27
++      at renderHeaderAndCheckLogo (node_modules/ramda/src/internal/_arity.js:6:19)
++      at Object.<anonymous> (src/Header.test.tsx:13:3)
+
+# 2023-10-24 22:24:47.513640
++/run code .
+
+# 2023-10-26 12:54:19.160663
++/run ls src/
+
+# 2023-11-01 08:23:35.805015
++/run code.
+
+# 2023-11-01 08:23:40.842056
++/run code .
+
+# 2023-11-01 08:23:48.093721
++/run clear
+
+# 2023-11-01 08:48:44.326987
++/add src/
+
+# 2023-11-01 08:49:11.848361
++/tokens
+
+# 2023-11-01 08:50:17.973418
++/clear
+
+# 2023-11-01 08:50:22.899207
++/drop
+
+# 2023-11-01 08:52:05.149957
++I am going to pass on the assignment, we are going to create it step-by-step as a CLI then afterwards connect it to the front end of the rest of the project, which is done in typescript and js:
+
+# 2023-11-01 11:54:33.415017
++/tokens
+
+# 2023-11-01 11:54:55.826478
++/add ./package.json
+
+# 2023-11-01 11:55:33.015150
++/add src/index.tsx
+
+# 2023-11-01 11:55:46.157289
++I am getting this error:ERROR in src/index.tsx:3:10
++TS2305: Module '"react-dom"' has no exported member 'createRoot'.
++    1 | import React from 'react';
++    2 | import './index.css';
++  > 3 | import { createRoot } from 'react-dom';
+
+# 2023-11-01 11:57:17.109320
++I am still getting the same error, can we use a more stable version and correct the index.tsx accordingly
+
+# 2023-11-01 11:59:11.601618
++/add src/SwapForm.tsx
+
+# 2023-11-01 11:59:15.731325
++Got this error: ERROR in src/SwapForm.tsx:59:103
++TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'.
++    57 |       <label htmlFor="amount">
++    58 |         Amount:
++  > 59 |         <input type="text" id="amount" placeholder="Amount" value={amount} onChange={(e) => setAmount(e.target.value === "" ? "0" : e.target.value)} />
++       |                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+# 2023-11-01 12:00:40.415310
++/add src/Header.tsx
+
+# 2023-11-01 12:00:55.074309
++I keep getting this error in regards to the .png file in which the name and directory match yet itdoes not recognize it: ERROR in src/Header.tsx:3:18
++TS2307: Cannot find module './chapman_panther.png' or its corresponding type declarations.
++    1 | import React from "react";
++    2 | import './Header.css';
++  > 3 | import logo from './chapman_panther.png';
+
+# 2023-11-01 12:49:03.636970
++/add src/components/CLOB/CLOBDashboard.tsx
+
+# 2023-11-01 12:49:09.144840
++/add src/components/CLOB/CLOBDashboard.css
+
+# 2023-11-01 12:49:33.285422
++/add src/SwapForm/SwapForm.tsx
+
+# 2023-11-01 12:49:54.046054
++/add src/Components/SwapForm/SwapForm.tsx
+
+# 2023-11-01 12:49:57.199573
++/add src/Components/SwapForm/SwapForm.css
+
+# 2023-11-01 12:50:36.430163
++Can you eddit the clob dashboard in which Type, Price, and quantity are on top of eachother instead of in one line
+
+# 2023-11-01 12:53:01.615997
++/add src/components/CLOB/MatchedOrdersDisplay.tsx
+
+# 2023-11-01 12:53:13.224900
++/add src/components/CLOB/OrderBookDisplay.tsx
+
+# 2023-11-01 12:53:21.484315
++/add src/components/CLOB/OrderInputForm.tsx
+
+# 2023-11-01 12:53:34.904921
++It still hasnt stacked vertically, I added more files if you need more context
+
+# 2023-11-01 12:57:02.585757
++Ok that work, can you make it look cleaner, right now the elements are scrunched up together and hard to follow along. Can you clean up the CSS following proper design standards while keeping the modern neumorphic look
+
+# 2023-11-01 13:02:58.765241
++clear
+
+# 2023-11-01 13:03:18.138086
++/clear
+
+# 2023-11-01 13:03:21.079240
++/drop
+
+# 2023-11-01 13:03:33.964395
++/add src/components/CLOB/CLOBDashboard.css 
+
+# 2023-11-01 13:04:19.695384
++Can you clean up the ui for this components as it is scrunched up and hard to read, follow proper ui design practices while keeping a neumorphic and modern look
+
+# 2023-11-01 13:10:54.156435
++/add src/components/CLOB/OrderInputForm.tsx
+
+# 2023-11-01 13:11:31.566866
++Can you clean up the css for the orderinputform, but keep it in the dashboard css
+
+# 2023-11-01 13:11:48.777843
++There isnt any at the moment
+
+# 2023-11-01 13:15:10.681734
++/drop src/components/CLOB/OrderInputForm.tsx
+
+# 2023-11-01 13:15:17.679484
++/add src/components/CLOB/OrderBookDisplay.tsx
+
+# 2023-11-01 13:15:46.455844
++Can you clean up this component, so far it does not have a css, can you make it cleaner and more readable
+
+# 2023-11-01 14:17:47.957774
++/add src/
+
+# 2023-11-01 14:17:50.501529
++/tokens
+
+# 2023-11-01 14:18:47.850218
++can you correct the css files since right now the components are not scrolling properly through the page, the `swap-portfolio-container` is overlapping the navigation and not below as the `clob-dashboard-container` grows with its values
+
+# 2023-11-02 10:50:38.913935
++/tokens
+
+# 2023-11-02 10:50:45.613139
++/run npm start
+
+# 2023-11-02 10:51:02.367488
++/add src/
+
+# 2023-11-02 10:51:08.221615
++/run ls
+
+# 2023-11-02 10:52:33.554147
++/add Readme.md
+
+# 2023-11-02 10:53:10.715249
++I updated this project to complete this excercise: Exercise: Emulate a Decentralized Exchange Using Functional Programming
++
++In this exercise, you will use functional programming to create a basic emulation of a decentralized exchange (DEX). We will contrast the difference between a central limit order book (CLOB) approach and an automated market maker (AMM) approach.
++
++Use the existing ../workspaces/mySwap/ project subdirectory for this assignment.
++
++Exercise Instructions:
++
++Define the core data structures:
++
++typescript
++
++// Data Structures for CLOB
++
++type Order = {
++  id: string;
++  type: 'BUY' | 'SELL';
++  price: number;
++  quantity: number;
++};
++
++type OrderBook = Order[];
++
++// Data Structures for AMM
++
++type Reserve = {
++  tokenX: number;
++  tokenY: number;
++};
++
++type Liquidity = {
++  proportion: number;
++};
++Central Limit Order Book (CLOB):
++
++placeOrder: This function should accept an order (Order) and an order book (OrderBook) as arguments. It should return a new order book with the new order added in the appropriate position, maintaining the order from highest to lowest price.
++
++cancelOrder: This function should accept an id and an order book (OrderBook) as arguments. It should return a new order book with the order with the matching id removed.
++
++matchOrders: This function should accept an order book (OrderBook) as an argument. It should return a new order book with any matched buy and sell orders with the same price removed. It should also return the matched orders.
++
++Automated Market Maker (AMM):
++
++addLiquidity: This function should accept an amount of each token (Reserve) and the current reserve (Reserve). It should return a new reserve with the amounts of each token increased by the appropriate amount.
++
++removeLiquidity: This function should accept a proportion of liquidity to remove (Liquidity) and the current reserve (Reserve). It should return a new reserve with the amount of each token decreased by the appropriate amount, and the amounts removed.
++
++swap: This function should accept a token to remove from the reserve, the amount to remove, and the current reserve (Reserve). It should return a new reserve with the amount of the input token decreased by the specified amount and the amount of the other token increased by the calculated amount. It should also return the calculated amount of the other token.
++
++Remember to maintain the invariant for AMM: x*y=k, where x and y are the amounts of the two tokens in the reserve and k is a constant.
++
++Note: This exercise is designed to illustrate the basic concepts of a CLOB and an AMM in a DEX. In a real-world scenario, additional considerations such as transaction fees, price slippage, user balances, and smart contract interactions would need to be taken into account.
+
+# 2023-11-02 10:54:08.553842
++I updated the assignment to complete the exercise, will paste the description after this. Update the README to match the updated project: tral Limit Order Book (CLOB):
++
++placeOrder: This function should accept an order (Order) and an order book (OrderBook) as
++ arguments. It should return a new order book with the new order added in the appropriate
++ position, maintaining the order from highest to lowest price.
++
++cancelOrder: This function should accept an id and an order book (OrderBook) as arguments
++. It should return a new order book with the order with the matching id removed.
++
++matchOrders: This function should accept an order book (OrderBook) as an argument. It sho
++uld return a new order book with any matched buy and sell orders with the same price remo
++ved. It should also return the matched orders.
++
++Automated Market Maker (AMM):
++
++addLiquidity: This function should accept an amount of each token (Reserve) and the curre
++nt reserve (Reserve). It should return a new reserve with the amounts of each token incre
++ased by the appropriate amount.
++
++removeLiquidity: This function should accept a proportion of liquidity to remove (Liquidi
++ty) and the current reserve (Reserve). It should return a new reserve with the amount of
++each token decreased by the appropriate amount, and the amounts removed.
++
++swap: This function should accept a token to remove from the reserve, the amount to remov
++e, and the current reserve (Reserve). It should return a new reserve with the amount of t
++he input token decreased by the specified amount and the amount of the other token increa
++sed by the calculated amount. It should also return the calculated amount of the other to
++ken.
++
++Remember to maintain the invariant for AMM: x*y=k, where x and y are the amounts of the t
++wo tokens in the reserve and k is a constant.
++
++Note: This exercise is designed to illustrate the basic concepts of a CLOB and an AMM in
++a DEX. In a real-world scenario, additional considerations such as transaction fees, pric
++e slippage, user balances, and smart contract interactions would need to be taken into ac
++count.
+
+# 2023-11-02 10:59:07.775748
++Similar to the CLOB Dashboard, lets create one for the AMM functionalities. Lets do this step by step in creating the visual components. We already implemented the functions
+
+# 2023-11-02 11:06:24.081863
++Lets start adding the functionalities
+
+# 2023-11-02 11:07:50.363899
++Lets continue with the next step
+
+# 2023-11-02 11:08:25.174305
++The handleAddLiquidity function is currently just logging the input values to the
++console. In the next step, we will replace this with a call to the addLiquidity function
++from our AMM module.
+
+# 2023-11-02 11:09:41.513593
++Can you implement the addLiquidity function
+
+# 2023-11-02 11:11:51.490558
++/add dex/
+
+# 2023-11-02 11:12:06.944589
++/add src/dex/
+
+# 2023-11-02 11:12:20.830501
++/run ls
+
+# 2023-11-02 11:12:34.771232
++/tokens
+
+# 2023-11-02 11:12:51.074010
++/add src/dex/
+
+# 2023-11-02 11:14:20.190560
++/add src/dex
+
+# 2023-11-02 11:16:07.528726
++/add src/
+
+# 2023-11-02 11:17:07.436681
++We are creating the AMMDashboard, although I have already implemented the functionalities in dex/. Can you updated the AMMDashboard to create the visual components for those AMM functionalities
+
+# 2023-11-02 11:26:27.681960
++/drop src/components/SwapForm/SwapForm.css
+
+# 2023-11-02 11:26:31.763853
++/drop src/components/SwapForm/SwapForm.tsx
+
+# 2023-11-02 11:30:48.337748
++using the ammFunctions, create the form for both the swap and removing liquidity
+
+# 2023-11-02 11:35:55.545675
++can you implement the functions for onSwap and onRemoveLiquidity
+
+# 2023-11-02 11:52:08.354014
++can you correct the `addLiquidity` function since I am getting this errors in regards to the first parameter: Argument of type 'number' is not assignable to parameter of type 'Reserve'.
+
+# 2023-11-02 11:55:55.012345
++That didnt work, here is a snippet from the test code in which the function is used properly: // src/tests/ammTests.ts
++
++import { addLiquidity, removeLiquidity, swap } from '../dex/ammFunctions';
++import { sampleReserve } from '../dex/sampleData';
++
++describe("AMM Functions", () => {
++
++  test("addLiquidity should update reserves correctly", () => {
++    const addedReserve = addLiquidity({ tokenX: 100, tokenY: 200 }, sampleReserve);
++
++    expect(addedReserve.tokenX).toBe(sampleReserve.tokenX + 100);
++    expect(addedReserve.tokenY).toBe(sampleReserve.tokenY + 200);
++  });
+
+# 2023-11-02 11:59:52.528454
++implement the getReserves in `src/dex/ammFunctions.ts` for it to work in the `src/components/AMM/AMMDashboard.tsx`
+
+# 2023-11-02 14:10:28.495633
++/add src/
+
+# 2023-11-02 14:10:46.604008
++/add Readme.md
+
+# 2023-11-02 14:11:02.172473
++Can we start debugging these errors one by one:
+
+# 2023-11-02 14:11:09.244555
++ERROR in src/components/AMM/AMMDashboard.tsx:11:58
+
+# 2023-11-02 14:11:14.328593
++TS2554: Expected 1 arguments, but got 2.
+
+# 2023-11-02 14:11:27.595159
++/add src/
+
+# 2023-11-02 14:11:31.437858
++/add Readme.md
+
+# 2023-11-02 14:11:36.303290
++can we debug these errors:> Can we start debugging these errors one by one:
++
++ERROR in src/components/AMM/AMMDashboard.tsx:11:58
++TS2554: Expected 1 arguments, but got 2.
++     9 |
++    10 |     const handleAddLiquidity = (tokenA: number, tokenB: number) => {
++  > 11 |         addLiquidity({ tokenX: tokenA, tokenY: tokenB }, reserves);
++       |                                                          ^^^^^^^^
++    12 |         setReserves(getReserves());
++    13 |     };
++    14 |
++
++ERROR in src/components/AMM/AMMDashboard.tsx:16:25
++TS2345: Argument of type 'number' is not assignable to parameter of type 'Liquidity'.
++    14 |
++    15 |     const handleRemoveLiquidity = (proportion: number) => {
++  > 16 |         removeLiquidity(proportion);
++       |                         ^^^^^^^^^^
++    17 |         setReserves(getReserves());
++    18 |     };
++    19 |
++
++ERROR in src/tests/amm.test.ts:9:69
++TS2554: Expected 1 arguments, but got 2.
++     7 |
++     8 |   test("addLiquidity should update reserves correctly", () => {
++  >  9 |     const addedReserve = addLiquidity({ tokenX: 100, tokenY: 200 }, sampleRe
+
+# 2023-11-02 14:14:17.007104
++We have these errors now: ERROR in src/tests/amm.test.ts:11:25
++TS2339: Property 'tokenX' does not exist on type 'void'.
++     9 |     const addedReserve = addLiquidity({ tokenX: 100, tokenY: 200 });
++    10 |
++  > 11 |     expect(addedReserve.tokenX).toBe(sampleReserve.tokenX + 100);
++       |                         ^^^^^^
++    12 |     expect(addedReserve.tokenY).toBe(sampleReserve.tokenY + 200);
++    13 |   });
++    14 |
++
++ERROR in src/tests/amm.test.ts:12:25
++TS2339: Property 'tokenY' does not exist on type 'void'.
++    10 |
++    11 |     expect(addedReserve.tokenX).toBe(sampleReserve.tokenX + 100);
++  > 12 |     expect(addedReserve.tokenY).toBe(sampleReserve.tokenY + 200);
++       |                         ^^^^^^
++    13 |   });
++    14 |
++    15 |   test("removeLiquidity should update reserves correctly", () => {
++
++ERROR in src/tests/amm.test.ts:17:13
++TS2339: Property 'updatedReserve' does not exist on type '{ removedAmount: Reserve; }'.
++    15 |   test("removeLiquidity should update reserves correctly", () => {
++    16 |     const liquidityToRemove = { proportion: 0.1 }; // Removing 10%
++  > 17 |     const { updatedReserve, removedAmount } = removeLiquidity(liquidityToRemove, sampleReserve);
++       |             ^^^^^^^^^^^^^^
++    18 |
++    19 |     expect(updatedReserve.tokenX).toBeCloseTo(sampleReserve.tokenX * 0.9);
++    20 |     expect(updatedReserve.tokenY).toBeCloseTo(sampleReserve.tokenY * 0.9);
++
++ERROR in src/tests/amm.test.ts:17:82
++TS2554: Expected 1 arguments, but got 2.
++    15 |   test("removeLiquidity should update reserves correctly", () => {
++    16 |     const liquidityToRemove = { proportion: 0.1 }; // Removing 10%
++  > 17 |     const { updatedReserve, removedAmount } = removeLiquidity(liquidityToRemove, sampleReserve);
++       |                                                                                  ^^^^^^^^^^^^^
++    18 |
++    19 |     expect(updatedReserve.tokenX).toBeCloseTo(sampleReserve.tokenX * 0.9);
++    20 |     expect(updatedReserve.tokenY).toBeCloseTo(sampleReserve.tokenY * 0.9);
++
++ERROR in src/tests/amm.test.ts:26:13
++TS2339: Property 'updatedReserve' does not exist on type '{ addedAmount: number; }'.
++    24 |   test("swap should update reserves and maintain invariant", () => {
++    25 |     const amountToRemove = 50; // Example value
++  > 26 |     const { updatedReserve, addedAmount} = swap('tokenX', amountToRemove, sampleReserve);
++       |             ^^^^^^^^^^^^^^
++    27 |
++    28 |     // Based on the AMM invariant, check the resulting reserve after swap.
++    29 |     const invariantBefore = sampleReserve.tokenX * sampleReserve.tokenY;
++
++ERROR in src/tests/amm.test.ts:26:75
++TS2554: Expected 2 arguments, but got 3.
++    24 |   test("swap should update reserves and maintain invariant", () => {
++    25 |     const amountToRemove = 50; // Example value
++  > 26 |     const { updatedReserve, addedAmount} = swap('tokenX', amountToRemove, sampleReserve);
++       |                                                                           ^^^^^^^^^^^^^
++    27 |
++    28 |     // Based on the AMM invariant, check the resulting reserve after swap.
++    29 |     const invariantBefore = sampleReserve.tokenX * sampleReserve.tokenY;
+
+# 2023-11-02 14:19:54.998368
++ERROR in src/tests/amm.test.ts:10:26
++TS2304: Cannot find name 'getReserves'.
++     8 |   test("addLiquidity should update reserves correctly", () => {
++     9 |     addLiquidity({ tokenX: 100, tokenY: 200 });
++  > 10 |     const addedReserve = getReserves();
++       |                          ^^^^^^^^^^^
++    11 |
++    12 |     expect(addedReserve.tokenX).toBe(sampleReserve.tokenX + 100);
++    13 |     expect(addedReserve.tokenY).toBe(sampleReserve.tokenY + 200);
++
++ERROR in src/tests/amm.test.ts:19:28
++TS2304: Cannot find name 'getReserves'.
++    17 |     const liquidityToRemove = { proportion: 0.1 }; // Removing 10%
++    18 |     const { removedAmount } = removeLiquidity(liquidityToRemove);
++  > 19 |     const updatedReserve = getReserves();
++       |                            ^^^^^^^^^^^
++    20 |
++    21 |     expect(updatedReserve.tokenX).toBeCloseTo(sampleReserve.tokenX * 0.9);
++    22 |     expect(updatedReserve.tokenY).toBeCloseTo(sampleReserve.tokenY * 0.9);
++
++ERROR in src/tests/amm.test.ts:29:28
++TS2304: Cannot find name 'getReserves'.
++    27 |     const amountToRemove = 50; // Example value
++    28 |     const { addedAmount} = swap('tokenX', amountToRemove);
++  > 29 |     const updatedReserve = getReserves();
++       |                            ^^^^^^^^^^^
++    30 |
++    31 |     // Based on the AMM invariant, check the resulting reserve after swap.
++    32 |     const invariantBefore = sampleReserve.tokenX * sampleReserve.tokenY;
+
+# 2023-11-02 14:21:13.678352
++/run code .
+
+# 2023-11-02 14:23:07.399808
++Lets create a css for the AMM Dashboard which matches the same style as the CLOBDashboard
+
+# 2023-11-02 14:25:42.681917
++Can you adjust the overall structure of the components as the navigation is stickied but the other containers are not below the navigation instead they are overlapping I am not able to scroll down. Can you fix the position of these components to smoothly navigate the page
+
+# 2023-11-02 14:27:56.571092
++Perfect that worked, can you now put the CLOB and AMM Dashboard in the same row in which they would both be below the `swap-portfolio-container` 
+
+# 2023-11-02 14:39:26.055253
++Retry again, revert the css styling of the CLOB and AMM Dashboards and make them aligned to the same row below the `swap-portfolio-container`
+
+# 2023-11-02 14:39:39.413896
++/tokens
+
+# 2023-11-07 08:50:05.979790
++/add src/
+
+# 2023-11-07 08:50:09.776396
++/add Readme.md
+
+# 2023-11-07 08:50:13.514633
++/run clear
+
+# 2023-11-07 08:51:58.107447
++Can you link the css of the `clob-dashboard-container` and `amm-dashboard-container` to match the same neumorphic/modern as `swap-portfolio-container`, all while keeping the same orientation  
+
+# 2023-11-07 08:52:59.070260
++/tokens
+
+# 2023-11-07 09:06:50.737397
++/add src/
+
+# 2023-11-07 09:07:02.148477
++/add Readme.md
+
+# 2023-11-07 09:07:27.591108
++Can you update the `clob-dashboard-container`
+
+# 2023-11-07 09:08:11.346028
++can you update the `clob-dashboard-container` and the `amm-dashboard-container` to match the `swap-portfolio-container` neumorphic/modern style, keep the same orientation of the flexbox for the clob and amm dashboards
+
+# 2023-11-07 09:09:25.686748
++For some reason the dashboards have still not updated, could there be a problem with the linkage or as to why the changes are not being displayed
+
+# 2023-11-07 09:09:55.073528
++I have already included the source files
+
+# 2023-11-07 09:11:12.741326
++it may be the `dashboard-container` as this is where clob and amm dashboards reside
+
+# 2023-11-07 09:15:02.585684
++The main codes component resides in the CLOBDashboard.tsx and the AMMDashboard.tsx, I am still not seeing the updated styles

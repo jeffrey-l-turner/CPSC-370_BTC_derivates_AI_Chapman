@@ -1,0 +1,903 @@
+
+# 2023-10-24 22:19:08.937368
++/add src/App.tsx
+
+# 2023-10-24 22:21:15.951528
++We are going to create a portfolio website using React. Lets create this step-by-step, first ask me the necessary questions to fill in the content of my website. This will be used to showcase my skills as a software engineer student who is going to graduate and will be looking for a job
+
+# 2023-10-24 22:22:42.679339
++Here is my resume: Gilberto Arellano Lopez
++gilarellano1996@gmail.com • linkedin.com/in/gilbertoarellano/ • github.com/gilarellano
++EDUCATION
++Chapman University | Orange, CA Expected Graduation: May 2024 Bachelor of Science – Software Engineering, Minor: Analytics
++Relevant Coursework: Software Principles & Design, Data Structures, Database Management, Data Science, Machine Learning, Business Analytics
++TECHNICAL SKILLS
++Programming Languages: C++, Python, R, SQL, HTML/CSS
++Technologies & Skills: Git, Unix/Linux, Keras, scikit-learn, agile software development Spoken Languages: Spanish, Native Speaker
++EXPERIENCE
++Operations and Technology Administrator | Gilberto Arellano Windows, San Francisco
++• Designed and developed a program written in C++ to calculate window quotes based on measurements, wood, glass,
++and window type, which reduced the quote calculation process by over 80%.
++• Create and send quotes to clients, using strong attention to detail and accuracy to ensure that quotes are both
++competitive and profitable for the company.
++• Created and maintain a CRM dashboard on Monday, project management software, to organize client projects, ensuring
++timely delivery and effective communication with clients.
++Restaurant Manager | La Capilla, Berkeley June 2016 - December 2019
++• Oversaw the day-to-day operations of restaurant generating $50-$60k monthly sales.
++• Managed a team of 9-10 employees, delegating responsibilities and providing guidance and support as needed.
++• Utilized QuickBooks Online to handle payroll and accounts payable, ensuring accurate and timely processing.
++• Interacted with customers to ensure high levels of satisfaction, addressing any concerns or issues promptly and professionally.
++• Maintained a positive and respectful work environment, promoting teamwork and collaboration among coworkers. PROJECTS
++Natural Language Processing | Python, Web Scraping, Machine Learning, OpenAI API, Keras May 2023
++• Scraped and cleaned YouTube transcripts of Machine Learning lectures using Python.
++• Fine-tuned a GPT model to mimic the lecturer's speech patterns, demonstrating transfer learning capabilities.
++• Trained a local LSTM model using Keras as a comparison to the GPT model.
++• Conducted a comparative analysis of the LSTM and the GPT models, offering insights into their relative strengths and weaknesses for text generation tasks.
++Window Quote/Estimate Calculator| C++, OOP May 2023
++• Designed and developed a quote/estimate calculator using C++ and Object-Oriented Programming principles to
++automate the window quote calculation process for a local window company – Gilberto Arellano Windows
++• The program reads window measurements, type of glass, type of wood, and installation cost from a CSV file, resulting in
++a 90% reduction in quote calculation time.
++• Organized the output to provide customers with a clear and comprehensive breakdown of the project cost, including
++unit price, unit tax, and overall project description.
++• Customers reported increased satisfaction due to faster quote turnaround times and clear, organized project breakdowns. Game of Life | C++, OOP May 2022
++• Developed a Game of Life simulation using C++ and Object-Oriented Programming principles, utilizing data structures such as arrays and linked lists to represent the game board and simulate the game's rules.
++• Implemented terminal-based input/output to provide a user-friendly interface for the simulation, allowing users to customize the game's settings and view the game's progress in real-time.
++• Added functionality to read and output game board configurations from files, providing a convenient way for users to load and save custom game settings.
+
+# 2023-10-24 22:24:14.664169
++For now just leave an option for me to add a photo later. Here are the color preferences: E4007C, F7E1D7, DEDBD2, B0C4B1, 291720. Please use this palette appropriately in which follows proper design UI techniques
+
+# 2023-10-24 22:25:31.987909
++/run code .
+
+# 2023-10-24 22:26:20.942585
++Can we create a script for me to run my website locally and see the progress
+
+# 2023-10-24 22:28:26.764695
++sh: react-scripts: command not found
+
+# 2023-10-24 22:30:01.356752
++Could not find a required file.
++  Name: index.html
++  Searched in: /Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/portfolio-website/public
+
+# 2023-10-24 22:31:13.718815
++I am using App.tsx as the entry point getting this error: Could not find a required file.
++  Name: index.js
++  Searched in: /Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/portfolio-website/src
+
+# 2023-10-24 22:32:55.623930
++ERROR in ./src/index.tsx 5:0-33
++Module not found: Error: Can't resolve 'react-dom' in '/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/portfolio-website/src'
+
+# 2023-10-24 22:34:40.109502
++add the react-dom dependency onto package.json
+
+# 2023-10-24 22:36:16.493176
++still getting this error: ERROR in ./src/index.tsx 5:0-33
++Module not found: Error: Can't resolve 'react-dom' in '/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/portfolio-website/src'
+
+# 2023-10-24 22:38:30.163778
++Lets add a css for the header for cleaner formatting.
+
+# 2023-10-24 22:46:06.440413
++I want to make this a decentralized app, can you make the necessary adjustments to head towards that direction?
+
+# 2023-10-24 22:49:02.743621
++/run code .
+
+# 2023-10-24 22:52:15.563762
++Getting these errors:[Error] Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
++	printWarning (bundle.js:5982)
++	error (bundle.js:5959)
++	render (bundle.js:31500)
++	./src/index.tsx (bundle.js:208)
++	(anonymous function) (bundle.js:81775)
++	__webpack_require__ (bundle.js:81220)
++	(anonymous function) (bundle.js:82357)
++	Global Code (bundle.js:82359)
++[Error] WebSocket connection to 'ws://localhost:8545/' failed: Could not connect to the server.
+
+# 2023-10-26 12:54:55.874662
++/run ls src/
+
+# 2023-10-26 12:55:30.066963
++/add src/App.tsx src/components/Header.css src/index.tsx src/components/Header.tsx 
+
+# 2023-10-26 12:55:34.989154
++/run clear
+
+# 2023-10-26 12:56:17.051987
++I want to create this portfolio website as a decentralized application
+
+# 2023-10-26 12:58:53.741860
++/add src/App.tsx src/components/Header.css src/index.tsx src/components/Header.tsx
+
+# 2023-10-26 12:59:20.939233
++I want to create this app as a decentralized application. Here is the error I am getting WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/bignumber.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/bignumbers.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/browser-base64.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/bytes32.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/fixednumber.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/fragments.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/hashes.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/id.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/idna.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/index.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/interface.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/message.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/namehash.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/strings.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/typed-data.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/utf8.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/curve.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/hash-to-curve.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/modular.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/utils.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/weierstrass.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/account.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/address.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/asyncEventEmitter.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/baseTransaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/bytes.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/constants.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/eip1559Transaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/eip2930Transaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/encoding.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/externals.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/hash.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/helpers.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/index.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/internal.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/legacyTransaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/lock.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/object.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/provider.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/signature.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/transactionFactory.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/types.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/units.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/util.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/withdrawal.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_assert.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_sha2.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_shortw_utils.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_u64.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/crypto.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/hash-utils.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/hmac.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/keccak.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/random.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/secp256k1.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/sha3.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/sha256.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/utils.ts' URL is not supported
++
++webpack compiled with 78 warnings
+
+# 2023-10-26 13:00:04.933579
++/run tree -L 2
+
+# 2023-10-26 13:00:25.673331
++/clear
+
+# 2023-10-26 13:00:32.560280
++/run ls
+
+# 2023-10-26 13:00:55.532690
++I want to create a decentralized app, this is the error I am getting: WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/bignumber.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/bignumbers.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/browser-base64.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/bytes32.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/fixednumber.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/fragments.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/hashes.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/id.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/idna.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/index.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/interface.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/message.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/namehash.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/strings.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/typed-data.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src.ts/utf8.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/curve.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/hash-to-curve.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/modular.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/utils.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/abstract/weierstrass.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/account.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/address.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/asyncEventEmitter.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/baseTransaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/bytes.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/constants.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/eip1559Transaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/eip2930Transaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/encoding.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/externals.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/hash.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/helpers.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/index.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/internal.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/legacyTransaction.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/lock.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/object.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/provider.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/signature.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/transactionFactory.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/types.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/units.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/util.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///../src/withdrawal.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_assert.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_sha2.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_shortw_utils.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/_u64.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/crypto.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/hash-utils.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/hmac.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/keccak.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/random.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/secp256k1.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/sha3.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/sha256.ts' URL is not supported
++
++WARNING in ./node_modules/web3/dist/web3.min.js
++Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
++Failed to parse source map: 'webpack:///src/utils.ts' URL is not supported
++
++webpack compiled with 78 warnings
+
+# 2023-10-26 13:01:55.802625
++/add package.json
+
+# 2023-10-26 13:03:17.601426
++lets use ethers instead, I just installed it, now switch out all the instances with ethers
+
+# 2023-10-26 13:05:02.308895
++Failed to compile.
++
++Attempted import error: 'ethers'.'providers' is not exported from 'ethers' (imported as 'ethers').
++ERROR in ./src/index.tsx 9:19-51
++export 'ethers'.'providers' (imported as 'ethers') was not found in 'ethers' (possible exports: AbiCoder, AbstractProvider, AbstractSigner, AlchemyProvider, AnkrProvider, BaseContract, BaseWallet, Block, BrowserProvider, CloudflareProvider, ConstructorFragment, Contract, ContractEventPayload, ContractFactory, ContractTransactionReceipt, ContractTransactionResponse, ContractUnknownEventPayload, EnsPlugin, EnsResolver, ErrorDescription, ErrorFragment, EtherSymbol, EtherscanPlugin, EtherscanProvider, EventFragment, EventLog, EventPayload, FallbackFragment, FallbackProvider, FeeData, FeeDataNetworkPlugin, FetchCancelSignal, FetchRequest, FetchResponse, FetchUrlFeeDataNetworkPlugin, FixedNumber, Fragment, FunctionFragment, GasCostPlugin, HDNodeVoidWallet, HDNodeWallet, Indexed, InfuraProvider, InfuraWebSocketProvider, Interface, IpcSocketProvider, JsonRpcApiProvider, JsonRpcProvider, JsonRpcSigner, LangEn, Log, LogDescription, MaxInt256, MaxUint256, MessagePrefix, MinInt256, Mnemonic, MulticoinProviderPlugin, N, NamedFragment, Network, NetworkPlugin, NonceManager, ParamType, PocketProvider, QuickNodeProvider, Result, Signature, SigningKey, SocketBlockSubscriber, SocketEventSubscriber, SocketPendingSubscriber, SocketProvider, SocketSubscriber, StructFragment, Transaction, TransactionDescription, TransactionReceipt, TransactionResponse, Typed, TypedDataEncoder, UndecodedEventLog, UnmanagedSubscriber, Utf8ErrorFuncs, VoidSigner, Wallet, WebSocketProvider, WeiPerEther, Wordlist, WordlistOwl, WordlistOwlA, ZeroAddress, ZeroHash, accessListify, assert, assertArgument, assertArgumentCount, assertNormalize, assertPrivate, checkResultErrors, computeAddress, computeHmac, concat, copyRequest, dataLength, dataSlice, decodeBase58, decodeBase64, decodeBytes32String, decodeRlp, decryptCrowdsaleJson, decryptKeystoreJson, decryptKeystoreJsonSync, defaultPath, defineProperties, dnsEncode, encodeBase58, encodeBase64, encodeBytes32String, encodeRlp, encryptKeystoreJson, encryptKeystoreJsonSync, ensNormalize, formatEther, formatUnits, fromTwos, getAccountPath, getAddress, getBigInt, getBytes, getBytesCopy, getCreate2Address, getCreateAddress, getDefaultProvider, getIcapAddress, getIndexedAccountPath, getNumber, getUint, hashMessage, hexlify, id, isAddress, isAddressable, isBytesLike, isCallException, isCrowdsaleJson, isError, isHexString, isKeystoreJson, isValidName, keccak256, lock, makeError, mask, namehash, parseEther, parseUnits, pbkdf2, randomBytes, recoverAddress, resolveAddress, resolveProperties, ripemd160, scrypt, scryptSync, sha256, sha512, showThrottleMessage, solidityPacked, solidityPackedKeccak256, solidityPackedSha256, stripZerosLeft, toBeArray, toBeHex, toBigInt, toNumber, toQuantity, toTwos, toUtf8Bytes, toUtf8CodePoints, toUtf8String, uuidV4, verifyMessage, verifyTypedData, version, wordlists, zeroPadBytes, zeroPadValue)
++
++webpack compiled with 1 error
++One of your dependencies, babel-preset-react-app, is importing the
++"@babel/plugin-proposal-private-property-in-object" package without
++declaring it in its dependencies. This is currently working because
++"@babel/plugin-proposal-private-property-in-object" is already in your
++node_modules folder for unrelated reasons, but it may break at any time.
++
++babel-preset-react-app is part of the create-react-app project, which
++is not maintianed anymore. It is thus unlikely that this bug will
++ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
++your devDependencies to work around this error. This will make this message
++go away.
+
+# 2023-10-26 13:08:51.205190
++Follow these design principles to desing this portfolio website, for now lets create a template and we will insert the content later: Website Portfolio Design Description
++
++1. Color Scheme:
++
++Use a neutral color palette consisting of shades of white, gray, and black. This will provide a clean and minimalistic look.
++Introduce a single accent color (like blue or green) for buttons, links, and highlights to add a touch of modernity.
++2. Typography:
++
++Choose a sans-serif font for headers and body content to maintain a modern feel.
++Headings: Larger, bold, with generous spacing.
++Body Text: Comfortable reading size with optimal line-height for readability.
++3. Layout & Structure:
++
++Header: Consist of a logo (preferably on the left) and a navigation menu (on the right). Make the header sticky for easy navigation.
++Homepage:
++Feature a large hero section with a high-quality image or video background. Overlay a brief introduction or tagline and a "View My Work" call-to-action (CTA) button.
++Below the hero section, display snippets of your best works (3-4 items). Include an image, a brief description, and a link to view more.
++Testimonials or client feedback, if available.
++A footer with contact information and links to social media profiles.
++Portfolio Page: Grid or masonry layout showcasing thumbnails of your work. On hover, display the project title and a brief description. Clicking on a thumbnail opens a detailed view with more information and images.
++About Page: A professional photo of yourself, a brief biography, your skills, and achievements.
++Contact Page: A simple contact form with fields for name, email, subject, and message. Also, provide alternative contact methods like email or phone number.
++4. Animations & Effects:
++
++Use subtle transitions for hover effects (like color fade or scale).
++Implement lazy loading for images and content as you scroll down.
++Consider a smooth parallax effect for the hero section.
++Make sure animations don’t compromise the website's speed and functionality.
++5. Responsiveness:
++
++Ensure the design is mobile-friendly, adapting to various screen sizes without compromising user experience.
++Implement a collapsible menu for mobile views.
++Make sure touch targets (like buttons and links) are adequately sized for touch devices.
++6. Content:
++
++Keep written content concise and straightforward, avoiding jargon.
++Use high-quality, optimized images that reflect the quality of your work but ensure they are compressed for web performance.
++7. User Experience (UX):
++
++Implement a smooth scroll effect for a seamless user experience.
++Ensure the site loads quickly by optimizing images and using efficient code.
++Intuitive navigation: Make sure users can easily find what they're looking for. Consider adding a search function if you have a lot of content.
++Provide clear CTAs on every page, guiding the user on what to do next.
++8. Footer:
++
++Should contain essential links like Privacy Policy, Terms of Use, and any copyright notices.
++Provide links to social media profiles.
++Consider adding a small contact form or an email signup form for newsletter subscriptions.
+
+# 2023-10-26 13:10:27.917252
++Lets continue
+
+# 2023-10-26 13:11:26.239014
++/tokens
+
+# 2023-10-26 13:11:33.042560
++lets continue
+
+# 2023-10-26 13:14:41.575786
++Can you finish creating these components: import PortfolioPreview from './components/PortfolioPreview.tsx'; /* New component */
++import Testimonials from './components/Testimonials.tsx'; /* New component */
++import Footer from './components/Footer.tsx';
+
+# 2023-10-26 13:16:50.279074
++Not seeing anything in the output, here is the error: [Error] Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
++	printWarning (bundle.js:6083)
++	error (bundle.js:6060)
++	render (bundle.js:31601)
++	./src/index.tsx (bundle.js:309)
++	(anonymous function) (bundle.js:63563)
++	__webpack_require__ (bundle.js:63008)
++	(anonymous function) (bundle.js:64145)
++	Global Code (bundle.js:64147)
++[Error] ReferenceError: Can't find variable: PortfolioPreview
++	App (bundle.js:43:112)
++	renderWithHooks (bundle.js:20150)
++	mountIndeterminateComponent (bundle.js:23436)
++	callCallback (bundle.js:9742)
++	dispatchEvent
++	invokeGuardedCallbackDev (bundle.js:9786)
++	invokeGuardedCallback (bundle.js:9843)
++	beginWork$1 (bundle.js:29717)
++	performUnitOfWork (bundle.js:28964)
++	workLoopSync (bundle.js:28887)
++	renderRootSync (bundle.js:28860)
++	performSyncWorkOnRoot (bundle.js:28552)
++	performSyncWorkOnRoot
++	flushSyncCallbacks (bundle.js:16582)
++	flushSync (bundle.js:28656)
++	legacyCreateRootFromDOMContainer (bundle.js:31525)
++	legacyRenderSubtreeIntoContainer (bundle.js:31547)
++	./src/index.tsx (bundle.js:309)
++	(anonymous function) (bundle.js:63563)
++	__webpack_require__ (bundle.js:63008)
++	(anonymous function) (bundle.js:64145)
++	Global Code (bundle.js:64147)
++[Error] The above error occurred in the <App> component:
++
++App@http://localhost:3000/static/js/bundle.js:34:76
++
++Consider adding an error boundary to your tree to customize error handling behavior.
++Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
++	logCapturedError (bundle.js:22254)
++	(anonymous function) (bundle.js:22279)
++	callCallback (bundle.js:18183)
++	commitUpdateQueue (bundle.js:18201)
++	commitLayoutEffectOnFiber (bundle.js:26252)
++	commitLayoutMountEffects_complete (bundle.js:27345)
++	commitLayoutEffects_begin (bundle.js:27334)
++	commitLayoutEffects (bundle.js:27280)
++	commitRootImpl (bundle.js:29190)
++	commitRoot (bundle.js:29070)
++	performSyncWorkOnRoot (bundle.js:28579)
++	performSyncWorkOnRoot
++	flushSyncCallbacks (bundle.js:16582)
++	flushSync (bundle.js:28656)
++	legacyCreateRootFromDOMContainer (bundle.js:31525)
++	legacyRenderSubtreeIntoContainer (bundle.js:31547)
++	./src/index.tsx (bundle.js:309)
++	(anonymous function) (bundle.js:63563)
++	__webpack_require__ (bundle.js:63008)
++	(anonymous function) (bundle.js:64145)
++	Global Code (bundle.js:64147)
++[Error] ReferenceError: Can't find variable: PortfolioPreview
++	__webpack_require__ (bundle.js:63011)
++	(anonymous function) (bundle.js:64145)
++	Global Code (bundle.js:64147)
+
+# 2023-10-26 13:18:22.259085
++[Warning] Parsing application manifest http://localhost:3000/manifest.json: The manifest is not valid JSON data.
++[Error] Warning: You are importing createRoot from "react-dom" which is not supported. You should instead import it from "react-dom/client".
++	printWarning (bundle.js:6348)
++	error (bundle.js:6325)
++	createRoot$1 (bundle.js:31970)
++	./src/index.tsx (bundle.js:574)
++	(anonymous function) (bundle.js:63828)
++	__webpack_require__ (bundle.js:63273)
++	(anonymous function) (bundle.js:64410)
++	Global Code (bundle.js:64412)
+
+# 2023-10-26 13:19:04.461782
++Parsing application manifest http://localhost:3000/manifest.json: The manifest is not valid JSON data.
+
+# 2023-10-26 13:21:12.780841
++Can you make this a dark theme website and center it in the middle
+
+# 2023-10-26 13:22:02.975264
++I dont have css files for those, either create or create global whichever is better practice
+
+# 2023-10-26 13:28:18.477151
++Can you apply the dark theme to the header as well
+
+# 2023-10-26 13:32:33.337339
++Can you center all the components to the middle
+
+# 2023-10-26 13:36:44.579299
++how can we anchor it to the center from both verticaly and horizontally as I expand and shrink the window it stays in the same place
+
+# 2023-10-26 13:39:12.362442
++It is still on the left side of the screen, can we center it from both horizontally and vertically
+
+# 2023-10-26 13:44:36.426002
++Can you add a generic 3d animation gif using three.js next to the header
+
+# 2023-10-26 13:49:07.379235
++right now its a floating cube that took over the whole screen, can we make it a small helix that is spinning slowly next to my name in the header
+
+# 2023-10-26 13:50:56.240270
++[Error] ReferenceError: Can't find variable: ThreeAnimation
++	Header (main.a1ead03fac78beebb3c0.hot-update.js:27:106)
++	renderWithHooks (bundle.js:20417)
++	updateFunctionComponent (bundle.js:23299)
++	callCallback (bundle.js:10009)
++	dispatchEvent
++	invokeGuardedCallbackDev (bundle.js:10053)
++	invokeGuardedCallback (bundle.js:10110)
++	beginWork$1 (bundle.js:29984)
++	performUnitOfWork (bundle.js:29231)
++	workLoopSync (bundle.js:29154)
++	renderRootSync (bundle.js:29127)
++	performSyncWorkOnRoot (bundle.js:28819)
++	performSyncWorkOnRoot
++	flushSyncCallbacks (bundle.js:16849)
++	flushSync (bundle.js:28923)
++	scheduleRefresh (bundle.js:30276)
++	(anonymous function) (bundle.js:32377)
++	forEach
++	performReactRefresh (bundle.js:32369)
++	(anonymous function) (bundle.js:722)
++[Error] ReferenceError: Can't find variable: ThreeAnimation
++	Header (main.a1ead03fac78beebb3c0.hot-update.js:27:106)
++	renderWithHooks (bundle.js:20417)
++	updateFunctionComponent (bundle.js:23299)
++	callCallback (bundle.js:10009)
++	dispatchEvent
++	invokeGuardedCallbackDev (bundle.js:10053)
++	invokeGuardedCallback (bundle.js:10110)
++	beginWork$1 (bundle.js:29984)
++	performUnitOfWork (bundle.js:29231)
++	workLoopSync (bundle.js:29154)
++	renderRootSync (bundle.js:29127)
++	recoverFromConcurrentError (bundle.js:28619)
++	performSyncWorkOnRoot (bundle.js:28828)
++	performSyncWorkOnRoot
++	flushSyncCallbacks (bundle.js:16849)
++	flushSync (bundle.js:28923)
++	scheduleRefresh (bundle.js:30276)
++	(anonymous function) (bundle.js:32377)
++	forEach
++	performReactRefresh (bundle.js:32369)
++	(anonymous function) (bundle.js:722)
++[Error] The above error occurred in the <Header> component:
++
++Header@http://localhost:3000/main.a1ead03fac78beebb3c0.hot-update.js:27:105
++div
++App@http://localhost:3000/main.45646fcaaa1d112a7140.hot-update.js:36:11
++
++Consider adding an error boundary to your tree to customize error handling behavior.
++Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
++	logCapturedError (bundle.js:22521)
++	(anonymous function) (bundle.js:22546)
++	callCallback (bundle.js:18450)
++	commitUpdateQueue (bundle.js:18468)
++	commitLayoutEffectOnFiber (bundle.js:26519)
++	commitLayoutMountEffects_complete (bundle.js:27612)
++	commitLayoutEffects_begin (bundle.js:27601)
++	commitLayoutEffects (bundle.js:27547)
++	commitRootImpl (bundle.js:29457)
++	commitRoot (bundle.js:29337)
++	performSyncWorkOnRoot (bundle.js:28846)
++	performSyncWorkOnRoot
++	flushSyncCallbacks (bundle.js:16849)
++	flushSync (bundle.js:28923)
++	scheduleRefresh (bundle.js:30276)
++	(anonymous function) (bundle.js:32377)
++	forEach
++	performReactRefresh (bundle.js:32369)
++	(anonymous function) (bundle.js:722)
++[Error] ReferenceError: Can't find variable: ThreeAnimation
++	performReactRefresh (bundle.js:32387)
++	(anonymous function) (bundle.js:722)
+
+# 2023-10-26 13:51:34.303342
++ERROR in ./src/components/Header.tsx 5:0-46
++Module not found: Error: Can't resolve './ThreeAnimation' in '/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/portfolio-website/src/components'
+
+# 2023-10-26 13:56:51.357048
++ok I see the object but not it obfuscated the whole page, I want it to just be another component in its own space without having to take over the whole page
+
+# 2023-10-26 13:58:07.138882
++ERROR
++Can't find variable: mount
++ThreeAnimation@http://localhost:3000/main.aa7152a3eee1ba75f4b8.hot-update.js:72:15
++renderWithHooks@http://localhost:3000/static/js/bundle.js:20417:31
++updateFunctionComponent@http://localhost:3000/static/js/bundle.js:23299:39
++beginWork$1@http://localhost:3000/static/js/bundle.js:29962:27
++performUnitOfWork@http://localhost:3000/static/js/bundle.js:29231:27
++workLoopSync@http://localhost:3000/static/js/bundle.js:29154:26
++renderRootSync@http://localhost:3000/static/js/bundle.js:29127:23
++recoverFromConcurrentError@http://localhost:3000/static/js/bundle.js:28619:38
++performSyncWorkOnRoot@http://localhost:3000/static/js/bundle.js:28828:50
++performSyncWorkOnRoot@[native code]
++flushSyncCallbacks@http://localhost:3000/static/js/bundle.js:16849:34
++flushSync@http://localhost:3000/static/js/bundle.js:28923:29
++scheduleRefresh@http://localhost:3000/static/js/bundle.js:30276:18
++@http://localhost:3000/static/js/bundle.js:32377:36
++forEach@[native code]
++performReactRefresh@http://localhost:3000/static/js/bundle.js:32369:37
++@http://localhost:3000/static/js/bundle.js:722:36
+
+# 2023-10-26 14:08:27.531480
++/add src/App.tsx src/components/Header.css src/index.tsx src/components/Header.tsx
+
+# 2023-10-26 14:08:36.169707
++/add src/
+
+# 2023-10-26 14:09:52.529644
++I am creating a portfolio website using ethers to serves as a Decentralized app, what could be some functional components to implement
+
+# 2023-10-26 14:17:38.119402
++create a README for this portfolio website on how to set it up and run it

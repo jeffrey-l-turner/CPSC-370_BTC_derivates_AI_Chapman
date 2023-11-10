@@ -1,0 +1,15 @@
+# OpenRouter Configuration
+#openai-api-base: https://openrouter.ai/api/v1
+#openai-api-key: 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
+#model: openai/gpt-4-32k
+
+# OpenAI Configuration
+openai-api-base: https://api.openai.com/v1
+openai-api-key: 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 
+model: gpt-4-1106-preview
+
+# Personal API Key
+#openai-api-key: sk-cvwkuwcw6astkip7c0uyt3blbkfjqzyqhxlgsjxy365ulak2
+
+# Class' API Key
+#openai-api-key: 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 

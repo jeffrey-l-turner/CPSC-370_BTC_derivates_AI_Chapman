@@ -1,0 +1,1125 @@
+
+# 2023-11-07 20:24:55.892261
++/add src/
+
+# 2023-11-07 20:24:59.857765
++/run pwd
+
+# 2023-11-07 20:25:04.637753
++/run ls
+
+# 2023-11-07 20:25:20.512629
++/add ./src
+
+# 2023-11-07 20:25:24.417576
++/add src
+
+# 2023-11-07 20:25:29.235812
++/add
+
+# 2023-11-07 20:25:31.710348
++/tokens
+
+# 2023-11-07 20:25:35.755072
++/clear
+
+# 2023-11-07 20:25:38.568189
++/tokens
+
+# 2023-11-07 20:26:33.540609
++Can you fix this error as I am trying to run the cargo rust RGB contract: error[E0433]: failed to resolve: use of undeclared crate or module `rgb`
++  --> src/main.rs:75:23
++   |
++75 |     let contract_id = rgb::ContractId::from_str(&bindle.to_string()).unwrap();
++   |                       ^^^ use of undeclared crate or module `rgb`
++   |
++help: consider importing this struct
++   |
++1  + use rgbstd::contract::ContractId;
++   |
++help: if you import `ContractId`, refer to it directly
++   |
++75 -     let contract_id = rgb::ContractId::from_str(&bindle.to_string()).unwrap();
++75 +     let contract_id = ContractId::from_str(&bindle.to_string()).unwrap();
++   |
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgb`
++  --> src/main.rs:76:20
++   |
++76 |     let contract = rgb::Contract::from_id(&contract_id).unwrap();
++   |                    ^^^ use of undeclared crate or module `rgb`
++   |
++help: consider importing this type alias
++   |
++1  + use rgbstd::containers::Contract;
++   |
++help: if you import `Contract`, refer to it directly
++   |
++76 -     let contract = rgb::Contract::from_id(&contract_id).unwrap();
++76 +     let contract = Contract::from_id(&contract_id).unwrap();
++   |
++
++For more information about this error, try `rustc --explain E0433`.
++error: could not compile `rgb20-token` (bin "rgb20-token") due to 2 previous errors
+
+# 2023-11-07 20:26:48.591262
++/add src/main.rs
+
+# 2023-11-07 20:28:27.608646
++/add src/
+
+# 2023-11-07 20:28:36.809829
++/add Cargo.lock
+
+# 2023-11-07 20:28:44.150149
++/add Cargo.toml
+
+# 2023-11-07 20:28:51.294616
++/add target/
+
+# 2023-11-07 20:29:13.569072
++getting this error: error[E0433]: failed to resolve: use of undeclared crate or module `rgb`
++  --> src/main.rs:75:23
++   |
++75 |     let contract_id = rgb::ContractId::from_str(&bindle.to_string()).unwrap();
++   |                       ^^^ use of undeclared crate or module `rgb`
++   |
++help: consider importing this struct
++   |
++1  + use rgbstd::contract::ContractId;
++   |
++help: if you import `ContractId`, refer to it directly
++   |
++75 -     let contract_id = rgb::ContractId::from_str(&bindle.to_string()).unwrap();
++75 +     let contract_id = ContractId::from_str(&bindle.to_string()).unwrap();
++   |
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgb`
++  --> src/main.rs:76:20
++   |
++76 |     let contract = rgb::Contract::from_id(&contract_id).unwrap();
++   |                    ^^^ use of undeclared crate or module `rgb`
++   |
++help: consider importing this type alias
++   |
++1  + use rgbstd::containers::Contract;
++   |
++help: if you import `Contract`, refer to it directly
++   |
++76 -     let contract = rgb::Contract::from_id(&contract_id).unwrap();
++76 +     let contract = Contract::from_id(&contract_id).unwrap();
++   |
++
++For more information about this error, try `rustc --explain E0433`.
++error: could not compile `rgb20-token` (bin "rgb20-token") due to 2 previous errors
+
+# 2023-11-07 20:29:45.748007
++error[E0599]: no function or associated item named `from_str` found for struct `ContractId` in the current scope
++  --> src/main.rs:78:35
++   |
++78 |     let contract_id = ContractId::from_str(&bindle.to_string()).unwrap();
++   |                                   ^^^^^^^^ function or associated item not found in `ContractId`
++   |
++   = help: items from traits can only be used if the trait is in scope
++help: the following trait is implemented but not in scope; perhaps add a `use` for it:
++   |
++1  + use std::str::FromStr;
++   |
++
++error[E0599]: no function or associated item named `from_id` found for struct `Consignment` in the current scope
++  --> src/main.rs:79:30
++   |
++79 |     let contract = Contract::from_id(&contract_id).unwrap();
++   |                              ^^^^^^^ function or associated item not found in `Consignment<false>`
++
++For more information about this error, try `rustc --explain E0599`.
++error: could not compile `rgb20-token` (bin "rgb20-token") due to 2 previous errors
+
+# 2023-11-07 20:30:25.373244
++error[E0599]: no function or associated item named `from_id` found for struct `Consignment` in the current scope
++  --> src/main.rs:85:33
++   |
++85 |     let contract = Consignment::from_id(&contract_id).unwrap();
++   |                                 ^^^^^^^ function or associated item not found in `Consignment<_>`
++
++For more information about this error, try `rustc --explain E0599`.
++error: could not compile `rgb20-token` (bin "rgb20-token") due to previous error
+
+# 2023-11-07 20:37:26.330113
++/add src/main.rs
+
+# 2023-11-07 20:37:34.110096
++/run ls
+
+# 2023-11-07 20:37:39.864296
++/add Cargo.lock
+
+# 2023-11-07 20:37:46.350153
++/add Cargo.toml
+
+# 2023-11-07 20:39:01.032553
++I am trying to create a simple RGB contract, here is the instructions from RGB.tech:Writing simple contract
++Firstly, using cargo to create a new project: cargo new rgb20-token, and enter it: cd rgb20-token. Then create a directory to store the contract file. You may name it whatever you like, here we set it to contracts: mkdir contracts. See source codes at RGB20-Token.
++
++Here is the complete project file tree:
++
++➜  rgb20-token git:(main) ✗ tree .
++.
++├── Cargo.lock
++├── Cargo.toml
++├── contracts
++└── src
++    └── main.rs
++
++3 directories, 3 files. 
+
+# 2023-11-07 20:39:35.298753
++I am trying to create a simple RGB contract, here is the instructions from RGB.tech:Wri
++ting simple contract
++Firstly, using cargo to create a new project: cargo new rgb20-token, and enter it: cd rgb
++20-token. Then create a directory to store the contract file. You may name it whatever yo
++u like, here we set it to contracts: mkdir contracts. See source codes at RGB20-Token.
++
++Here is the complete project file tree:
++
++➜  rgb20-token git:(main) ✗ tree .
++.
++├── Cargo.lock
++├── Cargo.toml
++├── contracts
++└── src
++    └── main.rs
++
++3 directories, 3 files. Then I followed the instructions and added those files. Yet I am getting these errors: error[E0433]: failed to resolve: use of undeclared crate or module `rgbstd`
++ --> src/main.rs:1:5
++  |
++1 | use rgbstd::interface::{rgb20, ContractBuilder};
++  |     ^^^^^^ use of undeclared crate or module `rgbstd`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `amplify`
++ --> src/main.rs:6:5
++  |
++6 | use amplify::hex::FromHex;
++  |     ^^^^^^^ use of undeclared crate or module `amplify`
++
++error[E0432]: unresolved import `bp`
++ --> src/main.rs:7:5
++  |
++7 | use bp::{Chain, Outpoint, Tx, Txid};
++  |     ^^ use of undeclared crate or module `bp`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgbstd`
++ --> src/main.rs:9:5
++  |
++9 | use rgbstd::containers::BindleContent;
++  |     ^^^^^^ use of undeclared crate or module `rgbstd`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgbstd`
++  --> src/main.rs:10:5
++   |
++10 | use rgbstd::contract::WitnessOrd;
++   |     ^^^^^^ use of undeclared crate or module `rgbstd`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgbstd`
++  --> src/main.rs:11:5
++   |
++11 | use rgbstd::resolvers::ResolveHeight;
++   |     ^^^^^^ use of undeclared crate or module `rgbstd`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgbstd`
++  --> src/main.rs:12:5
++   |
++12 | use rgbstd::stl::{
++   |     ^^^^^^ use of undeclared crate or module `rgbstd`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgbstd`
++  --> src/main.rs:15:5
++   |
++15 | use rgbstd::validation::{ResolveTx, TxResolverError};
++   |     ^^^^^^ use of undeclared crate or module `rgbstd`
++
++error[E0432]: unresolved import `rgb_schemata`
++ --> src/main.rs:8:5
++  |
++8 | use rgb_schemata::{nia_rgb20, nia_schema};
++  |     ^^^^^^^^^^^^ use of undeclared crate or module `rgb_schemata`
++
++error[E0432]: unresolved import `strict_encoding`
++  --> src/main.rs:16:5
++   |
++16 | use strict_encoding::StrictDumb;
++   |     ^^^^^^^^^^^^^^^ use of undeclared crate or module `strict_encoding`
++
++Some errors have detailed explanations: E0432, E0433.
++For more information about an error, try `rustc --explain E0432`.
++error: could not compile `rgb20-token` (bin "rgb20-token") due to 10 previous errors
+
+# 2023-11-07 20:41:46.126011
++It worked, when I ran cargo run, I got this -----BEGIN RGB CONTRACT-----
++Id: rgb:22CSyBtPFuYjzYRSNpad7PfpvqQt5WH9wGkZzCYiH5JbUzNMiN
++Terminals:
++Version: v1, then a lot of numbers and letters and then ---END RGB Contract---, what can I do with this and what does this mean?
+
+# 2023-11-07 20:43:21.159134
++I am doing this as part of an assignment for my crypto/blockchain class. Here is the next part of the assignment, what does this mean? "Import the contract into the stash using command-line tool and query its initial state. You can take an example on how to do that from https://rgb.tech/power-user/#contract"
+
+# 2023-11-08 13:01:04.541641
++/run ls
+
+# 2023-11-08 13:01:10.553023
++/add src/
+
+# 2023-11-08 13:01:19.551491
++/add Cargo.lock Cargo.toml
+
+# 2023-11-08 13:01:24.083369
++/add contracts/
+
+# 2023-11-08 13:03:02.766806
++I am taking a crypto/blockchain class, how would I complete this assingment? Import the contract into the stash using command-line tool and query its initial state. You can take an example on how to do that from https://rgb.tech/power-user/#contract
+
+# 2023-11-08 19:47:04.652672
++/add src/main.rs
+
+# 2023-11-08 19:47:20.423856
++/run ll
+
+# 2023-11-08 19:47:23.141244
++/run ls
+
+# 2023-11-08 19:47:30.951360
++/add Cargo.lock Cargo.toml
+
+# 2023-11-08 19:47:51.423026
++/add contracts/rgb20-token.contract.rgba
+
+# 2023-11-08 19:47:55.077575
++/run clear
+
+# 2023-11-08 19:54:15.142052
++I want to query the initial state of my smart contract, in which I am using RGB.tech for, how may I be able to do that in the CLI, macos
+
+# 2023-11-08 19:57:04.763649
++We are playing around with smart contracts, this is the description of the assignment, what could this mean? Create a custom RGB schema as starting point
++Add some custom state to it, like explained in https://rgb.tech/program/rust/#state
++Implement RGB20 interface https://rgb.tech/program/rust/#iimpl
++Issue a new contract using the schema you have created, repeating steps from the previous assignment task
+
+# 2023-11-08 20:04:55.423622
++The website provides a sample code for the custom schema, what would be an appropriate file name and where would I save it in this directory?
+
+# 2023-11-08 20:06:45.777585
++Here is the sample code, explain what this custom schema is doing: fn schema() -> SubSchema {
++    Schema {
++        ffv: zero!(),
++        subset_of: None,
++        type_system: types.type_system(),
++        global_types: tiny_bmap! {
++            GS_NOMINAL => GlobalStateSchema::once(types.get("RGBContract.Nominal")),
++            GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
++        },
++        owned_types: tiny_bmap! {
++            OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
++        },
++        valency_types: none!(),
++        genesis: GenesisSchema {
++            metadata: Ty::<SemId>::UNIT.id(None),
++            globals: tiny_bmap! {
++                GS_NOMINAL => Occurrences::Once,
++                GS_CONTRACT => Occurrences::Once,
++            },
++            assignments: tiny_bmap! {
++                OS_ASSETS => Occurrences::OnceOrMore,
++            },
++            valencies: none!(),
++        },
++        extensions: none!(),
++        transitions: tiny_bmap! {
++            TS_TRANSFER => TransitionSchema {
++                metadata: Ty::<SemId>::UNIT.id(None),
++                globals: none!(),
++                inputs: tiny_bmap! {
++                    OS_ASSETS => Occurrences::OnceOrMore
++                },
++                assignments: tiny_bmap! {
++                    OS_ASSETS => Occurrences::OnceOrMore
++                },
++                valencies: none!(),
++            }
++        },
++        script: Script::AluVM(AluScript {
++            libs: confined_bmap! { alu_id => alu_lib },
++            entry_points: confined_bmap! {
++                EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++            },
++        }),
++    }
++}
+
+# 2023-11-08 20:09:21.328598
++/add Cargo.lock Cargo.toml contracts/rgb20-token.contract.rgba src/main.rs
+
+# 2023-11-08 20:09:44.136555
++/add src/schema/token_schema.rs
+
+# 2023-11-08 20:10:24.264210
++I am working with smart contracts, layer 2 connected to bitcoin using rgb.tech, explain what my token_schema.rs is doing
+
+# 2023-11-09 10:19:47.297959
++I want to implement a custom state, how would I go about this? Here is the tutorial from the website, explain what is going on: Creating custom state
++Custom state can be added to a contract by defining a data type which will hold it. Data type is a rust structure or enum, which implements strict_encoding traits. The simplest way to add this implementation is through derive macros:
++
++#[derive(Clone, Eq, PartialEq, Debug)]
++#[derive(StrictDumb, StrictType, StrictEncode, StrictDecode)]
++#[strict_type(lib = LIB_NAME_RGB_CONTRACT)]
++#[cfg_attr(
++    feature = "serde",
++    derive(Serialize, Deserialize),
++    serde(crate = "serde_crate", rename_all = "camelCase")
++)]
++pub struct Nominal {
++    ticker: Ticker,
++    name: ContractName,
++    details: Option<ContractDetails>,
++    precision: Precision,
++}
++impl StrictSerialize for Nominal {}
++impl StrictDeserialize for Nominal {}
++Once declared, the type can be compiled into a type library:
++
++let lib = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
++    .process::<Nominal>()?
++    .compile(none!())?;
++let types = SystemBuilder::new()
++    .import(lib)?
++    .finalize()?;
+
+# 2023-11-09 10:31:40.202174
++How can I integrate this custom state to my `token_schema`, does it need to be implemented in another file the imported into the schema, what would be the best practice?
+
+# 2023-11-09 10:36:55.924333
++What would be my Nominal fields as an example for the the token_schema, as I am just learning about smart contracts
+
+# 2023-11-09 10:39:24.696930
++/add src/schema/custom_state.rs
+
+# 2023-11-09 10:44:32.268054
++Can you check my custom_state and check it was implemented correctly
+
+# 2023-11-09 10:45:01.905744
++Its already added, its `src/schema/custom_state.rs`
+
+# 2023-11-09 10:46:25.408540
++Can you check that the `Cargo.toml` include the `rgbstd` and `strict_encoding`, and whatever you have to check to make sure `serde` is implemented correctly
+
+# 2023-11-09 10:47:29.257982
++Lets now implement the `custom_state.rs` into my `src/schema/token_schema.rs` 
+
+# 2023-11-09 10:48:45.502081
++Can you make these changes for me, remember I am learning how to use smart contracts thus implement an example of how it might be used
+
+# 2023-11-09 11:30:34.306042
++Can you implement these changes to my token_schema, I have already added the file
+
+# 2023-11-09 11:31:00.406701
++/add src/schema/token_schema.rs
+
+# 2023-11-09 11:31:04.204846
++its already added
+
+# 2023-11-09 11:38:06.519765
++/add Cargo.lock Cargo.toml contracts/rgb20-token.contract.rgba src/main.rs src/schema/custom_state.rs src/schema/token_schema.rs
+
+# 2023-11-09 11:38:50.346610
++can you implement the `custom_state` onto my token_schema.rs, I am learning smart contracts using RGB, layer 2 bicoin protocol, 
+
+# 2023-11-09 11:39:39.524210
++IS there anything else needed to add in the token_schema to fully integrate the custom_state?
+
+# 2023-11-09 11:40:58.560344
++I want to test that I can create a contract from this, how would I run this and test it?
+
+# 2023-11-09 11:42:38.052073
++would i need to update my `src/main.rs` to properly create the `src/schema/token_schema.rs`
+
+# 2023-11-09 11:43:13.135422
++`main.rs` is already provided
+
+# 2023-11-09 11:46:51.394352
++error[E0433]: failed to resolve: unresolved import
++ --> src/main.rs:1:12
++  |
++1 | use crate::schema::token_schema::schema;
++  |            ^^^^^^
++  |            |
++  |            unresolved import
++  |            help: a similar path exists: `rgbstd::schema`
++
++error[E0433]: failed to resolve: use of undeclared crate or module `rgb20_token`
++ --> src/main.rs:2:5
++  |
++2 | use rgb20_token::schema::token_schema::schema as token_schema;
++  |     ^^^^^^^^^^^ use of undeclared crate or module `rgb20_token`
++
++warning: unused import: `nia_schema`
++  --> src/main.rs:10:31
++   |
++10 | use rgb_schemata::{nia_rgb20, nia_schema};
++   |                               ^^^^^^^^^^
++   |
++   = note: `#[warn(unused_imports)]` on by default
++
++For more information about this error, try `rustc --explain E0433`.
++warning: `rgb20-token` (bin "rgb20-token") generated 1 warning
++error: could not compile `rgb20-token` (bin "rgb20-token") due to 2 previous errors; 1 warning emitted
+
+# 2023-11-09 11:52:42.356658
++   Compiling rgb20-token v0.1.0 (/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token)
++error[E0433]: failed to resolve: unresolved import
++ --> src/main.rs:1:12
++  |
++1 | use crate::schema::token_schema::schema;
++  |            ^^^^^^
++  |            |
++  |            unresolved import
++  |            help: a similar path exists: `rgbstd::schema`
++
++error[E0432]: unresolved import `schema::token_schema::schema`
++ --> src/main.rs:2:5
++  |
++2 | use schema::token_schema::schema as token_schema;
++  |     ^^^
+
+# 2023-11-09 11:53:22.276293
++`src/schema/token_schema.rs` is the location
+
+# 2023-11-09 12:25:20.268885
++/run tree L-3
+
+# 2023-11-09 12:25:29.597353
++/run tree L -3
+
+# 2023-11-09 12:25:48.855256
++/run tree -L 3
+
+# 2023-11-09 12:26:11.797213
++/add src/
+
+# 2023-11-09 12:26:28.727142
++/add Cargo.toml Cargo.lock
+
+# 2023-11-09 12:28:13.804965
++I am learning how to use smart contracts, fill in the `custom_state`, here is the tutorial from RGB, layer 2 protocol for bitcoin: Creating custom state
++Custom state can be added to a contract by defining a data type which will hold it. Data type is a rust structure or enum, which implements strict_encoding traits. The simplest way to add this implementation is through derive macros:
++
++#[derive(Clone, Eq, PartialEq, Debug)]
++#[derive(StrictDumb, StrictType, StrictEncode, StrictDecode)]
++#[strict_type(lib = LIB_NAME_RGB_CONTRACT)]
++#[cfg_attr(
++    feature = "serde",
++    derive(Serialize, Deserialize),
++    serde(crate = "serde_crate", rename_all = "camelCase")
++)]
++pub struct Nominal {
++    ticker: Ticker,
++    name: ContractName,
++    details: Option<ContractDetails>,
++    precision: Precision,
++}
++impl StrictSerialize for Nominal {}
++impl StrictDeserialize for Nominal {}
++Once declared, the type can be compiled into a type library:
++
++let lib = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
++    .process::<Nominal>()?
++    .compile(none!())?;
++let types = SystemBuilder::new()
++    .import(lib)?
++    .finalize()?;
+
+# 2023-11-09 12:28:57.703962
++for the `Nominal` struct, make sure it matches as the one in `main`
+
+# 2023-11-09 12:30:11.957080
++for `LIB_NAME_RGB_CONTRACT` use what you think is best as an example as I am learning how to use smart contracts, if `rgb20` is best to use in this case that is fine
+
+# 2023-11-09 12:31:52.169263
++I copied and paste the `src/schema/token_schema.rs` from the RGB.tech website, make sure its correct and implement the `custom_state` we just created
+
+# 2023-11-09 12:33:11.492366
++I am just learning how to use this, use which `type_id` you think is best
+
+# 2023-11-09 12:33:48.925234
++`custom_state.rs` is already added
+
+# 2023-11-09 12:34:12.215856
++apply the changes you said you would make in the previous discussion
+
+# 2023-11-09 12:34:42.600593
++how can I test that this code would work?
+
+# 2023-11-09 12:36:13.145737
++Can we update the `src/main.rs` to use this token_schema.rs and update `Cargo.toml` if needed
+
+# 2023-11-09 12:37:12.556361
++I want to create a contract based on token_schema.rs, so import what is necessary and changes in main.rs to do this
+
+# 2023-11-09 12:42:15.612807
++I am getting this error in `src/main.rs`: error[E0433]: failed to resolve: unresolved import
++ --> src/main.rs:9:12
++  |
++9 | use crate::schema::token_schema::token_schema;
++  |            ^^^^^^
++  |            |
++  |            unresolved import
++  |            help: a similar path exists: `rgbstd::schema`
+
+# 2023-11-09 12:42:48.783653
++/run tree -L 3
+
+# 2023-11-09 12:43:28.341876
++I am getting this error when trying to import `token_schema`, error[E0433]: failed to resolve: unresolved import
++ --> src/main.rs:9:12
++  |
++9 | use crate::schema::token_schema::token_schema;
++  |            ^^^^^^
++  |            |
++  |            unresolved import
++  |            help: a similar path exists: `rgbstd::schema`
+
+# 2023-11-09 12:45:48.488857
++I get these errors when I alternate between each import
++
++ --> src/main.rs:9:5
++  |
++9 | use rgbstd::schema::token_schema;
++  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `token_schema` in `schema`
++
++For more information about this error, try `rustc --explain E0432`.
++  --> src/main.rs:10:12
++   |
++
++10 | use crate::schema::token_schema::schema as token_schema;
++   |            ^^^^^^
++   |            |
++   |            unresolved import
++   |            help: a similar path exists: `rgbstd::schema`
++
++For more information about this error, try `rustc --explain E0433`.
+
+# 2023-11-09 18:08:02.718386
++/add src/
+
+# 2023-11-09 18:08:12.294372
++/add Cargo.toml
+
+# 2023-11-09 18:08:24.733379
++after I run cargo 
+
+# 2023-11-09 18:08:56.118118
++After I run "cargo run" I am getting these errors for token_schema: error[E0425]: cannot find value `types` in this scope
++  --> src/schema/token_schema.rs:11:22
++   |
++11 |         type_system: types.type_system(),
++   |                      ^^^^^ not found in this scope
++
++error[E0425]: cannot find value `GS_NOMINAL` in this scope
++  --> src/schema/token_schema.rs:13:13
++   |
++13 |             GS_NOMINAL => GlobalStateSchema::once(NOMINAL_TYPE_ID),
++   |             ^^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `GlobalStateSchema`
++  --> src/schema/token_schema.rs:13:27
++   |
++13 |             GS_NOMINAL => GlobalStateSchema::once(NOMINAL_TYPE_ID),
++   |                           ^^^^^^^^^^^^^^^^^ use of undeclared type `GlobalStateSchema`
++   |
++help: consider importing this struct
++   |
++1  + use rgbstd::schema::GlobalStateSchema;
++   |
++
++error[E0425]: cannot find value `NOMINAL_TYPE_ID` in this scope
++  --> src/schema/token_schema.rs:13:51
++   |
++13 |             GS_NOMINAL => GlobalStateSchema::once(NOMINAL_TYPE_ID),
++   |                                                   ^^^^^^^^^^^^^^^ not found in this scope
++
++error[E0425]: cannot find value `GS_CONTRACT` in this scope
++  --> src/schema/token_schema.rs:14:13
++   |
++14 |             GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
++   |             ^^^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `GlobalStateSchema`
++  --> src/schema/token_schema.rs:14:28
++   |
++14 |             GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
++   |                            ^^^^^^^^^^^^^^^^^ use of undeclared type `GlobalStateSchema`
++   |
++help: consider importing this struct
++   |
++1  + use rgbstd::schema::GlobalStateSchema;
++   |
++
++error[E0425]: cannot find value `types` in this scope
++  --> src/schema/token_schema.rs:14:52
++   |
++14 |             GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
++   |                                                    ^^^^^ not found in this scope
++
++error[E0425]: cannot find value `OS_ASSETS` in this scope
++  --> src/schema/token_schema.rs:17:13
++   |
++17 |             OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
++   |             ^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `StateSchema`
++  --> src/schema/token_schema.rs:17:26
++   |
++17 |             OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
++   |                          ^^^^^^^^^^^ use of undeclared type `StateSchema`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::StateSchema;
++   |
++
++error[E0433]: failed to resolve: use of undeclared type `FungibleType`
++  --> src/schema/token_schema.rs:17:48
++   |
++17 |             OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
++   |                                                ^^^^^^^^^^^^ use of undeclared type `FungibleType`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::FungibleType;
++   |
++
++error[E0425]: cannot find value `GS_NOMINAL` in this scope
++  --> src/schema/token_schema.rs:23:17
++   |
++23 |                 GS_NOMINAL => Occurrences::Once,
++   |                 ^^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `Occurrences`
++  --> src/schema/token_schema.rs:23:31
++   |
++23 |                 GS_NOMINAL => Occurrences::Once,
++   |                               ^^^^^^^^^^^ use of undeclared type `Occurrences`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::Occurrences;
++   |
++
++error[E0425]: cannot find value `GS_CONTRACT` in this scope
++  --> src/schema/token_schema.rs:24:17
++   |
++24 |                 GS_CONTRACT => Occurrences::Once,
++   |                 ^^^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `Occurrences`
++  --> src/schema/token_schema.rs:24:32
++   |
++24 |                 GS_CONTRACT => Occurrences::Once,
++   |                                ^^^^^^^^^^^ use of undeclared type `Occurrences`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::Occurrences;
++   |
++
++error[E0425]: cannot find value `OS_ASSETS` in this scope
++  --> src/schema/token_schema.rs:27:17
++   |
++27 |                 OS_ASSETS => Occurrences::OnceOrMore,
++   |                 ^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `Occurrences`
++  --> src/schema/token_schema.rs:27:30
++   |
++27 |                 OS_ASSETS => Occurrences::OnceOrMore,
++   |                              ^^^^^^^^^^^ use of undeclared type `Occurrences`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::Occurrences;
++   |
++
++error[E0425]: cannot find value `TS_TRANSFER` in this scope
++  --> src/schema/token_schema.rs:33:13
++   |
++33 |             TS_TRANSFER => TransitionSchema {
++   |             ^^^^^^^^^^^ not found in this scope
++
++error[E0422]: cannot find struct, variant or union type `TransitionSchema` in this scope
++  --> src/schema/token_schema.rs:33:28
++   |
++33 |             TS_TRANSFER => TransitionSchema {
++   |                            ^^^^^^^^^^^^^^^^ not found in this scope
++   |
++help: consider importing this struct
++   |
++1  + use rgbstd::schema::TransitionSchema;
++   |
++
++error[E0425]: cannot find value `OS_ASSETS` in this scope
++  --> src/schema/token_schema.rs:37:21
++   |
++37 |                     OS_ASSETS => Occurrences::OnceOrMore
++   |                     ^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `Occurrences`
++  --> src/schema/token_schema.rs:37:34
++   |
++37 |                     OS_ASSETS => Occurrences::OnceOrMore
++   |                                  ^^^^^^^^^^^ use of undeclared type `Occurrences`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::Occurrences;
++   |
++
++error[E0425]: cannot find value `OS_ASSETS` in this scope
++  --> src/schema/token_schema.rs:40:21
++   |
++40 |                     OS_ASSETS => Occurrences::OnceOrMore
++   |                     ^^^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `Occurrences`
++  --> src/schema/token_schema.rs:40:34
++   |
++40 |                     OS_ASSETS => Occurrences::OnceOrMore
++   |                                  ^^^^^^^^^^^ use of undeclared type `Occurrences`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::schema::Occurrences;
++   |
++
++error[E0425]: cannot find value `alu_id` in this scope
++  --> src/schema/token_schema.rs:46:36
++   |
++46 |             libs: confined_bmap! { alu_id => alu_lib },
++   |                                    ^^^^^^ not found in this scope
++
++error[E0425]: cannot find value `alu_lib` in this scope
++  --> src/schema/token_schema.rs:46:46
++   |
++46 |             libs: confined_bmap! { alu_id => alu_lib },
++   |                                              ^^^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `EntryPoint`
++  --> src/schema/token_schema.rs:48:17
++   |
++48 |                 EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++   |                 ^^^^^^^^^^ use of undeclared type `EntryPoint`
++   |
++help: consider importing this enum
++   |
++1  + use rgbstd::vm::EntryPoint;
++   |
++
++error[E0425]: cannot find value `OS_ASSETS` in this scope
++  --> src/schema/token_schema.rs:48:48
++   |
++48 |                 EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++   |                                                ^^^^^^^^^ not found in this scope
++
++error[E0425]: cannot find value `alu_id` in this scope
++  --> src/schema/token_schema.rs:48:79
++   |
++48 |                 EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++   |                                                                               ^^^^^^ not found in this scope
++
++warning: unused import: `crate::schema::token_schema`
++ --> src/schema/token_schema.rs:1:5
++  |
++1 | use crate::schema::token_schema;
++  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
++  |
++  = note: `#[warn(unused_imports)]` on by default
++
++error[E0433]: failed to resolve: use of undeclared type `LibSite`
++  --> src/schema/token_schema.rs:48:62
++   |
++48 |                 EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++   |                                                              ^^^^^^^ use of undeclared type `LibSite`
++
+
+# 2023-11-09 18:09:52.340392
++I am just learning how to use smart contracts, so put a value that you think is best as I am creating this contract as practice
+
+# 2023-11-09 18:10:27.023761
++I am now getting these errors: error[E0252]: the name `AluScript` is defined multiple times
++  --> src/schema/token_schema.rs:15:5
++   |
++3  | use rgbstd::vm::{AluScript, EntryPoint, LibSite};
++   |                  --------- previous import of the type `AluScript` here
++...
++15 | use rgbstd::vm::AluScript;
++   |     ^^^^^^^^^^^^^^^^^^^^^ `AluScript` reimported here
++   |
++   = note: `AluScript` must be defined only once in the type namespace of this module
++
++error[E0432]: unresolved import `rgbstd::vm::LibSite`
++ --> src/schema/token_schema.rs:3:41
++  |
++3 | use rgbstd::vm::{AluScript, EntryPoint, LibSite};
++  |                                         ^^^^^^^ no `LibSite` in `vm`
++
++error[E0432]: unresolved import `rgbstd::stl::FungibleType`
++ --> src/schema/token_schema.rs:4:5
++  |
++4 | use rgbstd::stl::FungibleType;
++  |     ^^^^^^^^^^^^^^^^^^^^^^^^^ no `FungibleType` in `stl`
++  |
++help: consider importing this enum instead
++  |
++4 | use rgbstd::schema::FungibleType;
++  |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++
++error[E0432]: unresolved import `crate::schema::custom_state`
++ --> src/schema/token_schema.rs:5:20
++  |
++5 | use crate::schema::custom_state::{NOMINAL_TYPE_ID, Nominal};
++  |                    ^^^^^^^^^^^^ could not find `custom_state` in `schema`
++
++error[E0432]: unresolved import `crate::types`
++ --> src/schema/token_schema.rs:7:5
++  |
++7 | use crate::types; // Replace with the correct path if `types` is a module or remove if it's a variable within the same file.
++  |     ^^^^^^^^^^^^ no `types` in the root
++
++error[E0425]: cannot find value `alu_lib` in this scope
++  --> src/schema/token_schema.rs:57:46
++   |
++13 | const alu_id: u16 = 0x0204; // Placeholder value for AluVM library ID
++   | --------------------------- similarly named constant `alu_id` defined here
++...
++57 |             libs: confined_bmap! { alu_id => alu_lib },
++   |                                              ^^^^^^^ help: a constant with a similar name exists: `alu_id`
++
++warning: unused import: `rgbstd::vm::AluScript`
++  --> src/schema/token_schema.rs:15:5
++   |
++15 | use rgbstd::vm::AluScript;
++   |     ^^^^^^^^^^^^^^^^^^^^^
++   |
++   = note: `#[warn(unused_imports)]` on by default
+
+# 2023-11-09 18:15:42.246069
++Got these errors now: error[E0432]: unresolved import `crate::custom_state`
++ --> src/schema/token_schema.rs:5:12
++  |
++5 | use crate::custom_state::{NOMINAL_TYPE_ID, Nominal};
++  |            ^^^^^^^^^^^^ could not find `custom_state` in the crate root
++
++error[E0425]: cannot find value `types` in this scope
++  --> src/schema/token_schema.rs:20:22
++   |
++20 |         type_system: types.type_system(),
++   |                      ^^^^^ not found in this scope
++
++error[E0425]: cannot find value `types` in this scope
++  --> src/schema/token_schema.rs:23:52
++   |
++23 |             GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
++   |                                                    ^^^^^ not found in this scope
++
++error[E0433]: failed to resolve: use of undeclared type `LibSite`
++  --> src/schema/token_schema.rs:57:62
++   |
++57 |                 EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++   |                                                              ^^^^^^^ use of undeclared type `LibSite`
++
++error[E0063]: missing field `libs` in initializer of `AluScript`
++  --> src/schema/token_schema.rs:54:31
++   |
++54 |         script: Script::AluVM(AluScript {
++   |                               ^^^^^^^^^ missing `libs`
+
+# 2023-11-09 18:20:21.689124
++Can you redo the whole token_schema and recreate it, here is the sample text from the RGB.tech website: fn schema() -> SubSchema {
++    Schema {
++        ffv: zero!(),
++        subset_of: None,
++        type_system: types.type_system(),
++        global_types: tiny_bmap! {
++            GS_NOMINAL => GlobalStateSchema::once(types.get("RGBContract.Nominal")),
++            GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
++        },
++        owned_types: tiny_bmap! {
++            OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
++        },
++        valency_types: none!(),
++        genesis: GenesisSchema {
++            metadata: Ty::<SemId>::UNIT.id(None),
++            globals: tiny_bmap! {
++                GS_NOMINAL => Occurrences::Once,
++                GS_CONTRACT => Occurrences::Once,
++            },
++            assignments: tiny_bmap! {
++                OS_ASSETS => Occurrences::OnceOrMore,
++            },
++            valencies: none!(),
++        },
++        extensions: none!(),
++        transitions: tiny_bmap! {
++            TS_TRANSFER => TransitionSchema {
++                metadata: Ty::<SemId>::UNIT.id(None),
++                globals: none!(),
++                inputs: tiny_bmap! {
++                    OS_ASSETS => Occurrences::OnceOrMore
++                },
++                assignments: tiny_bmap! {
++                    OS_ASSETS => Occurrences::OnceOrMore
++                },
++                valencies: none!(),
++            }
++        },
++        script: Script::AluVM(AluScript {
++            libs: confined_bmap! { alu_id => alu_lib },
++            entry_points: confined_bmap! {
++                EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
++            },
++        }),
++    }
++}
+
+# 2023-11-09 18:21:45.048904
++/add src/
+
+# 2023-11-09 18:21:48.254855
++/add Cargo.toml
+
+# 2023-11-09 18:22:38.844893
++I am learning how to create smart contracts using RGB for Bitcoin. I inserted an example from the website into `token_schema`. Help me finalize the file and that everything is correct
+
+# 2023-11-09 18:32:54.322354
++/add src/
+
+# 2023-11-09 18:32:59.050170
++/add Cargo.toml
+
+# 2023-11-09 18:33:07.429193
++/run tree -L 3
+
+# 2023-11-09 18:42:20.125014
++I am learning how to create smart contracts using RGB, can you create a custom schema in `token_schema` and fill it in with sample information to see an example, use the custom_state that I created as well
+
+# 2023-11-09 19:15:50.768550
++error: no matching package named `rgbstd` found
++location searched: registry `crates-io`
+
+# 2023-11-09 19:16:20.163921
++error[E0432]: unresolved import `crate::schema::custom_state`
++ --> src/schema/token_schema.rs:1:20
++  |
++1 | use crate::schema::custom_state::Nominal;
++  |                    ^^^^^^^^^^^^ could not find `custom_state` in `schema`
++
++error[E0432]: unresolved import `rgbstd::schema::constants`
++ --> src/schema/token_schema.rs:2:22
++  |
++2 | use rgbstd::schema::{constants::*, Schema, SchemaId, TransitionType};
++  |                      ^^^^^^^^^ could not find `constants` in `schema`
++
++warning: unused imports: `StrictDecode`, `StrictEncode`
++ --> src/schema/token_schema.rs:3:23
++  |
++3 | use strict_encoding::{StrictEncode, StrictDecode};
++  |                       ^^^^^^^^^^^^  ^^^^^^^^^^^^
++  |
++  = note: `#[warn(unused_imports)]` on by default
++
++error[E0107]: missing generics for struct `rgbstd::schema::Schema`
++   --> src/schema/token_schema.rs:5:20
++    |
++5   | pub fn schema() -> Schema {
++    |                    ^^^^^^ expected 1 generic argument
++    |
++note: struct defined here, with 1 generic parameter: `Root`
++   --> /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-core-0.10.8/src/schema/schema.rs:112:12
++    |
++112 | pub struct Schema<Root: SchemaRoot> {
++    |            ^^^^^^ ----
++help: add missing generic argument
++    |
++5   | pub fn schema() -> Schema<Root> {
++    |                          ++++++
++
++error[E0433]: failed to resolve: use of undeclared type `FieldType`
++  --> src/schema/token_schema.rs:14:23
++   |
++14 |         defines: vec![FieldType::Nominal],
++   |                       ^^^^^^^^^ use of undeclared type `FieldType`
++
+
+# 2023-11-09 19:23:05.981369
++I have passed all the files you need to use as reference, create the token_schema.rs and fill it in with example information so I can see how a smart contract works, edit any files necessary for all of them to be coherent and working
+
+# 2023-11-09 19:28:12.844647
++Here are the errors, fill in any information on what you think is best, remember I am just creating these smart contracts to learn how they work: rror[E0432]: unresolved import `crate::schema::custom_state`
++ --> src/schema/token_schema.rs:1:20
++  |
++1 | use crate::schema::custom_state::Nominal;
++  |                    ^^^^^^^^^^^^ could not find `custom_state` in `schema`
++
++error[E0432]: unresolved imports `rgbstd::constants`, `rgbstd::Schema`, `rgbstd::SchemaId`, `rgbstd::TransitionType`
++ --> src/schema/token_schema.rs:3:14
++  |
++3 | use rgbstd::{constants::*, Schema, SchemaId, TransitionType};
++  |              ^^^^^^^^^     ^^^^^^  ^^^^^^^^  ^^^^^^^^^^^^^^ no `TransitionType` in the root
++  |              |             |       |
++  |              |             |       no `SchemaId` in the root
++  |              |             no `Schema` in the root
++  |              |             help: a similar name exists in the module (notice the capitalization): `schema`
++  |              could not find `constants` in `rgbstd`
++  |
++  = help: consider importing one of these items instead:
++          rgbstd::containers::ContentId::Schema
++          rgbstd::containers::UniversalBindle::Schema
++          rgbstd::schema::Schema
++  = help: consider importing this struct instead:
++          rgbstd::schema::SchemaId
++  = help: consider importing this type alias instead:
++          rgbstd::schema::TransitionType
++
++error[E0432]: unresolved imports `rgbstd::Schema`, `rgbstd::SchemaId`, `rgbstd::TransitionType`, `rgbstd::NodeId`
++  --> src/schema/token_schema.rs:24:14
++   |
++24 | use rgbstd::{Schema, SchemaId, TransitionType, NodeId};
++   |              ^^^^^^  ^^^^^^^^  ^^^^^^^^^^^^^^  ^^^^^^ no `NodeId` in the root
++   |              |       |         |
++   |              |       |         no `TransitionType` in the root
++   |              |       no `SchemaId` in the root
++   |              no `Schema` in the root
++   |              help: a similar name exists in the module (notice the capitalization): `schema`
++   |
++   = help: consider importing one of these items instead:
++           rgbstd::containers::ContentId::Schema
++           rgbstd::containers::UniversalBindle::Schema
++           rgbstd::schema::Schema
++   = help: consider importing this struct instead:
++           rgbstd::schema::SchemaId
++   = help: consider importing this type alias instead:
++           rgbstd::schema::TransitionType
++
++error[E0432]: unresolved import `crate::custom_state`
++  --> src/schema/token_schema.rs:23:12
++   |
++23 | use crate::custom_state::Nominal;
++   |            ^^^^^^^^^^^^ could not find `custom_state` in the crate root
++
++error[E0433]: failed to resolve: use of undeclared type `FieldType`
++  --> src/schema/token_schema.rs:15:23
++   |
++15 |         defines: vec![FieldType::Nominal],
++   |                       ^^^^^^^^^ use of undeclared type `FieldType`
++
+
+# 2023-11-09 19:29:25.340665
++cd ..
