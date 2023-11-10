@@ -1,7 +1,0 @@
-/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/libcommit_encoding_derive-b2889203d7c2433c.dylib: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/params.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/derive.rs
-
-/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/commit_encoding_derive-b2889203d7c2433c.d: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/params.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/derive.rs
-
-/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/lib.rs:
-/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/params.rs:
-/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/commit_encoding_derive-0.10.0/src/derive.rs:
