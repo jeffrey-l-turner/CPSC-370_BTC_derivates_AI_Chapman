@@ -1,0 +1,5 @@
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/rgb20_token-472c5e257bb78cd9: src/main.rs
+
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/rgb20_token-472c5e257bb78cd9.d: src/main.rs
+
+src/main.rs:

@@ -1,0 +1,9 @@
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/rand_chacha-844238c5283961d9.rmeta: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/chacha.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/guts.rs
+
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/librand_chacha-844238c5283961d9.rlib: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/chacha.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/guts.rs
+
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/rand_chacha-844238c5283961d9.d: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/chacha.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/guts.rs
+
+/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/lib.rs:
+/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/chacha.rs:
+/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_chacha-0.3.1/src/guts.rs:

@@ -1,0 +1,9 @@
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/secp256k1_zkp_sys-2b801fae4a9c7ca5.rmeta: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs
+
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/libsecp256k1_zkp_sys-2b801fae4a9c7ca5.rlib: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs
+
+/Users/gilbertoarellano/Dropbox/Academia/Chapman/Fall 2023/CPSC 370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/debug/deps/secp256k1_zkp_sys-2b801fae4a9c7ca5.d: /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs /Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs
+
+/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs:
+/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs:
+/Users/gilbertoarellano/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs:

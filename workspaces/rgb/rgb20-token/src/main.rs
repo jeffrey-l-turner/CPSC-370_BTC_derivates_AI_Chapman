@@ -1,11 +1,16 @@
+mod schema {
+    pub mod token_schema;
+}
+
 use rgbstd::interface::{rgb20, ContractBuilder};
+use rgb_schemata::nia_rgb20;
 
 use std::convert::Infallible;
 use std::fs;
 
 use amplify::hex::FromHex;
 use bp::{Chain, Outpoint, Tx, Txid};
-use rgb_schemata::{nia_rgb20, nia_schema};
+use crate::schema::token_schema::schema as token_schema;
 use rgbstd::containers::BindleContent;
 use rgbstd::contract::WitnessOrd;
 use rgbstd::resolvers::ResolveHeight;
@@ -45,7 +50,7 @@ fn main() {
 
     const ISSUE: u64 = 1_000_000_000;
 
-    let contract = ContractBuilder::with(rgb20(), nia_schema(), nia_rgb20())
+    let contract = ContractBuilder::with(rgb20(), token_schema(), nia_rgb20())
         .expect("schema fails to implement RGB20 interface")
         .set_chain(Chain::Testnet3)
         .add_global_state("spec", spec)
@@ -70,8 +75,4 @@ fn main() {
         .expect("unable to save contract");
     fs::write("contracts/rgb20-token.contract.rgba", bindle.to_string())
         .expect("unable to save contract");
-
-    // Import the contract into the RGB system
-    let contract_id = rgb::ContractId::from_str(&bindle.to_string()).unwrap();
-    let contract = rgb::Contract::from_id(&contract_id).unwrap();
 }
