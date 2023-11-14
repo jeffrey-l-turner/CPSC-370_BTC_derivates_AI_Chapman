@@ -15,8 +15,16 @@ use std::error::Error;
 use strict_types::LibBuilder;
 
 // Define missing types
-type ContractName = String; // Replace with actual type definition if different
-type ContractDetails = String; // Replace with actual type definition if different
+type ContractName = String;
+type ContractDetails = String;
+
+// Assuming System and SystemBuilder are defined in a module called 'system'
+use system::{System, SystemBuilder};
+
+// Define or import missing constants
+const GS_NOMINAL: NamedType = NamedType::new("Nominal");
+const GS_CONTRACT: NamedType = NamedType::new("ContractText");
+// ... other missing definitions
 
 #[derive(Clone, Eq, PartialEq, Debug, StrictEncode, StrictDecode)]
 #[strict_type(lib = "rgb20_token")]
@@ -31,12 +39,11 @@ pub struct Nominal {
     details: Option<ContractDetails>,
     precision: Precision,
 }
-impl StrictSerialize for Nominal {}
-impl StrictDeserialize for Nominal {}
+// Removed duplicate implementations
 
 const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
 
-use some_library::Lib; // Replace with the actual library path
+use some_library::Lib;
 
 static LIB: Result<Lib, Box<dyn Error>> = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
     .process::<Nominal>()
