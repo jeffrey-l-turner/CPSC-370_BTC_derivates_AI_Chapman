@@ -5,11 +5,11 @@ edition = "2021"
 
 [[bin]]
 name = "my_program"
-path = "src/main.rs"
+path = "src/my_program.rs"
 
 [lib]
 name = "custom_schema"
-path = "src/custom_schema.rs"
+path = "src/lib.rs"
 
 [dependencies]
 rgb-std = { version = "0.10.8", features = ["serde", "fs"] }
