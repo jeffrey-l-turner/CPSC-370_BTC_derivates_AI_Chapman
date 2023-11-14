@@ -7,7 +7,9 @@ edition = "2021"
 name = "my_program"
 path = "src/main.rs"
 
-# The [lib] section has been removed because the src/custom_schema.rs file does not exist
+[lib]
+name = "rgb20_token"
+path = "src/lib.rs"
 
 [dependencies]
 amplify = "4.0.1"
