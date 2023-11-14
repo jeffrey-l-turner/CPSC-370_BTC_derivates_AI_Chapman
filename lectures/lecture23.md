@@ -10,7 +10,7 @@
 - RGB final assignment issues; 
 - Grading assignments continued
 - Canvas Quiz errors, will provide additional 2 pts in credit for Canvas problems
-- Please respond to Canvas Survey for final project: review skills; Will start coding on Thurs.
+- Please respond to Canvas Survey if you haven't during class; will review before second lecture item
 - Setting up lightning node with test L-BTC; may not be avail. until next week
 - Likely one more quiz next week; no programming assignment
 
