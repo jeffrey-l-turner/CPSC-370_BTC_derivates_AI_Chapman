@@ -17,9 +17,9 @@ impl StrictDeserialize for Nominal {}
 
 const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
 
-const lib = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
-    .process::<Nominal>()?
-    .compile(none!())?;
+static LIB: Result<Lib, Error> = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
+    .process::<Nominal>()
+    .compile(none!());
 const types = SystemBuilder::new()
     .import(lib)?
     .finalize()?;
