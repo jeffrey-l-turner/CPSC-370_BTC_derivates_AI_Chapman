@@ -15,6 +15,15 @@ pub struct Nominal {
 impl StrictSerialize for Nominal {}
 impl StrictDeserialize for Nominal {}
 
+const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
+
+let lib = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
+    .process::<Nominal>()?
+    .compile(none!())?;
+let types = SystemBuilder::new()
+    .import(lib)?
+    .finalize()?;
+
 fn schema() -> SubSchema {
     Schema {
         ffv: zero!(),
