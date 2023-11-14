@@ -6,6 +6,7 @@ use strict_types::libname;
 use rgbstd::stl::{Ticker, Precision};
 use rgbstd::interface::{NamedType};
 use rgbstd::schema::{GlobalStateSchema, StateSchema, FungibleType, Occurrences, TransitionSchema};
+use strict_encoding::tn; // Import the tn macro
 use rgbstd::vm::EntryPoint;
 use rgbstd::schema::LibSite; // Assuming LibSite is in the schema module
 use rgbstd::interface::{IfaceImpl, rgb20};
