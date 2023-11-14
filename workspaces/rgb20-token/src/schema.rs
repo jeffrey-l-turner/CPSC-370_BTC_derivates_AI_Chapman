@@ -1,6 +1,5 @@
  use rgbstd::schema::{GenesisSchema, Schema, TransitionSchema};
- use rgbstd::type_map;
- use rgbstd::type_map::TypeMap;
+ use rgbstd::prelude::*;
  use rgbstd::prelude::*;
  use strict_encoding::{StrictDecode, StrictEncode};
 
