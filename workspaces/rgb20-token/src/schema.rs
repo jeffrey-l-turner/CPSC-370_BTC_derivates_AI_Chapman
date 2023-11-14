@@ -85,10 +85,8 @@ fn schema() -> SubSchema {
         subset_of: None,
         type_system: types.type_system(),
         global_types: tiny_bmap! {
-            GS_NOMINAL =>
-GlobalStateSchema::once(types.get("RGBContract.Nominal")),
-            GS_CONTRACT =>
-GlobalStateSchema::once(types.get("RGBContract.ContractText")),
+            GS_NOMINAL => GlobalStateSchema::once(types.get("RGBContract.Nominal")),
+            GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
         },
         owned_types: tiny_bmap! {
             OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
@@ -123,8 +121,7 @@ GlobalStateSchema::once(types.get("RGBContract.ContractText")),
         script: Script::AluVM(AluScript {
             libs: confined_bmap! { alu_id => alu_lib },
             entry_points: confined_bmap! {
-                EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0,
-alu_id)
+                EntryPoint::ValidateOwnedState(OS_ASSETS) => LibSite::with(0, alu_id)
             },
         }),
     }
