@@ -1,3 +1,16 @@
+use lazy_static::lazy_static;
+use strict_encoding::{StrictEncode, StrictDecode};
+use strict_types::{strict_type, libname, none};
+use amplify::{tiny_bset, tiny_bmap, confined_bmap, zero};
+use rgbstd::stl::{Ticker, Precision};
+use rgbstd::interface::{IfaceImpl, rgb20};
+use rgbstd::schema::{SubSchema, Schema, GenesisSchema};
+use rgbstd::vm::{AluScript, Script};
+use strict_types::{Ty, SemId};
+use std::result::Result;
+use std::error::Error;
+use strict_types::LibBuilder;
+
 #[derive(Clone, Eq, PartialEq, Debug)]
 #[derive(StrictEncode, StrictDecode)]
 #[strict_type(lib = "rgb20_token")]
@@ -20,19 +33,6 @@ const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
 static LIB: Result<Lib, Error> = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
     .process::<Nominal>()
     .compile(none!());
-
-use lazy_static::lazy_static;
-use strict_encoding::{StrictEncode, StrictDecode};
-use strict_types::{strict_type, libname, none};
-use amplify::{tiny_bset, tiny_bmap, confined_bmap, zero};
-use rgbstd::stl::{Ticker, Precision};
-use rgbstd::interface::{IfaceImpl, rgb20};
-use rgbstd::schema::{SubSchema, Schema, GenesisSchema};
-use rgbstd::vm::{AluScript, Script};
-use strict_types::{Ty, SemId};
-use std::result::Result;
-use std::error::Error;
-use strict_types::LibBuilder;
 
 lazy_static! {
     static ref TYPES: Result<System, Error> = {
