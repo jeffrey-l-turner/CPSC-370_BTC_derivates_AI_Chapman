@@ -1,8 +1,7 @@
 use lazy_static::lazy_static;
 use strict_encoding::{StrictEncode, StrictDecode};
-use amplify::{none, bmap, bset, tn};
-use strict_types::{StrictType, libname};
-use amplify::{bset, bmap, tiny_bset, tiny_bmap, confined_bmap, zero};
+use amplify::{none, tiny_bset, tiny_bmap, confined_bmap, zero};
+use strict_types::libname;
 use rgbstd::stl::{Ticker, Precision};
 use rgbstd::interface::{NamedType};
 use rgbstd::schema::{GlobalStateSchema, StateSchema, FungibleType, Occurrences, TransitionSchema};
