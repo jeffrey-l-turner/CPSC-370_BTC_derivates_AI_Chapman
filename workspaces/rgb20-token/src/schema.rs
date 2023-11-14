@@ -130,3 +130,4 @@ fn schema() -> SubSchema {
         }),
     }
 }
+use some_crate::{MissingMacro, MissingType};
