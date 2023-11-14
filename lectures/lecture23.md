@@ -36,3 +36,6 @@
 ## Resources
 
 * [RGB part II assignment](../assignments/31_Oct_2023.md)
+* [Humane AI Pin](https://mashable.com/article/humane-ai-pin-futuristic-features)
+* [ACM Meetup](https://meetu.ps/e/MBXNY/hvZVH/i)
+* [Economic Impact of AI](https://podcasts.apple.com/us/podcast/what-bitcoin-did/id1317356120?i=1000632835640)
