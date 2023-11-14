@@ -1,18 +1,21 @@
 use lazy_static::lazy_static;
-use strict_encoding::{StrictEncode, StrictDecode};
-use strict_types::{strict_type, libname, none};
-use amplify::{tiny_bset, tiny_bmap, confined_bmap, zero};
+use strict_encoding::{StrictEncode, StrictDecode, StrictSerialize, StrictDeserialize};
+use strict_types::{StrictType, libname};
+use amplify::{bset, bmap, tiny_bset, tiny_bmap, confined_bmap, zero};
 use rgbstd::stl::{Ticker, Precision};
 use rgbstd::interface::{IfaceImpl, rgb20};
 use rgbstd::schema::{SubSchema, Schema, GenesisSchema};
-use rgbstd::vm::{AluScript, Script};
+use rgbstd::schema::{AluScript, Script};
 use strict_types::{Ty, SemId};
 use std::result::Result;
 use std::error::Error;
 use strict_types::LibBuilder;
 
-#[derive(Clone, Eq, PartialEq, Debug)]
-#[derive(StrictEncode, StrictDecode)]
+// Define missing types
+type ContractName = String; // Replace with actual type definition if different
+type ContractDetails = String; // Replace with actual type definition if different
+
+#[derive(Clone, Eq, PartialEq, Debug, StrictEncode, StrictDecode, StrictSerialize, StrictDeserialize)]
 #[strict_type(lib = "rgb20_token")]
 #[cfg_attr(
     feature = "serde",
@@ -29,6 +32,8 @@ impl StrictSerialize for Nominal {}
 impl StrictDeserialize for Nominal {}
 
 const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
+
+use some_library::Lib; // Replace with the actual library path
 
 static LIB: Result<Lib, Error> = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
     .process::<Nominal>()
