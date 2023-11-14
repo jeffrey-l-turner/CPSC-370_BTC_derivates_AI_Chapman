@@ -16,7 +16,7 @@ use rgbstd::schema::Script; // Assuming Script is in the schema module
 use strict_types::{Ty, SemId};
 use std::result::Result;
 use std::error::Error;
-use strict_types::{Lib, LibBuilder};
+use strict_types::LibBuilder;
 
 // Define missing types
 type ContractName = String;
