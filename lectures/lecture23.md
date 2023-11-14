@@ -1,7 +1,7 @@
 # Lecture 23
 
 <div align="center">
-  <img src="./SPA_img.png.png" width="250" height="250" />
+  <img src="./SPA_img.png" width="250" height="250" />
 </div>
 
 # Housekeeping
@@ -16,11 +16,11 @@
 
 ## RGB part III (restarted)
 
-* 
+* In class review; Library mismatch apparently
 
-## Final Project Setup (as "Startup Engineering")
+## Final Project Review revisited (as "Startup Engineering")
 
-- Definining the Project
+- Defining the Project
 - Minimum Viable Product
 - User Interface Design (overview of tools) & now [AI assistance](https://app.uizard.io/)
 - * [Note](https://www.interaction-design.org/literature/topics/mobile-first): Mobile First approach, generally. Pay attention to landscape/portrait and desktop interfaces
@@ -31,7 +31,8 @@
 - Framework: Agile software development approach & tickets ([we're using GitHub]()https://github.com/jeffrey-l-turner/CPSC-370_BTC_derivates_AI_Chapman/issues/new)
 - AI assistance (new approach) -- going to try: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
 
+## Start-in on User Interface design
 
 ## Resources
 
-* Please sign up if assigned UI component: [UIzard](https://uizard.io)
+* [RGB part II assignment](../assignments/31_Oct_2023.md)

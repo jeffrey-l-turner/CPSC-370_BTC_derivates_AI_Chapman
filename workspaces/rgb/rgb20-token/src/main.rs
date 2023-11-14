@@ -2,7 +2,6 @@ use rgbstd::interface::{rgb20, ContractBuilder};
 
 use std::str::FromStr;
 use std::convert::Infallible;
-// Removed unused import
 use std::fs;
 
 use amplify::hex::FromHex;
