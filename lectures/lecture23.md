@@ -8,7 +8,6 @@
 
 - Reminder: Open Router credits are done
 - `.aider.conf.yml` format:
-- *
 ```
 openai-api-key: sk-<your_key>
 model: gpt-4-1106-preview
@@ -18,7 +17,7 @@ model: gpt-4-1106-preview
 - Canvas Quiz errors, will provide additional 2 pts in credit for Canvas problems
 - Please respond to Canvas Survey if you haven't during class; will review before second lecture item
 - Setting up lightning node with test L-BTC; may not be avail. until next week
-- Likely one more quiz next week; no programming assignment
+- Likely one more quiz next week; continous programming assignment here on out...
 
 ## RGB part III (restarted)
 
@@ -40,6 +39,11 @@ model: gpt-4-1106-preview
 ## Start-in on User Interface design
 
 - TBD: Which DApp will we do?
+- Groups:
+- * Design
+- * User Interface
+- * Back-End
+- * Quality Assurance (Software Engr. approach to AI)
 
 ## Resources
 
