@@ -7,9 +7,9 @@ edition = "2021"
 name = "my_program"
 path = "src/main.rs"
 
-[[lib]]
+[lib]
 name = "custom_schema"
-path = "src/customSchema.rs"
+path = "src/custom_schema.rs"
 
 [dependencies]
 rgb-std = { version = "0.10.8", features = ["serde", "fs"] }
