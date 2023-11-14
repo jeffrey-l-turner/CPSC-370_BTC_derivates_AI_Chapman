@@ -41,7 +41,7 @@ pub struct MyCustomToken {
                         description: "Transfer tokens to another address".to_string(),
                         args: bmap! {
                             // Arguments for the transfer action
-                            ArgAbi::required("amount", DataFormat::Unsigned(64, 0,
+                            ArgAbi::required("amount", DataFormat::Unsigned(64, 0, u64::MAX),
 u64::MAX),
                             ArgAbi::required("to", DataFormat::Bytes),
                         },
