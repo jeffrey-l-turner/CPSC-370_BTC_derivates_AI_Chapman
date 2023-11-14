@@ -10,6 +10,11 @@ path = "src/main.rs"
 # The [lib] section has been removed because the src/custom_schema.rs file does not exist
 
 [dependencies]
+amplify = "4.0.1"
+strict_encoding = "2.5.0"
+strict_types = "1.6.1"
+bp-core = "0.10.9"
 rgb-std = { version = "0.10.8", features = ["serde", "fs"] }
 serde = "1.0.152"
 serde_json = "1.0.93"
+rgb-schemata = "0.10.0"
