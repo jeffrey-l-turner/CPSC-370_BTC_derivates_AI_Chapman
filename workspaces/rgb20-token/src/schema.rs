@@ -1,12 +1,11 @@
-use amplify::Wrapper;
- use rgb_std::schema::{Constants, GenesisSchema, Schema, TransitionSchema};
- use rgb_std::type_map;
- use rgb_std::type_map::TypeMap;
- use rgb_std::prelude::*;
+ use rgbstd::schema::{GenesisSchema, Schema, TransitionSchema};
+ use rgbstd::type_map;
+ use rgbstd::type_map::TypeMap;
+ use rgbstd::prelude::*;
  use strict_encoding::{StrictDecode, StrictEncode};
 
  // Define your custom types and their properties
- #[derive(Clone, Debug, StrictEncode, StrictDecode)]
+ #[derive(Clone, Debug)]
  pub struct MyCustomToken {
      ticker: String,
      name: String,
