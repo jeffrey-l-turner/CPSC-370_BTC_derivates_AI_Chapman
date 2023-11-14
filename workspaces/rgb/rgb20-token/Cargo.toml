@@ -3,13 +3,7 @@ name = "rgb20-token"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "my_program"
-path = "src/main.rs"
-
-[lib]
-name = "rgb20_token"
-path = "src/lib.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 amplify = "4.0.1"
@@ -20,7 +14,4 @@ rgb-std = { version = "0.10.8", features = ["serde", "fs"] }
 serde = "1.0.152"
 serde_json = "1.0.93"
 rgb-schemata = "0.10.0"
-lazy_static = "1.4.0"
-system = "0.1.0"
-library = "0.0.2"
-some_crate = "0.1.0"
+rgb = "0.8.37"
