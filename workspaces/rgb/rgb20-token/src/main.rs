@@ -1,5 +1,6 @@
 use rgbstd::interface::{rgb20, ContractBuilder};
 
+use std::str::FromStr;
 use std::convert::Infallible;
 use std::fs;
 
