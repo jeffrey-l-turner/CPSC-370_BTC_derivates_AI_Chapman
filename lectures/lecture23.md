@@ -7,7 +7,13 @@
 # Housekeeping
 
 - Reminder: Open Router credits are done
-- RGB final assignment issues; 
+- `.aider.conf.yml` format:
+- *
+```
+openai-api-key: sk-<your_key>
+model: gpt-4-1106-preview
+```
+- RGB final assignment issues; Will revisit Thurs.
 - Grading assignments continued
 - Canvas Quiz errors, will provide additional 2 pts in credit for Canvas problems
 - Please respond to Canvas Survey if you haven't during class; will review before second lecture item
@@ -32,6 +38,8 @@
 - AI assistance (new approach) -- going to try: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
 
 ## Start-in on User Interface design
+
+- TBD: Which DApp will we do?
 
 ## Resources
 
