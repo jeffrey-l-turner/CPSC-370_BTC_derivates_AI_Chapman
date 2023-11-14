@@ -20,9 +20,15 @@ const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
 static LIB: Result<Lib, Error> = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
     .process::<Nominal>()
     .compile(none!());
-const types = SystemBuilder::new()
-    .import(lib)?
-    .finalize()?;
+use lazy_static::lazy_static;
+
+lazy_static! {
+    static ref TYPES: Result<System, Error> = {
+        SystemBuilder::new()
+            .import(LIB.clone().expect("Failed to initialize LIB"))
+            .finalize()
+    };
+}
 
 fn iface_impl() -> IfaceImpl {
     let schema = schema();
