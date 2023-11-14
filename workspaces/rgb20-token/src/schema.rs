@@ -1,4 +1,5 @@
  use rgbstd::schema::{GenesisSchema, Schema, TransitionSchema};
+ use rgbstd::macros::type_map;
  use strict_encoding::{StrictDecode, StrictEncode};
 
  // Define your custom types and their properties
