@@ -1,14 +1,17 @@
 use lazy_static::lazy_static;
 use strict_encoding::{StrictEncode, StrictDecode};
+use amplify::{bset, bmap}; // Import the missing macros
 use amplify::{none, tiny_bset, tiny_bmap, confined_bmap, zero};
 use strict_types::libname;
 use rgbstd::stl::{Ticker, Precision};
 use rgbstd::interface::{NamedType};
 use rgbstd::schema::{GlobalStateSchema, StateSchema, FungibleType, Occurrences, TransitionSchema};
-use rgbstd::vm::{EntryPoint, LibSite};
+use rgbstd::vm::EntryPoint;
+use rgbstd::schema::LibSite; // Assuming LibSite is in the schema module
 use rgbstd::interface::{IfaceImpl, rgb20};
 use rgbstd::schema::{SubSchema, Schema, GenesisSchema};
-use rgbstd::vm::{AluScript, Script};
+use rgbstd::vm::AluScript;
+use rgbstd::schema::Script; // Assuming Script is in the schema module
 use strict_types::{Ty, SemId};
 use std::result::Result;
 use std::error::Error;
@@ -22,8 +25,8 @@ type ContractDetails = String;
 use system::{System, SystemBuilder};
 
 // Define or import missing constants
-const GS_NOMINAL: NamedType = NamedType::new("Nominal");
-const GS_CONTRACT: NamedType = NamedType::new("ContractText");
+const GS_NOMINAL: NamedType<()> = NamedType::new("Nominal"); // Assuming the generic type is ()
+const GS_CONTRACT: NamedType<()> = NamedType::new("ContractText"); // Assuming the generic type is ()
 // ... other missing definitions
 
 #[derive(Clone, Eq, PartialEq, Debug, StrictEncode, StrictDecode)]
@@ -50,7 +53,7 @@ static LIB: Result<Lib, Box<dyn Error>> = LibBuilder::new(libname!(LIB_NAME_RGB_
     .compile(none!());
 
 lazy_static! {
-    static ref TYPES: Result<System, Error> = {
+    static ref TYPES: Result<System, Box<dyn Error>> = { // Use Box<dyn Error>
         SystemBuilder::new()
             .import(LIB.clone().expect("Failed to initialize LIB"))
             .finalize()
@@ -83,7 +86,7 @@ fn schema() -> SubSchema {
     Schema {
         ffv: zero!(),
         subset_of: None,
-        type_system: types.type_system(),
+        type_system: TYPES.as_ref().expect("Failed to initialize TYPES").type_system(),
         global_types: tiny_bmap! {
             GS_NOMINAL => GlobalStateSchema::once(types.get("RGBContract.Nominal")),
             GS_CONTRACT => GlobalStateSchema::once(types.get("RGBContract.ContractText")),
