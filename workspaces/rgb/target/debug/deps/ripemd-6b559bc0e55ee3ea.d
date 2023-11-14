@@ -1,0 +1,11 @@
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/deps/ripemd-6b559bc0e55ee3ea.rmeta: /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/lib.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c128.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c160.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c256.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c320.rs
+
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/deps/libripemd-6b559bc0e55ee3ea.rlib: /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/lib.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c128.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c160.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c256.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c320.rs
+
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/deps/ripemd-6b559bc0e55ee3ea.d: /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/lib.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c128.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c160.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c256.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c320.rs
+
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/lib.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c128.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c160.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c256.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ripemd-0.1.3/src/c320.rs:

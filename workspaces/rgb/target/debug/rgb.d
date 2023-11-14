@@ -1,0 +1,1 @@
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/rgb: /Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/src/main.rs

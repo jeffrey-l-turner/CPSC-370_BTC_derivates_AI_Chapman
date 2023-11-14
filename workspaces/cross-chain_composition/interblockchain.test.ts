@@ -8,3 +8,13 @@ describe('InterBlockchain', () => {
         // expect(interBlockchain.chain.length).toBeGreaterThan(0);
     });
 });
+import InterBlockchain from './interblockchain';
+
+describe('InterBlockchain', () => {
+  it('should have an empty shared state initially', () => {
+    const interBlockchain = InterBlockchain();
+    expect(interBlockchain.sharedState).toEqual({});
+  });
+
+  // Add more tests as needed
+});

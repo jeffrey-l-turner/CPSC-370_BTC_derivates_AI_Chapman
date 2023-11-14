@@ -1,0 +1,10 @@
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/deps/rgb_schemata-5aac025a3d278dd3.rmeta: /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs
+
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/deps/librgb_schemata-5aac025a3d278dd3.rlib: /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs
+
+/Users/luisrivas/Documents/CPSC_Courses/SE_370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/target/debug/deps/rgb_schemata-5aac025a3d278dd3.d: /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs /Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs
+
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs:
+/Users/luisrivas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs:

@@ -8,7 +8,8 @@
     "test": "jest",
     "start": "npm run start:interblock && (ts-node blockchain1.ts & ts-node blockchain2.ts & wait)",
     "start:blockchain2": "ts-node blockchain2.ts",
-    "start:interblock": "ts-node interblockchain.ts"
+    "start:interblock": "ts-node interblockchain.ts",
+    "test:interblock": "jest interblockchain.test.ts"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,13 @@
     "jest": "^29.7.0",
     "ts-node": "^10.9.1",
     "ts-jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "/tests/.*\\.(test|spec)?\\.(ts|tsx)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }
