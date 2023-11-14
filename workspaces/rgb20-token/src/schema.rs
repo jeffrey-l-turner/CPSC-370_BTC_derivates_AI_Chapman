@@ -1,9 +1,10 @@
-use amplify::{bmap, none, type_map};
+use amplify::{bmap, none};
+use rgbstd::schema::{StateSchema, TransitionType, ActionAbi, OwnedRightType, DataFormat};
 use rgbstd::schema::{Schema, GenesisSchema};
 use strict_encoding::{StrictEncode, StrictDecode};
 
 // Define your custom types and their properties
-#[derive(Clone, Debug, StrictEncode, StrictDecode)]
+#[derive(Clone, Debug, StrictEncode(lib = "strict_encoding"), StrictDecode(lib = "strict_encoding"))]
 pub struct MyCustomToken {
     ticker: String,
     name: String,
@@ -12,15 +13,14 @@ pub struct MyCustomToken {
 }
 
  // Define the schema for an RGB20 token
- pub fn rgb20_schema() -> Schema {
+ pub fn rgb20_schema() -> Schema<()> {
     Schema {
         rgb_features: none!(),
         root_id: none!(),
         field_types: bmap! {
             // Define the fields for your token
             FieldType::AsciiString => DataFormat::String(256),
-            FieldType::Unsigned64 => DataFormat::Unsigned(64, 0, u64::MAX), // Total
-supply
+            FieldType::Unsigned64 => DataFormat::Unsigned(64, 0, u64::MAX), // Total supply
         },
         owned_rights: bmap! {
             // Right to own tokens
@@ -37,12 +37,12 @@ supply
                 abi: bmap! {
                     // Define the ABI for transferring tokens
                     TransitionType::Custom(0) => ActionAbi {
-                        name: s!("transfer"),
-                        description: s!("Transfer tokens to another address"),
+                        name: "transfer".to_string(),
+                        description: "Transfer tokens to another address".to_string(),
                         args: bmap! {
                             // Arguments for the transfer action
                             ArgAbi::required("amount", DataFormat::Unsigned(64, 0,
-u64::MAX)),
+u64::MAX),
                             ArgAbi::required("to", DataFormat::Bytes),
                         },
                     },
@@ -51,13 +51,13 @@ u64::MAX)),
         },
         public_rights: none!(),
         genesis: GenesisSchema {
-            metadata: type_map! {
+            metadata: bmap! {
                 FieldType::AsciiString => once!(b"Ticker"),
                 FieldType::AsciiString => once!(b"Name"),
                 FieldType::AsciiString => once!(b"Description"),
                 FieldType::Unsigned64 => once!(b"TotalSupply"),
             },
-            owned_rights: type_map! {
+            owned_rights: bmap! {
                 OwnedRightType::Assets => none!(),
                 OwnedRightType::Custom(0) => none!(),
             },
