@@ -1,3 +1,20 @@
+#[derive(Clone, Eq, PartialEq, Debug)]
+#[derive(StrictEncode, StrictDecode)]
+#[strict_type(lib = "rgb20_token")]
+#[cfg_attr(
+    feature = "serde",
+    derive(Serialize, Deserialize),
+    serde(crate = "serde_crate", rename_all = "camelCase")
+)]
+pub struct Nominal {
+    ticker: Ticker,
+    name: ContractName,
+    details: Option<ContractDetails>,
+    precision: Precision,
+}
+impl StrictSerialize for Nominal {}
+impl StrictDeserialize for Nominal {}
+
 fn schema() -> SubSchema {
     Schema {
         ffv: zero!(),
