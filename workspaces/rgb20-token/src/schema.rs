@@ -4,7 +4,7 @@ use rgbstd::schema::{Schema, GenesisSchema};
 use strict_encoding::{StrictEncode, StrictDecode};
 
 // Define your custom types and their properties
-#[derive(Clone, Debug, StrictEncode, StrictDecode)]
+#[derive(Clone, Debug, StrictEncode(lib = "strict_encoding"), StrictDecode(lib = "strict_encoding"))]
 pub struct MyCustomToken {
     ticker: String,
     name: String,
