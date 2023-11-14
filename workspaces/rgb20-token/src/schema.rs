@@ -20,6 +20,7 @@ const LIB_NAME_RGB_CONTRACT: &str = "rgb_contract";
 static LIB: Result<Lib, Error> = LibBuilder::new(libname!(LIB_NAME_RGB_CONTRACT))
     .process::<Nominal>()
     .compile(none!());
+
 use lazy_static::lazy_static;
 
 lazy_static! {
@@ -28,28 +29,6 @@ lazy_static! {
             .import(LIB.clone().expect("Failed to initialize LIB"))
             .finalize()
     };
-}
-
-fn iface_impl() -> IfaceImpl {
-    let schema = schema();
-    let iface = rgb20();
-
-    IfaceImpl {
-        schema_id: schema.schema_id(),
-        iface_id: iface.iface_id(),
-        global_state: tiny_bset! {
-            NamedType::with(GS_NOMINAL, tn!("Nominal")),
-            NamedType::with(GS_CONTRACT, tn!("ContractText")),
-        },
-        assignments: tiny_bset! {
-            NamedType::with(OS_ASSETS, tn!("Assets")),
-        },
-        valencies: none!(),
-        transitions: tiny_bset! {
-            NamedType::with(TS_TRANSFER, tn!("Transfer")),
-        },
-        extensions: none!(),
-    }
 }
 
 fn iface_impl() -> IfaceImpl {
