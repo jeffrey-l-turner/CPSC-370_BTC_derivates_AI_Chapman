@@ -29,8 +29,6 @@ GlobalStateSchema::once(types.get("RGBContract.ContractText")),
         owned_types: tiny_bmap! {
             OS_ASSETS => StateSchema::Fungible(FungibleType::Unsigned64Bit),
             OS_NOMINAL => StateSchema::Custom(Nominal),
-            OS_CUSTOM => StateSchema::Custom(CustomStateType::YourCustomTypeHere
-// Replace with your actual custom type
         },
         valency_types: none!(),
         genesis: GenesisSchema {
