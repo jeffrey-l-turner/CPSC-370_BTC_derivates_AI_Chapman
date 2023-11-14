@@ -1,3 +1,7 @@
+use amplify::{bmap, none, type_map};
+use rgbstd::schema::{Schema, GenesisSchema};
+use strict_encoding::{StrictEncode, StrictDecode};
+
 // Define your custom types and their properties
 #[derive(Clone, Debug, StrictEncode, StrictDecode)]
 pub struct MyCustomToken {
