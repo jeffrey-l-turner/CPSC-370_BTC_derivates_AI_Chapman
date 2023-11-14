@@ -1,6 +1,5 @@
  use rgbstd::schema::{GenesisSchema, Schema, TransitionSchema};
  use rgbstd::prelude::*;
- use rgbstd::prelude::*;
  use strict_encoding::{StrictDecode, StrictEncode};
 
  // Define your custom types and their properties
