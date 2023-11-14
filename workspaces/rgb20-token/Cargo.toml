@@ -7,9 +7,7 @@ edition = "2021"
 name = "my_program"
 path = "src/main.rs"
 
-[lib]
-name = "custom_schema"
-path = "src/custom_schema.rs"
+# The [lib] section has been removed because the src/custom_schema.rs file does not exist
 
 [dependencies]
 rgb-std = { version = "0.10.8", features = ["serde", "fs"] }
