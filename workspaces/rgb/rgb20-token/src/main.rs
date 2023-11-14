@@ -75,5 +75,7 @@ fn main() {
 
     // Import the contract into the RGB system
     let contract_id = rgbstd::contract::ContractId::from_str(&bindle.to_string()).unwrap();
-    let contract = rgbstd::containers::Contract::from(contract_id).unwrap();
+    // Assuming `from` returns a Result or Option, replace `unwrap` with proper error handling
+    let contract = rgbstd::containers::Contract::from(contract_id)
+        .expect("Failed to create contract from contract_id");
 }
