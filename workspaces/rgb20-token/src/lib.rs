@@ -1,3 +1,2 @@
 mod schema;
-#[macro_use]
-pub mod macros;
+// The #[macro_use] attribute is already correctly placed above the `macros` module declaration.
