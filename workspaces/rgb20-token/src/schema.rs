@@ -18,8 +18,7 @@
          field_types: type_map! {
              // Define the fields for your token
              FieldType::AsciiString => DataFormat::String(256),
-             FieldType::Unsigned64 => DataFormat::Unsigned(64, 0, u64::MAX), // Total
- supply
+             FieldType::Unsigned64 => DataFormat::Unsigned(64, 0, u64::MAX), // Total supply
          },
          owned_right_types: type_map! {
              // Right to own tokens
