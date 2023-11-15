@@ -1,6 +1,6 @@
  use rgbstd::schema::{GenesisSchema, Schema, TransitionSchema};
  use strict_encoding::{StrictDecode, StrictEncode};
- use crate::macros::type_map;
+ // Removed explicit import of `type_map` macro to simplify macro imports
 
  // Define your custom types and their properties
  #[derive(Clone, Debug)]
