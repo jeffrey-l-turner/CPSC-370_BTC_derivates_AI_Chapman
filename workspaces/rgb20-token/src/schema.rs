@@ -1,7 +1,8 @@
  use rgbstd::schema::{GenesisSchema, Schema, TransitionSchema};
  use strict_encoding::{StrictDecode, StrictEncode};
  mod macros;
- use macros::type_map;
+ #[macro_use]
+ use macros;
 
  // Define your custom types and their properties
  #[derive(Clone, Debug)]
