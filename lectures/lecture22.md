@@ -20,7 +20,7 @@
 
 ## Final Project Setup (as "Startup Engineering")
 
-- Definining the Project
+- Defining the Project
 - Minimum Viable Product
 - User Interface Design (overview of tools) & now [AI assistance](https://app.uizard.io/)
 - * [Note](https://www.interaction-design.org/literature/topics/mobile-first): Mobile First approach, generally. Pay attention to landscape/portrait and desktop interfaces
@@ -35,3 +35,4 @@
 ## Resources
 
 * Please sign up if assigned UI component: [UIzard](https://uizard.io)
+* See Chapman Adobe
