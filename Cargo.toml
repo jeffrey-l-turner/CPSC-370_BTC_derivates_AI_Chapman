@@ -1,3 +1,4 @@
 [dependencies]
 some_crate = "0.1.0"
 rgbstd = { version = "0.10.8", features = ["serde", "fs"] }
+std = { version = "0.1.0", features = ["hashmap"] }
