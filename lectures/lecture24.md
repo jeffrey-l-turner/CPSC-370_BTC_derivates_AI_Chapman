@@ -24,6 +24,7 @@ model: gpt-4-1106-preview
 - Lightning Bitcoin node TBD
 - One more quiz week after next
 - Open AI credits restored this AM
+- Blockchain Engineer Crypto Hack
 
 ## Final Project Steps
 
@@ -36,11 +37,11 @@ model: gpt-4-1106-preview
 - Continuous Integration
 - Project Standards (coding conventions, ecosystems used, code commit/maintenance process)
 - Framework: Agile software development approach & tickets ([we're using GitHub]()https://github.com/jeffrey-l-turner/CPSC-370_BTC_derivates_AI_Chapman/issues/new)
-- AI assistance (new approach) -- going to try: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
+- Formal Specifiction: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
 
 ## Ideation and Team Assignments
 
-- Design (D), User Interface (UI), Back-end (BE) & Immutable Services (I) (smart contracts and wallet)
+- Design (D), User Interface (UI), Software Engineering Proces/Quality (QA), Back-end (BE) & Immutable Services (I) (smart contracts and wallet) 
 - * Ava Ambuske
 - * Gilberto Arellano
 - * Gianna Arenas
@@ -59,7 +60,8 @@ model: gpt-4-1106-preview
 - * Karishma Setya
 - * James Shan
 - * Jaden Suh
-- Still need to define hybrid centralized/decentralized stack
+- Choose Lead for each Team
+- Still need Product Owner
 
 ## Start-in on User Interface design
 
@@ -77,6 +79,4 @@ model: gpt-4-1106-preview
 ## Resources
 
 * [RGB part II assignment](../assignments/31_Oct_2023.md)
-* [Humane AI Pin](https://mashable.com/article/humane-ai-pin-futuristic-features)
-* [ACM Meetup](https://meetu.ps/e/MBXNY/hvZVH/i)
-* [Economic Impact of AI](https://podcasts.apple.com/us/podcast/what-bitcoin-did/id1317356120?i=1000632835640)
+* [Crypto Hack - Targeting Blockchain Engineers](https://thehackernews.com/2023/11/north-korean-hackers-tageting-crypto.html)
