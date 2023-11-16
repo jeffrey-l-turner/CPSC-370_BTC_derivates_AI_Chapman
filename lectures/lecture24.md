@@ -7,11 +7,19 @@
 # Housekeeping
 
 - Reminder: Open Router credits are done
-- `.aider.conf.yml` format:
+- Reminder: `.aider.conf.yml` format:
 ```
 openai-api-key: sk-<your_key>
 model: gpt-4-1106-preview
 ```
+- Pull Requests:
+- * Complete Environment Setup (git, ssh-keys, Aider, Mac: brew, Python (pip3...))
+- * Ability to push and pull (including upstream)
+- * Pull requests submitted and identify jeffrey-l-turner as reviewer/approver
+- * Respond to PR feedback on GitHub
+- * Assignments can be combined into single PR up to RGB [26 October assignment](../assignments/26_Oct_2023.md)
+- * May wait until instructions corrected for [2nd RGB](../assignments/31_Oct_2023.md)
+- * Checking use of aider (in logs and on Open AI)
 - RGB final assignment - instructions incomplete
 - Lightning Bitcoin node TBD
 - One more quiz week after next
