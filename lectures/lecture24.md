@@ -24,7 +24,7 @@ model: gpt-4-1106-preview
 - Lightning Bitcoin node TBD
 - One more quiz week after next
 - Open AI credits restored this AM
-- Blockchain Engineer Crypto Hack
+- [Blockchain Engineer Crypto Hack](https://thehackernews.com/2023/11/north-korean-hackers-tageting-crypto.html)
 
 ## Final Project Steps
 
@@ -37,29 +37,29 @@ model: gpt-4-1106-preview
 - Continuous Integration
 - Project Standards (coding conventions, ecosystems used, code commit/maintenance process)
 - Framework: Agile software development approach & tickets ([we're using GitHub]()https://github.com/jeffrey-l-turner/CPSC-370_BTC_derivates_AI_Chapman/issues/new)
-- Formal Specifiction: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
+- Formal Specification Approaches to LLM Software Engineering: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
 
 ## Ideation and Team Assignments
 
 - Design (D), User Interface (UI), Software Engineering Proces/Quality (QA), Back-end (BE) & Immutable Services (I) (smart contracts and wallet) 
-- * Ava Ambuske
-- * Gilberto Arellano
-- * Gianna Arenas
-- * Jesse Arevalo Baez
-- * Parker Escalette
-- * Noah Fuery	
-- * Emma Gibson	
-- * Alex Haberman
-- * Jack Mazac
-- * Carson McCue
-- * Katherine Monroy
-- * Chris Nam
-- * Devin Ng
-- * Luis Rivas
-- * Peter Senko
-- * Karishma Setya
-- * James Shan
-- * Jaden Suh
+- * Ava Ambuske -
+- * Gilberto Arellano -
+- * Gianna Arenas -
+- * Jesse Arevalo Baez -
+- * Parker Escalette -
+- * Noah Fuery	 -
+- * Emma Gibson	 -
+- * Alex Haberman -
+- * Jack Mazac -
+- * Carson McCue -
+- * Katherine Monroy -
+- * Chris Nam -
+- * Devin Ng -
+- * Luis Rivas -
+- * Peter Senko -
+- * Karishma Setya -
+- * James Shan -
+- * Jaden Suh -
 - Choose Lead for each Team
 - Still need Product Owner
 
