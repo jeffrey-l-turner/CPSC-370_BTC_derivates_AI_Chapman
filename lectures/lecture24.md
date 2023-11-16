@@ -39,7 +39,7 @@ model: gpt-4-1106-preview
 - Framework: Agile software development approach & tickets ([we're using GitHub]()https://github.com/jeffrey-l-turner/CPSC-370_BTC_derivates_AI_Chapman/issues/new)
 - Formal Specification Approaches to LLM Software Engineering: `formal specification`, `type/schema specification`, `code generation`, `unit testing`
 
-## Ideation and Team Assignments
+## [Ideation and Team Assignments](../Dating-DApp/data_ideation.excalidraw)
 
 - Design (D), User Interface (UI), Software Engineering Proces/Quality (QA), Back-end (BE) & Immutable Services (I) (smart contracts and wallet) 
 - * Ava Ambuske -
@@ -78,5 +78,6 @@ model: gpt-4-1106-preview
 
 ## Resources
 
+* [Last Lecture Drawing](../Dating-DApp/data_ideation.png)
 * [RGB part II assignment](../assignments/31_Oct_2023.md)
 * [Crypto Hack - Targeting Blockchain Engineers](https://thehackernews.com/2023/11/north-korean-hackers-tageting-crypto.html)
