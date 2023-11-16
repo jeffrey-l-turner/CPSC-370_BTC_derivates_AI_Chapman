@@ -42,24 +42,24 @@ model: gpt-4-1106-preview
 ## [Ideation and Team Assignments](../Dating-DApp/data_ideation.excalidraw)
 
 - Design (D), User Interface (UI), Software Engineering Proces/Quality (QA), Back-end (BE) & Immutable Services (I) (smart contracts and wallet) 
-- * Ava Ambuske -
-- * Gilberto Arellano -
-- * Gianna Arenas -
-- * Jesse Arevalo Baez -
-- * Parker Escalette -
-- * Noah Fuery	 -
-- * Emma Gibson	 -
-- * Alex Haberman -
-- * Jack Mazac -
-- * Carson McCue -
-- * Katherine Monroy -
-- * Chris Nam -
-- * Devin Ng -
-- * Luis Rivas -
-- * Peter Senko -
+- * Ava Ambuske - QA
+- * Gilberto Arellano - UI
+- * Gianna Arenas - UI
+- * Jesse Arevalo Baez - QA
+- * Parker Escalette - BE
+- * Noah Fuery	 - BE
+- * Emma Gibson	 - D - lead
+- * Alex Haberman - QA
+- * Jack Mazac - I - lead
+- * Carson McCue - UI (maybe BE) - lead
+- * Katherine Monroy - I
+- * Chris Nam - D
+- * Devin Ng - UI
+- * Luis Rivas - BE - lead
+- * Peter Senko - I
 - * Karishma Setya -
-- * James Shan -
-- * Jaden Suh -
+- * James Shan - 
+- * Jaden Suh - QA - lead
 - Choose Lead for each Team
 - Still need Product Owner
 
