@@ -21,7 +21,7 @@ model: gpt-4-1106-preview
 
 ## RGB part III (restarted)
 
-* In class review; Library mismatch apparently
+* In class review; Corrected code
 
 ## Final Project Review revisited (as "Startup Engineering")
 
@@ -47,6 +47,7 @@ model: gpt-4-1106-preview
 
 ## Resources
 
+* [In class drawing - Dating App](../Dating-DApp/data_ideation.png)
 * [RGB part II assignment](../assignments/31_Oct_2023.md)
 * [Humane AI Pin](https://mashable.com/article/humane-ai-pin-futuristic-features)
 * [ACM Meetup](https://meetu.ps/e/MBXNY/hvZVH/i)
