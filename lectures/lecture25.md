@@ -1,7 +1,7 @@
 # Lecture 25
 
 <div align="center">
-  <img src="./bitcoin_light.png" width="250" height="250" />
+  <img src="./Tax_transparency_Bitcoin.png" width="250" height="250" />
 </div>
 
 # Housekeeping
@@ -57,13 +57,17 @@ model: gpt-4-1106-preview
 
 ## Agile Software Development
 
-- Product Ownership
+- Product Ownership (team of team lead)
 - Scrum/Stand-up management (please make sure you attend final classes)
 - Groups & Assignments:
 - * Design
 - * User Interface
 - * Back-End
 - * Quality Assurance (Software Engr. approach to AI)
+- Will use Continous Integration Environments
+- * `dev` for non-accepted code
+- * `master` for production code
+- PRs to be submitted from `dev` to master per team lead
 
 ## Resources
 
