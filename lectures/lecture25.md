@@ -28,7 +28,7 @@ model: gpt-4-1106-preview
 - RGB final assignment - TBD
 - Lightning Bitcoin node for next week
 - One more quiz next week 
-- 
+- Everyone capable of getting 80% in class by simply doing work (thru end of Semester) 
 
 ## [Team Assignments](../Dating-DApp/data_ideation.excalidraw)
 
