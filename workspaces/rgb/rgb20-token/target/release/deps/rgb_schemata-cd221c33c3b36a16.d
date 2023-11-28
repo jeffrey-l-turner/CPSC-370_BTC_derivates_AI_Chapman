@@ -1,0 +1,10 @@
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/rgb_schemata-cd221c33c3b36a16.rmeta: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs
+
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/librgb_schemata-cd221c33c3b36a16.rlib: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs
+
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/rgb_schemata-cd221c33c3b36a16.d: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs
+
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/lib.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/cfa.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/nia.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rgb-schemata-0.10.1/src/uda.rs:
