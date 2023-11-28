@@ -17,6 +17,7 @@ model: gpt-4-1106-preview
 - * SBF found guilty
 - * Binance and CZ pay huge fine & agree to sentencing
 - * New tax rules & apparent on-ramp/off-ramp consolidation via Chokepoint 2.0, FATF, and Brokerage Rules
+- * Tether dominance; USDC decline...
 - Reminder: for Pull Requests:
 - * Complete Environment Setup (git, ssh-keys, Aider, Mac: brew, Python (pip3...))
 - * Ability to push and pull (including upstream)
