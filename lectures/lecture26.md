@@ -1,7 +1,7 @@
-# Lecture 25
+# Lecture 26
 
 <div align="center">
-  <img src="./Tax_transparency_Bitcoin.png" width="250" height="250" />
+  <img src="./Bitcoin_dating_DApp.png.png" width="250" height="250" />
 </div>
 
 # Housekeeping
@@ -12,12 +12,8 @@
 openai-api-key: sk-<your_key>
 model: gpt-4-1106-preview
 ```
-- Open AI credits to be restored on Thurs.
-- News from past couple of weeks:
-- * SBF found guilty
-- * Binance and CZ pay huge fine & agree to sentencing
-- * New tax rules & apparent on-ramp/off-ramp consolidation via Chokepoint 2.0, FATF, and Brokerage Rules
-- * Tether dominance; USDC decline...
+- Open AI credits to be restored 
+- Reminder: One more quiz next week 
 - Reminder: for Pull Requests:
 - * Complete Environment Setup (git, ssh-keys, Aider, Mac: brew, Python (pip3...))
 - * Ability to push and pull (including upstream)
@@ -26,10 +22,12 @@ model: gpt-4-1106-preview
 - * Assignments can be combined into single PR up to RGB [26 October assignment](../assignments/26_Oct_2023.md)
 - * May wait until instructions corrected for [2nd RGB](../assignments/31_Oct_2023.md)
 - * Checking use of aider (in logs and on Open AI)
-- RGB final assignment - TBD
-- Lightning Bitcoin node for next week
-- One more quiz next week 
+- RGB final assignment - still TBD
+- Lightning Bitcoin node - Voltage
 - Everyone capable of getting 80% in class by simply doing work (thru end of Semester) 
+- Still outstanding quizzes... please DM or see me if behind.
+- Everyone must participate these next couple of weeks!
+- Project/Community Direction -- choices to be made today.
 
 ## [Team Assignments](../Dating-DApp/data_ideation.excalidraw)
 
@@ -56,21 +54,21 @@ model: gpt-4-1106-preview
 
 - * Kat - Agile Lead / Product Owner
 
-## Agile Software Development
+## Community Direction
 
-- Product Ownership (team of team lead)
-- Scrum/Stand-up management (please make sure you attend final classes)
-- Groups & Assignments:
+- [See Canvas](https://discord.com/channels/1146585995765100554/1174772083549536256/1179847272142483588)
+
+## Agile Software Development (Part II)
+
+- Groups & Assignments in Tickets:
 - * Design
 - * User Interface
 - * Back-End
 - * Quality Assurance (Software Engr. approach to AI)
-- Will use Continous Integration Environments
-- * `dev` for non-accepted code
-- * `master` for production code
-- PRs to be submitted from `dev` to master per team lead
+- Using: 
+- Codebase available to perform PRs against
+- Using: https://www.notion.so
 
 ## Resources
 
-* [Last Lecture Drawing](../Dating-DApp/data_ideation.png)
-* [CZ & Binance](https://youtu.be/EljWmKzRmFQ?si=4ewWsWo__RewuBBl)
+* [Previous Lecture Drawing](../Dating-DApp/data_ideation.png)
