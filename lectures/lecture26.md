@@ -1,7 +1,7 @@
 # Lecture 26
 
 <div align="center">
-  <img src="./Bitcoin_dating_DApp.png.png" width="250" height="250" />
+  <img src="./Bitcoin_dating_DApp.png" width="250" height="250" />
 </div>
 
 # Housekeeping
