@@ -27,6 +27,7 @@ model: gpt-4-1106-preview
 - Everyone capable of getting 80% in class by simply doing work (thru end of Semester) 
 - Still outstanding quizzes... please DM or see me if behind.
 - Everyone must participate these next couple of weeks!
+- Project/Community Direction -- choices to be made today.
 
 ## [Team Assignments](../Dating-DApp/data_ideation.excalidraw)
 
@@ -53,6 +54,10 @@ model: gpt-4-1106-preview
 
 - * Kat - Agile Lead / Product Owner
 
+## Community Direction
+
+- [See Canvas](https://discord.com/channels/1146585995765100554/1174772083549536256/1179847272142483588)
+
 ## Agile Software Development (Part II)
 
 - Groups & Assignments in Tickets:
@@ -62,6 +67,7 @@ model: gpt-4-1106-preview
 - * Quality Assurance (Software Engr. approach to AI)
 - Using: 
 - Codebase available to perform PRs against
+- Using: https://www.notion.so
 
 ## Resources
 
