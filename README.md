@@ -1,5 +1,5 @@
 # Bitcoin Derivatives with AI assitance
-
+## THIS IS A TEST - I AM CHANGING THE README FILE
 ## Repo for a Chapman University blockchain testnet and CPSC-370 course. 
 
 The methods and results of this project will be taught in the Fall 2023 course CPSC-370 *The Decentralized Web and Scalable Blockchain Programming*.
@@ -27,6 +27,16 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - [12-Oct-2023](./lectures/lecture14.md)
 - [17-Oct-2023](./lectures/lecture15.md)
 - [19-Oct-2023](./lectures/lecture16.md)
+- [24-Oct-2023](./lectures/lecture17.md)
+- [26-Oct-2023](./lectures/lecture18.md)
+- [31-Oct-2023](./lectures/lecture19.md)
+- [2-Nov-2023](./lectures/lecture20.md)
+- [7-Nov-2023](./lectures/lecture21.md)
+- [9-Nov-2023](./lectures/lecture22.md)
+- [14-Nov-2023](./lectures/lecture23.md)
+- [16-Nov-2023](./lectures/lecture24.md)
+- [28-Nov-2023](./lectures/lecture25.md)
+- [30-Nov-2023](./lectures/lecture26.md)
 
 ## Assignments & Quizes
 - [Due: 31-Aug-2023](./assignments/31_Aug_2023.md)
@@ -37,6 +47,7 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - Fifth Week Quiz out on 27th; Due by End of Day 2-October-2023
 - Sixth Week Quiz out on 5th; Due by End of Day 5-October-2023
 - Seventh Week Quiz out on 12th; Due by End of Day 18-October-2023
+- Eigth Week Quiz out on 25th; Due by End of Day 29-October-2023
 
 ### Resourcs
 
