@@ -56,7 +56,7 @@ model Message {
   sender     User     @relation("MessageSender", fields: [senderId], references: [id])
   receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
   senderUser User     @relation("MessageSenderUser", fields: [senderId], references: [id])
-  receiverUser User   @relation("MessageReceiver", fields: [receiverId], references: [id])
+  receiverUser User   @relation("MessageReceiverUser", fields: [receiverId], references: [id])
 }
 
 model Like {
