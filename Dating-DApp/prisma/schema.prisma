@@ -55,7 +55,7 @@ model Message {
   sentAt     DateTime @default(now())
   sender     User     @relation("MessageSender", fields: [senderId], references: [id])
   receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
-  senderUser User     @relation("MessageSender", fields: [senderId], references: [id])
+  senderUser User     @relation("MessageSenderUser", fields: [senderId], references: [id])
   receiverUser User   @relation("MessageReceiver", fields: [receiverId], references: [id])
 }
 
