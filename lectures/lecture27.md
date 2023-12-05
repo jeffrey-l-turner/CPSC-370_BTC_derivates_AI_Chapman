@@ -34,7 +34,6 @@ model: gpt-4-1106-preview
 - * Jaden - QA - lead
 - * Jesse - QA
 - * Ava - QA
-- * Alex - QA
 
 - * Luis - BE - lead
 - * Parker - BE
@@ -44,10 +43,6 @@ model: gpt-4-1106-preview
 - * Peter - I
 
 - * Kat - Agile Lead / Product Owner
-
-## Community Direction
-
-- [See Canvas](https://discord.com/channels/1146585995765100554/1174772083549536256/1179847272142483588)
 
 ## Agile Software Development (Part III)
 
