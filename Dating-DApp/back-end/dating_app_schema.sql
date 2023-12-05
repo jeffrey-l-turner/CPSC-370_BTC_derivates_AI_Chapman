@@ -28,7 +28,7 @@ CREATE TABLE profiles (
 CREATE TABLE photos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
-    photo_url VARCHAR(255) NOT NULL,
+    photo BLOB,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );

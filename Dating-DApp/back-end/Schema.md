@@ -27,7 +27,7 @@
 
 - `id`: An auto-incrementing integer that serves as the primary key.
 - `user_id`: An integer that references the `id` in the `users` table.
-- `photo_url`: A string that represents the URL of the photo.
+- `photo`: A BLOB that represents the photo.
 - `created_at`: A timestamp that gets automatically set to the current time when a photo is uploaded.
 
 ## Messages Table
