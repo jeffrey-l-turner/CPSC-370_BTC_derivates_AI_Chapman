@@ -1,0 +1,111 @@
+{
+    "[javascript]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features"
+		},
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "xo.format.enable": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "diffEditor.wordWrap": "on",
+    "xo.enable": true,
+    "remote.downloadExtensionsLocally": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+		"typescript.format.enable": false,
+    "editor.minimap.enabled": false,
+    "solidity.linter": "solhint",
+    "[solidity]": {
+			"editor.defaultFormatter": "JuanBlanco.solidity"
+		},
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "scm.alwaysShowActions": true,
+    "scm.alwaysShowRepositories": true,
+    "vetur.experimental.templateInterpolationService": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "files.associations": {
+        "*.py": "python",
+        "*.cs": "csharp",
+        "*.sol": "solidity"
+    },
+    "[python]": {
+				"editor.defaultFormatter": "ms-python.python",
+				"editor.formatOnType": true
+    },
+    "bracketPairColorizer.depreciation-notice": false,
+    "vetur.format.defaultFormatter.ts": "prettier-tslint",
+    "[csharp]": {
+        "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+    },
+    "editor.codeLens": false,
+    "deno.config": "",
+		"deno.importMap": "./import_map.json",
+    "deno.enable": true,
+    "remote.SSH.configFile": "~/.ssh/config",
+    "prettier.jsxSingleQuote": true,
+    "remote.SSH.remotePlatform": {
+			"ec2-54-196-189-49.compute-1.amazonaws.com": "linux",
+			"192.168.0.98": "linux"
+		},
+		"hardhat.telemetry": false,
+    "editor.detectIndentation": false,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 2,
+		"diffEditor.ignoreTrimWhitespace": false,
+		"solidity.packageDefaultDependenciesDirectory": "lib",
+		"[rust]": {
+			"editor.defaultFormatter": "rust-lang.rust-analyzer"
+		},
+		"lldb.library": "/Library/Developer/CommandLineTools/Library/PrivateFrameworks/LLDB.framework/Versions/A/LLDB",
+		"[markdown]": {
+			"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+		},
+		"[nix]": {
+			"editor.defaultFormatter": "jnoortheen.nix-ide"
+		},
+		"nix.formatterPath": "nixpkgs-fmt",
+		"files.watcherExclude": {
+			"**/.bloop": true,
+			"**/.metals": true,
+			"**/.ammonite": true
+		},
+		"[toml]": {
+			"editor.defaultFormatter": "tamasfe.even-better-toml"
+		},
+		"[scala]": {
+			"editor.defaultFormatter": "scalameta.metals"
+		},
+		"[proto3]": {
+			"editor.defaultFormatter": "zxh404.vscode-proto3"
+		},
+		"workbench.colorTheme": "Default Dark+",
+		"workbench.editorAssociations": {
+			"*.so": "default"
+		},
+		"tabnine.experimentalAutoImports": true,
+		"redhat.telemetry.enabled": false,
+		"[java]": {
+			"editor.defaultFormatter": "redhat.java"
+		},
+		"[prisma]": {
+			"editor.defaultFormatter": "Prisma.prisma"
+		},
+		"metals.serverProperties": [],
+		"metals.javaHome": "/Users/spreston/.jabba/jdk/adopt@1.11.0-11/Contents/Home",
+		"[xml]": {
+			"editor.defaultFormatter": "DotJoshJohnson.xml"
+		},
+		"[dockerfile]": {
+			"editor.defaultFormatter": "foxundermoon.shell-format"
+		},
+		"[dotenv]": {
+			"editor.defaultFormatter": "foxundermoon.shell-format"
+		}
+}
