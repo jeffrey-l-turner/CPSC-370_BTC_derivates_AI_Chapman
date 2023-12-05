@@ -21,6 +21,7 @@
 - `city`: A string that represents the user's city.
 - `wallet`: A string that represents the user's wallet.
 - `country`: A string that represents the user's country.
+- `karma`: An integer that represents the user's reputation points.
 
 ## Photos Table
 

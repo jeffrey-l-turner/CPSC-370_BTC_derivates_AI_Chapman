@@ -20,6 +20,7 @@ CREATE TABLE profiles (
     city VARCHAR(255),
     wallet VARCHAR(255),
     country VARCHAR(255),
+    karma INT DEFAULT 0,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
