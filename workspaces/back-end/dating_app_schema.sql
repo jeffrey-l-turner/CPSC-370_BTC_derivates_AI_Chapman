@@ -18,6 +18,7 @@ CREATE TABLE profiles (
     interested_in ENUM('male', 'female', 'both', 'none'),
     bio TEXT,
     city VARCHAR(255),
+    wallet VARCHAR(255),
     country VARCHAR(255),
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
