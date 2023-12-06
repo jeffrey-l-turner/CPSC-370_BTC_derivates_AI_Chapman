@@ -1,10 +1,6 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 datasource db {
   provider     = "mysql"
   url          = env("DATABASE_URL")
-  relationMode = "prisma"
 }
 
 generator client {
@@ -20,8 +16,8 @@ model User {
   updatedAt DateTime @updatedAt
   profiles  Profile?
   photos    Photo[]
-  messages  Message[] @relation("MessageReceiver")
-  likes     Like[] @relation("LikeUser")
+  messages  Message[]
+  likes     Like[]
 }
 
 model Profile {
