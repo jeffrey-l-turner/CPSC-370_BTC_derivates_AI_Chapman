@@ -16,8 +16,8 @@ model User {
   updatedAt DateTime @updatedAt
   profiles  Profile?
   photos    Photo[]
-  messages  Message[]
-  likes     Like[]
+  messages  Message[] @relation("MessageSender")
+  likes     Like[] @relation("LikeUser")
 }
 
 model Profile {
@@ -51,6 +51,7 @@ model Message {
   sentAt     DateTime @default(now())
   sender     User     @relation("MessageSender", fields: [senderId], references: [id])
   receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
+  user       User     @relation("MessageSender", fields: [senderId], references: [id])
 }
 
 model Like {
@@ -59,5 +60,6 @@ model Like {
   createdAt    DateTime @default(now())
   user         User     @relation("LikeUser", fields: [userId], references: [id])
   likedUser    User     @relation("LikedUser", fields: [likedUserId], references: [id])
+  userLiked    User     @relation("LikeUser", fields: [userId], references: [id])
   @@id([userId, likedUserId])
 }
