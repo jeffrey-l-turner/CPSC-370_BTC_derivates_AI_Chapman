@@ -1,6 +1,6 @@
 datasource db {
-  provider     = "mysql"
-  url          = env("DATABASE_URL")
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
 generator client {
@@ -8,20 +8,21 @@ generator client {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  username  String   @unique
-  email     String   @unique
-  password  String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  profiles  Profile?
-  photos    Photo[]
-  messages  Message[] @relation("MessageSender")
-  likes     Like[] @relation("LikeUser")
+  id               Int       @id @default(autoincrement())
+  username         String    @unique
+  email            String    @unique
+  password         String
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  profiles         Profile?
+  photos           Photo[]
+  sentMessages     Message[] @relation("MessageSender")
+  receivedMessages Message[] @relation("MessageReceiver")
+  likes            Like[]    @relation("LikeUser")
 }
 
 model Profile {
-  userId       Int      @id
+  userId       Int       @id
   firstName    String?
   lastName     String?
   dateOfBirth  DateTime?
@@ -31,8 +32,8 @@ model Profile {
   city         String?
   wallet       String?
   country      String?
-  karma        Int      @default(0)
-  user         User     @relation(fields: [userId], references: [id])
+  karma        Int       @default(0)
+  user         User      @relation(fields: [userId], references: [id])
 }
 
 model Photo {
@@ -51,15 +52,13 @@ model Message {
   sentAt     DateTime @default(now())
   sender     User     @relation("MessageSender", fields: [senderId], references: [id])
   receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
-  user       User     @relation("MessageSender", fields: [senderId], references: [id])
 }
 
 model Like {
-  userId       Int
-  likedUserId  Int
-  createdAt    DateTime @default(now())
-  user         User     @relation("LikeUser", fields: [userId], references: [id])
-  likedUser    User     @relation("LikedUser", fields: [likedUserId], references: [id])
-  userLiked    User     @relation("LikeUser", fields: [userId], references: [id])
+  userId      Int
+  likedUserId Int
+  createdAt   DateTime @default(now())
+  user        User     @relation("LikeUser", fields: [userId], references: [id])
+
   @@id([userId, likedUserId])
 }

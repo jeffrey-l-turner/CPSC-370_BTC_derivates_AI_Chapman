@@ -35,6 +35,11 @@ async function createUser(username: string, email: string, password: string) {
   console.log(user)
 }
 
+async function getUsers() {
+  const users = await prisma.user.findMany()
+  console.log(users)
+}
+
 async function main() {
   const users = [
     'Ava Ambuske',
@@ -55,9 +60,14 @@ async function main() {
     'Jaden Suh'
   ]
 
-  for (const user of users) {
-    await createUser(user, `${user.replace(' ', '').toLowerCase()}@prisma.io`, 'password')
-  }
+  // Writes users into the database
+    // for (const user of users) {
+    //   await createUser(user, `${user.replace(' ', '').toLowerCase()}@prisma.io`, 'password')
+    // }
+
+  // Returns all users
+    // getUsers()
+  
 }
 
 main()
