@@ -3,6 +3,10 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 async function createUser(username: string, email: string, password: string) {
+  const femaleUsers = ['Ava Ambuske', 'Emma Gibson', 'Katherine Monroy'];
+  const gender = femaleUsers.includes(username) ? 'Female' : 'Male';
+  const interestedIn = femaleUsers.includes(username) ? 'Male' : 'Female';
+
   const user = await prisma.user.create({
     data: {
       username: username,
@@ -13,8 +17,8 @@ async function createUser(username: string, email: string, password: string) {
           firstName: username.split(' ')[0],
           lastName: username.split(' ')[1],
           dateOfBirth: new Date(),
-          gender: 'Male',
-          interestedIn: 'Female',
+          gender: gender,
+          interestedIn: interestedIn,
           bio: 'This is a bio',
           city: 'City',
           wallet: 'Wallet',
