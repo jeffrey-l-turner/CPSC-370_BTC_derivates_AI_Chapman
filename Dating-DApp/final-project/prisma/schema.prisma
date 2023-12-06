@@ -8,10 +8,3 @@ datasource db {
   relationMode = "prisma"
 }
 
-model User {
-  id        Int      @id @default(autoincrement())
-  firstname  String
-  lastname  String
-  email     String   @unique
-  createdAt DateTime @default(now())
-}
