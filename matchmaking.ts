@@ -3,37 +3,85 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 interface PotentialMatches {
-  // Define the structure
+  userId: string;
+  potentialMatchId: string;
 }
 
 interface MatchRequests {
-  // Define the structure
+  userId: string;
+  requestedMatchId: string;
 }
 
 interface AcceptedMatches {
-  // Define the structure
+  userId: string;
+  acceptedMatchId: string;
 }
 
-async function makePotentialMatches(user: string) {
-  // Compute a list of potential matches, filtered according to preferences
+async function makePotentialMatches(userId: string) {
+  const user = await prisma.profile.findUnique({ where: { id: userId } });
+  const potentialMatches = await prisma.profile.findMany({
+    where: {
+      gender: user.interestedIn,
+      interestedIn: user.gender,
+    },
+  });
+  return potentialMatches;
 }
 
-async function makeMatchRequests(user: string) {
-  // Compute a list of match requests
+async function makeMatchRequests(userId: string, potentialMatchId: string) {
+  const matchRequest = await prisma.matchRequests.create({
+    data: {
+      userId: userId,
+      requestedMatchId: potentialMatchId,
+    },
+  });
+  return matchRequest;
 }
 
-async function acceptMatch(user: string, match: string) {
-  // Accept a match request
+async function acceptMatch(userId: string, requestedMatchId: string) {
+  const acceptedMatch = await prisma.acceptedMatches.create({
+    data: {
+      userId: userId,
+      acceptedMatchId: requestedMatchId,
+    },
+  });
+  return acceptedMatch;
 }
 
-async function rejectMatch(user: string, match: string) {
-  // Reject a match request
+async function rejectMatch(userId: string, requestedMatchId: string) {
+  const rejectedMatch = await prisma.matchRequests.delete({
+    where: {
+      userId_requestedMatchId: {
+        userId: userId,
+        requestedMatchId: requestedMatchId,
+      },
+    },
+  });
+  return rejectedMatch;
 }
 
-async function chatWithMatch(user: string, match: string, message: string) {
-  // Enable users to chat with their accepted matches
+async function chatWithMatch(userId: string, matchId: string, message: string) {
+  const chatMessage = await prisma.message.create({
+    data: {
+      senderId: userId,
+      receiverId: matchId,
+      message: message,
+    },
+  });
+  return chatMessage;
 }
 
-async function filterAndRank(user: string) {
-  // Filter potential matches based on hard constraints and rank them based on soft constraints
+async function filterAndRank(userId: string) {
+  const user = await prisma.profile.findUnique({ where: { id: userId } });
+  const potentialMatches = await prisma.profile.findMany({
+    where: {
+      gender: user.interestedIn,
+      interestedIn: user.gender,
+    },
+    orderBy: {
+      dateOfBirth: 'asc',
+      city: 'asc',
+    },
+  });
+  return potentialMatches;
 }
