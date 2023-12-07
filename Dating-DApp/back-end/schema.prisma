@@ -17,7 +17,7 @@ model User {
   profiles  Profile?
   photos    Photo[]
   messages  Message[]
-  likes     Like[]
+  likes     Likes[]
 }
 
 model Profile {
@@ -38,7 +38,7 @@ model Profile {
 model Photo {
   id        Int      @id @default(autoincrement())
   userId    Int
-  photo     Bytes?
+  photo     String
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id])
 }
@@ -53,11 +53,30 @@ model Message {
   receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
 }
 
-model Like {
-  userId       Int
-  likedUserId  Int
-  createdAt    DateTime @default(now())
-  user         User     @relation("LikeUser", fields: [userId], references: [id])
-  likedUser    User     @relation("LikedUser", fields: [likedUserId], references: [id])
+model PotentialMatches {
+  userId            Int
+  potentialMatchId  Int
+  user              User @relation(fields: [userId], references: [id])
+  potentialMatch    User @relation(fields: [potentialMatchId], references: [id])
+
+  @@id([userId, potentialMatchId])
+}
+
+model AcceptedMatches {
+  userId  Int
+  matchId Int
+  user    User @relation(fields: [userId], references: [id])
+  match   User @relation(fields: [matchId], references: [id])
+
+  @@id([userId, matchId])
+}
+
+model Likes {
+  userId      Int
+  likedUserId Int
+  createdAt   DateTime @default(now())
+  user        User @relation(fields: [userId], references: [id])
+  likedUser   User @relation(fields: [likedUserId], references: [id])
+
   @@id([userId, likedUserId])
 }
