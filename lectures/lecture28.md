@@ -46,6 +46,7 @@ model: gpt-4-1106-preview
 - Review of What has gone right/wrong
 - * Vercel Deployment
 - * DNS/Name Servers
+- * How do you find/fix?: Search, StackOverflow, AI...
 - Standup today
 - Breakout into working groups...
 - Notion review before end of class
