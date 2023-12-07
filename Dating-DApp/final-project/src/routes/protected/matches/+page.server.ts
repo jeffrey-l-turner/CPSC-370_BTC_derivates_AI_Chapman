@@ -1,16 +1,37 @@
 import { prisma } from '$lib/server/prisma';
 import type { PageServerLoad } from './$types';
 
-export const load = (async () => {
-	/** 
-    * TODO - ADD IN ACTUAL PRISMA QUERY
-    * ? - USE CLOUDFLARE DURABLE OBJECTS FOR CONVERSATIONS
-      const profiles = await prisma.user.findMany({
-         where: {
-            
-         }
-      });
-   */
+export const load = (async ({
+	locals: {
+		session: { user_id }
+	}
+}) => {
+	const likes = await prisma.like.findMany({
+		where: {
+			OR: [
+				{
+					profileId: user_id
+				},
+				{
+					likedProfileId: user_id
+				}
+			],
+			AND: {
+				likedBack: true
+			}
+		},
+		include: {
+			profile: true,
+			likedProfile: true
+		}
+	});
+	const matches = likes.map((like) => {
+		return {
+			profile: like.profileId == user_id ? like.likedProfile : like.profile
+		};
+	});
 
-	return {};
+	return {
+		matches
+	};
 }) satisfies PageServerLoad;
