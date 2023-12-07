@@ -72,7 +72,6 @@ To ensure adherence to these standards, we will employ ESLint with appropriate T
 
 ### ESLint Installation and Use
 - Install ESLint and TypeScript packages: '''npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev'''
-- Install Husky to run ESLint automatically before each commit: '''npm install husky --save-dev'''
 - Running ESLint Manually: '''npm run lint'''
 
 ## 5. Conclusion
