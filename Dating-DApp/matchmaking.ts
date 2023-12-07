@@ -18,8 +18,8 @@ interface AcceptedMatches {
 }
 
 async function makePotentialMatches(userId: string) {
-  const user = await prisma.profile.findUnique({ where: { id: userId } });
-  const potentialMatches = await prisma.profile.findMany({
+  const user = await prisma.user.findUnique({ where: { id: userId } });
+  const potentialMatches = await prisma.user.findMany({
     where: {
       gender: user.interestedIn,
       interestedIn: user.gender,
@@ -72,8 +72,8 @@ async function chatWithMatch(userId: string, matchId: string, message: string) {
 }
 
 async function filterAndRank(userId: string) {
-  const user = await prisma.profile.findUnique({ where: { id: userId } });
-  const potentialMatches = await prisma.profile.findMany({
+  const user = await prisma.user.findUnique({ where: { id: userId } });
+  const potentialMatches = await prisma.user.findMany({
     where: {
       gender: user.interestedIn,
       interestedIn: user.gender,
