@@ -7,36 +7,26 @@ async function createUser(username: string, email: string, password: string) {
   const gender = femaleUsers.includes(username) ? 'Female' : 'Male';
   const interestedIn = femaleUsers.includes(username) ? 'Male' : 'Female';
 
-  const user = await prisma.user.create({
+  const user = await prisma.profile.create({
     data: {
-      username: username,
+      firstname: username.split(' ')[0],
+      lastname: username.split(' ')[1],
       email: email,
-      password: password,
-      profiles: {
-        create: {
-          firstName: username.split(' ')[0],
-          lastName: username.split(' ')[1],
-          dateOfBirth: new Date(),
-          gender: gender,
-          interestedIn: interestedIn,
-          bio: 'This is a bio',
-          city: 'City',
-          wallet: 'Wallet',
-          country: 'Country',
-        }
-      },
-      photos: {
-        create: {
-          photo: new Buffer('Photo'),
-        }
-      }
+      dateOfBirth: new Date(),
+      gender: gender,
+      interestedIn: interestedIn,
+      bio: 'This is a bio',
+      city: 'City',
+      wallet: 'Wallet',
+      country: 'Country',
+      photoUrl: 'Photo',
     },
   })
   console.log(user)
 }
 
 async function getUsers() {
-  const users = await prisma.user.findMany()
+  const users = await prisma.profile.findMany()
   console.log(users)
 }
 
