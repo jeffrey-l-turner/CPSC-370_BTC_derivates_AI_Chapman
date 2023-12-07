@@ -1,64 +1,53 @@
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
 }
 
 generator client {
   provider = "prisma-client-js"
 }
 
-model User {
-  id               Int       @id @default(autoincrement())
-  username         String    @unique
+model Profile {
+  id               String    @id
+  firstname        String?
+  lastname         String?
   email            String    @unique
-  password         String
   createdAt        DateTime  @default(now())
   updatedAt        DateTime  @updatedAt
-  profiles         Profile?
-  photos           Photo[]
+  dateOfBirth      DateTime?
+  gender           String?
+  interestedIn     String?
+  bio              String?
+  city             String?
+  wallet           String?
+  country          String?
+  photoUrl         String?
+  karma            Int       @default(0)
   sentMessages     Message[] @relation("MessageSender")
   receivedMessages Message[] @relation("MessageReceiver")
-  likes            Like[]    @relation("LikeUser")
-}
-
-model Profile {
-  userId       Int       @id
-  firstName    String?
-  lastName     String?
-  dateOfBirth  DateTime?
-  gender       String?
-  interestedIn String?
-  bio          String?
-  city         String?
-  wallet       String?
-  country      String?
-  karma        Int       @default(0)
-  user         User      @relation(fields: [userId], references: [id])
-}
-
-model Photo {
-  id        Int      @id @default(autoincrement())
-  userId    Int
-  photo     Bytes?
-  createdAt DateTime @default(now())
-  user      User     @relation(fields: [userId], references: [id])
+  likes            Like[]    @relation("LikeProfile")
+  likedBy          Like[]    @relation("LikedProfile")
 }
 
 model Message {
   id         Int      @id @default(autoincrement())
-  senderId   Int
-  receiverId Int
+  senderId   String
+  receiverId String
   message    String
   sentAt     DateTime @default(now())
-  sender     User     @relation("MessageSender", fields: [senderId], references: [id])
-  receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
+  sender     Profile  @relation("MessageSender", fields: [senderId], references: [id])
+  receiver   Profile  @relation("MessageReceiver", fields: [receiverId], references: [id])
 }
 
 model Like {
-  userId      Int
-  likedUserId Int
-  createdAt   DateTime @default(now())
-  user        User     @relation("LikeUser", fields: [userId], references: [id])
+  id             Int      @id @default(autoincrement())
+  profileId      String
+  likedProfileId String
+  createdAt      DateTime @default(now())
+  likedBack      Boolean?
+  profile        Profile  @relation("LikeProfile", fields: [profileId], references: [id])
+  likedProfile   Profile  @relation("LikedProfile", fields: [likedProfileId], references: [id])
 
-  @@id([userId, likedUserId])
+  @@unique([profileId, likedProfileId])
 }

@@ -53,12 +53,12 @@ async function main() {
   ]
 
   // Writes users into the database
-    // for (const user of users) {
-    //   await createUser(user, `${user.replace(' ', '').toLowerCase()}@prisma.io`, 'password')
-    // }
+  // for (const user of users) {
+  //   await createUser(user, `${user.replace(' ', '').toLowerCase()}@prisma.io`, 'password')
+  // }
 
   // Returns all users
-    // getUsers()
+  getUsers()
   
 }
 
