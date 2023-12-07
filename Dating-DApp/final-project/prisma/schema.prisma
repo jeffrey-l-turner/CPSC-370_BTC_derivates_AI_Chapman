@@ -10,7 +10,7 @@ generator client {
 
 model Profile {
   id                String       @id
-  firstname         String?
+  firstname          String?
   lastname          String?
   email             String       @unique
   createdAt         DateTime     @default(now())
@@ -26,8 +26,8 @@ model Profile {
   karma             Int          @default(0)
   sentMessages      Message[]    @relation("MessageSender")
   receivedMessages  Message[]    @relation("MessageReceiver")
-  likes             Like[]       @relation("LikeProfile")
-  likedBy           Like[]       @relation("LikedProfile")
+  swipes            Swipe[]      @relation("SwipeProfile")
+  swipedBy          Swipe[]      @relation("SwipedProfile")
 }
 
 model Message {
@@ -40,13 +40,13 @@ model Message {
   receiver    Profile  @relation("MessageReceiver", fields: [receiverId], references: [id])
 }
 
-model Like {
-  id              Int       @id @default(autoincrement())
-  profileId       String
-  likedProfileId  String
-  createdAt       DateTime  @default(now())
-  likedBack       Boolean?   
-  profile         Profile   @relation("LikeProfile", fields: [profileId], references: [id])
-  likedProfile    Profile   @relation("LikedProfile", fields: [likedProfileId], references: [id])
-  @@unique([profileId, likedProfileId])
+model Swipe {
+  id             Int       @id @default(autoincrement())
+  profileId      String
+  swipedProfileId  String
+  createdAt      DateTime  @default(now())
+  liked          Boolean
+  profile        Profile   @relation("SwipeProfile", fields: [profileId], references: [id])
+  swipedProfile  Profile   @relation("SwipedProfile", fields: [swipedProfileId], references: [id])
+  @@unique([profileId, swipedProfileId])
 }

@@ -2,39 +2,49 @@
 	import { fly } from 'svelte/transition';
 	import { swipe } from 'svelte-gestures';
 	import { flip } from 'svelte/animate';
+	import type { PageData } from './$types';
 
-	let items = [
-		{
-			src: 'https://picsum.photos/200/300'
-		},
-		{
-			src: 'https://picsum.photos/200/300?random=1'
-		}
-	];
+	export let data: PageData;
+	$: console.log(data);
 
 	let x = 500;
-	function handler(event) {
+	const handler = async (event) => {
 		x = event.detail.direction === 'right' ? 500 : -500;
-		items = items.slice(1);
-	}
+		const swipedOn = data.feed[0];
+		data.feed = data.feed.slice(1);
+
+		await fetch('/protected/feed', {
+			method: 'POST',
+			headers: {
+				'x-sveltekit-action': 'true'
+			},
+			body: JSON.stringify({
+				id: swipedOn.id
+			})
+		});
+	};
 </script>
 
 <div use:swipe={{ timeframe: 300, minSwipeDistance: 50, touchAction: 'pan-y' }} on:swipe={handler}>
 	<div class="overflow-y-hidden feed">
-		{#each items as item (item.src)}
+		8
+		{#each data.feed as profile (profile.id)}
 			<div
 				animate:flip={{ duration: 200 }}
 				out:fly={{ x: (() => x)(), duration: 300, opacity: 1 }}
 				class="join join-vertical p-2 w-full h-full"
 			>
 				<div class="h-full join-item max-w-sm">
-					<img src={item.src} alt="" class="w-full h-full object-cover pointer-events-none" />
+					<img
+						src={profile.photoUrl}
+						alt=""
+						class="w-full h-full object-cover pointer-events-none"
+					/>
 				</div>
 				<details class="collapse border join-item bg-white" open>
 					<summary class="collapse-title w-full text-xl font-medium pe-3">
 						<div class="flex items-center justify-between">
-							Jane, 28
-							<span class="badge">4 miles away</span>
+							{profile.firstname}, {profile.dateOfBirth}
 						</div>
 					</summary>
 					<div class="collapse-content">

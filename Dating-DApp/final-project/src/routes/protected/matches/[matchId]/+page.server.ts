@@ -1,5 +1,6 @@
 import { prisma } from '$lib/server/prisma';
-import type { PageServerLoad } from './$types';
+import type { Actions, PageServerLoad } from './$types';
+import { fail } from '@sveltejs/kit';
 
 export const load = (async ({
 	locals: {
@@ -25,5 +26,30 @@ export const load = (async ({
 		},
 		take: 15
 	});
-	return {};
+	return { messages, user_id };
 }) satisfies PageServerLoad;
+
+export const actions = {
+	default: async ({
+		request,
+		locals: {
+			session: { user_id }
+		},
+		params: { matchId }
+	}) => {
+		const submission = await request.formData();
+		const message = submission.get('message');
+
+		if (typeof message != 'string') {
+			return fail(400);
+		}
+
+		await prisma.message.create({
+			data: {
+				message,
+				senderId: user_id,
+				receiverId: matchId
+			}
+		});
+	}
+} satisfies Actions;

@@ -16,14 +16,15 @@
 									<span class="indicator-item badge badge-success z-1"></span>
 									<div class="mask mask-squircle w-12 h-12">
 										<img
-											src="https://picsum.photos/id/100/200/300"
+											src={profile.photoUrl != undefined
+												? profile.photoUrl
+												: 'https://picsum.photos/id/100/200/300'}
 											alt="Avatar Tailwind CSS Component"
 										/>
 									</div>
 								</div>
 								<div>
 									<div class="font-bold">{profile.firstname}</div>
-									<div class="text-sm opacity-50">Last text message...</div>
 								</div>
 							</div>
 						</a>
