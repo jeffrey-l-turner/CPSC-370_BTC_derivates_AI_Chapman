@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { v4 as uuidv4 } from 'uuid';
 import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient()
 
@@ -11,6 +12,7 @@ async function createUser(username: string, email: string, password: string) {
 
   const user = await prisma.profile.create({
     data: {
+      id: uuidv4(),
       firstname: username.split(' ')[0],
       lastname: username.split(' ')[1],
       email: email,
