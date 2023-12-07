@@ -18,8 +18,8 @@ interface AcceptedMatches {
 }
 
 async function makePotentialMatches(userId: string) {
-  const user = await prisma.user.findUnique({ where: { id: userId } });
-  const potentialMatches = await prisma.user.findMany({
+  const user = await prisma.profile.findUnique({ where: { id: userId } });
+  const potentialMatches = await prisma.profile.findMany({
     where: {
       gender: user.interestedIn,
       interestedIn: user.gender,
@@ -29,7 +29,7 @@ async function makePotentialMatches(userId: string) {
 }
 
 async function makeMatchRequests(userId: string, potentialMatchId: string) {
-  const matchRequest = await prisma.matchRequests.create({
+  const matchRequest = await prisma.like.create({
     data: {
       userId: userId,
       requestedMatchId: potentialMatchId,
@@ -39,7 +39,7 @@ async function makeMatchRequests(userId: string, potentialMatchId: string) {
 }
 
 async function acceptMatch(userId: string, requestedMatchId: string) {
-  const acceptedMatch = await prisma.acceptedMatches.create({
+  const acceptedMatch = await prisma.like.create({
     data: {
       userId: userId,
       acceptedMatchId: requestedMatchId,
@@ -49,7 +49,7 @@ async function acceptMatch(userId: string, requestedMatchId: string) {
 }
 
 async function rejectMatch(userId: string, requestedMatchId: string) {
-  const rejectedMatch = await prisma.matchRequests.delete({
+  const rejectedMatch = await prisma.like.delete({
     where: {
       userId_requestedMatchId: {
         userId: userId,
@@ -61,7 +61,7 @@ async function rejectMatch(userId: string, requestedMatchId: string) {
 }
 
 async function chatWithMatch(userId: string, matchId: string, message: string) {
-  const chatMessage = await prisma.message.create({
+  const chatMessage = await prisma.Message.create({
     data: {
       senderId: userId,
       receiverId: matchId,
@@ -72,8 +72,8 @@ async function chatWithMatch(userId: string, matchId: string, message: string) {
 }
 
 async function filterAndRank(userId: string) {
-  const user = await prisma.user.findUnique({ where: { id: userId } });
-  const potentialMatches = await prisma.user.findMany({
+  const user = await prisma.profile.findUnique({ where: { id: userId } });
+  const potentialMatches = await prisma.profile.findMany({
     where: {
       gender: user.interestedIn,
       interestedIn: user.gender,
