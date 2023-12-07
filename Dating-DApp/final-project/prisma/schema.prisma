@@ -1,17 +1,52 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
 generator client {
   provider = "prisma-client-js"
 }
 
-datasource db {
-  provider = "mysql"
-  url = env("DATABASE_URL")
-  relationMode = "prisma"
+model Profile {
+  id                String       @id
+  firstname         String?
+  lastname          String?
+  email             String       @unique
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+  dateOfBirth       DateTime?
+  gender            String?
+  interestedIn      String?
+  bio               String?
+  city              String?
+  wallet            String?
+  country           String?
+  photoUrl          String?
+  karma             Int          @default(0)
+  sentMessages      Message[]    @relation("MessageSender")
+  receivedMessages  Message[]    @relation("MessageReceiver")
+  likes             Like[]       @relation("LikeProfile")
+  likedBy           Like[]       @relation("LikedProfile")
 }
 
-model User {
-  id        Int      @id @default(autoincrement())
-  firstname  String
-  lastname  String
-  email     String   @unique
-  createdAt DateTime @default(now())
+model Message {
+  id          Int      @id @default(autoincrement())
+  senderId    String
+  receiverId  String
+  message     String
+  sentAt      DateTime @default(now())
+  sender      Profile  @relation("MessageSender", fields: [senderId], references: [id])
+  receiver    Profile  @relation("MessageReceiver", fields: [receiverId], references: [id])
+}
+
+model Like {
+  id              Int       @id @default(autoincrement())
+  profileId       String
+  likedProfileId  String
+  createdAt       DateTime  @default(now())
+  likedBack       Boolean?   
+  profile         Profile   @relation("LikeProfile", fields: [profileId], references: [id])
+  likedProfile    Profile   @relation("LikedProfile", fields: [likedProfileId], references: [id])
+  @@unique([profileId, likedProfileId])
 }

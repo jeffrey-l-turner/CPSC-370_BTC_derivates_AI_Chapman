@@ -11,14 +11,18 @@ export const actions = {
 		}
 
 		try {
-			const res = await stytch.magicLinks.email.loginOrCreate({
+			await stytch.magicLinks.email.loginOrCreate({
 				email,
 				login_magic_link_url: 'http://localhost:5173/authenticate',
 				signup_magic_link_url: 'http://localhost:5173/authenticate?signup=true'
 			});
-			console.log(res);
 		} catch (err) {
 			console.error(err);
+			return fail(500, { error: true });
 		}
+
+		return {
+			success: true
+		};
 	}
 } satisfies Actions;

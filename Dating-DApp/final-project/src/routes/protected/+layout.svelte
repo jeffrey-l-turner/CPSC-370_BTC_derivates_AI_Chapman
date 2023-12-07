@@ -41,7 +41,7 @@
 				</label>
 			</div>
 		</div>
-		<main class="overflow-y-scroll">
+		<main class="overflow-y-scroll relative">
 			<slot />
 		</main>
 	</div>
