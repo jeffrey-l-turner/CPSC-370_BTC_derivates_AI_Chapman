@@ -1,0 +1,82 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  profiles  Profile?
+  photos    Photo[]
+  messages  Message[]
+  likes     Likes[]
+}
+
+model Profile {
+  userId       Int      @id
+  firstName    String?
+  lastName     String?
+  dateOfBirth  DateTime?
+  gender       String?
+  interestedIn String?
+  bio          String?
+  city         String?
+  wallet       String?
+  country      String?
+  karma        Int      @default(0)
+  user         User     @relation(fields: [userId], references: [id])
+}
+
+model Photo {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  photo     String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model Message {
+  id         Int      @id @default(autoincrement())
+  senderId   Int
+  receiverId Int
+  message    String
+  sentAt     DateTime @default(now())
+  sender     User     @relation("MessageSender", fields: [senderId], references: [id])
+  receiver   User     @relation("MessageReceiver", fields: [receiverId], references: [id])
+}
+
+model PotentialMatches {
+  userId            Int
+  potentialMatchId  Int
+  user              User @relation(fields: [userId], references: [id])
+  potentialMatch    User @relation(fields: [potentialMatchId], references: [id])
+
+  @@id([userId, potentialMatchId])
+}
+
+model AcceptedMatches {
+  userId  Int
+  matchId Int
+  user    User @relation(fields: [userId], references: [id])
+  match   User @relation(fields: [matchId], references: [id])
+
+  @@id([userId, matchId])
+}
+
+model Likes {
+  userId      Int
+  likedUserId Int
+  createdAt   DateTime @default(now())
+  user        User @relation(fields: [userId], references: [id])
+  likedUser   User @relation(fields: [likedUserId], references: [id])
+
+  @@id([userId, likedUserId])
+}
