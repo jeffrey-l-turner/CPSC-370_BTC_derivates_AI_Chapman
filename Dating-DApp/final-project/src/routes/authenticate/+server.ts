@@ -28,7 +28,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 		await prisma.profile.create({
 			data: profileData
 		});
-		throw redirect(303, '/protected/welcome');
+		throw redirect(303, '/protected/profile');
 	}
 
 	throw redirect(303, '/protected/feed');

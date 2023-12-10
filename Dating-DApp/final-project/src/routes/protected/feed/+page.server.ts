@@ -1,4 +1,5 @@
 import { prisma } from '$lib/server/prisma';
+import { Prisma } from '@prisma/client';
 import type { Actions, PageServerLoad } from './$types';
 
 export const load = (async ({
@@ -6,15 +7,20 @@ export const load = (async ({
 		session: { user_id }
 	}
 }) => {
+	const profile = await prisma.profile.findUnique({
+		where: {
+			id: user_id
+		}
+	});
+
 	const feed = await prisma.profile.findMany({
-		// add filters on city, interested in, etc.
-		// exclude people already swiped on
 		where: {
 			NOT: {
 				swipedBy: {
 					some: { profileId: user_id }
 				}
 			},
+			gender: profile?.interestedIn,
 			id: {
 				not: user_id
 			}
@@ -25,7 +31,29 @@ export const load = (async ({
 }) satisfies PageServerLoad;
 
 export const actions = {
-	default: async ({ request }) => {
-		const x;
+	default: async ({
+		request,
+		locals: {
+			session: { user_id }
+		}
+	}) => {
+		const { swipedProfileId, liked } = await request.json();
+
+		await prisma.swipe.upsert({
+			where: {
+				profileId_swipedProfileId: {
+					profileId: swipedProfileId,
+					swipedProfileId: user_id
+				}
+			},
+			create: {
+				profileId: user_id,
+				swipedProfileId,
+				liked
+			},
+			update: {
+				likedBack: liked as boolean
+			}
+		});
 	}
 } satisfies Actions;
