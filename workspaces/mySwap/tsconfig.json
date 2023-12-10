@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    // ... other compiler options
+    "esModuleInterop": true,
+    "jsx": "react"
+
+  },
+  // ... other config options
+}
+

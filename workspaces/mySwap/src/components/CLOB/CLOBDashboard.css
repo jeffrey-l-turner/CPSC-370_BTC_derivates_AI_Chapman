@@ -1,0 +1,37 @@
+.clob-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #282828; /* Background color */
+    box-shadow: 10px 10px 20px #1c1c1c, -10px -10px 20px #343434; /* Neumorphic shadow */
+    border-radius: 20px;
+    margin: 20px; /* Updated margin to match swap-portfolio-container */
+    width: 80%;
+    max-width: 600px; /* Updated max-width to match swap-portfolio-container */
+}
+
+.clob-dashboard-container h2,
+.clob-dashboard-container h3 {
+    margin: 20px;
+    color: #e5e5e5; /* Light gray text for better contrast */
+    font-weight: bold;
+    font-size: 1.5em; /* Increase font size for better readability */
+}
+
+/* Additional neumorphic designs for contained elements, if needed */
+
+.clob-section {
+    flex-direction: row;
+    background: #282828;
+    padding: 20px 30px; /* Increase padding for better spacing */
+    border-radius: 15px;
+    margin: 20px; /* Increase margin for better spacing */
+    box-shadow: 5px 5px 10px #1c1c1c, -5px -5px 10px #343434;
+    width: 100%;
+}
+
+.clob-section-header {
+    margin: 20px; /* Increase margin for better spacing */
+    font-size: 1.2em; /* Increase font size for better readability */
+}

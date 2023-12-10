@@ -1,0 +1,43 @@
+/* src/components/LatestBlocks.css */
+
+.latest-blocks {
+    box-sizing: border-box;
+    color: rgb(247, 250, 250);
+    display: block;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    height: 483.78125px;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    padding-bottom: 14.4px;
+    padding-left: 14.4px;
+    padding-right: 14.4px;
+    padding-top: 14.4px;
+    text-align: start;
+    width: 1289.21875px;
+}
+
+.block-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-col {
+    flex: 1;
+}
+
+.block-col.hash {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.block-header {
+    display: flex;
+    justify-content: space-between;
+}
+

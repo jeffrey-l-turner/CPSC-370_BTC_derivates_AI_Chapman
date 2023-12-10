@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px; /* Increased left and right padding */
+  margin: 10px;
+  background: #282828;
+  color: #E5E5E5;
+  box-shadow: 10px 10px 20px #1c1c1c, -10px -10px 20px #343434;
+  border-radius: 20px;
+  z-index: 10;
+  position: sticky; /* Make the navigation bar sticky */
+  top: 0; /* Stick to the top of the page */
+}
+
+.navigation-button {
+  background: none;
+  border: none;
+  color:#E5E5E5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navigation-button:hover {
+  color: #ff007f;
+}

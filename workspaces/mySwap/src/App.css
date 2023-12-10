@@ -1,46 +1,64 @@
-.App {
-  text-align: center;
+.app {
+  font-family: 'Roboto', sans-serif;
+  color: #E5E5E5;
+  background: #282828;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 80px; /* Add padding-top to push the content down */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: auto;
+  /* Remove position: absolute */
 }
 
-.App-link {
-  color: #61dafb;
+.conversion-rates-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.link-button {
-  background: none!important;
+.navigation-button {
+  background: none;
   border: none;
-  padding: 0!important;
-  color: #069;
-  text-decoration: underline;
+  color:#E5E5E5;
+  text-decoration: none;
   cursor: pointer;
+
+}
+
+.swap-portfolio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px #1c1c1c, -10px -10px 20px #343434;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center children horizontally */
+  align-items: start; /* Align children to the start of the cross axis */
+  flex-wrap: wrap; /* Allow children to wrap to next line on smaller screens */
+}
+
+.navigation-button {
+  background: none;
+  border: none;
+  color:#E5E5E5;
+  text-decoration: none;
+  cursor: pointer;
+
 }

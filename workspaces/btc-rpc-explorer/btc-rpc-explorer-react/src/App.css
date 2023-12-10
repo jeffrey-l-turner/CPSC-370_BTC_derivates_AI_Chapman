@@ -1,0 +1,17 @@
+/* src/App.css */
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1A1A1D;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
