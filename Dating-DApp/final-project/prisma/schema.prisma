@@ -46,6 +46,7 @@ model Swipe {
   swipedProfileId  String
   createdAt      DateTime  @default(now())
   liked          Boolean
+  likedBack     Boolean?
   profile        Profile   @relation("SwipeProfile", fields: [profileId], references: [id])
   swipedProfile  Profile   @relation("SwipedProfile", fields: [swipedProfileId], references: [id])
   @@unique([profileId, swipedProfileId])

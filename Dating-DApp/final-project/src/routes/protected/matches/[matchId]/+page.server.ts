@@ -8,6 +8,16 @@ export const load = (async ({
 	},
 	params: { matchId }
 }) => {
+	const profile = await prisma.profile.findUnique({
+		where: {
+			id: user_id
+		}
+	});
+	const other = await prisma.profile.findUnique({
+		where: {
+			id: matchId
+		}
+	});
 	const messages = await prisma.message.findMany({
 		where: {
 			OR: [
@@ -26,7 +36,7 @@ export const load = (async ({
 		},
 		take: 15
 	});
-	return { messages, user_id };
+	return { profile, other, messages: messages.reverse(), user_id };
 }) satisfies PageServerLoad;
 
 export const actions = {

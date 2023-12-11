@@ -6,14 +6,14 @@ export const load = (async ({
 		session: { user_id }
 	}
 }) => {
-	const likes = await prisma.like.findMany({
+	const likes = await prisma.swipe.findMany({
 		where: {
 			OR: [
 				{
 					profileId: user_id
 				},
 				{
-					likedProfileId: user_id
+					swipedProfileId: user_id
 				}
 			],
 			AND: {
@@ -22,14 +22,15 @@ export const load = (async ({
 		},
 		include: {
 			profile: true,
-			likedProfile: true
+			swipedProfile: true
 		}
 	});
 	const matches = likes.map((like) => {
 		return {
-			profile: like.profileId == user_id ? like.likedProfile : like.profile
+			profile: like.profileId == user_id ? like.swipedProfile : like.profile
 		};
 	});
+	console.log(matches);
 
 	return {
 		matches

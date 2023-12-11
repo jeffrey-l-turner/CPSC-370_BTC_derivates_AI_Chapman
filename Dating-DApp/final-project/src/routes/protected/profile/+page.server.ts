@@ -1,5 +1,4 @@
 import { prisma } from '$lib/server/prisma';
-import ImageKit from 'imagekit';
 import { fail } from '@sveltejs/kit';
 import type { PageServerLoad, Actions } from './$types';
 

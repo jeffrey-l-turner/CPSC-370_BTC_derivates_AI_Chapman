@@ -14,19 +14,19 @@
 					<div class="w-10 rounded-full">
 						<img
 							alt="Tailwind CSS chat bubble component"
-							src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+							src={senderId == data.user_id ? data.profile?.photoUrl : data.other?.photoUrl}
 						/>
 					</div>
 				</div>
 				<div class="chat-header">
-					{senderId}
-					<time class="text-xs opacity-50">{sentAt}</time>
+					{senderId == data.user_id ? data.profile?.firstname : data.other?.firstname}
+					<time class="text-xs opacity-50">{sentAt.toLocaleTimeString()}</time>
 				</div>
 				<div class="chat-bubble">{message}</div>
 			</div>
 		{/each}
 	</div>
-	<div class="border-t w-screen">
+	<div class="border-t w-screen pb-2">
 		<form use:enhance method="POST" class="flex items-center mt-2">
 			<input
 				name="message"
