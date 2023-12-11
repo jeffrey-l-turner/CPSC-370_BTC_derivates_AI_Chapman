@@ -25,12 +25,12 @@ export const load = (async ({
 			swipedProfile: true
 		}
 	});
+	// Formatting fix
 	const matches = likes.map((like) => {
 		return {
 			profile: like.profileId == user_id ? like.swipedProfile : like.profile
 		};
 	});
-	console.log(matches);
 
 	return {
 		matches
