@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Version } from "$lib/index.ts";
+  import  Version  from "$lib/index.ts";
 </script>
 
 {Version}

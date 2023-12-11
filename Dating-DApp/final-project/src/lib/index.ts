@@ -2,3 +2,4 @@
 import { version } from './version';
 
 console.log(`Current version: ${version}`);
+export default version
