@@ -67,8 +67,12 @@ The deployment phase involves deploying the system to a production environment. 
 - Use Prisma's query methods, such as `findUnique`, `findMany`, `create`, `update`, and `delete`.
 - Use Prisma's transaction methods, such as `transaction` and `commit`.
 
-4. Enforcing Standards
+## 4. Enforcing Standards
 To ensure adherence to these standards, we will employ ESLint with appropriate TypeScript and Svelte plugins. A pre-commit hook will be set up to run ESLint, and code reviews will include a check for compliance with these standards. Continuous integration pipelines will also run automated tests and linting to maintain code quality throughout the development process.
+
+### ESLint Installation and Use
+- Install ESLint and TypeScript packages: '''npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev'''
+- Running ESLint Manually: '''npm run lint'''
 
 ## 5. Conclusion
 
