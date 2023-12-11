@@ -1,3 +1,8 @@
+<script lang="ts">
+  import { Version } from "$lib/index.ts";
+</script>
+
+{Version}
 <div class="flex flex-col h-screen">
 	<div class="navbar bg-base-100 p-4 border-b">
 		<div class="flex-1">
