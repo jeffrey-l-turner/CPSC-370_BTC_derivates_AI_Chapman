@@ -46,3 +46,18 @@
 ## Final Exam
 
 - One hour with 40 questions (all multiple choice or true/false)
+
+### Retrospective Results:
+
+Sprint Retro
+
+Went well…
+Learned quickly
+AI assitance
+Notion
+Good Teamwork
+Standups help know where we were
+
+Not so well
+This process could have started earlier
+Better integration with AI services
