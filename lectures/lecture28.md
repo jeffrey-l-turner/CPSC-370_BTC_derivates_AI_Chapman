@@ -1,4 +1,4 @@
-# Lecture 28
+# Final
 
 <div align="center">
   <img src="./Finals_logo_BTC.png" width="250" height="250" />
@@ -6,16 +6,9 @@
 
 # Housekeeping
 
-- Reminder: Open Router credits are done
-- Reminder: `.aider.conf.yml` format:
-```
-openai-api-key: sk-<your_key>
-model: gpt-4-1106-preview
-```
-- Open AI credits available
-- If you're behind, you should have a Canvas notification. Final office hours are today at 2PM
-- Everyone must participate this week and show up Monday for final project review, final, and time for course evaluation.
-- Project/Community Direction - we're implementing "Karma"
+- Have office hours this week ONLY on ZOOM
+- Grades to be posted by January 1st but should be available on Canvas Earlier
+- Assignments will be graded by this Saturday, including Final
 
 ## [Team Assignments](../Dating-DApp/data_ideation.excalidraw)
 
@@ -41,12 +34,15 @@ model: gpt-4-1106-preview
 
 - * Kat - Agile Lead / Product Owner
 
-## Review of What has gone right/wrong
+## Final Agile Process Review
 
-- Review of What has gone right/wrong
-- * Vercel Deployment
-- * DNS/Name Servers
-- Standup today
-- Breakout into working groups...
-- Notion review before end of class
+- Standup
+- Review state of DApp
+- Sprint Retrospective
+- * Review of What has gone right/wrong
+- * How could we do better
+- * Self-evaluation of working groups...
 
+## Final Exam
+
+- One hour with 40 questions (all multiple choice or true/false)
