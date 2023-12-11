@@ -3,7 +3,7 @@ import { redirect } from '@sveltejs/kit';
 import type { Handle } from '@sveltejs/kit';
 
 export const handle = (async ({ event, resolve }) => {
-	if (event.url.pathname.startsWith('/dashboard')) {
+	if (event.url.pathname.startsWith('/protected')) {
 		try {
 			const { session, session_token } = await stytch.sessions.authenticate({
 				session_token: event.cookies.get('session_token'),
