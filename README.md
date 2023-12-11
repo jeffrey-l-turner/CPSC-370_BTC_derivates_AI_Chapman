@@ -53,12 +53,5 @@ The methods and results of this project will be taught in the Fall 2023 course C
 - Seventh Week Quiz out on 12th; Due by End of Day 18-October-2023
 - Eigth Week Quiz out on 25th; Due by End of Day 29-October-2023
 
-### Resourcs
 
-* [Warp](app.warp.dev/referral/PXZMWP)
-* [settings.json for VSCode](./resources/settings.json)
-
-### Testnet Project Outline:
-
-<div align="center"><img src="./docs/drawings/Chapman_testnet.png"></img></div>
-
+This class completed the fall/winter at Chapman University in 2023
