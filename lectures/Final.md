@@ -49,15 +49,16 @@
 
 ### Retrospective Results:
 
-Sprint Retro
+#### Sprint Retro
 
-Went well…
-Learned quickly
-AI assitance
-Notion
-Good Teamwork
-Standups help know where we were
+* Went well…
+> Learned quickly
+> AI assitance
+> Notion
+> Good Teamwork
+> Standups help know where we were
 
-Not so well
-This process could have started earlier
-Better integration with AI services
+* Not so well
+
+> This process could have started earlier
+> Better integration with AI services
