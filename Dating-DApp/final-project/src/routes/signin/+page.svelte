@@ -1,7 +1,8 @@
 <script lang="ts">
-	import type { ActionData } from '../signup/$types';
+	import type { ActionData } from './$types';
 
 	export let form: ActionData;
+	$: console.log;
 </script>
 
 <div class="grid h-screen bg-primary">

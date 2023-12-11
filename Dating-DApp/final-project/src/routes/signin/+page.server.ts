@@ -23,7 +23,7 @@ export const actions = {
 			});
 		} catch (err) {
 			console.error(err);
-			return fail(500, { error: true });
+			return fail(500, { error: true, err });
 		}
 
 		return {
