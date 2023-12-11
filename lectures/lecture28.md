@@ -1,7 +1,7 @@
 # Final
 
 <div align="center">
-  <img src="./Finals_logo_BTC.png" width="250" height="250" />
+  <img src="./Bitcoin_final.png" width="250" height="250" />
 </div>
 
 # Housekeeping
