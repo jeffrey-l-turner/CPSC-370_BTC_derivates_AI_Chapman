@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "jest": "^28.0.0", // Replace with the latest version of Jest
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@types/node": "^20.7.1",
