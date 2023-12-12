@@ -1,0 +1,72 @@
+TARGET = Some("aarch64-apple-darwin")
+OPT_LEVEL = Some("3")
+HOST = Some("aarch64-apple-darwin")
+cargo:rerun-if-env-changed=CC_aarch64-apple-darwin
+CC_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_aarch64_apple_darwin
+CC_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+CARGO_CFG_TARGET_FEATURE = Some("aes,crc,dit,dotprod,dpb,dpb2,fcma,fhm,flagm,fp16,frintts,jsconv,lor,lse,neon,paca,pacg,pan,pmuv3,ras,rcpc,rcpc2,rdm,sb,sha2,sha3,ssbs,vh")
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CC_aarch64-apple-darwin
+CC_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_aarch64_apple_darwin
+CC_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("aes,crc,dit,dotprod,dpb,dpb2,fcma,fhm,flagm,fp16,frintts,jsconv,lor,lse,neon,paca,pacg,pan,pmuv3,ras,rcpc,rcpc2,rdm,sb,sha2,sha3,ssbs,vh")
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-arch" "arm64" "-I" "depend/secp256k1/" "-I" "depend/secp256k1/include" "-I" "depend/secp256k1/src" "-Wall" "-Wextra" "-Wno-unused-function" "-DSECP256K1_BUILD=" "-DENABLE_MODULE_SURJECTIONPROOF=1" "-DENABLE_MODULE_GENERATOR=1" "-DENABLE_MODULE_RANGEPROOF=1" "-DENABLE_MODULE_ECDSA_ADAPTOR=1" "-DENABLE_MODULE_WHITELIST=1" "-DECMULT_GEN_PREC_BITS=4" "-DUSE_NUM_NONE=1" "-DUSE_FIELD_INV_BUILTIN=1" "-DUSE_SCALAR_INV_BUILTIN=1" "-DECMULT_WINDOW_SIZE=15" "-DUSE_EXTERNAL_DEFAULT_CALLBACKS=1" "-o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/contrib/lax_der_parsing.o" "-c" "depend/secp256k1/contrib/lax_der_parsing.c"
+exit status: 0
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-arch" "arm64" "-I" "depend/secp256k1/" "-I" "depend/secp256k1/include" "-I" "depend/secp256k1/src" "-Wall" "-Wextra" "-Wno-unused-function" "-DSECP256K1_BUILD=" "-DENABLE_MODULE_SURJECTIONPROOF=1" "-DENABLE_MODULE_GENERATOR=1" "-DENABLE_MODULE_RANGEPROOF=1" "-DENABLE_MODULE_ECDSA_ADAPTOR=1" "-DENABLE_MODULE_WHITELIST=1" "-DECMULT_GEN_PREC_BITS=4" "-DUSE_NUM_NONE=1" "-DUSE_FIELD_INV_BUILTIN=1" "-DUSE_SCALAR_INV_BUILTIN=1" "-DECMULT_WINDOW_SIZE=15" "-DUSE_EXTERNAL_DEFAULT_CALLBACKS=1" "-o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/src/secp256k1.o" "-c" "depend/secp256k1/src/secp256k1.c"
+exit status: 0
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-arch" "arm64" "-I" "depend/secp256k1/" "-I" "depend/secp256k1/include" "-I" "depend/secp256k1/src" "-Wall" "-Wextra" "-Wno-unused-function" "-DSECP256K1_BUILD=" "-DENABLE_MODULE_SURJECTIONPROOF=1" "-DENABLE_MODULE_GENERATOR=1" "-DENABLE_MODULE_RANGEPROOF=1" "-DENABLE_MODULE_ECDSA_ADAPTOR=1" "-DENABLE_MODULE_WHITELIST=1" "-DECMULT_GEN_PREC_BITS=4" "-DUSE_NUM_NONE=1" "-DUSE_FIELD_INV_BUILTIN=1" "-DUSE_SCALAR_INV_BUILTIN=1" "-DECMULT_WINDOW_SIZE=15" "-DUSE_EXTERNAL_DEFAULT_CALLBACKS=1" "-o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/src/precomputed_ecmult_gen.o" "-c" "depend/secp256k1/src/precomputed_ecmult_gen.c"
+exit status: 0
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-arch" "arm64" "-I" "depend/secp256k1/" "-I" "depend/secp256k1/include" "-I" "depend/secp256k1/src" "-Wall" "-Wextra" "-Wno-unused-function" "-DSECP256K1_BUILD=" "-DENABLE_MODULE_SURJECTIONPROOF=1" "-DENABLE_MODULE_GENERATOR=1" "-DENABLE_MODULE_RANGEPROOF=1" "-DENABLE_MODULE_ECDSA_ADAPTOR=1" "-DENABLE_MODULE_WHITELIST=1" "-DECMULT_GEN_PREC_BITS=4" "-DUSE_NUM_NONE=1" "-DUSE_FIELD_INV_BUILTIN=1" "-DUSE_SCALAR_INV_BUILTIN=1" "-DECMULT_WINDOW_SIZE=15" "-DUSE_EXTERNAL_DEFAULT_CALLBACKS=1" "-o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/src/precomputed_ecmult.o" "-c" "depend/secp256k1/src/precomputed_ecmult.c"
+exit status: 0
+cargo:rerun-if-env-changed=AR_aarch64-apple-darwin
+AR_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=AR_aarch64_apple_darwin
+AR_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64-apple-darwin
+ARFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64_apple_darwin
+ARFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/libsecp256k1zkp.a" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/contrib/lax_der_parsing.o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/src/secp256k1.o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/src/precomputed_ecmult_gen.o" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/depend/secp256k1/src/precomputed_ecmult.o"
+exit status: 0
+running: "ar" "s" "/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out/libsecp256k1zkp.a"
+exit status: 0
+cargo:rustc-link-lib=static=secp256k1zkp
+cargo:rustc-link-search=native=/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/build/secp256k1-zkp-sys-9f7ebe555df474d2/out
