@@ -1,0 +1,57 @@
+import json
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Define the JSON data
+ blocks = [                                                                                                                                                                                                 
+   {                                                                                                                                                                                                        
+     "hash": "0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103",                                                                                                                            
+     "ver": 1,                                                                                                                                                                                              
+     "prev_block": "00000000000007d0f98d9edca880a6c124e25095712df8952e0439ac7409738a",                                                                                                                      
+     "mrkl_root": "935aa0ed2e29a4b81e0c995c39e06995ecce7ddbebb26ed32d550a72e8200bf5",                                                                                                                       
+     "time": 1322131230,                                                                                                                                                                                    
+     "bits": 437129626,                                                                                                                                                                                     
+     "nonce": 2964215930,                                                                                                                                                                                   
+     "n_tx": 22,                                                                                                                                                                                            
+     "size": 9195,                                                                                                                                                                                          
+     "block_index": 818044,                                                                                                                                                                                 
+     "main_chain": true,                                                                                                                                                                                    
+     "height": 154595,                                                                                                                                                                                      
+     "received_time": 1322131301,                                                                                                                                                                           
+     "relayed_by": "108.60.208.156",                                                                                                                                                                        
+     "tx": [                                                                                                                                                                                                
+       "--Array of Transactions--"                                                                                                                                                                          
+     ]                                                                                                                                                                                                      
+   },                                                                                                                                                                                                       
+   {                                                                                                                                                                                                        
+     "hash": "0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd104",                                                                                                                            
+     "ver": 1,                                                                                                                                                                                              
+     "prev_block": "00000000000007d0f98d9edca880a6c124e25095712df8952e0439ac7409738b",                                                                                                                      
+     "mrkl_root": "935aa0ed2e29a4b81e0c995c39e06995ecce7ddbebb26ed32d550a72e8200bf6",                                                                                                                       
+     "time": 1322131231,                                                                                                                                                                                    
+     "bits": 437129627,                                                                                                                                                                                     
+     "nonce": 2964215931,                                                                                                                                                                                   
+     "n_tx": 23,                                                                                                                                                                                            
+     "size": 9196,                                                                                                                                                                                          
+     "block_index": 818045,                                                                                                                                                                                 
+     "main_chain": true,                                                                                                                                                                                    
+     "height": 154596,                                                                                                                                                                                      
+     "received_time": 1322131302,                                                                                                                                                                           
+     "relayed_by": "108.60.208.157",                                                                                                                                                                        
+     "tx": [                                                                                                                                                                                                
+       "--Array of Transactions--"                                                                                                                                                                          
+     ]                                                                                                                                                                                                      
+   }
+ ]                                                                                                                                                                                                          
+                                                                                                                                                                                                          
+# Extract the number of transactions from each block
+n_tx = [block['n_tx'] for block in blocks]
+
+# Create the histogram
+plt.hist(n_tx, bins=np.arange(min(n_tx), max(n_tx) + 1, 1), alpha=0.5, edgecolor='black')
+
+plt.title('Histogram of Transactions')
+plt.xlabel('Number of Transactions')
+plt.ylabel('Frequency')
+
+plt.show()
