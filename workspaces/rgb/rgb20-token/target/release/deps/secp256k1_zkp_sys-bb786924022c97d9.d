@@ -1,0 +1,9 @@
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/secp256k1_zkp_sys-bb786924022c97d9.rmeta: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs
+
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/libsecp256k1_zkp_sys-bb786924022c97d9.rlib: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs
+
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/secp256k1_zkp_sys-bb786924022c97d9.d: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs
+
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/lib.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/error_callbacks.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-zkp-sys-0.8.1/src/zkp.rs:

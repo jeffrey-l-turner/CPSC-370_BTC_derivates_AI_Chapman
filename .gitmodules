@@ -1,0 +1,6 @@
+[submodule "pair_programming"]
+	path = pair_programming
+	url = ./new-subdir
+[submodule "workspaces/mySwap/workspaces/21SeptAssignment/interface"]
+	path = workspaces/mySwap/workspaces/21SeptAssignment/interface
+	url = git@github.com:Uniswap/interface.git
