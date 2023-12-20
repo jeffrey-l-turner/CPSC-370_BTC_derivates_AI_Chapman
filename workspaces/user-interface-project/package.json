@@ -1,0 +1,25 @@
+
+{
+  "name": "user-interface-project",
+  "version": "1.0.0",
+  "description": "Creating a basic user interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "~/src/CPSC-370_BTC_derivates_AI_Chapman"
+  },
+  "keywords": [
+    "user",
+    "interface",
+    "JavaScript"
+  ],
+  "author": "Devin Ng",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}
