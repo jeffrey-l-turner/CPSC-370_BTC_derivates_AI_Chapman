@@ -1,0 +1,26 @@
+{
+  "name": "addition-function-project",
+  "version": "1.0.0",
+  "description": "Write a JavaScript file to define an addition function and another JavaScript file to test it (originally wanted to write a user interface instead of a math function, but I could not figure out how to create a user interface on JavaScript).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "~/src/CPSC-370_BTC_derivates_AI_Chapman"
+  },
+  "keywords": [
+    "JavaScript",
+    "addition",
+    "function"
+  ],
+  "author": "Devin Ng",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "jest": "^29.7.0"
+  }
+}
