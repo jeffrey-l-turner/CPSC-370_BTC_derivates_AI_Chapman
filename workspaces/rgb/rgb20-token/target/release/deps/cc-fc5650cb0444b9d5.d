@@ -1,0 +1,10 @@
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/cc-fc5650cb0444b9d5.rmeta: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/libcc-fc5650cb0444b9d5.rlib: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/noahfuery/Documents/CPSCCourses/cpsc370/CPSC-370_BTC_derivates_AI_Chapman/workspaces/rgb/rgb20-token/target/release/deps/cc-fc5650cb0444b9d5.d: /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs:
+/Users/noahfuery/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs:
