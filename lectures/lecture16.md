@@ -16,11 +16,13 @@ mv .aider.conf.yml .aider.conf.yml-or
 mv .aider.conf.yml-oai .aider.conf.yml
 ```
 
-## Common Problems: Pull Request Reviews and Git usage
+# Common Problems: Pull Request Reviews and Git usage
 
 - Please see me if you need help or DM.
 
-### Using git with PR submission:
+## this is to see a merge conflict
+## Using git with PR submission:
+## this is to see a merge conflict
 
 - Logging
 - `git bisect`
